@@ -1,0 +1,889 @@
+﻿player_id,fbref_id,player_name,national_team,nationality,club,position,age,height_cm,foot,matches,starts,minutes,90s,goals,assists,yellow_cards,red_cards,shots,shots_on_target,passes_completed,passes_attempted,pass_completion_pct,progressive_passes,key_passes,tackles,tackles_won,interceptions,clearances,blocks,errors,sca,gca,saves,save_percentage,psxg,psxg_plus_minus,sweeper_actions,crosses_stopped,distance_covered,source,fbref_name,match_type
+2,,MANDI Aissa,ALG,Algeria,Lille OSC,DF,34,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Aïssa Mandi,moved
+5,,BELAID Zineddine,ALG,Algeria,JS Kabylie,DF,27,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Zineddine Belaïd,moved
+6,,ZERROUKI Ramiz,ALG,Algeria,FC Twente,MF,28,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ramiz Zerrouki,moved
+7,,MAHREZ Riyad,ALG,Algeria,Al Ahli FC,FW,35,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Riyad Mahrez,moved
+8,,AOUAR Houssem,ALG,Algeria,Al Ittihad,MF,27,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Houssem Aouar,moved
+9,,GOUIRI Amine,ALG,Algeria,Olympique Marseille,FW,26,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Amine Gouiri,moved
+10,,CHAIBI Fares,ALG,Algeria,Eintracht Frankfurt,MF,23,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Fares Chaïbi,moved
+11,,HADJ MOUSSA Anis,ALG,Algeria,Feyenoord Rotterdam,FW,24,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Anis Hadj Moussa,moved
+12,,BENBOUALI Nadhir,ALG,Algeria,Györi ETO FC,FW,26,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nadhir Benbouali,moved
+13,,HADJAM Jaouen,ALG,Algeria,BSC Young Boys,DF,23,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jaouen Hadjam,moved
+14,,BOUDAOUI Hicham,ALG,Algeria,OGC Nice,MF,26,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Hicham Boudaoui,moved
+15,,AIT-NOURI Rayan,ALG,Algeria,Manchester City FC,DF,25,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Rayan Aït-Nouri,moved
+16,,BENBOT Oussama,ALG,Algeria,USM Alger,GK,31,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Oussama Benbot,moved
+17,,BELGHALI Rafik,ALG,Algeria,Hellas Verona FC,DF,24,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Rafik Belghali,moved
+18,,AMOURA Mohamed,ALG,Algeria,VfL Wolfsburg,FW,26,170,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mohamed Amoura,moved
+19,,BENTALEB Nabil,ALG,Algeria,Lille OSC,MF,31,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nabil Bentaleb,moved
+20,,BOULBINA Adil,ALG,Algeria,Al Duhail SC,FW,23,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Adil Boulbina,moved
+21,,BENSEBAINI Ramy,ALG,Algeria,Borussia Dortmund,DF,31,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ramy Bensebaini,moved
+22,,MAZA Ibrahim,ALG,Algeria,Bayer 04 Leverkusen,MF,20,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ibrahim Maza,moved
+23,,ZIDANE Luca,ALG,Algeria,Granada CF,GK,28,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Luca Zidane,moved
+25,,GHEDJEMIS Fares,ALG,Algeria,Frosinone,FW,23,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Farés Ghedjemis,moved
+26,,CHERGUI Samir,ALG,Algeria,Paris FC,DF,27,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Samir Chergui,moved
+29,,TAGLIAFICO Nicolas,ARG,Argentina,Olympique Lyonnais,DF,33,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nicolás Tagliafico,moved
+30,,MONTIEL Gonzalo,ARG,Argentina,CA River Plate,DF,29,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gonzalo Montiel,moved
+31,,PAREDES Leandro,ARG,Argentina,CA Boca Juniors,MF,31,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Leandro Paredes,moved
+32,,MARTINEZ Lisandro,ARG,Argentina,Manchester United FC,DF,28,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lisandro Martínez,moved
+33,,DE PAUL Rodrigo,ARG,Argentina,Inter Miami CF,MF,32,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Rodrigo De Paul,moved
+34,,BARCO Valentin,ARG,Argentina,RC Strasbourg,MF,21,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Valentín Barco,moved
+35,,ALVAREZ Julian,ARG,Argentina,Atlético De Madrid,FW,26,170,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Julián Álvarez,moved
+36,,MESSI Lionel,ARG,Argentina,Inter Miami CF,FW,38,170,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lionel Messi,moved
+37,,LO CELSO Giovani,ARG,Argentina,Real Betis,MF,30,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Giovani Lo Celso,moved
+39,,ROMERO Cristian,ARG,Argentina,Tottenham Hotspur FC,DF,28,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Cristian Romero,moved
+40,,PALACIOS Exequiel,ARG,Argentina,Bayer 04 Leverkusen,MF,27,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Exequiel Palacios,moved
+41,,GONZALEZ Nico,ARG,Argentina,Atlético De Madrid,MF,28,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nicolás González,manual
+42,,ALMADA Thiago,ARG,Argentina,Atlético De Madrid,FW,25,171,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Thiago Almada,moved
+43,,SIMEONE Giuliano,ARG,Argentina,Atlético De Madrid,FW,23,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Giuliano Simeone,moved
+44,,PAZ Nico,ARG,Argentina,Como,FW,21,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nicolás Paz,manual
+45,,OTAMENDI Nicolas,ARG,Argentina,SL Benfica,DF,38,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nicolás Otamendi,moved
+46,,MAC ALLISTER Alexis,ARG,Argentina,Liverpool FC,MF,27,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alexis Mac Allister,moved
+48,,MARTINEZ Lautaro,ARG,Argentina,FC Internazionale Milano,FW,28,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lautaro Martínez,moved
+49,,MARTINEZ Emiliano,ARG,Argentina,Aston Villa FC,GK,33,195,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Emiliano Martínez,moved
+50,,FERNANDEZ Enzo,ARG,Argentina,Chelsea FC,MF,25,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Enzo Fernández,moved
+51,,MEDINA Facundo,ARG,Argentina,Olympique Marseille,DF,27,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Facundo Medina,moved
+52,,MOLINA Nahuel,ARG,Argentina,Atlético De Madrid,DF,28,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nahuel Molina,moved
+53,,RYAN Mathew,AUS,Australia,Levante UD,GK,34,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mathew Ryan,moved
+55,,CIRCATI Alessandro,AUS,Australia,Parma,DF,22,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alessandro Circati,moved
+56,,ITALIANO Jacob,AUS,Australia,Grazer AK,DF,24,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jacob Italiano,moved
+58,,GERIA Jason,AUS,Australia,Albirex Niigata,DF,33,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jason Geria,moved
+59,,LECKIE Mathew,AUS,Australia,Melbourne City FC,FW,35,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mathew Leckie,moved
+60,,METCALFE Connor,AUS,Australia,FC St. Pauli,MF,26,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Connor Metcalfe,moved
+62,,HRUSTIC Ajdin,AUS,Australia,SC Heracles Almelo,FW,29,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ajdin Hrustic,moved
+63,,MABIL Awer,AUS,Australia,CD Castellón,FW,30,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Awer Mabil,moved
+65,,ONEILL Aiden,AUS,Australia,New York City FC,MF,27,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Aiden O'Neill,manual
+67,,TREWIN Kai,AUS,Australia,New York City FC,DF,25,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kai Trewin,moved
+68,,BEHICH Aziz,AUS,Australia,Melbourne City FC,DF,35,170,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Aziz Behich,moved
+69,,IRANKUNDA Nestory,AUS,Australia,Watford FC,FW,20,165,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nestory Irankunda,moved
+70,,BEACH Patrick,AUS,Australia,Melbourne City FC,GK,22,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Patrick Beach,moved
+71,,SOUTTAR Harry,AUS,Australia,Leicester City FC,DF,27,198,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Harry Souttar,moved
+72,,VOLPATO Cristian,AUS,Australia,US Sassuolo,FW,22,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Cristian Volpato,moved
+73,,BURGESS Cameron,AUS,Australia,Swansea City AFC,DF,30,194,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Cameron Burgess,moved
+74,,IRVINE Jackson,AUS,Australia,FC St. Pauli,MF,33,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jackson Irvine,moved
+75,,VELUPILLAY Nishan,AUS,Australia,Melbourne Victory FC,FW,25,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nishan Velupillay,moved
+76,,OKON-ENGSTLER Paul,AUS,Australia,Sydney FC,MF,21,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Paul Okon-Engstler,moved
+77,,HERRINGTON Lucas,AUS,Australia,Colorado Rapids,DF,18,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lucas Herrington,moved
+78,,YENGI Tete,AUS,Australia,FC Machida Zelvia,FW,25,197,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tete Yengi,moved
+79,,SCHLAGER Alexander,AUT,Austria,FC Red Bull Salzburg,GK,30,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alexander Schlager,moved
+81,,DANSO Kevin,AUT,Austria,Tottenham Hotspur FC,DF,27,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kevin Danso,moved
+82,,SCHLAGER Xaver,AUT,Austria,RB Leipzig,MF,28,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Xaver Schlager,moved
+83,,POSCH Stefan,AUT,Austria,1. FSV Mainz 05,DF,29,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Stefan Posch,moved
+84,,SEIWALD Nicolas,AUT,Austria,RB Leipzig,MF,25,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nicolas Seiwald,moved
+85,,ARNAUTOVIC Marko,AUT,Austria,FK Crvena Zvezda,FW,37,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marko Arnautović,moved
+86,,ALABA David,AUT,Austria,Real Madrid C. F.,DF,33,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,David Alaba,moved
+87,,SABITZER Marcel,AUT,Austria,Borussia Dortmund,MF,32,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marcel Sabitzer,moved
+88,,GRILLITSCH Florian,AUT,Austria,SC Braga,MF,30,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Florian Grillitsch,moved
+89,,GREGORITSCH Michael,AUT,Austria,FC Augsburg,FW,32,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Michael Gregoritsch,moved
+92,,KALAJDZIC Sasa,AUT,Austria,LASK Linz,FW,28,200,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Saša Kalajdžić,moved
+93,,LIENHART Philipp,AUT,Austria,SC Freiburg,DF,29,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Philipp Lienhart,moved
+94,,MWENE Phillip,AUT,Austria,1. FSV Mainz 05,DF,32,170,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Phillipp Mwene,manual
+95,,CHUKWUEMEKA Carney,AUT,Austria,Borussia Dortmund,MF,22,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Carney Chukwuemeka,moved
+96,,SCHMID Romano,AUT,Austria,SV Werder Bremen,MF,26,168,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Romano Schmid,moved
+98,,LAIMER Konrad,AUT,Austria,FC Bayern München,MF,29,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Konrad Laimer,moved
+99,,WIMMER Patrick,AUT,Austria,VfL Wolfsburg,FW,25,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Patrick Wimmer,moved
+100,,PRASS Alexander,AUT,Austria,TSG Hoffenheim,MF,25,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alexander Prass,moved
+101,,FRIEDL Marco,AUT,Austria,SV Werder Bremen,DF,28,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marco Friedl,moved
+102,,WANNER Paul,AUT,Austria,PSV Eindhoven,MF,20,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Paul Wanner,moved
+105,,COURTOIS Thibaut,BEL,Belgium,Real Madrid C. F.,GK,34,199,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Thibaut Courtois,moved
+107,,THEATE Arthur,BEL,Belgium,Eintracht Frankfurt,DF,26,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Arthur Theate,moved
+108,,MECHELE Brandon,BEL,Belgium,Club Brugge,DF,33,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Brandon Mechele,moved
+109,,DE CUYPER Maxim,BEL,Belgium,Brighton & Hove Albion FC,DF,25,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Maxim De Cuyper,moved
+110,,WITSEL Axel,BEL,Belgium,Girona FC,MF,37,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Axel Witsel,moved
+111,,DE BRUYNE Kevin,BEL,Belgium,SSC Napoli,MF,34,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kevin De Bruyne,moved
+112,,TIELEMANS Youri,BEL,Belgium,Aston Villa FC,MF,29,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Youri Tielemans,moved
+113,,LUKAKU Romelu,BEL,Belgium,SSC Napoli,FW,33,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Romelu Lukaku,moved
+114,,TROSSARD Leandro,BEL,Belgium,Arsenal FC,FW,31,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Leandro Trossard,moved
+115,,DOKU Jeremy,BEL,Belgium,Manchester City FC,FW,24,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jeremy Doku,moved
+116,,LAMMENS Senne,BEL,Belgium,Manchester United FC,GK,23,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Senne Lammens,moved
+118,,LUKEBAKIO Dodi,BEL,Belgium,SL Benfica,FW,28,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Dodi Lukebakio,moved
+119,,MEUNIER Thomas,BEL,Belgium,Lille OSC,DF,34,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Thomas Meunier,moved
+121,,DE KETELAERE Charles,BEL,Belgium,Atalanta Bergamo,FW,25,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Charles De Ketelaere,moved
+122,,SEYS Joaquin,BEL,Belgium,Club Brugge,DF,21,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Joaquin Seys,moved
+123,,MOREIRA Diego,BEL,Belgium,RC Strasbourg,MF,21,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Diego Moreira,moved
+124,,VANAKEN Hans,BEL,Belgium,Club Brugge,MF,33,195,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Hans Vanaken,moved
+125,,CASTAGNE Timothy,BEL,Belgium,Fulham FC,DF,30,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Timothy Castagne,moved
+126,,SAELEMAEKERS Alexis,BEL,Belgium,AC Milan,MF,26,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alexis Saelemaekers,moved
+127,,RASKIN Nicolas,BEL,Belgium,Rangers FC,MF,25,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nicolas Raskin,moved
+128,,ONANA Amadou,BEL,Belgium,Aston Villa FC,MF,24,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Amadou Onana,moved
+129,,NGOY Nathan,BEL,Belgium,Lille OSC,DF,23,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nathan Ngoy,moved
+130,,FERNANDEZ-PARDO Matias,BEL,Belgium,Lille OSC,FW,21,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Matias Fernandez-Pardo,moved
+131,,VASILJ Nikola,BIH,Bosnia And Herzegovina,FC St. Pauli,GK,30,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nikola Vasilj,moved
+133,,HADZIKADUNIC Dennis,BIH,Bosnia And Herzegovina,UC Sampdoria,DF,27,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Dennis Hadžikadunić,moved
+134,,MUHAREMOVIC Tarik,BIH,Bosnia And Herzegovina,US Sassuolo,DF,23,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tarik Muharemovic,moved
+135,,KOLASINAC Sead,BIH,Bosnia And Herzegovina,Atalanta Bergamo,DF,32,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sead Kolašinac,moved
+136,,TAHIROVIC Benjamin,BIH,Bosnia And Herzegovina,Brøndby IF,MF,23,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Benjamin Tahirovic,moved
+137,,DEDIC Amar,BIH,Bosnia And Herzegovina,SL Benfica,DF,23,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Amar Dedić,moved
+138,,GIGOVIC Armin,BIH,Bosnia And Herzegovina,BSC Young Boys,MF,24,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Armin Gigovic,moved
+139,,BAZDAR Samed,BIH,Bosnia And Herzegovina,Jagiellonia Białystok,FW,22,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Samed Baždar,moved
+140,,DEMIROVIC Ermedin,BIH,Bosnia And Herzegovina,VfB Stuttgart,FW,28,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ermedin Demirović,moved
+141,,DZEKO Edin,BIH,Bosnia And Herzegovina,FC Schalke 04,FW,40,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Edin Džeko,moved
+143,,BASIC Ivan,BIH,Bosnia And Herzegovina,FC Astana,MF,24,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ivan Bašić,moved
+144,,SUNJIC Ivan,BIH,Bosnia And Herzegovina,Pafos FC,MF,29,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ivan Šunjić,moved
+145,,MEMIC Amar,BIH,Bosnia And Herzegovina,FC Viktoria Plzeň,MF,25,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Amar Memić,moved
+146,,HADZIAHMETOVIC Amir,BIH,Bosnia And Herzegovina,Hull City FC,MF,29,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Amir Hadžiahmetović,moved
+147,,BURNIC Dzenis,BIH,Bosnia And Herzegovina,Karlsruher SC,MF,28,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Dženis Burnić,moved
+148,,KATIC Nikola,BIH,Bosnia And Herzegovina,FC Schalke 04,DF,29,194,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nikola Katić,moved
+149,,ALAJBEGOVIC Kerim,BIH,Bosnia And Herzegovina,FC Red Bull Salzburg,FW,18,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kerim Alajbegović,moved
+150,,BAJRAKTAREVIC Esmir,BIH,Bosnia And Herzegovina,PSV Eindhoven,FW,21,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Esmir Bajraktarevic,moved
+151,,RADELJIC Stjepan,BIH,Bosnia And Herzegovina,HNK Rijeka,DF,28,201,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Stjepan Radeljić,moved
+153,,TABAKOVIC Haris,BIH,Bosnia And Herzegovina,Borussia Mönchengladbach,FW,31,196,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Haris Tabaković,moved
+155,,LUKIC Jovo,BIH,Bosnia And Herzegovina,Universitatea Cluj,FW,27,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jovo Lukić,moved
+156,,MAHMIC Ermin,BIH,Bosnia And Herzegovina,FC Slovan Liberec,MF,21,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ermin Mahmić,moved
+157,,ALISSON,BRA,Brazil,Liverpool FC,GK,33,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alisson,normal
+158,,EDERSON SILVA,BRA,Brazil,Atalanta Bergamo,MF,26,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Éderson Silva,normal
+159,,GABRIEL MAGALHAES,BRA,Brazil,Arsenal FC,DF,28,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gabriel Magalhães,normal
+160,,MARQUINHOS,BRA,Brazil,Paris Saint-Germain,DF,32,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marquinhos,normal
+161,,CASEMIRO,BRA,Brazil,Manchester United FC,MF,34,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Casemiro,normal
+162,,ALEX SANDRO,BRA,Brazil,CR Flamengo,DF,35,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alex Sandro,normal
+163,,VINICIUS JUNIOR,BRA,Brazil,Real Madrid C. F.,FW,25,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Vinicius Júnior,normal
+164,,BRUNO GUIMARAES,BRA,Brazil,Newcastle United FC,MF,28,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Bruno Guimarães,normal
+165,,MATHEUS CUNHA,BRA,Brazil,Manchester United FC,FW,27,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Matheus Cunha,normal
+167,,RAPHINHA,BRA,Brazil,FC Barcelona,FW,29,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Raphinha,normal
+169,,DANILO,BRA,Brazil,CR Flamengo,DF,34,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Danilo,normal
+172,,DOUGLAS SANTOS,BRA,Brazil,FC Zenit St. Petersburg,DF,32,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Douglas Santos,normal
+173,,FABINHO,BRA,Brazil,Al Ittihad,MF,32,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Fabinho,normal
+174,,DANILO SANTOS,BRA,Brazil,Botafogo,MF,25,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Danilo Santos,normal
+175,,ENDRICK,BRA,Brazil,Olympique Lyonnais,FW,19,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Endrick,normal
+176,,LUCAS PAQUETA,BRA,Brazil,CR Flamengo,MF,28,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lucas Paquetá,normal
+177,,LUIZ HENRIQUE,BRA,Brazil,FC Zenit St. Petersburg,FW,25,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Luiz Henrique,normal
+178,,GABRIEL MARTINELLI,BRA,Brazil,Arsenal FC,FW,24,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gabriel Martinelli,normal
+180,,ROGER IBANEZ,BRA,Brazil,Al Ahli FC,DF,27,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Roger Ibanez,normal
+181,,IGOR THIAGO,BRA,Brazil,Brentford FC,FW,24,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Igor Thiago,normal
+182,,RAYAN,BRA,Brazil,AFC Bournemouth,FW,19,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Rayan,normal
+183,,VOZINHA,CPV,Cabo Verde,GD Chaves,GK,40,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Vozinha,normal
+188,,KEVIN PINA,CPV,Cabo Verde,FC Krasnodar,MF,29,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kevin Pina,normal
+189,,JOVANE CABRAL,CPV,Cabo Verde,CF Estrela Da Amadora,MF,27,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jovane Cabral,normal
+191,,GILSON BENCHIMOL,CPV,Cabo Verde,FC Akron Tolyatti,FW,24,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gilson Benchimol,normal
+192,,JAMIRO MONTEIRO,CPV,Cabo Verde,PEC Zwolle,MF,32,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jamiro Monteiro,normal
+193,,GARRY RODRIGUES,CPV,Cabo Verde,Apollon Limassol,MF,35,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Garry Rodrigues,normal
+195,,SIDNY LOPES CABRAL,CPV,Cabo Verde,SL Benfica,DF,23,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sidny Lopes Cabral,normal
+196,,DEROY DUARTE,CPV,Cabo Verde,PFC Ludogorets Razgrad,MF,26,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Deroy Duarte,normal
+197,,LAROS DUARTE,CPV,Cabo Verde,Puskás Akadémia FC,MF,29,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Laros Duarte,normal
+199,,WILLY SEMEDO,CPV,Cabo Verde,AC Omonia,MF,32,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Willy Semedo,normal
+200,,TELMO ARCANJO,CPV,Cabo Verde,Vitória SC,MF,24,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Telmo Arcanjo,normal
+201,,DAILON LIVRAMENTO,CPV,Cabo Verde,Casa Pia AC,FW,25,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Dailon Livramento,normal
+202,,RYAN MENDES,CPV,Cabo Verde,Iğdır FK,FW,36,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ryan Mendes,normal
+203,,NUNO DA COSTA,CPV,Cabo Verde,Başakşehir FK,MF,35,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nuno da Costa,normal
+204,,STEVEN MOREIRA,CPV,Cabo Verde,Columbus Crew,DF,31,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Steven Moreira,normal
+206,,WAGNER PINA,CPV,Cabo Verde,Trabzonspor,DF,23,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Wagner Pina,normal
+208,,HELIO VARELA,CPV,Cabo Verde,Maccabi Tel-Aviv FC,MF,24,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Hélio Varela,normal
+210,,JOHNSTON Alistair,CAN,Canada,Celtic FC,DF,27,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alistair Johnston,moved
+212,,DE FOUGEROLLES Luc,CAN,Canada,FCV Dender EH,DF,20,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Luc De Fougerolles,moved
+214,,CHOINIERE Mathieu,CAN,Canada,LAFC,MF,27,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mathieu Choinière,moved
+215,,EUSTAQUIO Stephen,CAN,Canada,LAFC,MF,29,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Stephen Eustáquio,moved
+216,,KONE Ismael,CAN,Canada,US Sassuolo,MF,23,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ismaël Koné,moved
+217,,LARIN Cyle,CAN,Canada,Southampton FC,FW,31,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Cyle Larin,moved
+218,,DAVID Jonathan,CAN,Canada,Juventus FC,FW,26,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jonathan David,moved
+219,,MILLAR Liam,CAN,Canada,Hull City FC,MF,26,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Liam Millar,moved
+220,,OLUWASEYI Tani,CAN,Canada,Villarreal CF,FW,26,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tani Oluwaseyi,moved
+221,,CORNELIUS Derek,CAN,Canada,Rangers FC,DF,28,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Derek Cornelius,moved
+222,,SHAFFELBURG Jacob,CAN,Canada,LAFC,MF,26,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jacob Shaffelburg,moved
+223,,BOMBITO Moise,CAN,Canada,OGC Nice,DF,26,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Moïse Bombito,moved
+224,,CREPEAU Maxime,CAN,Canada,Orlando City SC,GK,32,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Maxime Crépeau,moved
+225,,BUCHANAN Tajon,CAN,Canada,Villarreal CF,FW,27,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tajon Buchanan,moved
+227,,DAVIES Alphonso,CAN,Canada,FC Bayern München,DF,25,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alphonso Davies,moved
+228,,AHMED Ali,CAN,Canada,Norwich City FC,FW,25,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ali Ahmed,moved
+229,,OSORIO Jonathan,CAN,Canada,Toronto FC,MF,33,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jonathan Osorio,moved
+230,,LARYEA Richie,CAN,Canada,Toronto FC,DF,31,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Richie Laryea,moved
+231,,SIGUR Niko,CAN,Canada,HNK Hajduk Split,DF,22,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Niko Sigur,moved
+232,,DAVID Promise,CAN,Canada,Royale Union Saint-Gilloise,FW,24,195,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Promise David,moved
+233,,SALIBA Nathan,CAN,Canada,RSC Anderlecht,MF,22,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nathan Saliba,moved
+236,,MUNOZ Daniel,COL,Colombia,Crystal Palace FC,DF,30,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Daniel Muñoz,moved
+237,,LUCUMI Jhon,COL,Colombia,Bologna FC,DF,27,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jhon Lucumí,moved
+238,,ARIAS Santiago,COL,Colombia,CA Independiente,DF,34,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Santiago Arias,moved
+239,,CASTANO Kevin,COL,Colombia,CA River Plate,MF,25,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kevin Castaño,moved
+240,,RIOS Richard,COL,Colombia,SL Benfica,MF,26,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Richard Ríos,moved
+241,,DIAZ Luis,COL,Colombia,FC Bayern München,FW,29,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Luis Díaz,moved
+243,,CORDOBA Jhon,COL,Colombia,FC Krasnodar,FW,33,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jhon Córdoba,moved
+244,,RODRIGUEZ James,COL,Colombia,Minnesota United FC,MF,34,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,James Rodríguez,moved
+245,,ARIAS Jhon,COL,Colombia,SE Palmeiras,MF,28,168,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jhon Arias,moved
+246,,VARGAS Camilo,COL,Colombia,Atlas FC,GK,37,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Camilo Vargas,moved
+247,,MINA Yerry,COL,Colombia,Cagliari,DF,31,195,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yerry Mina,moved
+248,,PUERTA Gustavo,COL,Colombia,Racing Santander,DF,22,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gustavo Puerta,moved
+250,,LERMA Jefferson,COL,Colombia,Crystal Palace FC,MF,31,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jefferson Lerma,moved
+251,,MOJICA Johan,COL,Colombia,RCD Mallorca,DF,33,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Johan Mojica,moved
+254,,QUINTERO Juan,COL,Colombia,CA River Plate,MF,33,167,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Juan Quintero,moved
+255,,CAMPAZ Jaminton,COL,Colombia,CA Rosario Central,FW,26,166,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jaminton Campaz,moved
+256,,MACHADO Deiver,COL,Colombia,FC Nantes,DF,32,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Deiver Machado,moved
+257,,SANCHEZ Davinson,COL,Colombia,Galatasaray SK,DF,29,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Davinson Sánchez,moved
+259,,SUAREZ Luis,COL,Colombia,Sporting CP,FW,28,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Luis Suárez,moved
+260,,GOMEZ Andres,COL,Colombia,CR Vasco Da Gama,FW,23,170,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Andrés Gómez,moved
+261,,MPASI Lionel,COD,Congo DR,Le Havre AC,GK,31,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lionel Mpasi,moved
+262,,WAN-BISSAKA Aaron,COD,Congo DR,West Ham United FC,DF,28,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Aaron Wan-Bissaka,moved
+263,,KAPUADI Steve,COD,Congo DR,Widzew Łódź,DF,28,196,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Steve Kapuadi,moved
+264,,TUANZEBE Axel,COD,Congo DR,Burnley FC,DF,28,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Axel Tuanzebe,moved
+267,,MBUKU Nathanael,COD,Congo DR,Montpellier HSC,MF,24,170,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nathanaël Mbuku,moved
+268,,MOUTOUSSAMY Samuel,COD,Congo DR,Atromitos FC,MF,29,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Samuel Moutoussamy,moved
+269,,CIPENGA Brian,COD,Congo DR,CD Castellón,FW,28,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Brian Cipenga,moved
+270,,BONGONDA Theo,COD,Congo DR,FC Spartak Moscow,MF,30,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Theo Bongonda,moved
+272,,KAYEMBE Joris,COD,Congo DR,KRC Genk,DF,31,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Joris Kayembe,moved
+274,,SADIKI Noah,COD,Congo DR,Sunderland AFC,MF,21,165,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Noah Sadiki,moved
+277,,BAKAMBU Cedric,COD,Congo DR,Real Betis,FW,35,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Cédric Bakambu,moved
+278,,PICKEL Charles,COD,Congo DR,RCD Espanyol,MF,29,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Charles Pickel,moved
+279,,MAYELE Fiston,COD,Congo DR,Pyramids FC,FW,31,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Fiston Mayele,moved
+280,,WISSA Yoane,COD,Congo DR,Newcastle United FC,FW,29,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yoane Wissa,moved
+282,,MBEMBA Chancel,COD,Congo DR,Lille OSC,DF,31,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Chancel Mbemba,moved
+283,,BANZA Simon,COD,Congo DR,Al Jazira,FW,29,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Simon Banza,moved
+284,,KALULU Gedeon,COD,Congo DR,Aris Limassol FC,DF,28,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gédéon Kalulu,moved
+285,,KAYEMBE Edo,COD,Congo DR,Watford FC,MF,28,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Edo Kayembe,moved
+286,,MASUAKU Arthur,COD,Congo DR,RC Lens,DF,32,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Arthur Masuaku,moved
+287,,FOFANA Yahia,CIV,Côte D'Ivoire,Çaykur Rizespor,GK,25,194,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yahia Fofana,moved
+288,,DIOMANDE Ousmane,CIV,Côte D'Ivoire,Sporting CP,DF,22,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ousmane Diomande,moved
+289,,KONAN Ghislain,CIV,Côte D'Ivoire,Gil Vicente FC,DF,30,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ghislain Konan,moved
+291,,SINGO Wilfried,CIV,Côte D'Ivoire,Galatasaray SK,DF,25,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Wilfried Singo,moved
+292,,FOFANA Seko,CIV,Côte D'Ivoire,FC Porto,MF,31,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Seko Fofana,moved
+293,,KOSSOUNOU Odilon,CIV,Côte D'Ivoire,Atalanta Bergamo,DF,25,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Odilon Kossounou,moved
+294,,KESSIE Franck,CIV,Côte D'Ivoire,Al Ahli FC,MF,29,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Franck Kessié,moved
+295,,BONNY Ange-Yoan,CIV,Côte D'Ivoire,FC Internazionale Milano,FW,22,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ange-Yoan Bonny,moved
+296,,ADINGRA Simon,CIV,Côte D'Ivoire,AS Monaco,FW,24,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Simon Adingra,moved
+297,,DIOMANDE Yan,CIV,Côte D'Ivoire,RB Leipzig,FW,19,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yan Diomandé,moved
+298,,WAHI Elye,CIV,Côte D'Ivoire,OGC Nice,FW,23,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Elye Wahi,moved
+299,,OPERI Christopher,CIV,Côte D'Ivoire,Başakşehir FK,DF,29,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Christopher Opéri,moved
+300,,DIAKITE Oumar,CIV,Côte D'Ivoire,Cercle Brugge,FW,22,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Oumar Diakité,moved
+301,,DIALLO Amad,CIV,Côte D'Ivoire,Manchester United FC,FW,23,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Amad Diallo,moved
+303,,DOUE Guela,CIV,Côte D'Ivoire,RC Strasbourg,DF,23,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Guéla Doué,moved
+304,,SANGARE Ibrahim,CIV,Côte D'Ivoire,Nottingham Forest FC,MF,28,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ibrahim Sangaré,moved
+305,,PEPE Nicolas,CIV,Côte D'Ivoire,Villarreal CF,FW,31,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nicolas Pépé,moved
+306,,AGBADOU Emmanuel,CIV,Côte D'Ivoire,Beşiktaş JK,DF,28,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Emmanuel Agbadou,moved
+308,,GUESSAND Evann,CIV,Côte D'Ivoire,Crystal Palace FC,FW,24,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Evann Guessand,moved
+310,,TOURE Bazoumana,CIV,Côte D'Ivoire,TSG Hoffenheim,FW,20,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Bazoumana Touré,moved
+313,,LIVAKOVIC Dominik,CRO,Croatia,GNK Dinamo Zagreb,GK,31,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Dominik Livaković,moved
+314,,STANISIC Josip,CRO,Croatia,FC Bayern München,DF,26,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Josip Stanišić,moved
+315,,PONGRACIC Marin,CRO,Croatia,ACF Fiorentina,DF,28,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marin Pongračić,moved
+316,,GVARDIOL Josko,CRO,Croatia,Manchester City FC,DF,24,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Joško Gvardiol,moved
+318,,SUTALO Josip,CRO,Croatia,AFC Ajax,DF,26,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Josip Šutalo,moved
+320,,KOVACIC Mateo,CRO,Croatia,Manchester City FC,MF,32,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mateo Kovačić,moved
+321,,KRAMARIC Andrej,CRO,Croatia,TSG Hoffenheim,FW,34,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Andrej Kramarić,moved
+322,,MODRIC Luka,CRO,Croatia,AC Milan,MF,40,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Luka Modrić,moved
+323,,BUDIMIR Ante,CRO,Croatia,CA Osasuna,FW,34,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ante Budimir,moved
+325,,VLASIC Nikola,CRO,Croatia,Torino FC,MF,28,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nikola Vlašić,moved
+326,,PERISIC Ivan,CRO,Croatia,PSV Eindhoven,FW,37,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ivan Perišić,moved
+327,,PASALIC Mario,CRO,Croatia,Atalanta Bergamo,MF,31,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mario Pašalić,moved
+328,,BATURINA Martin,CRO,Croatia,Como,MF,23,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Martin Baturina,moved
+329,,SUCIC Petar,CRO,Croatia,FC Internazionale Milano,MF,22,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Petar Sučić,moved
+332,,MATANOVIC Igor,CRO,Croatia,SC Freiburg,FW,23,194,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Igor Matanović,moved
+333,,SUCIC Luka,CRO,Croatia,Real Sociedad,MF,23,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Luka Sučić,moved
+334,,VUSKOVIC Luka,CRO,Croatia,Hamburger SV,DF,19,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Luka Vušković,moved
+336,,PASALIC Marco,CRO,Croatia,Orlando City SC,FW,25,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marco Pašalić,moved
+338,,MUSA Petar,CRO,Croatia,FC Dallas,FW,28,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Petar Musa,moved
+339,,ROOM Eloy,CUW,Curaçao,Miami FC,GK,37,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Eloy Room,moved
+340,,SAMBO Shurandy,CUW,Curaçao,Sparta Rotterdam,DF,24,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Shurandy Sambo,moved
+341,,GAARI Jurien,CUW,Curaçao,Abha Club,DF,32,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Juriën Gaari,moved
+342,,VAN EIJMA Roshon,CUW,Curaçao,RKC Waalwijk,DF,28,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Roshon van Eijma,moved
+343,,FLORANUS Sherel,CUW,Curaçao,PEC Zwolle,DF,27,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sherel Floranus,moved
+344,,ROEMERATOE Godfried,CUW,Curaçao,RKC Waalwijk,MF,26,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Godfried Roemeratoe,moved
+345,,BACUNA Juninho,CUW,Curaçao,FC Volendam,MF,28,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Juninho Bacuna,moved
+346,,COMENENCIA Livano,CUW,Curaçao,FC Zürich,MF,22,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Livano Comenencia,moved
+348,,BACUNA Leandro,CUW,Curaçao,Iğdır FK,MF,34,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Leandro Bacuna,moved
+349,,ANTONISSE Jeremy,CUW,Curaçao,AE Kifisia FC,FW,24,164,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jeremy Antonisse,moved
+350,,HANSEN Sontje,CUW,Curaçao,Middlesbrough FC,FW,24,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sontje Hansen,moved
+351,,NOSLIN Tyrese,CUW,Curaçao,SC Telstar,FW,23,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tyrese Noslin,moved
+352,,GORRE Kenji,CUW,Curaçao,Maccabi Haifa FC,FW,31,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kenji Gorré,moved
+354,,MARGARITHA Jearl,CUW,Curaçao,SK Beveren,FW,26,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jearl Margaritha,moved
+355,,KUWAS Brandley,CUW,Curaçao,FC Volendam,FW,33,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Brandley Kuwas,moved
+356,,OBISPO Armando,CUW,Curaçao,PSV Eindhoven,DF,27,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Armando Obispo,moved
+357,,KASTANEER Gervane,CUW,Curaçao,Terengganu FC,FW,30,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gervane Kastaneer,moved
+358,,BRENET Joshua,CUW,Curaçao,Kayserispor,DF,32,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Joshua Brenet,moved
+359,,CHONG Tahith,CUW,Curaçao,Sheeld United FC,MF,26,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tahith Chong,moved
+361,,BAZOER Riechedly,CUW,Curaçao,Konyaspor,DF,29,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Riechedly Bazoer,moved
+362,,FONVILLE Deveron,CUW,Curaçao,NEC Nijmegen,DF,23,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Deveron Fonville,moved
+365,,KOVAR Matej,CZE,Czechia,PSV Eindhoven,GK,26,196,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Matej Kovar,moved
+366,,ZIMA David,CZE,Czechia,SK Slavia Praha,DF,25,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,David Zima,moved
+367,,HOLES Tomas,CZE,Czechia,SK Slavia Praha,DF,33,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tomáš Holeš,moved
+368,,HRANAC Robin,CZE,Czechia,TSG Hoffenheim,DF,26,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Robin Hranáč,moved
+369,,COUFAL Vladimir,CZE,Czechia,TSG Hoffenheim,DF,33,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Vladimír Coufal,moved
+370,,CHALOUPEK Stepan,CZE,Czechia,SK Slavia Praha,DF,23,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Štěpán Chaloupek,moved
+371,,KREJCI Ladislav,CZE,Czechia,Wolverhampton Wanderers FC,DF,27,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ladislav Krejčí,moved
+372,,DARIDA Vladimir,CZE,Czechia,FC Hradec Králové,MF,35,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Vladimír Darida,moved
+373,,HLOZEK Adam,CZE,Czechia,TSG Hoffenheim,FW,23,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Adam Hložek,moved
+374,,SCHICK Patrik,CZE,Czechia,Bayer 04 Leverkusen,FW,30,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Patrik Schick,moved
+376,,CERV Lukas,CZE,Czechia,FC Viktoria Plzeň,MF,25,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lukáš Červ,moved
+377,,CHYTIL Mojmir,CZE,Czechia,SK Slavia Praha,FW,27,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mojmír Chytil,moved
+379,,SULC Pavel,CZE,Czechia,Olympique Lyonnais,FW,25,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Pavel Šulc,moved
+381,,PROVOD Lukas,CZE,Czechia,SK Slavia Praha,MF,29,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lukáš Provod,moved
+382,,SADILEK Michal,CZE,Czechia,SK Slavia Praha,MF,27,169,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Michal Sadílek,moved
+383,,CHORY Tomas,CZE,Czechia,SK Slavia Praha,FW,31,199,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tomáš Chorý,moved
+384,,ZELENY Jaroslav,CZE,Czechia,AC Sparta Praha,DF,33,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jaroslav Zelený,moved
+385,,DOUDERA David,CZE,Czechia,SK Slavia Praha,DF,28,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,David Douděra,moved
+386,,SOUCEK Tomas,CZE,Czechia,West Ham United FC,MF,31,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tomáš Souček,moved
+388,,SOJKA Alexandr,CZE,Czechia,FC Viktoria Plzeň,MF,23,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alexandr Sojka,moved
+390,,VISINSKY Denis,CZE,Czechia,FC Viktoria Plzeň,FW,23,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Denis Višinský,moved
+391,,GALINDEZ Hernan,ECU,Ecuador,CA Huracán,GK,39,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Hernán Galíndez,moved
+393,,HINCAPIE Piero,ECU,Ecuador,Arsenal FC,DF,24,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Piero Hincapié,moved
+394,,ORDONEZ Joel,ECU,Ecuador,Club Brugge,DF,22,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Joel Ordóñez,moved
+395,,ALCIVAR Jordy,ECU,Ecuador,Independiente Del Valle,MF,26,168,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jordy Alcivar,moved
+396,,PACHO Willian,ECU,Ecuador,Paris Saint-Germain,DF,24,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Willian Pacho,moved
+397,,ESTUPINAN Pervis,ECU,Ecuador,AC Milan,DF,28,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Pervis Estupiñán,moved
+399,,YEBOAH John,ECU,Ecuador,Venezia FC,FW,25,170,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,John Yeboah,moved
+400,,PAEZ Kendry,ECU,Ecuador,CA River Plate,MF,19,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kendry Páez,moved
+401,,RODRIGUEZ Kevin,ECU,Ecuador,Royale Union Saint-Gilloise,FW,26,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kevin Rodríguez,moved
+403,,VALENCIA Enner,ECU,Ecuador,CF Pachuca,FW,36,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Enner Valencia,moved
+404,,MINDA Alan,ECU,Ecuador,Atlético Mineiro,MF,23,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alan Minda,moved
+405,,VITE Pedro,ECU,Ecuador,Pumas UNAM,MF,24,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Pedro Vite,moved
+406,,CAICEDO Jordy,ECU,Ecuador,CA Huracán,FW,28,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jordy Caicedo,moved
+407,,PRECIADO Angelo,ECU,Ecuador,Atlético Mineiro,DF,28,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ángelo Preciado,moved
+409,,PLATA Gonzalo,ECU,Ecuador,CR Flamengo,FW,25,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gonzalo Plata,moved
+410,,ANGULO Nilson,ECU,Ecuador,Sunderland AFC,FW,22,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nilson Angulo,moved
+411,,FRANCO Alan,ECU,Ecuador,Atlético Mineiro,MF,27,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alan Franco,moved
+413,,CAICEDO Moises,ECU,Ecuador,Chelsea FC,MF,24,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Moisés Caicedo,moved
+415,,POROZO Jackson,ECU,Ecuador,Club Tijuana,DF,25,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jackson Porozo,moved
+416,,MEDINA Yaimar,ECU,Ecuador,KRC Genk,DF,21,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yaimar Medina,moved
+418,,YASSER IBRAHIM,EGY,Egypt,Al Ahly FC,DF,33,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yasser Ibrahim,normal
+419,,MOHAMED HANY,EGY,Egypt,Al Ahly FC,DF,30,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mohamed Hany,normal
+420,,HOSSAM ABDELMAGUID,EGY,Egypt,Zamalek SC,DF,25,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Hossam Abdelmaguid,normal
+421,,RAMY RABIA,EGY,Egypt,Al Ain FC,DF,33,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ramy Rabia,normal
+423,,TREZEGUET,EGY,Egypt,Al Ahly FC,FW,31,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Trézéguet,normal
+424,,EMAM ASHOUR,EGY,Egypt,Al Ahly FC,MF,28,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Emam Ashour,normal
+425,,HAMZA ABDELKARIM,EGY,Egypt,FC Barcelona,FW,18,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Hamza Abdelkarim,normal
+426,,MOHAMED SALAH,EGY,Egypt,Liverpool FC,FW,33,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mohamed Salah,normal
+428,,HAISSEM HASSAN,EGY,Egypt,Real Oviedo,FW,24,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Haissem Hassan,normal
+429,,AHMED FATOUH,EGY,Egypt,Zamalek SC,DF,28,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ahmed Fatouh,normal
+430,,HAMDY FATHY,EGY,Egypt,Al Wakrah SC,MF,31,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Hamdy Fathy,normal
+431,,KARIM HAFEZ,EGY,Egypt,Pyramids FC,DF,30,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Karim Hafez,normal
+436,,IBRAHIM ADEL,EGY,Egypt,FC Nordsjælland,FW,25,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ibrahim Adel,normal
+437,,MAHMOUD SABER,EGY,Egypt,ZED FC,MF,24,170,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mahmoud Saber,normal
+438,,OMAR MARMOUSH,EGY,Egypt,Manchester City FC,FW,27,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Omar Marmoush,normal
+441,,ZIZO,EGY,Egypt,Al Ahly FC,FW,30,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Zizo,normal
+443,,PICKFORD Jordan,ENG,England,Everton FC,GK,32,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jordan Pickford,moved
+444,,KONSA Ezri,ENG,England,Aston Villa FC,DF,28,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ezri Konsa,moved
+446,,RICE Declan,ENG,England,Arsenal FC,MF,27,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Declan Rice,moved
+447,,STONES John,ENG,England,Manchester City FC,DF,32,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,John Stones,moved
+448,,GUEHI Marc,ENG,England,Manchester City FC,DF,25,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marc Guéhi,moved
+449,,SAKA Bukayo,ENG,England,Arsenal FC,FW,24,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Bukayo Saka,moved
+450,,ANDERSON Elliot,ENG,England,Nottingham Forest FC,MF,23,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Elliot Anderson,moved
+451,,KANE Harry,ENG,England,FC Bayern München,FW,32,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Harry Kane,moved
+452,,BELLINGHAM Jude,ENG,England,Real Madrid C. F.,MF,22,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jude Bellingham,moved
+453,,RASHFORD Marcus,ENG,England,FC Barcelona,FW,28,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marcus Rashford,moved
+455,,HENDERSON Dean,ENG,England,Crystal Palace FC,GK,29,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Dean Henderson,moved
+456,,HENDERSON Jordan,ENG,England,Brentford FC,MF,35,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jordan Henderson,moved
+457,,BURN Dan,ENG,England,Newcastle United FC,DF,34,201,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Dan Burn,moved
+459,,ROGERS Morgan,ENG,England,Aston Villa FC,MF,23,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Morgan Rogers,moved
+460,,GORDON Anthony,ENG,England,Newcastle United FC,FW,25,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Anthony Gordon,moved
+461,,WATKINS Ollie,ENG,England,Aston Villa FC,FW,30,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ollie Watkins,moved
+462,,MADUEKE Noni,ENG,England,Arsenal FC,FW,24,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Noni Madueke,moved
+463,,EZE Eberechi,ENG,England,Arsenal FC,MF,27,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Eberechi Eze,moved
+464,,TONEY Ivan,ENG,England,Al Ahli FC,FW,30,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ivan Toney,moved
+466,,JAMES Reece,ENG,England,Chelsea FC,DF,26,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Reece James,moved
+467,,SPENCE Djed,ENG,England,Tottenham Hotspur FC,DF,25,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Djed Spence,moved
+468,,QUANSAH Jarell,ENG,England,Bayer 04 Leverkusen,DF,23,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jarell Quansah,moved
+470,,GUSTO Malo,FRA,France,Chelsea FC,DF,23,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Malo Gusto,moved
+471,,DIGNE Lucas,FRA,France,Aston Villa FC,DF,32,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lucas Digne,moved
+472,,UPAMECANO Dayot,FRA,France,FC Bayern München,DF,27,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Dayot Upamecano,moved
+473,,KOUNDE Jules,FRA,France,FC Barcelona,DF,27,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jules Koundé,moved
+474,,KONE Manu,FRA,France,AS Roma,MF,25,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Manu Koné,moved
+475,,DEMBELE Ousmane,FRA,France,Paris Saint-Germain,FW,29,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ousmane Dembélé,moved
+476,,TCHOUAMENI Aurelien,FRA,France,Real Madrid C. F.,MF,26,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Aurélien Tchouaméni,moved
+477,,THURAM Marcus,FRA,France,FC Internazionale Milano,FW,28,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marcus Thuram,moved
+478,,MBAPPE Kylian,FRA,France,Real Madrid C. F.,FW,27,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kylian Mbappé,moved
+479,,OLISE Michael,FRA,France,FC Bayern München,FW,24,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Michael Olise,moved
+480,,BARCOLA Bradley,FRA,France,Paris Saint-Germain,FW,23,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Bradley Barcola,moved
+482,,RABIOT Adrien,FRA,France,AC Milan,MF,31,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Adrien Rabiot,moved
+483,,KONATE Ibrahima,FRA,France,Liverpool FC,DF,27,194,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ibrahima Konaté,moved
+484,,MAIGNAN Mike,FRA,France,AC Milan,GK,30,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mike Maignan,moved
+485,,SALIBA William,FRA,France,Arsenal FC,DF,25,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,William Saliba,moved
+486,,ZAIRE-EMERY Warren,FRA,France,Paris Saint-Germain,MF,20,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Warren Zaïre-Emery,moved
+487,,HERNANDEZ Theo,FRA,France,Al Hilal SC,DF,28,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Theo Hernández,moved
+488,,DOUE Desire,FRA,France,Paris Saint-Germain,FW,21,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Désiré Doué,moved
+490,,MATETA Jean-Philippe,FRA,France,Crystal Palace FC,FW,28,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jean-Philippe Mateta,moved
+492,,CHERKI Rayan,FRA,France,Manchester City FC,MF,22,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Rayan Cherki,moved
+493,,AKLIOUCHE Maghnes,FRA,France,AS Monaco,MF,24,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Maghnes Akliouche,moved
+494,,LACROIX Maxence,FRA,France,Crystal Palace FC,DF,26,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Maxence Lacroix,moved
+495,,NEUER Manuel,GER,Germany,FC Bayern München,GK,40,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Manuel Neuer,moved
+497,,ANTON Waldemar,GER,Germany,Borussia Dortmund,DF,29,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Waldemar Anton,moved
+498,,TAH Jonathan,GER,Germany,FC Bayern München,DF,30,195,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jonathan Tah,moved
+499,,PAVLOVIC Aleksandar,GER,Germany,FC Bayern München,MF,22,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Aleksandar Pavlovic,moved
+500,,KIMMICH Joshua,GER,Germany,FC Bayern München,DF,31,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Joshua Kimmich,moved
+501,,HAVERTZ Kai,GER,Germany,Arsenal FC,FW,27,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kai Havertz,moved
+502,,GORETZKA Leon,GER,Germany,FC Bayern München,MF,31,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Leon Goretzka,moved
+503,,LEWELING Jamie,GER,Germany,VfB Stuttgart,MF,25,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jamie Leweling,moved
+504,,MUSIALA Jamal,GER,Germany,FC Bayern München,MF,23,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jamal Musiala,moved
+505,,WOLTEMADE Nick,GER,Germany,Newcastle United FC,FW,24,198,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nick Woltemade,moved
+508,,BEIER Maximilian,GER,Germany,Borussia Dortmund,FW,23,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Maximilian Beier,moved
+509,,SCHLOTTERBECK Nico,GER,Germany,Borussia Dortmund,DF,26,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nico Schlotterbeck,moved
+510,,STILLER Angelo,GER,Germany,VfB Stuttgart,MF,25,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Angelo Stiller,moved
+511,,WIRTZ Florian,GER,Germany,Liverpool FC,MF,23,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Florian Wirtz,moved
+512,,BROWN Nathaniel,GER,Germany,Eintracht Frankfurt,DF,22,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nathaniel Brown,moved
+513,,SANE Leroy,GER,Germany,Galatasaray SK,MF,30,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Leroy Sané,moved
+514,,AMIRI Nadiem,GER,Germany,1. FSV Mainz 05,MF,29,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nadiem Amiri,moved
+516,,RAUM David,GER,Germany,RB Leipzig,DF,28,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,David Raum,moved
+517,,NMECHA Felix,GER,Germany,Borussia Dortmund,MF,25,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Felix Nmecha,moved
+518,,THIAW Malick,GER,Germany,Newcastle United FC,DF,24,194,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Malick Thiaw,moved
+520,,UNDAV Deniz,GER,Germany,VfB Stuttgart,FW,29,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Deniz Undav,moved
+522,,SEIDU Alidu,GHA,Ghana,Stade Rennais FC,DF,26,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alidu Seidu,moved
+523,,YIRENKYI Caleb,GHA,Ghana,FC Nordsjælland,MF,20,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Caleb Yirenkyi,moved
+524,,ADJETEY Jonas,GHA,Ghana,VfL Wolfsburg,DF,22,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jonas Adjetey,moved
+525,,PARTEY Thomas,GHA,Ghana,Villarreal CF,MF,32,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Thomas Partey,moved
+528,,SIBO Kwasi,GHA,Ghana,Real Oviedo,MF,27,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kwasi Sibo,moved
+529,,AYEW Jordan,GHA,Ghana,Leicester City FC,FW,34,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jordan Ayew,moved
+530,,THOMAS-ASANTE Brandon,GHA,Ghana,Coventry City FC,FW,27,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Brandon Thomas-Asante,moved
+531,,SEMENYO Antoine,GHA,Ghana,Manchester City FC,MF,26,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Antoine Semenyo,moved
+534,,MENSAH Gideon,GHA,Ghana,AJ Auxerre,DF,27,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gideon Mensah,moved
+535,,OWUSU Elisha,GHA,Ghana,AJ Auxerre,MF,28,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Elisha Owusu,moved
+536,,ASARE Benjamin,GHA,Ghana,Hearts Of Oak SC,GK,33,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Benjamin Asare,moved
+538,,OPOKU Jerome,GHA,Ghana,Başakşehir FK,DF,27,197,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jerome Opoku,moved
+539,,WILLIAMS Inaki,GHA,Ghana,Athletic Club,FW,31,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Iñaki Williams,moved
+542,,SULEMANA Kamaldeen,GHA,Ghana,Atalanta Bergamo,FW,24,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kamaldeen Sulemana,moved
+543,,LUCKASSEN Derrick,GHA,Ghana,Pafos FC,DF,30,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Derrick Luckassen,moved
+544,,NUAMAH Ernest,GHA,Ghana,Olympique Lyonnais,FW,22,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ernest Nuamah,moved
+546,,SENAYA Marvin,GHA,Ghana,AJ Auxerre,DF,25,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marvin Senaya,moved
+547,,PLACIDE Johny,HAI,Haiti,SC Bastia,GK,38,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Johny Placide,moved
+548,,ARCUS Carlens,HAI,Haiti,Angers SCO,DF,29,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Carlens Arcus,moved
+550,,ADE Ricardo,HAI,Haiti,LDU Quito,DF,36,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ricardo Adé,moved
+551,,DELCROIX Hannes,HAI,Haiti,FC Lugano,DF,27,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Hannes Delcroix,moved
+553,,ETIENNE Derrick,HAI,Haiti,Toronto FC,FW,29,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Derrick Etienne,moved
+554,,EXPERIENCE Martin,HAI,Haiti,AS Nancy,DF,27,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Martin Expérience,moved
+555,,NAZON Duckens,HAI,Haiti,Esteghlal Tehran FC,FW,32,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Duckens Nazon,moved
+556,,BELLEGARDE Jean-Ricner,HAI,Haiti,Wolverhampton Wanderers FC,MF,27,170,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jean-Ricner Bellegarde,moved
+557,,DEEDSON Louicius,HAI,Haiti,FC Dallas,FW,25,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Louicius Deedson,moved
+561,,PROVIDENCE Ruben,HAI,Haiti,Almere City FC,FW,24,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ruben Providence,moved
+562,,JOSEPH Lenny,HAI,Haiti,Ferencvárosi TC,FW,25,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lenny Joseph,moved
+564,,ISIDOR Wilson,HAI,Haiti,Sunderland AFC,FW,25,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Wilson Isidor,moved
+565,,FORTUNE Yassin,HAI,Haiti,FC Vizela,FW,27,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yassin Fortuné,moved
+566,,PIERROT Frantzdy,HAI,Haiti,Çaykur Rizespor,FW,31,194,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Frantzdy Pierrot,moved
+567,,CASIMIR Josue,HAI,Haiti,AJ Auxerre,FW,24,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Josué Casimir,moved
+568,,DUVERNE Jean-Kevin,HAI,Haiti,KAA Gent,DF,28,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jean-Kevin Duverne,moved
+571,,SIMON Dominique,HAI,Haiti,FC Tatran Prešov,MF,25,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Dominique Simon,moved
+573,,BEIRANVAND Alireza,IRN,IR Iran,Tractor Sazi Tabriz FC,GK,33,195,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alireza Beiranvand,moved
+574,,HARDANI Saleh,IRN,IR Iran,Esteghlal Tehran FC,DF,27,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Saleh Hardani,moved
+577,,MOHAMMADI Milad,IRN,IR Iran,Persepolis FC,DF,32,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Milad Mohammadi,moved
+578,,EZATOLAHI Saeid,IRN,IR Iran,Shabab Al Ahli Club,MF,29,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Saeid Ezatolahi,moved
+579,,JAHANBAKHSH Alireza,IRN,IR Iran,FCV Dender EH,MF,32,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alireza Jahanbakhsh,moved
+581,,TAREMI Mehdi,IRN,IR Iran,Olympiacos FC,FW,33,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mehdi Taremi,moved
+582,,GHAYEDI Mehdi,IRN,IR Iran,Al Nasr SC,FW,27,166,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mehdi Ghayedi,moved
+583,,ALIPOUR Ali,IRN,IR Iran,Persepolis FC,FW,30,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ali Alipour,moved
+586,,GHODDOS Saman,IRN,IR Iran,Al Ittihad Kalba SCC,MF,32,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Saman Ghoddos,moved
+588,,TORABI Mehdi,IRN,IR Iran,Tractor Sazi Tabriz FC,MF,31,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mehdi Torabi,moved
+590,,HOSSEINZADEH Amirhossein,IRN,IR Iran,Tractor Sazi Tabriz FC,FW,25,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Amirhossein Hosseinzadeh,moved
+591,,NEMATI Ali,IRN,IR Iran,Foolad Khuzestan FC,DF,30,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ali Nemati,moved
+593,,GHORBANI Mohammad,IRN,IR Iran,Al Wahda SC,MF,24,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mohammad Ghorbani,moved
+595,,REZAEIAN Ramin,IRN,IR Iran,Foolad Khuzestan FC,DF,36,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ramin Rezaeian,moved
+600,,REBIN SULAKA,IRQ,Iraq,Port FC,DF,34,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Rebin Sulaka,normal
+601,,HUSSEIN ALI,IRQ,Iraq,Pogoń Szczecin,DF,24,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Hussein Ali,normal
+602,,ZAID TAHSEEN,IRQ,Iraq,Pakhtakor Tashkent FK,DF,25,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Zaid Tahseen,normal
+603,,AKAM HASHIM,IRQ,Iraq,Al Zawra'a SC,DF,27,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Akam Hashim,normal
+605,,YOUSSEF AMYN,IRQ,Iraq,AEK Larnaca FC,MF,22,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Youssef Amyn,normal
+606,,IBRAHIM BAYESH,IRQ,Iraq,Al Dhafra SCC,MF,26,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ibrahim Bayesh,normal
+608,,MOHANAD ALI,IRQ,Iraq,Dibba FC,FW,25,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mohanad Ali,normal
+610,,JALAL HASSAN,IRQ,Iraq,Al Zawra'a SC,GK,35,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jalal Hassan,normal
+611,,ALI YOUSIF,IRQ,Iraq,Al Talaba SC,FW,30,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ali Yousif,normal
+612,,ZIDANE IQBAL,IRQ,Iraq,FC Utrecht,MF,23,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Zidane Iqbal,normal
+615,,ALI JASIM,IRQ,Iraq,Al Najmah SC,FW,22,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ali Jasim,normal
+617,,KEVIN YAKOB,IRQ,Iraq,Aarhus GF,MF,25,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kevin Yakob,normal
+618,,AIMAR SHER,IRQ,Iraq,Sarpsborg 08 FF,MF,23,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Aimar Sher,normal
+619,,MARKO FARJI,IRQ,Iraq,Venezia FC,FW,22,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marko Farji,normal
+620,,AHMED BASIL,IRQ,Iraq,Al Shorta SC,GK,29,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ahmed Basil,normal
+621,,MERCHAS DOSKI,IRQ,Iraq,FC Viktoria Plzeň,DF,26,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Merchas Doski,normal
+623,,MUSTAFA SAADOON,IRQ,Iraq,Al Shorta SC,DF,25,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mustafa Saadoon,normal
+625,,SUZUKI Zion,JPN,Japan,Parma,GK,23,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Zion Suzuki,moved
+626,,SUGAWARA Yukinari,JPN,Japan,SV Werder Bremen,DF,25,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yukinari Sugawara,moved
+627,,TANIGUCHI Shogo,JPN,Japan,Sint-Truiden VV,DF,34,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Shogo Taniguchi,moved
+629,,NAGATOMO Yuto,JPN,Japan,FC Tokyo,DF,39,170,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yūto Nagatomo,moved
+631,,TANAKA Ao,JPN,Japan,Leeds United FC,MF,27,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ao Tanaka,moved
+632,,KUBO Takefusa,JPN,Japan,Real Sociedad,MF,25,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Takefusa Kubo,moved
+633,,GOTO Keisuke,JPN,Japan,Sint-Truiden VV,FW,21,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Keisuke Gotō,moved
+634,,DOAN Ritsu,JPN,Japan,Eintracht Frankfurt,MF,27,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ritsu Doan,moved
+635,,MAEDA Daizen,JPN,Japan,Celtic FC,MF,28,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Daizen Maeda,moved
+637,,NAKAMURA Keito,JPN,Japan,Stade Reims,MF,25,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Keito Nakamura,moved
+638,,ITO Junya,JPN,Japan,KRC Genk,MF,33,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Junya Itō,moved
+639,,KAMADA Daichi,JPN,Japan,Crystal Palace FC,MF,29,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Daichi Kamada,moved
+640,,WATANABE Tsuyoshi,JPN,Japan,Feyenoord Rotterdam,DF,29,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tsuyoshi Watanabe,moved
+641,,SUZUKI Yuito,JPN,Japan,SC Freiburg,MF,24,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yuito Suzuki,moved
+642,,UEDA Ayase,JPN,Japan,Feyenoord Rotterdam,FW,27,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ayase Ueda,moved
+643,,OGAWA Koki,JPN,Japan,NEC Nijmegen,FW,28,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kōki Ogawa,moved
+644,,SEKO Ayumu,JPN,Japan,Le Havre AC,DF,26,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ayumu Seko,moved
+645,,ITO Hiroki,JPN,Japan,FC Bayern München,DF,27,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Hiroki Ito,moved
+646,,TOMIYASU Takehiro,JPN,Japan,AFC Ajax,DF,27,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Takehiro Tomiyasu,moved
+648,,SANO Kaishu,JPN,Japan,1. FSV Mainz 05,MF,25,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kaishū Sano,moved
+649,,SUZUKI Junnosuke,JPN,Japan,FC København,DF,22,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Junnosuke Suzuki,moved
+650,,SHIOGAI Kento,JPN,Japan,VfL Wolfsburg,FW,21,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kento Shiogai,moved
+651,,YAZEED ABULAILA,JOR,Jordan,Al Hussein SC,GK,33,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yazeed Abulaila,normal
+653,,ABDALLAH NASIB,JOR,Jordan,Al Zawra'a SC,DF,32,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Abdallah Nasib,normal
+656,,AMER JAMOUS,JOR,Jordan,Al Zawra'a SC,MF,23,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Amer Jamous,normal
+659,,ALI OLWAN,JOR,Jordan,Al Sailiya SC,FW,26,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ali Olwan,normal
+674,,ALI AZAIZEH,JOR,Jordan,Al Shabab FC,FW,22,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ali Azaizeh,normal
+692,,PARK Jinseob,KOR,Korea Republic,Zhejiang FC,DF,30,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Park Jinseob,normal
+699,,CASTROP Jens,KOR,Korea Republic,Borussia Mönchengladbach,DF,22,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jens Castrop,moved
+703,,RANGEL Raul,MEX,Mexico,CD Guadalajara,GK,26,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Raúl Rangel,moved
+704,,SANCHEZ Jorge,MEX,Mexico,PAOK Saloniki,DF,28,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jorge Sánchez,moved
+705,,MONTES Cesar,MEX,Mexico,FC Lokomotiv Moscow,DF,29,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,César Montes,moved
+706,,ALVAREZ Edson,MEX,Mexico,Fenerbahçe SK,DF,28,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Edson Álvarez,moved
+707,,VASQUEZ Johan,MEX,Mexico,Genoa CFC,DF,27,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Johan Vásquez,moved
+708,,LIRA Erik,MEX,Mexico,CF Cruz Azul,MF,26,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Erik Lira,moved
+709,,ROMO Luis,MEX,Mexico,CD Guadalajara,MF,31,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Luis Romo,moved
+710,,FIDALGO Alvaro,MEX,Mexico,Real Betis,MF,29,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Álvaro Fidalgo,moved
+711,,JIMENEZ Raul,MEX,Mexico,Fulham FC,FW,35,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Raúl Jiménez,moved
+712,,VEGA Alexis,MEX,Mexico,Deportivo Toluca FC,FW,28,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alexis Vega,moved
+713,,GIMENEZ Santiago,MEX,Mexico,AC Milan,FW,25,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Santiago Giménez,moved
+715,,OCHOA Guillermo,MEX,Mexico,AEL Limassol,GK,40,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Guillermo Ochoa,moved
+716,,GONZALEZ Armando,MEX,Mexico,CD Guadalajara,FW,23,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Armando González,moved
+717,,REYES Israel,MEX,Mexico,Club América,DF,26,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Israel Reyes,moved
+718,,QUINONES Julian,MEX,Mexico,Al Qadsiah FC,FW,29,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Julián Quiñones,moved
+719,,PINEDA Orbelin,MEX,Mexico,AEK Athens,MF,30,169,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Orbelín Pineda,moved
+720,,VARGAS Obed,MEX,Mexico,Atlético De Madrid,MF,20,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Obed Vargas,moved
+721,,MORA Gilberto,MEX,Mexico,Club Tijuana,MF,17,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gilberto Mora,moved
+722,,CHAVEZ Mateo,MEX,Mexico,AZ Alkmaar,DF,22,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mateo Chávez,moved
+723,,HUERTA Cesar,MEX,Mexico,RSC Anderlecht,FW,25,171,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,César Huerta,moved
+725,,GALLARDO Jesus,MEX,Mexico,Deportivo Toluca FC,DF,31,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jesús Gallardo,moved
+726,,CHAVEZ Luis,MEX,Mexico,FC Dynamo Moscow,MF,30,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Luis Chávez,moved
+727,,ALVARADO Roberto,MEX,Mexico,CD Guadalajara,FW,27,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Roberto Alvarado,moved
+728,,GUTIERREZ Brian,MEX,Mexico,CD Guadalajara,MF,22,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Brian Gutiérrez,moved
+729,,BOUNOU Yassine,MAR,Morocco,Al Hilal SC,GK,35,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yassine Bounou,moved
+730,,HAKIMI Achraf,MAR,Morocco,Paris Saint-Germain,DF,27,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Achraf Hakimi,moved
+731,,MAZRAOUI Noussair,MAR,Morocco,Manchester United FC,DF,28,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Noussair Mazraoui,moved
+732,,AMRABAT Sofyan,MAR,Morocco,Real Betis,MF,29,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sofyan Amrabat,moved
+734,,BOUADDI Ayyoub,MAR,Morocco,Lille OSC,MF,18,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ayyoub Bouaddi,moved
+735,,TALBI Chemsdine,MAR,Morocco,Sunderland AFC,MF,21,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Chemsdine Talbi,moved
+736,,OUNAHI Azzedine,MAR,Morocco,Girona FC,MF,26,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Azzedine Ounahi,moved
+737,,RAHIMI Soufiane,MAR,Morocco,Al Ain FC,FW,30,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Soufiane Rahimi,moved
+738,,DIAZ Brahim,MAR,Morocco,Real Madrid C. F.,FW,26,170,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Brahim Díaz,moved
+739,,SAIBARI Ismael,MAR,Morocco,PSV Eindhoven,MF,25,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ismael Saibari,moved
+741,,EL OUAHDI Zakaria,MAR,Morocco,KRC Genk,DF,24,171,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Zakaria El Ouahdi,moved
+742,,DIOP Issa,MAR,Morocco,Fulham FC,DF,29,194,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Issa Diop,moved
+743,,EL MOURABET Samir,MAR,Morocco,RC Strasbourg,MF,20,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Samir El Mourabet,moved
+744,,YASSINE Gessime,MAR,Morocco,RC Strasbourg,MF,20,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gessime Yassine,moved
+746,,RIAD Chadi,MAR,Morocco,Crystal Palace FC,DF,22,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Chadi Riad,moved
+748,,EL KAABI Ayoub,MAR,Morocco,Olympiacos FC,FW,32,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ayoub El Kaabi,moved
+749,,AMAIMOUNI Ayoube,MAR,Morocco,Eintracht Frankfurt,FW,21,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ayoube Amaimouni,moved
+751,,EL KHANNOUSS Bilal,MAR,Morocco,VfB Stuttgart,MF,22,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Bilal El Khannouss,moved
+752,,EL AYNAOUI Neil,MAR,Morocco,AS Roma,MF,24,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Neil El Aynaoui,moved
+753,,HALHAL Redouane,MAR,Morocco,KV Mechelen,DF,23,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Redouane Halhal,moved
+755,,VERBRUGGEN Bart,NED,Netherlands,Brighton & Hove Albion FC,GK,23,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Bart Verbruggen,moved
+757,,DE ROON Marten,NED,Netherlands,Atalanta Bergamo,MF,35,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marten de Roon,moved
+758,,VAN DIJK Virgil,NED,Netherlands,Liverpool FC,DF,34,195,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Virgil van Dijk,moved
+759,,AKE Nathan,NED,Netherlands,Manchester City FC,DF,31,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nathan Aké,moved
+761,,KLUIVERT Justin,NED,Netherlands,AFC Bournemouth,MF,27,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Justin Kluivert,moved
+762,,GRAVENBERCH Ryan,NED,Netherlands,Liverpool FC,MF,24,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ryan Gravenberch,moved
+763,,WEGHORST Wout,NED,Netherlands,AFC Ajax,FW,33,197,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Wout Weghorst,moved
+765,,GAKPO Cody,NED,Netherlands,Liverpool FC,FW,27,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Cody Gakpo,moved
+768,,REIJNDERS Tijjani,NED,Netherlands,Manchester City FC,MF,27,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tijjani Reijnders,moved
+769,,VAN DE VEN Micky,NED,Netherlands,Tottenham Hotspur FC,DF,25,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Micky van de Ven,moved
+770,,TIL Guus,NED,Netherlands,PSV Eindhoven,MF,28,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Guus Til,moved
+771,,LANG Noa,NED,Netherlands,Galatasaray SK,FW,26,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Noa Lang,moved
+772,,MALEN Donyell,NED,Netherlands,AS Roma,FW,27,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Donyell Malen,moved
+773,,BROBBEY Brian,NED,Netherlands,Sunderland AFC,FW,24,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Brian Brobbey,moved
+774,,KOOPMEINERS Teun,NED,Netherlands,Juventus FC,MF,28,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Teun Koopmeiners,moved
+775,,DE JONG Frenkie,NED,Netherlands,FC Barcelona,MF,29,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Frenkie de Jong,moved
+776,,DUMFRIES Denzel,NED,Netherlands,FC Internazionale Milano,DF,30,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Denzel Dumfries,moved
+778,,SUMMERVILLE Crysencio,NED,Netherlands,West Ham United FC,FW,24,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Crysencio Summerville,moved
+779,,HATO Jorrel,NED,Netherlands,Chelsea FC,DF,20,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jorrel Hato,moved
+780,,TIMBER Quinten,NED,Netherlands,Olympique Marseille,MF,24,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Quinten Timber,moved
+781,,CROCOMBE Max,NZL,New Zealand,Millwall FC,GK,32,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Max Crocombe,moved
+782,,PAYNE Tim,NZL,New Zealand,Wellington Phoenix FC,DF,32,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tim Payne,moved
+783,,DE VRIES Francis,NZL,New Zealand,Auckland FC,DF,31,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Francis de Vries,moved
+784,,BINDON Tyler,NZL,New Zealand,Sheeld United FC,DF,21,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tyler Bindon,moved
+785,,BOXALL Michael,NZL,New Zealand,Minnesota United FC,DF,37,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Michael Boxall,moved
+786,,BELL Joe,NZL,New Zealand,Viking Stavanger,MF,27,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Joe Bell,moved
+788,,STAMENIC Marko,NZL,New Zealand,Swansea City AFC,MF,24,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marko Stamenic,moved
+789,,WOOD Chris,NZL,New Zealand,Nottingham Forest FC,FW,34,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Chris Wood,moved
+790,,SINGH Sarpreet,NZL,New Zealand,Wellington Phoenix FC,MF,27,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sarpreet Singh,moved
+791,,JUST Elijah,NZL,New Zealand,Motherwell FC,MF,26,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Elijah Just,moved
+793,,CACACE Liberato,NZL,New Zealand,Wrexham AFC,DF,25,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Liberato Cacace,moved
+796,,SURMAN Finn,NZL,New Zealand,Portland Timbers,DF,22,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Finn Surman,moved
+799,,OLD Ben,NZL,New Zealand,AS Saint-Etienne,MF,23,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ben Old,moved
+800,,McCOWATT Callum,NZL,New Zealand,Silkeborg IF,MF,27,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Callum McCowatt,moved
+801,,RANDALL Jesse,NZL,New Zealand,Auckland FC,FW,23,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jesse Randall,moved
+803,,THOMAS Ryan,NZL,New Zealand,PEC Zwolle,MF,31,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ryan Thomas,moved
+804,,ELLIOT Callan,NZL,New Zealand,Auckland FC,DF,26,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Callan Elliot,moved
+808,,THORSBY Morten,NOR,Norway,US Cremonese,MF,30,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Morten Thorsby,moved
+809,,AJER Kristoffer,NOR,Norway,Brentford FC,DF,28,198,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kristoffer Ajer,moved
+812,,BERG Patrick,NOR,Norway,FK Bodø/Glimt,MF,28,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Patrick Berg,moved
+814,,BERGE Sander,NOR,Norway,Fulham FC,MF,28,195,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sander Berge,moved
+815,,HAALAND Erling,NOR,Norway,Manchester City FC,FW,25,195,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Erling Haaland,moved
+819,,SELVIK Egil,NOR,Norway,Watford FC,GK,28,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Egil Selvik,moved
+820,,AURSNES Fredrik,NOR,Norway,SL Benfica,MF,30,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Fredrik Aursnes,moved
+824,,THORSTVEDT Kristian,NOR,Norway,US Sassuolo,MF,27,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kristian Thorstvedt,moved
+825,,AASGAARD Thelo,NOR,Norway,Rangers FC,MF,24,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Thelo Aasgaard,moved
+826,,NUSA Antonio,NOR,Norway,RB Leipzig,FW,21,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Antonio Nusa,moved
+827,,SCHJELDERUP Andreas,NOR,Norway,SL Benfica,MF,22,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Andreas Schjelderup,moved
+828,,BOBB Oscar,NOR,Norway,Fulham FC,MF,22,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Oscar Bobb,moved
+830,,LANGAS Sondre,NOR,Norway,Derby County FC,DF,25,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sondre Langås,moved
+831,,FALCHENER Henrik,NOR,Norway,Viking Stavanger,DF,23,194,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Henrik Falchener,moved
+832,,RYERSON Julian,NOR,Norway,Borussia Dortmund,FW,28,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Julian Ryerson,moved
+834,,BLACKMAN Cesar,PAN,Panama,ŠK Slovan Bratislava,DF,28,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,César Blackman,moved
+835,,CORDOBA Jose,PAN,Panama,Norwich City FC,DF,25,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,José Córdoba,moved
+836,,ESCOBAR Fidel,PAN,Panama,Deportivo Saprissa,DF,31,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Fidel Escobar,moved
+838,,MARTINEZ Cristian,PAN,Panama,Hapoel Kiryat Shmona FC,MF,29,170,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Cristian Martínez,moved
+841,,RODRIGUEZ Tomas,PAN,Panama,Deportivo Saprissa,FW,27,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tomás Rodríguez,moved
+842,,DIAZ Ismael,PAN,Panama,Club León,MF,29,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ismael Díaz,moved
+845,,RAMOS Jiovany,PAN,Panama,Puerto Cabello CF,DF,29,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jiovany Ramos,moved
+846,,HARVEY Carlos,PAN,Panama,Minnesota United FC,DF,26,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Carlos Harvey,moved
+849,,FAJARDO Jose,PAN,Panama,CD Universidad Católica,FW,32,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,José Fajardo,moved
+850,,WATERMAN Cecilio,PAN,Panama,CD Universidad De Concepción,FW,35,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Cecilio Waterman,moved
+851,,QUINTERO Alberto,PAN,Panama,CD Plaza Amador,MF,38,165,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alberto Quintero,moved
+852,,GODOY Anibal,PAN,Panama,San Diego FC,MF,36,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Aníbal Godoy,moved
+854,,MOSQUERA Orlando,PAN,Panama,Al Fayha FC,GK,31,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Orlando Mosquera,moved
+856,,LONDONO Azarias,PAN,Panama,CD Universidad Católica,FW,24,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Azarías Londoño,moved
+858,,GUTIERREZ Jorge,PAN,Panama,Deportivo La Guaira,DF,27,171,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jorge Gutiérrez,moved
+861,,ALDERETE Omar,PAR,Paraguay,Sunderland AFC,DF,29,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Omar Alderete,moved
+863,,BALBUENA Fabian,PAR,Paraguay,Grêmio FBPA,DF,34,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Fabián Balbuena,moved
+864,,ALONSO Junior,PAR,Paraguay,Atlético Mineiro,DF,33,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Júnior Alonso,moved
+865,,SOSA Ramon,PAR,Paraguay,SE Palmeiras,MF,26,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ramón Sosa,moved
+866,,GOMEZ Diego,PAR,Paraguay,Brighton & Hove Albion FC,MF,23,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Diego Gómez,moved
+867,,SANABRIA Antonio,PAR,Paraguay,US Cremonese,FW,30,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Antonio Sanabria,moved
+868,,ALMIRON Miguel,PAR,Paraguay,Atlanta United FC,MF,32,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Miguel Almirón,moved
+869,,MAURICIO,PAR,Paraguay,SE Palmeiras,MF,24,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mauricio,normal
+870,,GILL Orlando,PAR,Paraguay,CA San Lorenzo,GK,26,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Orlando Gill,moved
+871,,CANALE Jose,PAR,Paraguay,CA Lanús,DF,29,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,José Canale,moved
+872,,CUBAS Andres,PAR,Paraguay,Vancouver Whitecaps FC,MF,30,166,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Andrés Cubas,moved
+873,,GOMEZ Gustavo,PAR,Paraguay,SE Palmeiras,DF,33,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gustavo Gómez,moved
+874,,BOBADILLA Damian,PAR,Paraguay,São Paulo FC,MF,24,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Damián Bobadilla,moved
+876,,ARCE Alex,PAR,Paraguay,CS Independiente Rivadavia,FW,30,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Álex Arce,moved
+877,,ENCISO Julio,PAR,Paraguay,RC Strasbourg,FW,22,168,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Julio Enciso,moved
+878,,OJEDA Braian,PAR,Paraguay,Orlando City SC,MF,25,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Braian Ojeda,moved
+879,,AVALOS Gabriel,PAR,Paraguay,CA Independiente,FW,34,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gabriel Ávalos,moved
+881,,GALARZA Matias,PAR,Paraguay,Atlanta United FC,MF,24,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Matías Galarza,moved
+882,,CABALLERO Gustavo,PAR,Paraguay,Portsmouth FC,MF,24,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gustavo Caballero,moved
+883,,PITTA Isidro,PAR,Paraguay,Red Bull Bragantino,FW,26,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Isidro Pitta,moved
+884,,MAIDANA Alexandro,PAR,Paraguay,CA Talleres,DF,20,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alexandro Maidana,moved
+885,,DIOGO COSTA,POR,Portugal,FC Porto,GK,26,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Diogo Costa,normal
+886,,NELSON SEMEDO,POR,Portugal,Fenerbahçe SK,DF,32,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nélson Semedo,normal
+887,,RUBEN DIAS,POR,Portugal,Manchester City FC,DF,29,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Rúben Dias,normal
+888,,TOMAS ARAUJO,POR,Portugal,SL Benfica,DF,24,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tomás Araújo,normal
+889,,DIOGO DALOT,POR,Portugal,Manchester United FC,DF,27,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Diogo Dalot,normal
+890,,MATHEUS NUNES,POR,Portugal,Manchester City FC,MF,27,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Matheus Nunes,normal
+891,,CRISTIANO RONALDO,POR,Portugal,Al Nassr FC,FW,41,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Cristiano Ronaldo,normal
+892,,BRUNO FERNANDES,POR,Portugal,Manchester United FC,MF,31,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Bruno Fernandes,normal
+893,,GONCALO RAMOS,POR,Portugal,Paris Saint-Germain,FW,24,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gonçalo Ramos,normal
+894,,BERNARDO SILVA,POR,Portugal,Manchester City FC,MF,31,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Bernardo Silva,normal
+895,,JOAO FELIX,POR,Portugal,Al Nassr FC,FW,26,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,João Félix,normal
+897,,RENATO VEIGA,POR,Portugal,Villarreal CF,DF,22,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Renato Veiga,normal
+899,,JOAO NEVES,POR,Portugal,Paris Saint-Germain,MF,21,171,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,João Neves,normal
+900,,FRANCISCO TRINCAO,POR,Portugal,Sporting CP,FW,26,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Francisco Trincão,normal
+901,,RAFAEL LEAO,POR,Portugal,AC Milan,FW,27,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Rafael Leão,normal
+902,,PEDRO NETO,POR,Portugal,Chelsea FC,FW,26,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Pedro Neto,normal
+904,,JOAO CANCELO,POR,Portugal,FC Barcelona,DF,32,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,João Cancelo,normal
+905,,RUBEN NEVES,POR,Portugal,Al Hilal SC,MF,29,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Rúben Neves,normal
+907,,VITINHA,POR,Portugal,Paris Saint-Germain,MF,26,170,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Vitinha,normal
+908,,SAMU COSTA,POR,Portugal,RCD Mallorca,DF,25,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Samu Costa,normal
+909,,NUNO MENDES,POR,Portugal,Paris Saint-Germain,DF,23,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nuno Mendes,normal
+910,,FRANCISCO CONCEICAO,POR,Portugal,Juventus FC,FW,23,166,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Francisco Conceição,normal
+911,,MAHMOUD ABUNADA,QAT,Qatar,Al Rayyan SC,GK,26,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mahmoud Abunada,normal
+913,,LUCAS MENDES,QAT,Qatar,Al Wakrah SC,DF,35,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lucas Mendes,normal
+914,,ISSA LAYE,QAT,Qatar,Al Arabi SC,DF,28,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Issa Laye,normal
+915,,JASSEM GABER,QAT,Qatar,Al Rayyan SC,DF,24,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jassem Gaber,normal
+916,,ABDULAZIZ HATEM,QAT,Qatar,Al Rayyan SC,MF,36,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Abdulaziz Hatem,normal
+917,,AHMED ALAAELDIN,QAT,Qatar,Al Rayyan SC,FW,33,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ahmed Alaaeldin,normal
+918,,EDMILSON JUNIOR,QAT,Qatar,Al Duhail SC,FW,31,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Edmilson Junior,normal
+921,,AKRAM AFIF,QAT,Qatar,Al Sadd SC,FW,29,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Akram Afif,normal
+922,,KARIM BOUDIAF,QAT,Qatar,Al Duhail SC,MF,35,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Karim Boudiaf,normal
+924,,HOMAM AHMED,QAT,Qatar,Cultural Leonesa,DF,26,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Homam Ahmed,normal
+925,,YUSUF ABDURISAG,QAT,Qatar,Al Wakrah SC,FW,26,171,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yusuf Abdurisag,normal
+926,,BOUALEM KHOUKHI,QAT,Qatar,Al Sadd SC,DF,35,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Boualem Khoukhi,normal
+929,,ALMOEZ ALI,QAT,Qatar,Al Duhail SC,FW,29,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Almoez Ali,normal
+930,,AHMED FATHY,QAT,Qatar,Al Arabi SC,MF,33,171,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ahmed Fathy,normal
+933,,ASSIM MADIBO,QAT,Qatar,Al Wakrah SC,MF,29,168,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Assim Madibo,normal
+936,,MOHAMED MANAI,QAT,Qatar,Al Shamal SC,FW,23,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mohamed Manai,normal
+939,,ALI LAJAMI,KSA,Saudi Arabia,Al Hilal SC,DF,30,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ali Lajami,normal
+948,,SAUD ABDULHAMID,KSA,Saudi Arabia,RC Lens,DF,26,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Saud Abdulhamid,normal
+959,,MOHAMED KANNO,KSA,Saudi Arabia,Al Hilal SC,MF,31,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mohamed Kanno,normal
+963,,GUNN Angus,SCO,Scotland,Nottingham Forest FC,GK,30,196,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Angus Gunn,moved
+964,,HICKEY Aaron,SCO,Scotland,Brentford FC,DF,24,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Aaron Hickey,moved
+965,,ROBERTSON Andy,SCO,Scotland,Liverpool FC,DF,32,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Andy Robertson,moved
+966,,McTOMINAY Scott,SCO,Scotland,SSC Napoli,MF,29,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Scott McTominay,moved
+967,,HANLEY Grant,SCO,Scotland,Hibernian FC,DF,34,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Grant Hanley,moved
+968,,TIERNEY Kieran,SCO,Scotland,Celtic FC,DF,29,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kieran Tierney,moved
+969,,McGINN John,SCO,Scotland,Aston Villa FC,MF,31,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,John McGinn,moved
+971,,DYKES Lyndon,SCO,Scotland,Charlton Athletic FC,FW,30,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lyndon Dykes,moved
+972,,ADAMS Che,SCO,Scotland,Torino FC,FW,29,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ché Adams,moved
+973,,CHRISTIE Ryan,SCO,Scotland,AFC Bournemouth,MF,31,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ryan Christie,moved
+975,,HENDRY Jack,SCO,Scotland,Al Ettifaq FC,DF,31,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jack Hendry,moved
+976,,STEWART Ross,SCO,Scotland,Southampton FC,FW,29,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ross Stewart,moved
+979,,GANNON-DOAK Ben,SCO,Scotland,AFC Bournemouth,FW,20,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ben Gannon-Doak,moved
+981,,FERGUSON Lewis,SCO,Scotland,Bologna FC,MF,26,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lewis Ferguson,moved
+982,,SHANKLAND Lawrence,SCO,Scotland,Heart Of Midlothian FC,FW,30,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lawrence Shankland,moved
+984,,PATTERSON Nathan,SCO,Scotland,Everton FC,DF,24,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nathan Patterson,moved
+985,,McLEAN Kenny,SCO,Scotland,Norwich City FC,MF,34,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kenny McLean,moved
+986,,RALSTON Anthony,SCO,Scotland,Celtic FC,DF,27,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Anthony Ralston,moved
+987,,CURTIS Findlay,SCO,Scotland,Kilmarnock FC,FW,20,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Findlay Curtis,moved
+988,,McKENNA Scott,SCO,Scotland,GNK Dinamo Zagreb,DF,29,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Scott McKenna,moved
+991,,KOULIBALY Kalidou,SEN,Senegal,Al Hilal SC,DF,34,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kalidou Koulibaly,moved
+992,,SECK Abdoulaye,SEN,Senegal,Maccabi Haifa FC,DF,34,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Abdoulaye Seck,moved
+994,,CISS Pathe,SEN,Senegal,Rayo Vallecano,MF,32,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Pathé Ciss,moved
+995,,DIAO Assane,SEN,Senegal,Como,FW,20,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Assane Diao,moved
+996,,CAMARA Lamine,SEN,Senegal,AS Monaco,MF,22,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lamine Camara,moved
+997,,DIENG Bamba,SEN,Senegal,FC Lorient,FW,26,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Bamba Dieng,moved
+998,,MANE Sadio,SEN,Senegal,Al Nassr FC,FW,34,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sadio Mané,moved
+999,,JACKSON Nicolas,SEN,Senegal,FC Bayern München,FW,24,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nicolas Jackson,moved
+1001,,NDIAYE Iliman,SEN,Senegal,Everton FC,FW,26,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Iliman Ndiaye,moved
+1002,,JAKOBS Ismail,SEN,Senegal,Galatasaray SK,DF,26,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ismail Jakobs,moved
+1003,,DIATTA Krepin,SEN,Senegal,AS Monaco,DF,27,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Krépin Diatta,moved
+1004,,MENDY Edouard,SEN,Senegal,Al Ahli FC,GK,34,194,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Édouard Mendy,moved
+1006,,SARR Ismaila,SEN,Senegal,Crystal Palace FC,FW,28,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ismaila Sarr,moved
+1007,,NIAKHATE Moussa,SEN,Senegal,Olympique Lyonnais,DF,30,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Moussa Niakhaté,moved
+1008,,MBAYE Ibrahim,SEN,Senegal,Paris Saint-Germain,FW,18,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ibrahim Mbaye,moved
+1009,,DIARRA Habib,SEN,Senegal,Sunderland AFC,MF,22,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Habib Diarra,moved
+1011,,DIAW Mory,SEN,Senegal,Le Havre AC,GK,32,197,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mory Diaw,moved
+1014,,GUEYE Pape,SEN,Senegal,Villarreal CF,MF,27,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Pape Gueye,moved
+1015,,WILLIAMS Ronwen,RSA,South Africa,Mamelodi Sundowns FC,GK,34,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ronwen Williams,moved
+1018,,MOKOENA Teboho,RSA,South Africa,Mamelodi Sundowns FC,MF,29,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Teboho Mokoena,moved
+1019,,MBATHA Thalente,RSA,South Africa,Orlando Pirates FC,MF,26,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Thalente Mbatha,moved
+1020,,MODIBA Aubrey,RSA,South Africa,Mamelodi Sundowns FC,DF,30,171,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Aubrey Modiba,moved
+1021,,APPOLLIS Oswin,RSA,South Africa,Orlando Pirates FC,FW,24,171,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Oswin Appollis,moved
+1022,,MOREMI Tshepang,RSA,South Africa,Orlando Pirates FC,FW,25,169,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tshepang Moremi,moved
+1023,,FOSTER Lyle,RSA,South Africa,Burnley FC,FW,25,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lyle Foster,moved
+1024,,MOFOKENG Relebohile,RSA,South Africa,Orlando Pirates FC,FW,21,168,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Relebohile Mofokeng,moved
+1025,,ZWANE Themba,RSA,South Africa,Mamelodi Sundowns FC,MF,36,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Themba Zwane,moved
+1026,,MASEKO Thapelo,RSA,South Africa,AEL Limassol,FW,22,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Thapelo Maseko,moved
+1027,,SITHOLE Sphephelo,RSA,South Africa,CD Tondela,MF,27,197,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sphephelo Sithole,moved
+1028,,MBOKAZI Mbekezeli,RSA,South Africa,Chicago Fire FC,DF,20,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mbekezeli Mbokazi,moved
+1029,,RAYNERS Iqraam,RSA,South Africa,Mamelodi Sundowns FC,FW,30,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Iqraam Rayners,moved
+1031,,MAKGOPA Evidence,RSA,South Africa,Orlando Pirates FC,FW,26,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Evidence Makgopa,moved
+1033,,SIBISI Nkosinathi,RSA,South Africa,Orlando Pirates FC,DF,30,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nkosinathi Sibisi,moved
+1034,,MUDAU Khuliso,RSA,South Africa,Mamelodi Sundowns FC,DF,31,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Khuliso Mudau,moved
+1035,,OKON Ime,RSA,South Africa,Hannover 96,DF,22,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ime Okon,moved
+1037,,ADAMS Jayden,RSA,South Africa,Mamelodi Sundowns FC,MF,25,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jayden Adams,moved
+1039,,SEBELEBELE Kamogelo,RSA,South Africa,Orlando Pirates FC,FW,23,166,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kamogelo Sebelebele,moved
+1042,,PUBILL Marc,ESP,Spain,Atlético De Madrid,DF,22,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marc Pubill,moved
+1044,,GARCIA Eric,ESP,Spain,FC Barcelona,DF,25,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Eric García,moved
+1045,,LLORENTE Marcos,ESP,Spain,Atlético De Madrid,DF,31,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marcos Llorente,moved
+1046,,MERINO Mikel,ESP,Spain,Arsenal FC,MF,29,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mikel Merino,moved
+1047,,TORRES Ferran,ESP,Spain,FC Barcelona,FW,26,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ferran Torres,moved
+1049,,GAVI,ESP,Spain,FC Barcelona,MF,21,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gavi,normal
+1050,,OLMO Dani,ESP,Spain,FC Barcelona,FW,28,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Dani Olmo,moved
+1051,,PINO Yeremy,ESP,Spain,Crystal Palace FC,FW,23,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yéremy Pino,moved
+1052,,PORRO Pedro,ESP,Spain,Tottenham Hotspur FC,DF,26,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Pedro Porro,moved
+1054,,LAPORTE Aymeric,ESP,Spain,Athletic Club,DF,32,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Aymeric Laporte,moved
+1055,,BAENA Alex,ESP,Spain,Atlético De Madrid,MF,24,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Álex Baena,moved
+1056,,RODRI,ESP,Spain,Manchester City FC,MF,29,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Rodri,normal
+1057,,WILLIAMS Nico,ESP,Spain,Athletic Club,FW,23,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nico Williams,moved
+1058,,ZUBIMENDI Martin,ESP,Spain,Arsenal FC,MF,27,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Martín Zubimendi,moved
+1059,,YAMAL Lamine,ESP,Spain,FC Barcelona,FW,18,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lamine Yamal,moved
+1060,,PEDRI,ESP,Spain,FC Barcelona,MF,23,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Pedri,normal
+1061,,OYARZABAL Mikel,ESP,Spain,Real Sociedad,FW,29,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mikel Oyarzabal,moved
+1062,,CUBARSI Pau,ESP,Spain,FC Barcelona,DF,19,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Pau Cubarsí,moved
+1063,,SIMON Unai,ESP,Spain,Athletic Club,GK,29,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Unai Simón,moved
+1064,,CUCURELLA Marc,ESP,Spain,Chelsea FC,DF,27,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Marc Cucurella,moved
+1066,,IGLESIAS Borja,ESP,Spain,RC Celta Vigo,FW,33,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Borja Iglesias,moved
+1067,,WIDELL ZETTERSTROM Jacob,SWE,Sweden,Derby County FC,GK,27,197,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jacob Widell Zetterström,moved
+1068,,LAGERBIELKE Gustaf,SWE,Sweden,SC Braga,DF,26,193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gustaf Lagerbielke,moved
+1069,,LINDELOF Victor,SWE,Sweden,Aston Villa FC,DF,31,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Victor Lindelöf,moved
+1070,,HIEN Isak,SWE,Sweden,Atalanta Bergamo,DF,27,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Isak Hien,moved
+1071,,GUDMUNDSSON Gabriel,SWE,Sweden,Leeds United FC,DF,27,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gabriel Gudmundsson,moved
+1073,,BERGVALL Lucas,SWE,Sweden,Tottenham Hotspur FC,MF,20,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Lucas Bergvall,moved
+1074,,SVENSSON Daniel,SWE,Sweden,Borussia Dortmund,DF,24,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Daniel Svensson,moved
+1075,,ISAK Alexander,SWE,Sweden,Liverpool FC,FW,26,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alexander Isak,moved
+1076,,NYGREN Benjamin,SWE,Sweden,Celtic FC,MF,24,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Benjamin Nygren,moved
+1077,,ELANGA Anthony,SWE,Sweden,Newcastle United FC,FW,24,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Anthony Elanga,moved
+1079,,SEMA Ken,SWE,Sweden,Pafos FC,MF,32,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ken Sema,moved
+1081,,STARFELT Carl,SWE,Sweden,RC Celta Vigo,DF,31,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Carl Starfelt,moved
+1082,,KARLSTROM Jesper,SWE,Sweden,Udinese,MF,30,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jesper Karlström,moved
+1083,,GYOKERES Viktor,SWE,Sweden,Arsenal FC,FW,28,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Viktor Gyökeres,moved
+1084,,AYARI Yasin,SWE,Sweden,Brighton & Hove Albion FC,MF,22,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yasin Ayari,moved
+1085,,SVANBERG Mattias,SWE,Sweden,VfL Wolfsburg,MF,27,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mattias Svanberg,moved
+1087,,BERNHARDSSON Alexander,SWE,Sweden,Holstein Kiel,DF,27,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alexander Bernhardsson,moved
+1088,,ZENELI Besfort,SWE,Sweden,Royale Union Saint-Gilloise,MF,23,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Besfort Zeneli,moved
+1089,,NORDFELDT Kristoffer,SWE,Sweden,AIK Stockholm,GK,36,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kristoffer Nordfeldt,moved
+1090,,STROUD Elliot,SWE,Sweden,Mjällby AIF,DF,23,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Elliot Stroud,moved
+1091,,NILSSON Gustaf,SWE,Sweden,Club Brugge,FW,29,197,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gustaf Nilsson,moved
+1092,,ALI Taha,SWE,Sweden,Malmö FF,FW,27,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Taha Ali,moved
+1093,,KOBEL Gregor,SUI,Switzerland,Borussia Dortmund,GK,28,196,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Gregor Kobel,moved
+1094,,MUHEIM Miro,SUI,Switzerland,Hamburger SV,DF,28,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Miro Muheim,moved
+1095,,WIDMER Silvan,SUI,Switzerland,1. FSV Mainz 05,DF,33,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Silvan Widmer,moved
+1096,,ELVEDI Nico,SUI,Switzerland,Borussia Mönchengladbach,DF,29,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nico Elvedi,moved
+1097,,AKANJI Manuel,SUI,Switzerland,FC Internazionale Milano,DF,30,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Manuel Akanji,moved
+1098,,ZAKARIA Denis,SUI,Switzerland,AS Monaco,MF,29,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Denis Zakaria,moved
+1099,,EMBOLO Breel,SUI,Switzerland,Stade Rennais FC,FW,29,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Breel Embolo,moved
+1100,,FREULER Remo,SUI,Switzerland,Bologna FC,MF,34,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Remo Freuler,moved
+1101,,MANZAMBI Johan,SUI,Switzerland,SC Freiburg,MF,20,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Johan Manzambi,moved
+1102,,XHAKA Granit,SUI,Switzerland,Sunderland AFC,MF,33,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Granit Xhaka,moved
+1103,,NDOYE Dan,SUI,Switzerland,Nottingham Forest FC,FW,25,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Dan Ndoye,moved
+1105,,RODRIGUEZ Ricardo,SUI,Switzerland,Real Betis,DF,33,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ricardo Rodríguez,moved
+1106,,JASHARI Ardon,SUI,Switzerland,AC Milan,MF,23,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ardon Jashari,moved
+1107,,SOW Djibril,SUI,Switzerland,Sevilla FC,MF,29,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Djibril Sow,moved
+1108,,FASSNACHT Christian,SUI,Switzerland,BSC Young Boys,FW,32,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Christian Fassnacht,moved
+1109,,VARGAS Ruben,SUI,Switzerland,Sevilla FC,FW,27,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ruben Vargas,moved
+1111,,OKAFOR Noah,SUI,Switzerland,Leeds United FC,FW,26,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Noah Okafor,moved
+1112,,AEBISCHER Michel,SUI,Switzerland,Pisa SC,MF,29,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Michel Aebischer,moved
+1114,,RIEDER Fabian,SUI,Switzerland,FC Augsburg,MF,24,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Fabian Rieder,moved
+1115,,AMDOUNI Zeki,SUI,Switzerland,Burnley FC,FW,25,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Zeki Amdouni,moved
+1117,,JAQUEZ Luca,SUI,Switzerland,VfB Stuttgart,DF,23,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Luca Jaquez,moved
+1118,,ITTEN Cedric,SUI,Switzerland,Fortuna Düsseldorf,FW,29,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Cedric Itten,moved
+1119,,CHAMAKH Mouhib,TUN,Tunisia,Club Africain,GK,24,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mouhib Chamakh,moved
+1120,,ABDI Ali,TUN,Tunisia,OGC Nice,DF,32,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ali Abdi,moved
+1121,,TALBI Montassar,TUN,Tunisia,FC Lorient,DF,28,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Montassar Talbi,moved
+1122,,REKIK Omar,TUN,Tunisia,NK Maribor,DF,24,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Omar Rekik,moved
+1124,,BRONN Dylan,TUN,Tunisia,Servette FC,DF,30,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Dylan Bronn,moved
+1125,,ACHOURI Elias,TUN,Tunisia,FC København,FW,27,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Elias Achouri,moved
+1126,,SAAD Elias,TUN,Tunisia,Hannover 96,FW,26,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Elias Saad,moved
+1127,,MASTOURI Hazem,TUN,Tunisia,FC Dynamo Makhachkala,FW,28,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Hazem Mastouri,moved
+1128,,MEJBRI Hannibal,TUN,Tunisia,Burnley FC,MF,23,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Hannibal Mejbri,moved
+1129,,GHARBI Ismael,TUN,Tunisia,FC Augsburg,MF,22,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ismaël Gharbi,moved
+1130,,BEN OUANES Mortadha,TUN,Tunisia,Kasımpaşa SK,DF,31,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mortadha Ben Ouanes,moved
+1131,,KHEDIRA Rani,TUN,Tunisia,1. FC Union Berlin,MF,32,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Rani Khedira,moved
+1134,,DAHMEN Aymen,TUN,Tunisia,CS Sfaxien,GK,29,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Aymen Dahmen,moved
+1135,,SKHIRI Ellyes,TUN,Tunisia,Eintracht Frankfurt,MF,31,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ellyes Skhiri,moved
+1137,,CHAOUAT Firas,TUN,Tunisia,Club Africain,FW,30,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Firas Chaouat,moved
+1138,,VALERY Yan,TUN,Tunisia,BSC Young Boys,DF,27,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yan Valery,moved
+1144,,TOUNEKTI Sebastian,TUN,Tunisia,Celtic FC,MF,23,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sebastian Tounekti,moved
+1146,,CELIK Zeki,TUR,Türkiye,AS Roma,DF,29,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Zeki Çelik,moved
+1147,,DEMIRAL Merih,TUR,Türkiye,Al Ahli FC,DF,28,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Merih Demiral,moved
+1148,,SOYUNCU Caglar,TUR,Türkiye,Fenerbahçe SK,DF,30,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Çağlar Söyüncü,moved
+1149,,OZCAN Salih,TUR,Türkiye,Borussia Dortmund,MF,28,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Salih Özcan,moved
+1150,,KOKCU Orkun,TUR,Türkiye,Beşiktaş JK,MF,25,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Orkun Kökçü,moved
+1151,,AKTURKOGLU Kerem,TUR,Türkiye,Fenerbahçe SK,FW,27,172,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kerem Aktürkoğlu,moved
+1152,,GULER Arda,TUR,Türkiye,Real Madrid C. F.,FW,21,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Arda Güler,moved
+1153,,GUL Deniz,TUR,Türkiye,FC Porto,FW,21,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Deniz Gül,moved
+1154,,CALHANOGLU Hakan,TUR,Türkiye,FC Internazionale Milano,MF,32,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Hakan Çalhanoğlu,moved
+1159,,KABAK Ozan,TUR,Türkiye,TSG Hoffenheim,DF,26,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ozan Kabak,moved
+1160,,YUKSEK Ismail,TUR,Türkiye,Fenerbahçe SK,MF,27,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,İsmail Yüksek,moved
+1162,,MULDUR Mert,TUR,Türkiye,Fenerbahçe SK,DF,27,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mert Müldür,moved
+1163,,AKGUN Yunus,TUR,Türkiye,Galatasaray SK,FW,25,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Yunus Akgün,moved
+1164,,KADIOGLU Ferdi,TUR,Türkiye,Brighton & Hove Albion FC,DF,26,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ferdi Kadioglu,moved
+1166,,AYHAN Kaan,TUR,Türkiye,Galatasaray SK,MF,31,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Kaan Ayhan,moved
+1170,,UZUN Can,TUR,Türkiye,Eintracht Frankfurt,FW,20,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Can Uzun,moved
+1171,,ROCHET Sergio,URU,Uruguay,SC Internacional,GK,33,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sergio Rochet,moved
+1173,,CACERES Sebastian,URU,Uruguay,Club América,DF,26,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sebastián Cáceres,moved
+1175,,UGARTE Manuel,URU,Uruguay,Manchester United FC,MF,25,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Manuel Ugarte,moved
+1176,,BENTANCUR Rodrigo,URU,Uruguay,Tottenham Hotspur FC,MF,28,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Rodrigo Bentancur,moved
+1177,,DE LA CRUZ Nicolas,URU,Uruguay,CR Flamengo,MF,29,167,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Nicolás De La Cruz,moved
+1178,,VALVERDE Federico,URU,Uruguay,Real Madrid C. F.,MF,27,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Federico Valverde,moved
+1179,,NUNEZ Darwin,URU,Uruguay,Al Hilal SC,FW,26,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Darwin Núñez,moved
+1183,,VARELA Guillermo,URU,Uruguay,CR Flamengo,DF,33,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Guillermo Varela,moved
+1184,,CANOBBIO Agustin,URU,Uruguay,Fluminense FC,MF,27,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Agustín Canobbio,moved
+1186,,OLIVERA Mathias,URU,Uruguay,SSC Napoli,DF,28,174,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mathías Olivera,moved
+1187,,VINA Matias,URU,Uruguay,CA River Plate,DF,28,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Matías Viña,moved
+1188,,RODRIGUEZ Brian,URU,Uruguay,Club América,FW,26,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Brian Rodríguez,moved
+1189,,AGUIRRE Rodrigo,URU,Uruguay,Tigres UANL,FW,31,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Rodrigo Aguirre,moved
+1190,,ARAUJO Maxi,URU,Uruguay,Sporting CP,MF,26,176,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Maxi Araújo,moved
+1191,,VINAS Federico,URU,Uruguay,Real Oviedo,FW,27,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Federico Viñas,moved
+1193,,MUSLERA Fernando,URU,Uruguay,Estudiantes LP,GK,39,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Fernando Muslera,moved
+1197,,TURNER Matt,USA,USA,New England Revolution,GK,31,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Matt Turner,moved
+1198,,DEST Sergino,USA,USA,PSV Eindhoven,DF,25,173,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sergiño Dest,moved
+1199,,RICHARDS Chris,USA,USA,Crystal Palace FC,DF,26,189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Chris Richards,moved
+1200,,ADAMS Tyler,USA,USA,AFC Bournemouth,MF,27,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tyler Adams,moved
+1201,,ROBINSON Antonee,USA,USA,Fulham FC,DF,28,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Antonee Robinson,moved
+1202,,TRUSTY Auston,USA,USA,Celtic FC,DF,27,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Auston Trusty,moved
+1204,,McKENNIE Weston,USA,USA,Juventus FC,MF,27,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Weston McKennie,moved
+1205,,PEPI Ricardo,USA,USA,PSV Eindhoven,FW,23,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Ricardo Pepi,moved
+1206,,PULISIC Christian,USA,USA,AC Milan,FW,27,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Christian Pulisic,moved
+1207,,AARONSON Brenden,USA,USA,Leeds United FC,FW,25,177,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Brenden Aaronson,moved
+1208,,ROBINSON Miles,USA,USA,FC Cincinnatti,DF,29,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Miles Robinson,moved
+1209,,REAM Tim,USA,USA,Charlotte FC,DF,38,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Tim Ream,moved
+1210,,BERHALTER Sebastian,USA,USA,Vancouver Whitecaps FC,MF,25,175,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sebastian Berhalter,moved
+1212,,FREEMAN Alex,USA,USA,Villarreal CF,DF,21,188,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Alex Freeman,moved
+1213,,TILLMAN Malik,USA,USA,Bayer 04 Leverkusen,MF,24,187,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Malik Tillman,moved
+1214,,ARFSTEN Max,USA,USA,Columbus Crew,DF,25,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Max Arfsten,moved
+1215,,WRIGHT Haji,USA,USA,Coventry City FC,FW,28,191,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Haji Wright,moved
+1216,,BALOGUN Folarin,USA,USA,AS Monaco,FW,24,179,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Folarin Balogun,moved
+1217,,WEAH Timothy,USA,USA,Olympique Marseille,FW,26,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Timothy Weah,moved
+1218,,McKENZIE Mark,USA,USA,Toulouse FC,DF,27,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Mark McKenzie,moved
+1219,,SCALLY Joe,USA,USA,Borussia Mönchengladbach,DF,23,184,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Joe Scally,moved
+1220,,FREESE Matt,USA,USA,New York City FC,GK,27,198,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Matt Freese,moved
+1223,,YUSUPOV Utkir,UZB,Uzbekistan,PFC Navbahor Namangan,GK,35,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Utkir Yusupov,moved
+1224,,KHUSANOV Abdukodir,UZB,Uzbekistan,Manchester City FC,DF,22,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Abdukodir Khusanov,moved
+1225,,ALIJONOV Khojiakbar,UZB,Uzbekistan,Pakhtakor Tashkent FK,DF,29,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Khojiakbar Alijonov,moved
+1226,,SAYFIEV Farrukh,UZB,Uzbekistan,FK Neftchi Farg'ona,DF,35,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Farrukh Sayfiev,moved
+1227,,ASHURMATOV Rustam,UZB,Uzbekistan,Esteghlal Tehran FC,DF,29,186,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Rustam Ashurmatov,moved
+1228,,MOZGOVOY Akmal,UZB,Uzbekistan,Pakhtakor Tashkent FK,MF,27,180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Akmal Mozgovoy,moved
+1229,,SHUKUROV Otabek,UZB,Uzbekistan,Baniyas Club,MF,29,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Otabek Shukurov,moved
+1230,,ISKANDEROV Jamshid,UZB,Uzbekistan,FK Neftchi Farg'ona,MF,32,171,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jamshid Iskanderov,moved
+1233,,URUNOV Oston,UZB,Uzbekistan,Persepolis FC,MF,25,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Oston Urunov,moved
+1234,,NEMATOV Abduvohid,UZB,Uzbekistan,Nasaf Qarshi FC,GK,25,182,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Abduvohid Nematov,moved
+1235,,NASRULLAEV Sherzod,UZB,Uzbekistan,Pakhtakor Tashkent FK,DF,27,183,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sherzod Nasrullaev,moved
+1236,,SHOMURODOV Eldor,UZB,Uzbekistan,Başakşehir FK,FW,30,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Eldor Shomurodov,moved
+1239,,KHAMDAMOV Dostonbek,UZB,Uzbekistan,Pakhtakor Tashkent FK,MF,29,178,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Dostonbek Khamdamov,moved
+1240,,ABDULLAEV Abdulla,UZB,Uzbekistan,Dibba FC,DF,28,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Abdulla Abdullaev,moved
+1242,,AMONOV Azizbek,UZB,Uzbekistan,FK Dinamo Samarkand,FW,28,181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Azizbek Amonov,moved
+1243,,SERGEEV Igor,UZB,Uzbekistan,Persepolis FC,FW,33,185,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Igor Sergeev,moved
+1245,,ESANOV Sherzod,UZB,Uzbekistan,FK Buxoro,MF,23,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Sherzod Esanov,moved
+1248,,UROZOV Jakhongir,UZB,Uzbekistan,FK Dinamo Samarkand,DF,22,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FIFA World Cup 2026 roster,Jakhongir Urozov,moved

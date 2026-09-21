@@ -1,6 +1,5 @@
 import pandas as pd
 import unicodedata
-from rapidfuzz import process, fuzz
 
 
 raw = pd.read_csv("data/players_raw.csv")
@@ -25,11 +24,14 @@ team_map = {
 
 def norm(s):
     s = str(s)
+
     s = unicodedata.normalize("NFD", s)
+
     s = "".join(
         c for c in s
         if unicodedata.category(c) != "Mn"
     )
+
     return s.lower().strip()
 
 
@@ -48,34 +50,88 @@ for _, row in std.iterrows():
 
 
 # ==========================================
-# EXACT MATCH
+# DOC MANUAL MAPPING
 # ==========================================
 
-matched = 0
+manual_file = "data/manual_mapping.csv"
+
+manual = pd.read_csv(manual_file)
+
+manual_dict = {}
+
+for _, row in manual.iterrows():
+
+    decision = str(row["decision"]).strip().upper()
+
+    if decision != "MATCH":
+        continue
+
+    raw_name = norm(row["raw_name"])
+
+    fifa_team = str(row["team"]).strip().upper()
+
+    # Chuyen ma FIFA sang ma FBref
+    team = team_map.get(fifa_team, "")
+
+    fbref_name = str(row["fbref_name"]).strip()
+
+    manual_dict[(raw_name, team)] = fbref_name
+
+# ==========================================
+# MATCHING
+# ==========================================
+
+matched_indices = set()
+
+match_type = {}
+
 normal = 0
 moved = 0
-unmatched = []
+manual_count = 0
 
 
-for _, row in raw.iterrows():
+for index, row in raw.iterrows():
 
     raw_name = norm(row["player_name"])
-    raw_team = team_map.get(row["national_team"], "")
+    raw_team = team_map.get(
+        row["national_team"],
+        ""
+    )
 
-    # ------------------------------
-    # Cach 1: ten giong nhau
-    # ------------------------------
 
-    if (raw_name, raw_team) in std_keys:
+    # ======================================
+    # 1. MANUAL MATCH
+    # ======================================
 
-        matched += 1
-        normal += 1
+    if (raw_name, raw_team) in manual_dict:
+
+        matched_indices.add(index)
+
+        match_type[index] = "manual"
+
+        manual_count += 1
+
         continue
 
 
-    # ------------------------------
-    # Cach 2: dua tu cuoi len dau
-    # ------------------------------
+    # ======================================
+    # 2. EXACT MATCH
+    # ======================================
+
+    if (raw_name, raw_team) in std_keys:
+
+        matched_indices.add(index)
+
+        match_type[index] = "normal"
+
+        normal += 1
+
+        continue
+
+
+    # ======================================
+    # 3. MOVED NAME MATCH
+    # ======================================
 
     parts = raw_name.split()
 
@@ -92,112 +148,188 @@ for _, row in raw.iterrows():
 
     if (moved_name, raw_team) in std_keys:
 
-        matched += 1
+        matched_indices.add(index)
+
+        match_type[index] = "moved"
+
         moved += 1
+
         continue
 
 
-    unmatched.append(
-        (
-            row["player_name"],
-            row["national_team"],
-            raw_name,
-            raw_team
-        )
-    )
-
-
-print("Normal:", normal)
-print("Đưa tên cuối lên đầu:", moved)
-print("Tổng match:", matched)
-print("Unmatched:", len(unmatched))
-
-
 # ==========================================
-# FUZZY MATCH
+# KET QUA
 # ==========================================
 
-print("\n==========================================")
-print("FUZZY MATCH - 364 UNMATCHED")
+matched = len(matched_indices)
+
+unmatched = len(raw) - matched
+
+
+print()
+print("==========================================")
+print("MATCH RESULT")
 print("==========================================")
 
+print(
+    "Normal exact match :",
+    normal
+)
 
-for original_name, original_team, raw_name, raw_team in unmatched:
+print(
+    "Moved name match   :",
+    moved
+)
 
-    candidates = [
-        name
-        for (name, team) in std_keys.keys()
-        if team == raw_team
-    ]
+print(
+    "Manual match       :",
+    manual_count
+)
 
+print(
+    "Tong match         :",
+    matched
+)
 
-    if not candidates:
-
-        print(
-            f"\n{original_name} | {original_team}"
-            f"\n  -> KHONG CO DU LIEU FBREF"
-        )
-
-        continue
-
-
-    # --------------------------------------
-    # Tao them dang "ten cuoi len dau"
-    # --------------------------------------
-
-    parts = raw_name.split()
-
-    queries = [raw_name]
-
-    if len(parts) >= 2:
-
-        moved_name = " ".join(
-            [parts[-1]] + parts[:-1]
-        )
-
-        queries.append(moved_name)
+print(
+    "Unmatched           :",
+    unmatched
+)
 
 
-    # --------------------------------------
-    # Tim ket qua tot nhat
-    # --------------------------------------
+# ==========================================
+# LAY 887 CAU THU
+# ==========================================
 
-    best = None
-
-
-    for query in queries:
-
-        results = process.extract(
-            query,
-            candidates,
-            scorer=fuzz.WRatio,
-            limit=3
-        )
-
-        for candidate, score, _ in results:
-
-            if best is None or score > best[1]:
-
-                best = (
-                    candidate,
-                    score,
-                    query
-                )
+players_matched = raw.loc[
+    sorted(matched_indices)
+].copy()
 
 
-    candidate = best[0]
-    score = best[1]
-    query_used = best[2]
+# ==========================================
+# TIM FBREF NAME
+# ==========================================
 
-    fbref_name = std_keys[(candidate, raw_team)]
+fbref_names = []
+match_types = []
 
 
-    print(
-        f"\n{original_name} | {original_team}"
+for index, row in players_matched.iterrows():
+
+    raw_name = norm(row["player_name"])
+
+    raw_team = team_map.get(
+        row["national_team"],
+        ""
     )
 
-    print(
-        f"  -> {fbref_name}"
-        f" | score = {score:.1f}"
-        f" | query = {query_used}"
-    )
+
+    fbref_name = None
+    current_match_type = None
+
+
+    # ======================================
+    # MANUAL
+    # ======================================
+
+    if (raw_name, raw_team) in manual_dict:
+
+        fbref_name = manual_dict[
+            (raw_name, raw_team)
+        ]
+
+        current_match_type = "manual"
+
+
+    # ======================================
+    # EXACT
+    # ======================================
+
+    elif (raw_name, raw_team) in std_keys:
+
+        fbref_name = std_keys[
+            (raw_name, raw_team)
+        ]
+
+        current_match_type = "normal"
+
+
+    # ======================================
+    # MOVED
+    # ======================================
+
+    else:
+
+        parts = raw_name.split()
+
+        if len(parts) >= 2:
+
+            moved_name = " ".join(
+                [parts[-1]] + parts[:-1]
+            )
+
+        else:
+
+            moved_name = raw_name
+
+
+        if (moved_name, raw_team) in std_keys:
+
+            fbref_name = std_keys[
+                (moved_name, raw_team)
+            ]
+
+            current_match_type = "moved"
+
+
+    fbref_names.append(fbref_name)
+    match_types.append(current_match_type)
+
+
+# ==========================================
+# THEM THONG TIN MATCHING
+# ==========================================
+
+players_matched["fbref_name"] = fbref_names
+players_matched["match_type"] = match_types
+
+
+# ==========================================
+# LUU FILE
+# ==========================================
+
+output_file = "data/players_matched.csv"
+
+
+players_matched.to_csv(
+    output_file,
+    index=False,
+    encoding="utf-8-sig"
+)
+
+
+# ==========================================
+# KIEM TRA CUOI
+# ==========================================
+
+print()
+print("==========================================")
+print("DA TAO DATASET MATCHED")
+print("==========================================")
+
+print(
+    "So cau thu:",
+    len(players_matched)
+)
+
+print(
+    "File:",
+    output_file
+)
+
+print()
+print("Match type trong dataset:")
+
+print(
+    players_matched["match_type"].value_counts()
+)

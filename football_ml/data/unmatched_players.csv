@@ -1,0 +1,382 @@
+﻿player_name,national_team,position,club
+MASTIL Melvin,ALG,GK,FC Stade Nyonnais
+ABADA Achref,ALG,DF,USM Alger
+TOUGAI Mohamed Amine,ALG,DF,Espérance De Tunisie
+TITRAOUI Yassine,ALG,MF,Sporting Charleroi
+MUSSO Juan,ARG,GK,Atlético De Madrid
+BALERDI Leonardo,ARG,DF,Olympique Marseille
+RULLI Geronimo,ARG,GK,Olympique Marseille
+LOPEZ Jose Manuel,ARG,FW,SE Palmeiras
+DEGENEK Milos,AUS,DF,APOEL FC
+BOS Jordan,AUS,DF,Feyenoord Rotterdam
+TOURE Mohamed,AUS,FW,Norwich City FC
+IZZO Paul,AUS,GK,Randers FC
+DEVLIN Cameron,AUS,MF,Heart Of Midlothian FC
+AFFENGRUBER David,AUT,DF,Elche CF
+WIEGELE Florian,AUT,GK,FC Viktoria Plzeň
+PENTZ Patrick,AUT,GK,Brøndby IF
+BAUMGARTNER Christoph,AUT,MF,RB Leipzig
+SVOBODA Michael,AUT,DF,Venezia FC
+SCHOEPF Alessandro,AUT,MF,Wolfsberger AC
+DEBAST Zeno,BEL,DF,Sporting CP
+PENDERS Mike,BEL,GK,RC Strasbourg
+DE WINTER Koni,BEL,DF,AC Milan
+MUJAKIC Nihad,BIH,DF,Gaziantep FK
+JURKAS Mladen,BIH,GK,FK Borac Banja Luka
+ZLOMISLIC Martin,BIH,GK,HNK Rijeka
+CELIK Nidal,BIH,DF,RC Lens
+NEYMAR JR,BRA,FW,Santos FC
+WEVERTON,BRA,GK,Grêmio FBPA
+BREMER,BRA,DF,Juventus FC
+LEO PEREIRA,BRA,DF,CR Flamengo
+EDERSON,BRA,GK,Fenerbahçe SK
+STOPIRA,CPV,DF,SCU Torreense
+DINEY BORGES,CPV,DF,Al Bataeh Club
+PICO LOPES,CPV,DF,Shamrock Rovers FC
+LOGAN COSTA,CPV,DF,Villarreal CF
+JOAO PAULO,CPV,MF,FC FCSB
+MARCIO ROSA,CPV,GK,PFC Montana
+YANNICK SEMEDO,CPV,MF,SC Farense
+CJ DOS SANTOS,CPV,GK,San Diego FC
+KELVIN PIRES,CPV,DF,SJK
+ST. CLAIR Dayne,CAN,GK,Inter Miami CF
+JONES Alfie,CAN,DF,Middlesbrough FC
+WATERMAN Joel,CAN,DF,Chicago Fire FC
+GOODMAN Owen,CAN,GK,Barnsley
+FLORES Marcelo,CAN,MF,Tigres UANL
+OSPINA David,COL,GK,Atlético Nacional
+CARRASCAL Jorge,COL,MF,CR Flamengo
+PORTILLA Juan,COL,MF,Athletico Paranaense
+DITTA Willer,COL,DF,CF Cruz Azul
+HERNANDEZ Cucho,COL,FW,Real Betis
+MONTERO Alvaro,COL,GK,CA Vélez Sarsfield
+BATUBINSIKA Dylan,COD,DF,AEL FC
+MUKAU Ngalayel,COD,MF,Lille OSC
+KAKUTA Gael,COD,FW,AEL FC
+ELIA Meschack,COD,FW,Alanyaspor
+TSHIBOLA Aaron,COD,MF,Kilmarnock FC
+FAYULU Timothy,COD,GK,FC Noah
+EPOLO Matthieu,COD,GK,Standard Liège
+SERI Jean Michael,CIV,MF,NK Maribor
+BONNY Ange-Yoan,CIV,FW,FC Internazionale Milano
+KONE Mohamed,CIV,GK,Sporting Charleroi
+NDICKA Evan,CIV,DF,AS Roma
+LAFONT Alban,CIV,GK,Panathinaikos FC
+GUIAGON Parfait,CIV,MF,Sporting Charleroi
+OULAI Christ Inao,CIV,MF,Trabzonspor
+CALETA-CAR Duje,CRO,DF,Real Sociedad
+MORO Nikola,CRO,MF,Bologna FC
+PANDUR Ivor,CRO,GK,Hull City FC
+JAKIC Kristijan,CRO,DF,FC Augsburg
+FRUK Toni,CRO,MF,HNK Rijeka
+KOTARSKI Dominik,CRO,GK,FC København
+ERLIC Martin,CRO,DF,FC Midtjylland
+LOCADIA Juergen,CUW,FW,Miami FC
+MARTHA Arjany,CUW,MF,Rotherham United FC
+FELIDA Kevin,CUW,MF,FC Den Bosch
+BODAK Tyrick,CUW,GK,SC Telstar
+DOORNBUSCH Trevor,CUW,GK,VVV Venlo
+KUCHTA Jan,CZE,FW,AC Sparta Praha
+JURASEK David,CZE,DF,SK Slavia Praha
+STANEK Jindrich,CZE,GK,SK Slavia Praha
+HORNICEK Lukas,CZE,GK,SC Braga
+SOCHUREK Hugo,CZE,MF,AC Sparta Praha
+TORRES Felix,ECU,DF,SC Internacional
+VALENCIA Anthony,ECU,MF,Royal Antwerp FC
+RAMIREZ Moises,ECU,GK,AE Kifisia FC
+CASTILLO Denil,ECU,MF,FC Midtjylland
+VALLE Gonzalo,ECU,GK,LDU Quito
+AREVALO Jeremy,ECU,FW,VfB Stuttgart
+MOHAMED ELSHENAWY,EGY,GK,Al Ahly FC
+MOHAMED ABDELMONEIM,EGY,DF,OGC Nice
+MOSTAFA ZICO,EGY,MF,Pyramids FC
+MAHDY SOLIMAN,EGY,GK,Zamalek SC
+MOHANAD LASHIN,EGY,MF,Pyramids FC
+NABIL DONGA,EGY,MF,Al Najmah SC
+MARAWAN ATTIA,EGY,MF,Al Ahly FC
+MOSTAFA SHOUBIR,EGY,GK,Al Ahly FC
+TAREK ALAA,EGY,DF,ZED FC
+MOHAMED ALAA,EGY,GK,El Gouna FC
+OREILLY Nico,ENG,DF,Manchester City FC
+LIVRAMENTO Tino,ENG,DF,Newcastle United FC
+MAINOO Kobbie,ENG,MF,Manchester United FC
+TRAFFORD James,ENG,GK,Manchester City FC
+SAMBA Brice,FRA,GK,Stade Rennais FC
+KANTE Ngolo,FRA,MF,Fenerbahçe SK
+HERNANDEZ Lucas,FRA,DF,Paris Saint-Germain
+MATETA Jean-Philippe,FRA,FW,Crystal Palace FC
+RISSER Robin,FRA,GK,RC Lens
+RUEDIGER Antonio,GER,DF,Real Madrid C. F.
+BAUMANN Oliver,GER,GK,TSG Hoffenheim
+GROSS Pascal,GER,MF,Brighton & Hove Albion FC
+NUEBEL Alexander,GER,GK,VfB Stuttgart
+OUEDRAOGO Assan,GER,MF,RB Leipzig
+ZIGI Lawrence Ati,GHA,GK,FC St. Gallen
+MUMIN Abdul,GHA,DF,Rayo Vallecano
+FATAWU Abdul,GHA,FW,Leicester City FC
+ANANG Joseph,GHA,GK,St Patrick's Athletic FC
+BAAH Christopher Bonsu,GHA,FW,Al Qadsiah FC
+RAHMAN Baba,GHA,DF,PAOK Saloniki
+BOAKYE Augustine,GHA,MF,AS Saint-Etienne
+OPPONG Kojo Peprah,GHA,DF,OGC Nice
+ADU Prince,GHA,FW,FC Viktoria Plzeň
+THERMONCY Keeto,HAI,DF,BSC Young Boys
+SAINTE Carl,HAI,MF,El Paso Locomotive FC
+BELLEGARDE Jean-Ricner,HAI,MF,Wolverhampton Wanderers FC
+PIERRE Alexandre,HAI,GK,FC Sochaux-Montbéliard
+LACROIX Markhus,HAI,DF,Colorado Springs Switchbacks FC
+PIERRE Leverton,HAI,MF,FC Vizela
+DUVERNE Jean-Kevin,HAI,DF,KAA Gent
+DUVERGER Josue,HAI,GK,FC Cosmos Koblenz
+PAUGAIN Wilguens,HAI,DF,SV Zulte Waregem
+PIERRE Woodensky,HAI,MF,Violette AC
+HAJISAFI Ehsan,IRN,DF,Sepahan SC
+MOHEBBI Mohammad,IRN,MF,FC Rostov
+NIAZMAND Payam,IRN,GK,Persepolis FC
+KANANI Hossein,IRN,DF,Persepolis FC
+CHESHMI Roozbeh,IRN,MF,Esteghlal Tehran FC
+YOUSEFI Arya,IRN,DF,Sepahan SC
+MOGHANLOO Shahriyar,IRN,FW,Al Ittihad Kalba SCC
+HOSSEINI Hossein,IRN,GK,Sepahan SC
+DARGAHI Dennis,IRN,FW,Standard Liège
+IRI Danial,IRN,DF,Malavan Anzali FC
+RAZAGHINIA Amirmohammad,IRN,MF,Esteghlal Tehran FC
+FAHAD TALIB,IRQ,GK,Al Talaba SC
+MUNAF YOUNUS,IRQ,DF,Al Shorta SC
+ALI ALHAMADI,IRQ,FW,Luton Town FC
+AHMED QASIM,IRQ,FW,Nashville SC
+AHMED MAKNAZI,IRQ,DF,Al Karma SC
+AMIR ALAMMARI,IRQ,MF,KS Cracovia
+AYMEN HUSSEIN,IRQ,FW,Al Karma SC
+ZAID ISMAEL,IRQ,MF,Al Talaba SC
+FRANS PUTROS,IRQ,DF,Persib Bandung
+ITAKURA Kou,JPN,DF,AFC Ajax
+ENDO Wataru,JPN,MF,Liverpool FC
+OSAKO Keisuke,JPN,GK,Sanfrecce Hiroshima
+HAYAKAWA Tomoki,JPN,GK,Kashima Antlers
+MOHAMMAD ABUHASHEESH,JOR,DF,Al Karma SC
+HUSAM ABUDAHAB,JOR,DF,Al Faisaly SC
+YAZAN ALARAB,JOR,DF,FC Seoul
+MOHAMMAD ABUZRAIQ,JOR,FW,Raja Casablanca
+NOOR ALRAWABDEH,JOR,MF,Selangor FC
+MOUSA ALTAMARI,JOR,FW,Stade Rennais FC
+ODEH FAKHOURY,JOR,FW,Pyramids FC
+NOUR BANIATEYAH,JOR,GK,Al Faisaly SC
+MAHMOUD ALMARDI,JOR,FW,Al Hussein SC
+RAJAEI AYED,JOR,MF,Al Hussein SC
+IBRAHIM SADEH,JOR,MF,Al Karma SC
+MOHAMMAD ABUALNADI,JOR,DF,Selangor FC
+SALEEM OBAID,JOR,DF,Al Hussein SC
+MOHAMMAD ABUGHOUSH,JOR,MF,Al Hussein SC
+SAED ALROSAN,JOR,DF,Al Hussein SC
+MOHANNAD ABUTAHA,JOR,MF,Al-Quwa Al-Jawiya
+NIZAR ALRASHDAN,JOR,MF,Qatar SC
+ABDALLAH ALFAKHORI,JOR,GK,Al Wahdat SC
+EHSAN HADDAD,JOR,DF,Al Hussein SC
+MOHAMMAD ALDAOUD,JOR,MF,Al Wahdat SC
+ANAS BADAWI,JOR,DF,Al Faisaly SC
+KIM Seunggyu,KOR,GK,FC Tokyo
+LEE Hanbeom,KOR,DF,FC Midtjylland
+LEE Gihyuk,KOR,MF,Gangwon FC
+KIM Minjae,KOR,DF,FC Bayern München
+KIM Taehyeon,KOR,DF,Kashima Antlers
+HWANG Inbeom,KOR,MF,Feyenoord Rotterdam
+SON Heungmin,KOR,FW,LAFC
+PAIK Seungho,KOR,MF,Birmingham City FC
+CHO Guesung,KOR,FW,FC Midtjylland
+LEE Jaesung,KOR,MF,1. FSV Mainz 05
+HWANG Heechan,KOR,MF,Wolverhampton Wanderers FC
+SONG Bumkeun,KOR,GK,Jeonbuk Hyundai Motors FC
+LEE Taeseok,KOR,DF,FK Austria Wien
+CHO Wije,KOR,DF,Jeonbuk Hyundai Motors FC
+KIM Moonhwan,KOR,DF,Daejeon Hana Citizen FC
+BAE Junho,KOR,MF,Stoke City FC
+OH Hyeongyu,KOR,FW,Beşiktaş JK
+LEE Kangin,KOR,MF,Paris Saint-Germain
+YANG Hyunjun,KOR,MF,Celtic FC
+JO Hyeonwoo,KOR,GK,Ulsan HD
+SEOL Youngwoo,KOR,DF,FK Crvena Zvezda
+KIM Jingyu,KOR,MF,Jeonbuk Hyundai Motors FC
+EOM Jisung,KOR,MF,Swansea City AFC
+LEE Donggyeong,KOR,MF,Ulsan HD
+ACEVEDO Carlos,MEX,GK,Club Santos Laguna
+MARTINEZ Guillermo,MEX,FW,Pumas UNAM
+AGUERD Nayef,MAR,DF,Olympique Marseille
+EL KAJOUI Munir,MAR,GK,RS Berkane
+EZZALZOULI Abde,MAR,FW,Real Betis
+BELAMMARI Youssef,MAR,DF,Al Ahly FC
+TAGNAOUTI Ahmed Reda,MAR,GK,ASFAR
+VERBRUGGEN Bart,NED,GK,Brighton & Hove Albion FC
+GEERTRUIDA Lutsharel,NED,DF,Sunderland AFC
+DE ROON Marten,NED,MF,Atalanta Bergamo
+VAN DIJK Virgil,NED,DF,Liverpool FC
+AKE Nathan,NED,DF,Manchester City FC
+VAN HECKE Jan Paul,NED,DF,Brighton & Hove Albion FC
+KLUIVERT Justin,NED,MF,AFC Bournemouth
+GRAVENBERCH Ryan,NED,MF,Liverpool FC
+WEGHORST Wout,NED,FW,AFC Ajax
+DEPAY Memphis,NED,FW,SC Corinthians
+GAKPO Cody,NED,FW,Liverpool FC
+WIEFFER Mats,NED,DF,Brighton & Hove Albion FC
+ROEFS Robin,NED,GK,Sunderland AFC
+REIJNDERS Tijjani,NED,MF,Manchester City FC
+VAN DE VEN Micky,NED,DF,Tottenham Hotspur FC
+TIL Guus,NED,MF,PSV Eindhoven
+LANG Noa,NED,FW,Galatasaray SK
+MALEN Donyell,NED,FW,AS Roma
+BROBBEY Brian,NED,FW,Sunderland AFC
+KOOPMEINERS Teun,NED,MF,Juventus FC
+DE JONG Frenkie,NED,MF,FC Barcelona
+DUMFRIES Denzel,NED,DF,FC Internazionale Milano
+FLEKKEN Mark,NED,GK,Bayer 04 Leverkusen
+SUMMERVILLE Crysencio,NED,FW,West Ham United FC
+HATO Jorrel,NED,DF,Chelsea FC
+TIMBER Quinten,NED,MF,Olympique Marseille
+GARBETT Matthew,NZL,MF,Peterborough United FC
+PAULSEN Alex,NZL,GK,Lechia Gdańsk
+RUFER Alex,NZL,MF,Wellington Phoenix FC
+PIJNAKER Nando,NZL,DF,Auckland FC
+BARBAROUSES Kosta,NZL,FW,WS Wanderers FC
+WAINE Ben,NZL,FW,Port Vale FC
+WOUD Michael,NZL,GK,Auckland FC
+BAYLISS Lachlan,NZL,MF,Newcastle United Jets FC
+SMITH Tommy,NZL,DF,Braintree Town FC
+NYLAND Orjan,NOR,GK,Sevilla FC
+OSTIGARD Leo,NOR,DF,Genoa CFC
+MOLLER WOLFE David,NOR,DF,Wolverhampton Wanderers FC
+SORLOTH Alexander,NOR,FW,Atlético De Madrid
+ODEGAARD Martin,NOR,MF,Arsenal FC
+STRAND LARSEN Jorgen,NOR,FW,Crystal Palace FC
+TANGVIK Sander,NOR,GK,Hamburger SV
+BJORKAN Fredrik Andre,NOR,DF,FK Bodø/Glimt
+HOLMGREN PEDERSEN Marcus,NOR,DF,Torino FC
+HEGGEM Torbjorn,NOR,DF,Bologna FC
+HAUGE Jens Petter,NOR,MF,FK Bodø/Glimt
+MEJIA Luis,PAN,GK,Club Nacional
+FARINA Edgardo,PAN,DF,FC Pari Nizhny Novgorod
+RODRIGUEZ Jose Luis,PAN,MF,FC Juárez
+CARRASQUILLA Adalberto,PAN,MF,Pumas UNAM
+BARCENAS Edgar Yoel,PAN,MF,Mazatlán FC
+SAMUDIO Cesar,PAN,GK,CD Marathón
+DAVIS Eric,PAN,DF,CD Plaza Amador
+ANDRADE Andres,PAN,DF,LASK Linz
+YANIS Cesar,PAN,MF,CD Cobresal
+MURILLO Amir,PAN,DF,Beşiktaş JK
+MILLER Roderick,PAN,DF,Turan Tovuz
+FERNANDEZ Gatito,PAR,GK,Cerro Porteño
+VELAZQUEZ Gustavo,PAR,DF,Cerro Porteño
+CACERES Juan Jose,PAR,DF,FC Dynamo Moscow
+ROMERO GAMARRA Alejandro,PAR,FW,Al Ain FC
+OLVEIRA Gaston,PAR,GK,Club Olimpia
+JOSE SA,POR,GK,Wolverhampton Wanderers FC
+GONCALO INACIO,POR,DF,Sporting CP
+GONCALO GUEDES,POR,FW,Real Sociedad
+RUI SILVA,POR,GK,Sporting CP
+PEDRO MIGUEL,QAT,DF,Al Sadd SC
+MOHAMMED MUNTARI,QAT,FW,Al Gharafa SC
+HASSAN ALHAYDOS,QAT,FW,Al Sadd SC
+AYOUB ALOUI,QAT,DF,Al Gharafa SC
+AHMED ALGANEHI,QAT,MF,Al Gharafa SC
+SULTAN ALBRAKE,QAT,DF,Al Duhail SC
+SALAH ZAKARIA,QAT,GK,Al Duhail SC
+MESHAAL BARSHAM,QAT,GK,Al Sadd SC
+TAHSIN MOHAMMED,QAT,FW,Al Duhail SC
+ALHASHMI ALHUSSEIN,QAT,DF,Al Arabi SC
+NAWAF ALAQIDI,KSA,GK,Al Nassr FC
+ALI MAJRASHI,KSA,DF,Al Ahli FC
+ABDULELAH ALAMRI,KSA,DF,Al Nassr FC
+HASSAN ALTAMBAKTI,KSA,DF,Al Hilal SC
+NASSER ALDAWSARI,KSA,MF,Al Hilal SC
+MUSAB ALJUWAYR,KSA,MF,Al Qadsiah FC
+AIMAN YAHYA,KSA,FW,Al Nassr FC
+FERAS ALBRIKAN,KSA,FW,Al Ahli FC
+SALEM ALDAWSARI,KSA,FW,Al Hilal SC
+SALEH ALSHEHRI,KSA,FW,Al Ittihad
+NAWAF BU WASHL,KSA,DF,Al Nassr FC
+HASSAN KADISH,KSA,DF,Al Ittihad
+ABDULLAH ALKHAIBARI,KSA,MF,Al Nassr FC
+ZIYAD ALJOHANI,KSA,MF,Al Ahli FC
+KHALID ALGHANNAM,KSA,FW,Al Ettifaq FC
+ALA ALHAJJI,KSA,MF,Neom SC
+ABDULLAH ALHAMDDAN,KSA,FW,Al Nassr FC
+SULTAN MANDASH,KSA,FW,Al Hilal SC
+MOHAMMED ALOWAIS,KSA,GK,Al Ula Saudi FC
+AHMED ALKASSAR,KSA,GK,Al Qadsiah FC
+MOTEB ALHARBI,KSA,DF,Al Hilal SC
+JEHAD THIKRI,KSA,DF,Al Qadsiah FC
+MOHAMMED ABU ALSHAMAT,KSA,DF,Al Qadsiah FC
+FLETCHER Tyler,SCO,MF,Manchester United FC
+KELLY Liam,SCO,GK,Rangers FC
+SOUTTAR John,SCO,DF,Rangers FC
+HYAM Dominic,SCO,DF,Wrexham AFC
+HIRST George,SCO,FW,Ipswich Town FC
+GORDON Craig,SCO,GK,Heart Of Midlothian FC
+DIOUF Yehvann,SEN,GK,OGC Nice
+SARR Mamadou,SEN,DF,Chelsea FC
+GUEYE Idrissa Gana,SEN,MF,Everton FC
+NDIAYE Cherif,SEN,FW,Samsunspor
+SARR Pape Matar,SEN,MF,Tottenham Hotspur FC
+NDIAYE Bara Sapoko,SEN,MF,FC Bayern München
+MENDY Antoine,SEN,DF,OGC Nice
+DIOUF El Hadji Malick,SEN,DF,West Ham United FC
+MATULUDI Thabang,RSA,DF,Polokwane City FC
+NDAMANE Khulumani,RSA,DF,Mamelodi Sundowns FC
+CHAINE Sipho,RSA,GK,Orlando Pirates FC
+KABINI Samukele,RSA,DF,Molde FK
+GOSS Ricardo,RSA,GK,Siwelele FC
+MAKHANYA Olwethu,RSA,DF,Philadelphia Union
+CROSS Bradley,RSA,DF,Kaizer Chiefs FC
+RAYA David,ESP,GK,Arsenal FC
+GRIMALDO Alex,ESP,DF,Bayer 04 Leverkusen
+RUIZ Fabian,ESP,MF,Paris Saint-Germain
+GARCIA Joan,ESP,GK,FC Barcelona
+MUNOZ Victor,ESP,FW,CA Osasuna
+JOHANSSON Herman,SWE,DF,FC Dallas
+JOHANSSON Viktor,SWE,GK,Stoke City FC
+EKDAL Hjalmar,SWE,DF,Burnley FC
+SMITH Eric,SWE,DF,FC St. Pauli
+MVOGO Yvon,SUI,GK,FC Lorient
+COEMERT Eray,SUI,DF,Valencia CF
+KELLER Marvin,SUI,GK,BSC Young Boys
+AMENDA Aurele,SUI,DF,Eintracht Frankfurt
+AROUS Adam,TUN,DF,Kasımpaşa SK
+AYARI Khalil,TUN,MF,Paris Saint-Germain
+HADJ MAHMOUD Mohamed,TUN,MF,FC Lugano
+ELLOUMI Rayan,TUN,FW,Vancouver Whitecaps FC
+BEN HMIDA Mohamed Amine,TUN,DF,Espérance De Tunisie
+BEN HESSEN Sabri,TUN,GK,Étoile Du Sahel
+NEFFATI Moutaz,TUN,DF,IFK Norrköping FK
+CHIKHAOUI Raed,TUN,DF,US Monastir
+SLIMANE Anis,TUN,MF,Norwich City FC
+GUNOK Mert,TUR,GK,Fenerbahçe SK
+YILDIZ Kenan,TUR,FW,Juventus FC
+BAYINDIR Altay,TUR,GK,Manchester United FC
+ELMALI Eren,TUR,DF,Galatasaray SK
+BARDAKCI Abdulkerim,TUR,DF,Galatasaray SK
+KAHVECI Irfan Can,TUR,FW,Kasımpaşa SK
+YILMAZ Baris Alper,TUR,FW,Galatasaray SK
+CAKIR Ugurcan,TUR,GK,Galatasaray SK
+AYDIN Oguz,TUR,FW,Fenerbahçe SK
+AKAYDIN Samet,TUR,DF,Çaykur Rizespor
+GIMENEZ Jose Maria,URU,DF,Atlético De Madrid
+ARAUJO Ronald,URU,DF,FC Barcelona
+DE ARRASCAETA Giorgian,URU,MF,CR Flamengo
+PELLISTRI Facundo,URU,FW,Panathinaikos FC
+MELE Santiago,URU,GK,CF Monterrey
+MARTINEZ Emiliano,URU,MF,SE Palmeiras
+PIQUEREZ Joaquin,URU,MF,SE Palmeiras
+BUENO Santiago,URU,DF,Wolverhampton Wanderers FC
+SANABRIA Juan Manuel,URU,MF,Real Salt Lake
+ZALAZAR Rodrigo,URU,MF,SC Braga
+REYNA Giovanni,USA,MF,Borussia Mönchengladbach
+ROLDAN Cristian,USA,MF,Seattle Sounders FC
+BRADY Chris,USA,GK,Chicago Fire FC
+ZENDEJAS Alex,USA,FW,Club América
+XAMROBEKOV Odiljon,UZB,MF,Tractor Sazi Tabriz FC
+MASHARIPOV Jaloliddin,UZB,MF,Esteghlal Tehran FC
+ESHMURODOV Umar,UZB,DF,Nasaf Qarshi FC
+ERGASHEV Botirali,UZB,GK,FK Neftchi Farg'ona
+GANIEV Azizjon,UZB,MF,Al Bataeh Club
+FAYZULLAEV Abbosbek,UZB,MF,Başakşehir FK
+KARIMOV Behruzjon,UZB,DF,Surkhon FK
+ULMASALIYEV Avazbek,UZB,DF,OKMK FK
