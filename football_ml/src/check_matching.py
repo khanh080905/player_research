@@ -93,10 +93,7 @@ manual_count = 0
 for index, row in raw.iterrows():
 
     raw_name = norm(row["player_name"])
-    raw_team = team_map.get(
-        row["national_team"],
-        ""
-    )
+    raw_team = team_map.get(str(row["national_team"]),"")
 
 
     # ======================================
