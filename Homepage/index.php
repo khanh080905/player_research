@@ -340,29 +340,402 @@ $scorers = [
             </div>
         </div>
 
+        <!-- STYLES FOR REDESIGNED SECTION 02 & SECTION 05 -->
+        <style>
+            .search-toolbar-index {
+                padding: 16px 20px;
+                background: rgba(13, 18, 32, 0.85);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 16px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                gap: 14px;
+                margin-bottom: 24px;
+            }
+            .search-input-wrap-index {
+                flex: 1;
+                min-width: 260px;
+                position: relative;
+            }
+            .search-input-wrap-index i {
+                position: absolute;
+                left: 16px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #64748b;
+            }
+            .search-input-index {
+                width: 100%;
+                background: #06080b;
+                border: 1px solid rgba(255, 255, 255, 0.15);
+                color: #fff;
+                padding: 11px 16px 11px 44px;
+                border-radius: 10px;
+                font-family: inherit;
+                font-size: 13px;
+                outline: none;
+                transition: all 0.3s ease;
+            }
+            .search-input-index:focus {
+                border-color: var(--accent-gold, #e2b775);
+                box-shadow: 0 0 16px rgba(226, 183, 117, 0.25);
+            }
+            .pos-pills-index {
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+            .pos-pill-index {
+                background: #06080b;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                color: #94a3b8;
+                padding: 8px 14px;
+                border-radius: 8px;
+                font-size: 11px;
+                font-weight: 700;
+                cursor: pointer;
+                transition: all 0.25s ease;
+            }
+            .pos-pill-index:hover {
+                color: #fff;
+                border-color: rgba(255, 255, 255, 0.25);
+            }
+            .pos-pill-index.active {
+                background: var(--accent-gold, #e2b775);
+                color: #000;
+                border-color: var(--accent-gold, #e2b775);
+                box-shadow: 0 0 14px rgba(226, 183, 117, 0.35);
+            }
+
+            .players-grid-index {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+                gap: 20px;
+            }
+            .player-card-index {
+                background: rgba(13, 18, 32, 0.85);
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                border-radius: 16px;
+                padding: 20px;
+                cursor: pointer;
+                transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+                position: relative;
+                overflow: hidden;
+                text-decoration: none;
+                color: inherit;
+                display: flex;
+                flex-direction: column;
+            }
+            .player-card-index:hover {
+                transform: translateY(-6px);
+                border-color: rgba(226, 183, 117, 0.45);
+                box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7), 0 0 20px rgba(226, 183, 117, 0.15);
+            }
+            .card-top-index {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 12px;
+            }
+            .flag-tag-index {
+                font-family: 'Space Grotesk', monospace;
+                font-size: 11px;
+                font-weight: 700;
+                background: #06080b;
+                color: #94a3b8;
+                padding: 3px 8px;
+                border-radius: 4px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .badge-pos-index {
+                font-size: 10px;
+                font-weight: 800;
+                padding: 3px 8px;
+                border-radius: 4px;
+                letter-spacing: 0.05em;
+            }
+            .badge-pos-index.FW { background: rgba(255, 69, 0, 0.15); color: #ff5533; border: 1px solid rgba(255, 69, 0, 0.35); }
+            .badge-pos-index.MF { background: rgba(34, 197, 94, 0.15); color: #22c55e; border: 1px solid rgba(34, 197, 94, 0.35); }
+            .badge-pos-index.DF { background: rgba(0, 240, 255, 0.15); color: #00f0ff; border: 1px solid rgba(0, 240, 255, 0.35); }
+            .badge-pos-index.GK { background: rgba(226, 183, 117, 0.15); color: #e2b775; border: 1px solid rgba(226, 183, 117, 0.35); }
+
+            .card-rating-index {
+                text-align: right;
+            }
+            .card-rating-index .num {
+                font-family: 'Space Grotesk', monospace;
+                font-size: 22px;
+                font-weight: 900;
+                color: var(--accent-gold, #e2b775);
+                display: block;
+                line-height: 1;
+            }
+            .card-rating-index .lbl {
+                font-size: 8px;
+                color: #64748b;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+            }
+
+            .shirt-avatar-index {
+                width: 52px;
+                height: 52px;
+                border-radius: 50%;
+                background: #06080b;
+                border: 2px solid var(--accent-gold, #e2b775);
+                margin: 6px auto 10px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Space Grotesk', monospace;
+                font-size: 20px;
+                font-weight: 900;
+                color: var(--accent-gold, #e2b775);
+                box-shadow: 0 0 16px rgba(226, 183, 117, 0.25);
+            }
+            .player-name-index {
+                font-family: 'Cinzel', serif;
+                font-size: 16px;
+                font-weight: 800;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 4px;
+                text-align: center;
+                color: #fff;
+            }
+            .player-sub-index {
+                font-size: 11px;
+                color: #94a3b8;
+                text-align: center;
+                margin-bottom: 12px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .card-stats-index {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 4px;
+                background: #06080b;
+                padding: 8px;
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.06);
+                font-size: 11px;
+                margin-bottom: 14px;
+                text-align: center;
+            }
+            .card-stats-index small {
+                display: block;
+                color: #64748b;
+                font-size: 9px;
+                margin-bottom: 2px;
+            }
+            .card-stats-index b {
+                color: #fff;
+                font-family: 'Space Grotesk', monospace;
+            }
+            .btn-profile-index {
+                width: 100%;
+                padding: 9px;
+                background: rgba(226, 183, 117, 0.08);
+                border: 1px solid rgba(226, 183, 117, 0.3);
+                color: var(--accent-gold, #e2b775);
+                border-radius: 8px;
+                font-family: 'Space Grotesk', monospace;
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 0.08em;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                text-align: center;
+                margin-top: auto;
+            }
+            .player-card-index:hover .btn-profile-index {
+                background: var(--accent-gold, #e2b775);
+                color: #000;
+                border-color: var(--accent-gold, #e2b775);
+            }
+
+            /* SECTION 05: INTELLIGENCE STYLES */
+            .ml-widget-container {
+                background: linear-gradient(135deg, rgba(6,8,11,0.95) 0%, rgba(13,18,32,0.98) 100%);
+                border: 1px solid rgba(0, 240, 255, 0.25);
+                border-radius: 24px;
+                padding: 50px 30px;
+                max-width: var(--max);
+                margin: 40px auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+                align-items: center;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 240, 255, 0.1);
+            }
+            @media (max-width: 960px) {
+                .ml-widget-container {
+                    grid-template-columns: 1fr;
+                    padding: 30px 20px;
+                }
+            }
+            .v-bar-item {
+                margin-bottom: 10px;
+            }
+            .v-bar-header {
+                display: flex;
+                justify-content: space-between;
+                font-size: 11px;
+                font-weight: 700;
+                margin-bottom: 4px;
+                color: #94a3b8;
+                font-family: 'Space Grotesk', monospace;
+            }
+            .v-bar-track {
+                height: 8px;
+                background: #06080b;
+                border-radius: 4px;
+                overflow: hidden;
+                border: 1px solid rgba(255,255,255,0.08);
+            }
+            .v-bar-fill {
+                height: 100%;
+                background: linear-gradient(90deg, #00f0ff, #22c55e);
+                border-radius: 4px;
+                box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+                transition: width 0.5s ease;
+            }
+            .sim-chip {
+                background: #06080b;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                color: #94a3b8;
+                padding: 6px 12px;
+                border-radius: 6px;
+                font-size: 11px;
+                font-family: 'Space Grotesk', monospace;
+                font-weight: 700;
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+            .sim-chip:hover, .sim-chip.active {
+                background: rgba(0, 240, 255, 0.15);
+                color: var(--accent-cyan, #00f0ff);
+                border-color: rgba(0, 240, 255, 0.4);
+            }
+        </style>
+
+        <!-- SECTION 02 / SCOUT (REDESIGNED TO MATCH PLAYERS.PHP) -->
         <section class="section" id="players">
             <div class="heading">
-                <div><small>02 / SCOUT</small>
-                    <h2>FIND YOUR <em>PLAYER</em></h2>
-                </div><a href="players.php">Advanced search ↗</a>
-            </div>
-            <div class="searchbox">
-                <div>⌕ <input id="playerSearch" placeholder="Search player, club or country..."></div><select id="position">
-                    <option value="">All positions</option>
-                    <option>Forward</option>
-                    <option>Midfielder</option>
-                    <option>Defender</option>
-                    <option>Goalkeeper</option>
-                </select><button onclick="findPlayer()">SEARCH PLAYER</button>
-            </div>
-            <div class="featured">
-                <div class="avatar">JB<small>FEATURED</small></div>
-                <div class="playertext"><small>PLAYER OF THE WEEK</small>
-                    <h3>Jude Bellingham</h3>
-                    <p>Midfielder · England</p>
-                    <div class="mini"><span><b>8</b> Goals</span><span><b>6</b> Assists</span><span><b>91.4</b> ML Rating</span></div><a class="light" href="player.php?id=1">View profile ↗</a>
+                <div>
+                    <small style="color:var(--accent-gold, #e2b775);font-family:'Space Grotesk',monospace;font-weight:800;letter-spacing:1px;">02 / SCOUT</small>
+                    <h2 style="font-family:'Cinzel',serif;">FIND YOUR <em>PLAYER (TRA CỨU 888 CẦU THỦ)</em></h2>
                 </div>
-                <div class="rating"><b>91.4</b><small>ML RATING</small></div>
+                <a href="players.php" style="color:var(--accent-gold, #e2b775);font-family:'Space Grotesk',monospace;font-weight:700;font-size:13px;">Duyệt tất cả 888 cầu thủ ↗</a>
+            </div>
+
+            <!-- SEARCH TOOLBAR PREVIEW MATCHING PLAYERS.PHP -->
+            <div class="search-toolbar-index">
+                <div class="search-input-wrap-index">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="indexSearchInput" class="search-input-index" placeholder="Tìm tên cầu thủ, quốc gia, CLB... (VD: Vinicius, Mbappé, Bellingham...)" onkeyup="filterIndexCards()">
+                </div>
+                <div class="pos-pills-index">
+                    <button class="pos-pill-index active" data-pos="" onclick="selectIndexPos(this)">TẤT CẢ (888)</button>
+                    <button class="pos-pill-index" data-pos="FW" onclick="selectIndexPos(this)">⚽ TIỀN ĐẠO (FW)</button>
+                    <button class="pos-pill-index" data-pos="MF" onclick="selectIndexPos(this)">🔄 TIỀN VỆ (MF)</button>
+                    <button class="pos-pill-index" data-pos="DF" onclick="selectIndexPos(this)">🛡 HẬU VỆ (DF)</button>
+                    <button class="pos-pill-index" data-pos="GK" onclick="selectIndexPos(this)">🧤 THỦ MÔN (GK)</button>
+                </div>
+            </div>
+
+            <!-- 4 FEATURED PLAYER CARDS MATCHING PLAYERS.PHP GRID -->
+            <div class="players-grid-index" id="indexPlayersGrid">
+                <!-- CARD 1: Bellingham -->
+                <a class="player-card-index" href="player.php?id=30" data-name="Jude Bellingham" data-pos="MF" data-country="ENG" data-club="Real Madrid C. F.">
+                    <div class="card-top-index">
+                        <span class="flag-tag-index">ENG 🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+                        <span class="badge-pos-index MF">MF · TIỀN VỆ</span>
+                        <div class="card-rating-index">
+                            <span class="num">91.4</span>
+                            <span class="lbl">OVERALL</span>
+                        </div>
+                    </div>
+                    <div class="shirt-avatar-index">7</div>
+                    <div class="player-name-index">Jude Bellingham</div>
+                    <div class="player-sub-index">England · Real Madrid C. F. · 22 tuổi · 186 cm</div>
+                    <div class="card-stats-index">
+                        <div><small>BÀN THẮNG</small><b>8</b></div>
+                        <div><small>KIẾN TẠO</small><b>6</b></div>
+                        <div><small>SỐ TRẬN</small><b>5</b></div>
+                    </div>
+                    <div class="btn-profile-index">XEM HỒ SƠ CẦU THỦ ↗</div>
+                </a>
+
+                <!-- CARD 2: Mbappé -->
+                <a class="player-card-index" href="player.php?id=3" data-name="Kylian Mbappé" data-pos="FW" data-country="FRA" data-club="Real Madrid C. F.">
+                    <div class="card-top-index">
+                        <span class="flag-tag-index">FRA 🇫🇷</span>
+                        <span class="badge-pos-index FW">FW · TIỀN ĐẠO</span>
+                        <div class="card-rating-index">
+                            <span class="num">91.8</span>
+                            <span class="lbl">OVERALL</span>
+                        </div>
+                    </div>
+                    <div class="shirt-avatar-index">10</div>
+                    <div class="player-name-index">Kylian Mbappé</div>
+                    <div class="player-sub-index">France · Real Madrid C. F. · 27 tuổi · 178 cm</div>
+                    <div class="card-stats-index">
+                        <div><small>BÀN THẮNG</small><b>12</b></div>
+                        <div><small>KIẾN TẠO</small><b>5</b></div>
+                        <div><small>SỐ TRẬN</small><b>6</b></div>
+                    </div>
+                    <div class="btn-profile-index">XEM HỒ SƠ CẦU THỦ ↗</div>
+                </a>
+
+                <!-- CARD 3: Messi -->
+                <a class="player-card-index" href="player.php?id=1" data-name="Lionel Messi" data-pos="FW" data-country="ARG" data-club="Inter Miami CF">
+                    <div class="card-top-index">
+                        <span class="flag-tag-index">ARG 🇦🇷</span>
+                        <span class="badge-pos-index FW">FW · TIỀN ĐẠO</span>
+                        <div class="card-rating-index">
+                            <span class="num">90.5</span>
+                            <span class="lbl">OVERALL</span>
+                        </div>
+                    </div>
+                    <div class="shirt-avatar-index">10</div>
+                    <div class="player-name-index">Lionel Messi</div>
+                    <div class="player-sub-index">Argentina · Inter Miami CF · 38 tuổi · 170 cm</div>
+                    <div class="card-stats-index">
+                        <div><small>BÀN THẮNG</small><b>10</b></div>
+                        <div><small>KIẾN TẠO</small><b>8</b></div>
+                        <div><small>SỐ TRẬN</small><b>7</b></div>
+                    </div>
+                    <div class="btn-profile-index">XEM HỒ SƠ CẦU THỦ ↗</div>
+                </a>
+
+                <!-- CARD 4: Haaland -->
+                <a class="player-card-index" href="player.php?id=2" data-name="Erling Haaland" data-pos="FW" data-country="NOR" data-club="Manchester City">
+                    <div class="card-top-index">
+                        <span class="flag-tag-index">NOR 🇳🇴</span>
+                        <span class="badge-pos-index FW">FW · TIỀN ĐẠO</span>
+                        <div class="card-rating-index">
+                            <span class="num">92.1</span>
+                            <span class="lbl">OVERALL</span>
+                        </div>
+                    </div>
+                    <div class="shirt-avatar-index">9</div>
+                    <div class="player-name-index">Erling Haaland</div>
+                    <div class="player-sub-index">Norway · Manchester City · 25 tuổi · 195 cm</div>
+                    <div class="card-stats-index">
+                        <div><small>BÀN THẮNG</small><b>15</b></div>
+                        <div><small>KIẾN TẠO</small><b>3</b></div>
+                        <div><small>SỐ TRẬN</small><b>6</b></div>
+                    </div>
+                    <div class="btn-profile-index">XEM HỒ SƠ CẦU THỦ ↗</div>
+                </a>
             </div>
         </section>
 
@@ -389,13 +762,167 @@ $scorers = [
             </div>
         </section>
 
-        <section class="ml">
-            <div><small>05 / INTELLIGENCE</small>
-                <h2>FOOTBALL<br><em>MEETS ML.</em></h2>
-                <p>Turn raw football statistics into interpretable player ratings. Compare performance, discover patterns and build data-driven scouting insights.</p><a class="primary" href="ml-analysis.php">Explore ML analysis ↗</a>
+        <!-- SECTION 05 / INTELLIGENCE (REDESIGNED TO MATCH ML-ANALYSIS.PHP) -->
+        <section class="ml-widget-container" id="ml-intelligence">
+            <div style="padding-right:20px;">
+                <small style="color:var(--accent-cyan, #00f0ff);font-family:'Space Grotesk',monospace;font-weight:800;letter-spacing:2px;display:block;margin-bottom:8px;">05 / INTELLIGENCE — MACHINE LEARNING ENGINE</small>
+                <h2 style="font-family:'Cinzel', serif;font-size:clamp(34px, 4vw, 50px);line-height:1.1;color:#fff;margin:10px 0 16px 0;">FOOTBALL<br><em style="color:var(--accent-cyan, #00f0ff);font-style:normal;">MEETS AI ML.</em></h2>
+                <p style="color:#94a3b8;font-size:14px;line-height:1.7;margin-bottom:24px;">
+                    Mô hình học máy <strong>XGBoost (R² = 90.26%)</strong> phân tích <strong>888 cầu thủ FIFA World Cup 2026</strong>. Đo lường 5 chỉ số LED VU-Meter theo từng vị trí thi đấu và giả lập kịch bản thi đấu (What-If Simulator) thời gian thực.
+                </p>
+                <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;">
+                    <span style="font-family:'Space Grotesk',monospace;font-size:11px;font-weight:700;padding:5px 12px;background:rgba(34,197,94,0.12);border:1px solid rgba(34,197,94,0.3);color:#22c55e;border-radius:20px;">● MODEL: XGBoost</span>
+                    <span style="font-family:'Space Grotesk',monospace;font-size:11px;font-weight:700;padding:5px 12px;background:rgba(0,240,255,0.12);border:1px solid rgba(0,240,255,0.3);color:#00f0ff;border-radius:20px;">● ACCURACY: R² 90.26%</span>
+                    <span style="font-family:'Space Grotesk',monospace;font-size:11px;font-weight:700;padding:5px 12px;background:rgba(226,183,117,0.12);border:1px solid rgba(226,183,117,0.3);color:#e2b775;border-radius:20px;">● MATCHED: 888 PLAYERS</span>
+                </div>
+                <a class="primary" href="ml-analysis.php" style="background:var(--accent-cyan, #00f0ff);color:#000;font-family:'Space Grotesk',monospace;font-weight:800;padding:14px 28px;border-radius:30px;text-decoration:none;display:inline-block;box-shadow:0 0 24px rgba(0,240,255,0.35);transition:all 0.3s ease;">MỞ BẢNG DỰ ĐOÁN &amp; PHÂN TÍCH (ML ANALYSIS ⚡)</a>
             </div>
-            <div class="network"><b>ML</b><i>PACE</i><i>GOALS</i><i>PASS</i><i>DEF</i></div>
+
+            <!-- INTERACTIVE ML PREVIEW WIDGET -->
+            <div style="background:rgba(6,8,11,0.9);border:1px solid rgba(0,240,255,0.25);border-radius:20px;padding:24px;box-shadow:0 20px 50px rgba(0,0,0,0.8);">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.08);">
+                    <div style="font-family:'Space Grotesk',monospace;font-size:12px;font-weight:800;color:#fff;">🤖 AI MODEL INFERENCE &amp; VU-METER</div>
+                    <span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 8px;border-radius:4px;font-size:10px;font-weight:700;font-family:'Space Grotesk',monospace;">LIVE PREVIEW</span>
+                </div>
+
+                <!-- PLAYER TOGGLE TAB -->
+                <div style="display:flex;gap:6px;margin-bottom:16px;" id="indexMlPlayerTabs">
+                    <button class="sim-chip active" onclick="switchIndexMlPlayer('bellingham', this)">BELLINGHAM</button>
+                    <button class="sim-chip" onclick="switchIndexMlPlayer('mbappe', this)">MBAPPÉ</button>
+                    <button class="sim-chip" onclick="switchIndexMlPlayer('messi', this)">MESSI</button>
+                    <button class="sim-chip" onclick="switchIndexMlPlayer('haaland', this)">HAALAND</button>
+                </div>
+
+                <!-- 5 LED VU METERS -->
+                <div id="indexVuContainer">
+                    <div class="v-bar-item">
+                        <div class="v-bar-header"><span>PACE ⚡</span><span id="vPaceVal">94.2</span></div>
+                        <div class="v-bar-track"><div class="v-bar-fill" id="vPaceBar" style="width:94.2%"></div></div>
+                    </div>
+                    <div class="v-bar-item">
+                        <div class="v-bar-header"><span>SHOOTING ⚽</span><span id="vShootVal">91.5</span></div>
+                        <div class="v-bar-track"><div class="v-bar-fill" id="vShootBar" style="width:91.5%"></div></div>
+                    </div>
+                    <div class="v-bar-item">
+                        <div class="v-bar-header"><span>PASSING 🎯</span><span id="vPassVal">89.8</span></div>
+                        <div class="v-bar-track"><div class="v-bar-fill" id="vPassBar" style="width:89.8%"></div></div>
+                    </div>
+                    <div class="v-bar-item">
+                        <div class="v-bar-header"><span>DRIBBLING 💫</span><span id="vDribVal">93.1</span></div>
+                        <div class="v-bar-track"><div class="v-bar-fill" id="vDribBar" style="width:93.1%"></div></div>
+                    </div>
+                    <div class="v-bar-item">
+                        <div class="v-bar-header"><span>DEFENDING 🛡</span><span id="vDefVal">68.4</span></div>
+                        <div class="v-bar-track"><div class="v-bar-fill" id="vDefBar" style="width:68.4%"></div></div>
+                    </div>
+                </div>
+
+                <!-- SIMULATOR CONTROLS -->
+                <div style="background:#06080b;border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:12px;margin-top:16px;">
+                    <div style="font-size:11px;color:#94a3b8;font-family:'Space Grotesk',monospace;margin-bottom:8px;display:flex;justify-content:space-between;">
+                        <span>GIẢ LẬP KỊCH BẢN (WHAT-IF):</span>
+                        <b style="color:var(--accent-cyan,#00f0ff);" id="indexSimResult">Rating: 91.4 ➔ 91.8</b>
+                    </div>
+                    <div style="display:flex;gap:6px;">
+                        <button class="sim-chip" onclick="applyIndexSim(30, 0, 0, this)">+30' Phút</button>
+                        <button class="sim-chip" onclick="applyIndexSim(0, 1, 0, this)">+1 Goal</button>
+                        <button class="sim-chip" onclick="applyIndexSim(0, 0, 1, this)">+1 Assist</button>
+                        <button class="sim-chip" onclick="resetIndexSim(this)">Reset</button>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <script>
+            // Section 02 Search & Filter Logic
+            let currentSelectedPos = '';
+            function selectIndexPos(btn) {
+                document.querySelectorAll('.pos-pill-index').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentSelectedPos = btn.getAttribute('data-pos') || '';
+                filterIndexCards();
+            }
+
+            function filterIndexCards() {
+                const query = (document.getElementById('indexSearchInput').value || '').toLowerCase().trim();
+                const cards = document.querySelectorAll('#indexPlayersGrid .player-card-index');
+                cards.forEach(card => {
+                    const name = (card.getAttribute('data-name') || '').toLowerCase();
+                    const pos = card.getAttribute('data-pos') || '';
+                    const country = (card.getAttribute('data-country') || '').toLowerCase();
+                    const club = (card.getAttribute('data-club') || '').toLowerCase();
+
+                    const matchesPos = !currentSelectedPos || pos === currentSelectedPos;
+                    const matchesQuery = !query || name.includes(query) || country.includes(query) || club.includes(query);
+
+                    if (matchesPos && matchesQuery) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            // Section 05 ML Preview Data & Logic
+            const mlPlayerData = {
+                bellingham: { pace: 88.5, shoot: 86.4, pass: 91.2, drib: 92.5, def: 78.4, base: 91.4, ai: 91.8 },
+                mbappe: { pace: 97.4, shoot: 94.2, pass: 82.5, drib: 93.8, def: 42.1, base: 91.8, ai: 92.3 },
+                messi: { pace: 80.2, shoot: 92.8, pass: 96.5, drib: 95.1, def: 38.6, base: 90.5, ai: 91.1 },
+                haaland: { pace: 89.6, shoot: 96.1, pass: 72.4, drib: 80.2, def: 45.0, base: 92.1, ai: 92.7 }
+            };
+
+            let currentMlPlayerKey = 'bellingham';
+            let extraMins = 0;
+            let extraGoals = 0;
+            let extraAssists = 0;
+
+            function switchIndexMlPlayer(key, btn) {
+                document.querySelectorAll('#indexMlPlayerTabs .sim-chip').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentMlPlayerKey = key;
+                extraMins = 0;
+                extraGoals = 0;
+                extraAssists = 0;
+                updateIndexMlView();
+            }
+
+            function applyIndexSim(mins, goals, assists, btn) {
+                extraMins += mins;
+                extraGoals += goals;
+                extraAssists += assists;
+                updateIndexMlView();
+            }
+
+            function resetIndexSim(btn) {
+                extraMins = 0;
+                extraGoals = 0;
+                extraAssists = 0;
+                updateIndexMlView();
+            }
+
+            function updateIndexMlView() {
+                const data = mlPlayerData[currentMlPlayerKey] || mlPlayerData.bellingham;
+                document.getElementById('vPaceVal').innerText = data.pace.toFixed(1);
+                document.getElementById('vPaceBar').style.width = data.pace + '%';
+
+                document.getElementById('vShootVal').innerText = data.shoot.toFixed(1);
+                document.getElementById('vShootBar').style.width = data.shoot + '%';
+
+                document.getElementById('vPassVal').innerText = data.pass.toFixed(1);
+                document.getElementById('vPassBar').style.width = data.pass + '%';
+
+                document.getElementById('vDribVal').innerText = data.drib.toFixed(1);
+                document.getElementById('vDribBar').style.width = data.drib + '%';
+
+                document.getElementById('vDefVal').innerText = data.def.toFixed(1);
+                document.getElementById('vDefBar').style.width = data.def + '%';
+
+                const simBoost = (extraMins * 0.015) + (extraGoals * 0.4) + (extraAssists * 0.25);
+                const simRating = (data.ai + simBoost).toFixed(1);
+
+                document.getElementById('indexSimResult').innerHTML = `Thực tế: ${data.base} ➔ AI: ${data.ai} ${simBoost > 0 ? `<span style="color:var(--accent-gold,#e2b775)">(Giả lập: ${simRating} ⚡)</span>` : ''}`;
+            }
+        </script>
 
         <section class="section">
             <div class="heading">
