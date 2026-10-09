@@ -1,17 +1,22 @@
-// EXPANDING NAV PANELS MENU & MODAL TRANSITION MECHANICS
+// EXPANDING PANELS MAIN PAGE, SVG WORLD MAP 5 CONTINENTS & COUNTRY SLIDER FLOW
 
 document.addEventListener("DOMContentLoaded", () => {
   const panels = document.querySelectorAll(".flex-panel");
-  const sliderModal = document.getElementById("slider-modal");
-  const genericModal = document.getElementById("generic-modal");
+  const worldMapModal = document.getElementById("world-map-modal");
+  const countrySliderModal = document.getElementById("country-slider-modal");
 
-  const openSliderBtn = document.getElementById("open-slider-btn");
-  const closeSliderBtn = document.getElementById("close-slider-btn");
-  const closeGenericBtns = document.querySelectorAll(".close-generic-btn");
+  const openWorldMapBtn = document.getElementById("open-world-map-btn");
+  const closeMapBtn = document.getElementById("close-map-btn");
+  const closeMapBarBtn = document.getElementById("close-map-bar-btn");
+  const backToMapBtn = document.getElementById("back-to-map-btn");
+
+  const svgContinents = document.querySelectorAll(".svg-continent");
+  const sideContinentCards = document.querySelectorAll(".continent-card-item");
+  const allContinentElements = [...svgContinents, ...sideContinentCards];
 
   const navLinkBtns = document.querySelectorAll(".nav-link-btn");
 
-  // 1. Panel Accordion Mechanics (Matches Screenshot)
+  // 1. MAIN PAGE 5 PANELS ACCORDION MECHANICS
   if (panels.length) {
     panels.forEach((panel) => {
       panel.addEventListener("mouseenter", () => {
@@ -19,9 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       panel.addEventListener("click", (e) => {
-        // If user clicks action button inside panel, don't re-trigger panel toggle
-        if (e.target.closest(".panel-action-btn")) return;
-        setActivePanel(panel);
+        if (panel.id === "panel-destinations" || e.target.closest("#open-world-map-btn")) {
+          openWorldMap();
+        } else {
+          setActivePanel(panel);
+        }
       });
     });
   }
@@ -31,98 +38,109 @@ document.addEventListener("DOMContentLoaded", () => {
     targetPanel.classList.add("active");
   }
 
-  // 2. Action Buttons Click -> Open Feature View Modal
-  document.querySelectorAll(".panel-action-btn").forEach((btn) => {
-    btn.addEventListener("click", (e) => {
+  // 2. OPEN WORLD MAP MODAL (STEP 2 VIEW)
+  if (openWorldMapBtn) {
+    openWorldMapBtn.addEventListener("click", (e) => {
       e.stopPropagation();
-      const targetModalId = btn.dataset.target;
-
-      if (targetModalId === "slider-modal") {
-        openSliderModal();
-      } else {
-        openGenericModal(btn);
-      }
-    });
-  });
-
-  // Open Slider Modal
-  function openSliderModal() {
-    if (sliderModal) {
-      sliderModal.classList.add("active");
-      document.body.style.overflow = "hidden";
-
-      // Start / resume slider timer
-      if (window.timedCardsApp) {
-        window.timedCardsApp.startTimer();
-      }
-    }
-  }
-
-  // Close Slider Modal
-  if (closeSliderBtn) {
-    closeSliderBtn.addEventListener("click", () => {
-      closeSliderModal();
+      openWorldMap();
     });
   }
 
-  function closeSliderModal() {
-    if (sliderModal) {
-      sliderModal.classList.remove("active");
-      document.body.style.overflow = "";
-
-      // Pause slider timer
-      if (window.timedCardsApp && window.timedCardsApp.timerTween) {
-        window.timedCardsApp.timerTween.pause();
-      }
-    }
-  }
-
-  // Generic Modal Handling
-  function openGenericModal(btn) {
-    const panel = btn.closest(".flex-panel");
-    const num = panel ? panel.querySelector(".panel-num")?.textContent : "01";
-    const heading = panel ? panel.querySelector(".panel-heading")?.textContent : "FEATURE DETAILS";
-    const desc = panel ? panel.querySelector(".panel-desc")?.textContent : "";
-
-    document.getElementById("modal-num").textContent = num;
-    document.getElementById("modal-title").textContent = heading;
-    document.getElementById("modal-desc").textContent = desc;
-
-    if (genericModal) {
-      genericModal.classList.add("active");
+  function openWorldMap() {
+    if (worldMapModal) {
+      worldMapModal.classList.add("active");
       document.body.style.overflow = "hidden";
     }
   }
 
-  closeGenericBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      if (genericModal) genericModal.classList.remove("active");
+  function closeWorldMap() {
+    if (worldMapModal) {
+      worldMapModal.classList.remove("active");
       document.body.style.overflow = "";
+    }
+  }
+
+  if (closeMapBtn) {
+    closeMapBtn.addEventListener("click", () => {
+      closeWorldMap();
+    });
+  }
+
+  if (closeMapBarBtn) {
+    closeMapBarBtn.addEventListener("click", () => {
+      closeWorldMap();
+    });
+  }
+
+  // 3. CONTINENT SELECTION ON SVG WORLD MAP & SIDE PANEL (SYNCHRONIZED HOVER & CLICK)
+  allContinentElements.forEach((element) => {
+    const key = element.dataset.continent;
+    if (!key) return;
+
+    // Synchronized Hover
+    element.addEventListener("mouseenter", () => {
+      allContinentElements.forEach((item) => {
+        if (item.dataset.continent !== key) {
+          item.classList.add("dimmed");
+        } else {
+          item.classList.remove("dimmed");
+        }
+      });
+    });
+
+    element.addEventListener("mouseleave", () => {
+      allContinentElements.forEach((item) => item.classList.remove("dimmed"));
+    });
+
+    // Click to view national teams slider
+    element.addEventListener("click", () => {
+      openCountrySlider(key);
     });
   });
 
-  // Navbar Buttons -> Open Panel or Modal directly
+  // 4. OPEN COUNTRY SLIDER MODAL
+  function openCountrySlider(continentKey) {
+    if (window.timedCardsApp) {
+      window.timedCardsApp.loadContinent(continentKey);
+    }
+
+    if (countrySliderModal) {
+      countrySliderModal.classList.add("active");
+    }
+  }
+
+  function closeCountrySlider() {
+    if (countrySliderModal) {
+      countrySliderModal.classList.remove("active");
+    }
+  }
+
+  if (backToMapBtn) {
+    backToMapBtn.addEventListener("click", () => {
+      closeCountrySlider();
+    });
+  }
+
+  // 5. NAVBAR BUTTONS
   navLinkBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      const panelId = btn.dataset.openPanel;
-      if (panelId === "destinations") {
-        openSliderModal();
-      } else {
-        const targetPanel = document.getElementById(`panel-${panelId}`);
-        if (targetPanel) {
-          setActivePanel(targetPanel);
-          targetPanel.scrollIntoView({ behavior: "smooth" });
-        }
+      const continentKey = btn.dataset.continent;
+      if (continentKey) {
+        openWorldMap();
+        openCountrySlider(continentKey);
       }
     });
   });
 
-  // ESC Key to close any open modal
+  // 6. ESC KEY NAVIGATION
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
-      closeSliderModal();
-      if (genericModal) genericModal.classList.remove("active");
-      document.body.style.overflow = "";
+      if (countrySliderModal && countrySliderModal.classList.contains("active")) {
+        closeCountrySlider();
+      } else if (worldMapModal && worldMapModal.classList.contains("active")) {
+        closeWorldMap();
+      }
     }
   });
 });
+

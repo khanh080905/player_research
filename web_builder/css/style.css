@@ -61,9 +61,9 @@ body {
 
 .brand-logo {
   font-family: var(--font-heading);
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 900;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
   color: #fff;
   text-decoration: none;
   position: relative;
@@ -74,7 +74,7 @@ body {
   position: absolute;
   bottom: -4px;
   left: 0;
-  width: 24px;
+  width: 20px;
   height: 2px;
   background-color: var(--accent-gold);
 }
@@ -143,7 +143,7 @@ body {
 }
 
 
-/* MAIN LAYOUT: 5 CONTINENTS EXPANDING PANELS */
+/* MAIN PAGE: 5 EXPANDING NAV PANELS (EXACT UNCHANGED AS IN IMAGE 1) */
 .app-main {
   width: 100%;
   min-height: 100vh;
@@ -170,7 +170,6 @@ body {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
-/* FLEX PANEL BASE MECHANICS (EXACT FROM VIDEO) */
 .flex-panel {
   position: relative;
   flex: 1;
@@ -190,7 +189,7 @@ body {
   background-size: cover;
   background-position: center;
   transition: transform 0.8s ease, filter 0.5s ease;
-  filter: brightness(0.6);
+  filter: brightness(0.65);
 }
 
 .flex-panel:hover .panel-bg, .flex-panel.active .panel-bg {
@@ -201,11 +200,10 @@ body {
 .panel-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(6, 8, 11, 0.25) 0%, rgba(6, 8, 11, 0.9) 100%);
+  background: linear-gradient(180deg, rgba(6, 8, 11, 0.3) 0%, rgba(6, 8, 11, 0.9) 100%);
   transition: opacity 0.5s ease;
 }
 
-/* ROTATED VERTICAL TITLE (EXACT MECHANICS FROM VIDEO) */
 .flex-title {
   position: absolute;
   top: 50%;
@@ -228,7 +226,6 @@ body {
   transform: translate(-50%, -50%) rotate(0deg) scale(1.8);
 }
 
-/* PANEL CONTENT REVEALED ON EXPAND */
 .panel-content {
   position: absolute;
   bottom: 50px;
@@ -267,11 +264,10 @@ body {
   font-size: 15px;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.85);
-  max-width: 540px;
+  max-width: 520px;
   margin-bottom: 24px;
 }
 
-/* PANEL ACTION BUTTON */
 .panel-action-btn {
   display: inline-flex;
   align-items: center;
@@ -318,7 +314,7 @@ body {
 }
 
 
-/* FULLSCREEN FEATURE MODAL: WORLD CUP TEAMS TIMED CARDS (IMAGE 1) */
+/* MODALS BASE */
 .feature-modal {
   position: fixed;
   inset: 0;
@@ -369,6 +365,406 @@ body {
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
 }
 
+
+/* STEP 2: INTERACTIVE SVG WORLD MAP WITH 5 CONTINENTS */
+/* STEP 2: INTERACTIVE SVG WORLD MAP WITH 5 CONTINENTS */
+.world-map-modal {
+  background: var(--bg-dark);
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.world-map-modal .close-modal-btn {
+  position: relative;
+  top: auto;
+  left: auto;
+  padding: 8px 18px;
+  font-size: 11px;
+}
+
+/* TOP NAV BAR & PILLS */
+.map-top-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 12px 0;
+  flex-shrink: 0;
+  z-index: 250;
+}
+
+.map-nav-pills {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.map-pill {
+  background: none;
+  border: none;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 6px 0;
+}
+
+.map-pill:hover,
+.map-pill.active {
+  background: none;
+  border: none;
+  color: #ffffff;
+  box-shadow: none;
+  transform: none;
+}
+
+.map-pill::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1.5px;
+  background-color: var(--accent-gold);
+  transition: width 0.3s ease;
+}
+
+.map-pill:hover::after,
+.map-pill.active::after {
+  width: 100%;
+}
+
+/* MAIN WRAPPER: CANVAS + SIDE PANEL (UNIFIED CONTAINER LIKE IMAGE 1) */
+.world-map-wrapper {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 6px;
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+/* CANVAS STAGE CONTAINER */
+.map-canvas-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  background: var(--bg-dark);
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* SVG MAP STAGE & ZOOM WRAPPER */
+.svg-map-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: var(--bg-dark);
+  overflow: hidden;
+}
+
+.map-zoom-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.25);
+  transform-origin: center center;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.world-map-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  filter: none;
+  mix-blend-mode: normal;
+  transform: none;
+}
+
+.world-svg-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  pointer-events: auto;
+}
+
+/* SVG CONTINENTS STYLING: PURE INVISIBLE HITBOXES (ZERO OVERLAY BOXES/TINTS) */
+.svg-continent {
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.svg-continent path {
+  fill: transparent !important;
+  stroke: none !important;
+  filter: none !important;
+  transition: none;
+}
+
+.svg-continent:hover path {
+  fill: transparent !important;
+  stroke: none !important;
+  filter: none !important;
+}
+
+/* SVG TEXT LABELS PER CONTINENT WITH MATCHING NEON COLORS */
+.continent-svg-label {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  pointer-events: none;
+  transition: fill 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+}
+
+.americas-label {
+  fill: #ff4500;
+  filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.9));
+}
+
+.europe-label {
+  fill: #00f0ff;
+  filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.9));
+}
+
+.asia-label {
+  fill: #ffd700;
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.9));
+}
+
+.africa-label {
+  fill: #e000ff;
+  filter: drop-shadow(0 0 10px rgba(224, 0, 255, 0.9));
+}
+
+.oceania-label {
+  fill: #00ffd5;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 213, 0.9));
+}
+
+/* HOVER EFFECT ON LABELS */
+.svg-continent:hover .continent-svg-label {
+  font-size: 20px;
+  fill: #ffffff;
+  filter: drop-shadow(0 0 20px #ffffff) drop-shadow(0 0 35px currentColor);
+}
+
+/* RIGHT SIDE PANEL: HIGHLIGHTED CONTINENTS LIST */
+.map-side-panel {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  background: rgba(6, 8, 11, 0.95);
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0;
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  backdrop-filter: blur(16px);
+  overflow: hidden;
+}
+
+.side-panel-header {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: #7b8c9e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 12px;
+  flex-shrink: 0;
+}
+
+.continent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-height: 0;
+}
+
+.continent-card-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.35s var(--transition-smooth);
+}
+
+.continent-card-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(0, 240, 255, 0.4);
+  transform: translateX(-4px);
+  box-shadow: 0 10px 30px rgba(0, 240, 255, 0.15);
+}
+
+.continent-card-item.dimmed {
+  opacity: 0.3;
+  filter: grayscale(70%);
+}
+
+.item-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item-head .num {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-gold);
+  letter-spacing: 0.1em;
+  margin-right: 2px;
+}
+
+.item-head .name {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  flex: 1;
+}
+
+.item-head .flags {
+  font-size: 13px;
+}
+
+.item-sub {
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 4px;
+}
+
+.item-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.badge-tag {
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 9.5px;
+  letter-spacing: 0.05em;
+}
+
+.badge-americas {
+  background: rgba(255, 170, 0, 0.15);
+  color: #ffb700;
+  border: 1px solid rgba(255, 183, 0, 0.4);
+}
+
+.badge-europe {
+  background: rgba(0, 240, 255, 0.15);
+  color: #00f0ff;
+  border: 1px solid rgba(0, 240, 255, 0.4);
+}
+
+.badge-asia {
+  background: rgba(255, 215, 0, 0.15);
+  color: #ffd700;
+  border: 1px solid rgba(255, 215, 0, 0.4);
+}
+
+.badge-africa {
+  background: rgba(224, 0, 255, 0.15);
+  color: #e000ff;
+  border: 1px solid rgba(224, 0, 255, 0.4);
+}
+
+.badge-oceania {
+  background: rgba(0, 255, 213, 0.15);
+  color: #00ffd5;
+  border: 1px solid rgba(0, 255, 213, 0.4);
+}
+
+
+/* STEP 3: COUNTRY SLIDER MODAL WITH HORIZONTAL SCROLLBAR (IMAGE 2 STYLING) */
+.country-slider-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 210;
+  background: var(--bg-dark);
+}
+
+/* ACTIVE BACKGROUND STAGE (FULLSCREEN IMAGE LIKE IMAGE 1) */
+.bg-stage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bg-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.6s ease-in-out, transform 0.8s ease;
+  filter: brightness(0.95) contrast(1.02);
+  transform: scale(1.03);
+}
+
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
 .modal-continent-header {
   position: absolute;
   top: 38px;
@@ -385,34 +781,6 @@ body {
   border: 1px solid rgba(226, 183, 117, 0.3);
 }
 
-/* Background Stage for Modal Slider */
-.bg-stage {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-}
-
-.bg-layer {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.8s ease;
-  transform: scale(1.05);
-}
-
-.bg-layer.active {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.bg-overlay {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 70% 50%, rgba(6, 8, 11, 0.2) 0%, rgba(6, 8, 11, 0.85) 100%),
-              linear-gradient(180deg, rgba(6, 8, 11, 0.5) 0%, rgba(6, 8, 11, 0.95) 100%);
-}
-
 .modal-hero-content {
   position: relative;
   z-index: 10;
@@ -426,7 +794,6 @@ body {
   align-items: center;
 }
 
-/* Info Box inside Slider Modal */
 .info-box {
   display: flex;
   flex-direction: column;
@@ -450,24 +817,21 @@ body {
 
 .main-title {
   font-family: var(--font-heading);
-  font-size: clamp(48px, 6vw, 84px);
+  font-size: clamp(34px, 4.2vw, 59px);
   font-weight: 900;
   line-height: 1.05;
   letter-spacing: 0.05em;
   color: #fff;
-  text-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  text-shadow: 0 10px 30px rgba(0,0,0,0.8);
   text-transform: uppercase;
 }
 
 .description {
   font-size: 16px;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.95);
   font-weight: 400;
-}
-
-.cta-wrap {
-  margin-top: 10px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
 }
 
 .btn-explore {
@@ -496,74 +860,76 @@ body {
   box-shadow: 0 12px 30px rgba(255, 255, 255, 0.3);
 }
 
-.btn-explore i {
-  transition: transform 0.3s ease;
-}
-
-.btn-explore:hover i {
-  transform: translateX(4px);
-}
-
-/* Right Deck & Cards */
-.cards-deck-wrap {
+/* HORIZONTAL SCROLLABLE CARDS TRACK & SCROLLBAR */
+.scrollable-cards-wrap {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  align-items: flex-end;
+  gap: 20px;
+  width: 100%;
 }
 
-.cards-deck {
+.scrollable-cards-track {
   display: flex;
   gap: 16px;
-  height: 360px;
+  height: 350px;
   width: 100%;
-  justify-content: flex-end;
+  overflow-x: auto;
+  padding: 16px 8px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollable-cards-track::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
 }
 
 .dest-card {
   position: relative;
-  width: 130px;
-  height: 320px;
+  min-width: 135px;
+  height: 310px;
   border-radius: var(--radius-card);
   overflow: hidden;
   cursor: pointer;
   flex-shrink: 0;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-  transition: transform 0.5s var(--transition-smooth), border-color 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  scroll-snap-align: start;
+  transition: transform 0.4s var(--transition-smooth), border-color 0.3s ease;
 }
 
 .dest-card:hover {
-  transform: translateY(-10px) scale(1.03);
+  transform: scale(1.02);
   border-color: rgba(255, 255, 255, 0.6);
 }
 
 .dest-card.active {
   border-color: var(--accent-gold);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8), 0 0 20px var(--accent-glow);
+  box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .card-img-wrap {
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.8s ease;
+  transition: transform 0.6s ease;
 }
 
 .dest-card:hover .card-img {
-  transform: scale(1.12);
+  transform: scale(1.05);
 }
 
 .card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.9) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.45) 100%);
 }
 
 .card-info {
@@ -594,21 +960,20 @@ body {
   margin-top: 2px;
 }
 
-/* Slider Controls & Progress Bar */
-.slider-controls {
+/* CUSTOM HORIZONTAL SCROLLBAR & CONTROLS */
+.scroll-controls-bar {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
   width: 100%;
-  max-width: 500px;
 }
 
 .nav-arrow {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -624,21 +989,21 @@ body {
   transform: scale(1.1);
 }
 
-.timer-bar-wrap {
+.custom-scrollbar-track {
   flex: 1;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
   overflow: hidden;
   position: relative;
 }
 
-.timer-progress-fill {
+.custom-scrollbar-thumb {
   height: 100%;
-  width: 100%;
+  width: 30%;
   background: linear-gradient(90deg, var(--accent-gold) 0%, #ffffff 100%);
-  transform-origin: left center;
-  transform: scaleX(0);
+  border-radius: 6px;
+  transition: transform 0.1s linear;
 }
 
 
@@ -682,18 +1047,20 @@ body {
 
 
 /* RESPONSIVE DESIGN */
+@media (max-width: 1200px) {
+  .map-stage {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 1024px) {
   .modal-hero-content {
     grid-template-columns: 1fr;
     gap: 30px;
   }
   
-  .cards-deck-wrap {
+  .scrollable-cards-wrap {
     align-items: center;
-  }
-  
-  .cards-deck {
-    justify-content: center;
   }
 }
 
@@ -706,13 +1073,9 @@ body {
     flex-direction: column;
     height: 85vh;
   }
-  
-  .flex-panel:hover, .flex-panel.active {
-    flex-grow: 3;
-  }
-  
-  .flex-title {
-    transform: translate(-50%, -50%) rotate(0deg) scale(1.2);
+
+  .map-stage {
+    grid-template-columns: 1fr;
   }
 
   .close-modal-btn {
