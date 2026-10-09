@@ -2,13 +2,13 @@
 $playerId = isset($_GET['id']) ? intval($_GET['id']) : 1;
 ?>
 <!doctype html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Hồ sơ cầu thủ bóng đá - FIFA World Cup 2026">
-    <title>Hồ Sơ Cầu Thủ — Football ML</title>
+    <meta name="description" content="Football Player Profile - FIFA World Cup 2026">
+    <title>Player Profile — Football ML</title>
     
     <!-- Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -292,28 +292,28 @@ $playerId = isset($_GET['id']) ? intval($_GET['id']) : 1;
     <header class="app-header">
         <a class="brand" href="index.php"><b>FM</b><span>FOOTBALL<small>ML ANALYTICS</small></span></a>
         <nav id="nav">
-            <a href="index.php">Trang chủ</a>
-            <a href="countries.php">Châu lục</a>
-            <a class="active" href="players.php">Cầu thủ</a>
-            <a href="ml-analysis.php">ML Analysis (Dự đoán AI)</a>
-            <a href="rankings.php">Bảng xếp hạng</a>
-            <a href="statistics.php">Thống kê</a>
+            <a href="index.php">Home</a>
+            <a href="countries.php">Continents</a>
+            <a class="active" href="players.php">Players</a>
+            <a href="ml-analysis.php">ML Analysis ⚡</a>
+            <a href="rankings.php">Rankings</a>
+            <a href="statistics.php">Statistics</a>
         </nav>
         <div class="actions">
-            <a href="index.php" class="secondary" style="font-size:12px;padding:6px 14px;">← Quay lại Trang chủ</a>
+            <a href="index.php" class="secondary" style="font-size:12px;padding:6px 14px;">← Back to Home</a>
         </div>
     </header>
 
     <main class="profile-container">
-        <a href="index.php#players" class="back-nav"><i class="fa-solid fa-arrow-left"></i> QUAY LẠI DANH SÁCH CẦU THỦ</a>
+        <a href="players.php" class="back-nav"><i class="fa-solid fa-arrow-left"></i> BACK TO PLAYER CATALOG</a>
 
         <div class="profile-card" id="profileCard">
             <div class="profile-avatar-side">
                 <div class="shirt-circle" id="pShirt">--</div>
-                <h1 class="player-main-name" id="pName">ĐANG TẢI...</h1>
+                <h1 class="player-main-name" id="pName">LOADING...</h1>
                 <p style="font-size:13px;color:var(--text-sub);" id="pClub">--</p>
                 <div class="player-team-pill">
-                    ● ĐỘI TUYỂN: <span id="pTeam">--</span>
+                    ● NATIONAL TEAM: <span id="pTeam">--</span>
                 </div>
             </div>
 
@@ -323,67 +323,67 @@ $playerId = isset($_GET['id']) ? intval($_GET['id']) : 1;
                         <span class="pos-badge FW" id="pPosBadge">--</span>
                         <div class="overall-rating">
                             <span class="num" id="pRating">--</span>
-                            <span class="lbl">RATING TỔNG THỂ</span>
+                            <span class="lbl">OVERALL RATING</span>
                         </div>
                     </div>
 
-                    <!-- BIO METRICS: Tuổi, Chiều cao, Cân nặng, Vị trí, Quốc gia, CLB -->
+                    <!-- BIO METRICS: Age, Height, Weight, Position, Country, Club -->
                     <div class="bio-details-grid">
                         <div class="bio-box">
-                            <small><i class="fa-solid fa-calendar"></i> Tuổi tác</small>
+                            <small><i class="fa-solid fa-calendar"></i> Age</small>
                             <span id="pAge">--</span>
                         </div>
                         <div class="bio-box">
-                            <small><i class="fa-solid fa-ruler-vertical"></i> Chiều cao</small>
+                            <small><i class="fa-solid fa-ruler-vertical"></i> Height</small>
                             <span id="pHeight">--</span>
                         </div>
                         <div class="bio-box">
-                            <small><i class="fa-solid fa-weight-scale"></i> Cân nặng</small>
+                            <small><i class="fa-solid fa-weight-scale"></i> Weight</small>
                             <span id="pWeight">--</span>
                         </div>
                         <div class="bio-box">
-                            <small><i class="fa-solid fa-flag"></i> Đội tuyển quốc gia</small>
+                            <small><i class="fa-solid fa-flag"></i> National Team</small>
                             <span id="pNation">--</span>
                         </div>
                         <div class="bio-box">
-                            <small><i class="fa-solid fa-shield-halved"></i> Câu lạc bộ</small>
+                            <small><i class="fa-solid fa-shield-halved"></i> Club</small>
                             <span id="pClubBox">--</span>
                         </div>
                         <div class="bio-box">
-                            <small><i class="fa-solid fa-user-tag"></i> Vị trí thi đấu</small>
+                            <small><i class="fa-solid fa-user-tag"></i> Position</small>
                             <span id="pPosBox">--</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- STATS SUMMARY: Số trận, Phút thi đấu, Bàn thắng, Kiến tạo -->
+                <!-- STATS SUMMARY: Matches, Minutes, Goals, Assists -->
                 <div>
                     <div class="stats-summary-grid">
                         <div class="stat-item">
-                            <small>Số trận thi đấu</small>
+                            <small>Matches Played</small>
                             <b id="pMatches">--</b>
                         </div>
                         <div class="stat-item">
-                            <small>Phút thi đấu</small>
+                            <small>Minutes Played</small>
                             <b id="pMinutes">--'</b>
                         </div>
                         <div class="stat-item">
-                            <small>Bàn thắng (Goals)</small>
+                            <small>Goals</small>
                             <b id="pGoals">--</b>
                         </div>
                         <div class="stat-item">
-                            <small>Kiến tạo (Assists)</small>
+                            <small>Assists</small>
                             <b id="pAssists">--</b>
                         </div>
                     </div>
 
                     <div class="ml-link-banner">
                         <div>
-                            <span style="font-size:12px;font-weight:700;color:#fff;display:block;">Dự đoán phong độ &amp; Phân tích Machine Learning?</span>
-                            <span style="font-size:11px;color:var(--text-sub);">Truy cập công cụ ML Analysis trên thanh công cụ để xem phân tích AI chuyên sâu.</span>
+                            <span style="font-size:12px;font-weight:700;color:#fff;display:block;">Performance Prediction &amp; Machine Learning Analysis?</span>
+                            <span style="font-size:11px;color:var(--text-sub);">Access the ML Analysis tool to view deep AI performance predictions and radar charts.</span>
                         </div>
                         <a href="ml-analysis.php" class="ml-link-btn">
-                            <span>TRUY CẬP ML ANALYSIS</span>
+                            <span>LAUNCH ML ANALYSIS</span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -402,7 +402,7 @@ $playerId = isset($_GET['id']) ? intval($_GET['id']) : 1;
                 renderProfile(player);
             })
             .catch(err => {
-                console.error("Lỗi khi tải thông tin cầu thủ:", err);
+                console.error("Error loading player info:", err);
             });
 
         function renderProfile(p) {
@@ -418,7 +418,7 @@ $playerId = isset($_GET['id']) ? intval($_GET['id']) : 1;
             document.getElementById('pPosBadge').textContent = `${p.pos} · ${p.pos_label}`;
             document.getElementById('pRating').textContent = p.rating.toFixed(1);
 
-            document.getElementById('pAge').textContent = `${p.age} tuổi`;
+            document.getElementById('pAge').textContent = `${p.age} yrs`;
             document.getElementById('pHeight').textContent = `${p.height} cm`;
             document.getElementById('pWeight').textContent = `${calculatedWeight} kg`;
             document.getElementById('pNation').textContent = `${p.team}`;

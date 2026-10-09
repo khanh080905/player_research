@@ -305,11 +305,11 @@ $scorers = [
             <div class="modal-hero-content">
                 <div class="info-box">
                     <div class="subtitle-wrap">
-                        <span class="location-tag" id="hero-tag">JAPAN / NHẬT BẢN • Samurai Blue</span>
+                        <span class="location-tag" id="hero-tag">JAPAN • Samurai Blue</span>
                     </div>
                     <h1 class="main-title" id="hero-title">JAPAN</h1>
                     <p class="description" id="hero-desc">
-                        Đội tuyển Nhật Bản - Samurai Blue dẫn đầu vòng loại Châu Á với lối chơi kiểm soát bóng đẳng cấp và bản lĩnh thi đấu tại VCK World Cup.
+                        Japan - Samurai Blue leads the Asian FIFA rankings with mesmerizing possession control and relentless press.
                     </p>
                     <div class="cta-wrap">
                         <button class="btn-explore" id="hero-cta">
@@ -631,23 +631,23 @@ $scorers = [
             <div class="heading">
                 <div>
                     <small style="color:var(--accent-gold, #e2b775);font-family:'Space Grotesk',monospace;font-weight:800;letter-spacing:1px;">02 / SCOUT</small>
-                    <h2 style="font-family:'Cinzel',serif;">FIND YOUR <em>PLAYER (TRA CỨU 888 CẦU THỦ)</em></h2>
+                    <h2 style="font-family:'Cinzel',serif;">FIND YOUR <em>PLAYER (888 MATCHED PLAYERS)</em></h2>
                 </div>
-                <a href="players.php" style="color:var(--accent-gold, #e2b775);font-family:'Space Grotesk',monospace;font-weight:700;font-size:13px;">Duyệt tất cả 888 cầu thủ ↗</a>
+                <a href="players.php" style="color:var(--accent-gold, #e2b775);font-family:'Space Grotesk',monospace;font-weight:700;font-size:13px;">Browse all 888 players ↗</a>
             </div>
 
             <!-- SEARCH TOOLBAR PREVIEW MATCHING PLAYERS.PHP -->
             <div class="search-toolbar-index">
                 <div class="search-input-wrap-index">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" id="indexSearchInput" class="search-input-index" placeholder="Tìm tên cầu thủ, quốc gia, CLB... (VD: Vinicius, Mbappé, Bellingham...)" onkeyup="filterIndexCards()">
+                    <input type="text" id="indexSearchInput" class="search-input-index" placeholder="Search player name, country, club... (e.g. Vinicius, Mbappé, Bellingham...)" onkeyup="filterIndexCards()">
                 </div>
                 <div class="pos-pills-index">
-                    <button class="pos-pill-index active" data-pos="" onclick="selectIndexPos(this)">TẤT CẢ (888)</button>
-                    <button class="pos-pill-index" data-pos="FW" onclick="selectIndexPos(this)">⚽ TIỀN ĐẠO (FW)</button>
-                    <button class="pos-pill-index" data-pos="MF" onclick="selectIndexPos(this)">🔄 TIỀN VỆ (MF)</button>
-                    <button class="pos-pill-index" data-pos="DF" onclick="selectIndexPos(this)">🛡 HẬU VỆ (DF)</button>
-                    <button class="pos-pill-index" data-pos="GK" onclick="selectIndexPos(this)">🧤 THỦ MÔN (GK)</button>
+                    <button class="pos-pill-index active" data-pos="" onclick="selectIndexPos(this)">ALL (888)</button>
+                    <button class="pos-pill-index" data-pos="FW" onclick="selectIndexPos(this)">⚽ FORWARD (FW)</button>
+                    <button class="pos-pill-index" data-pos="MF" onclick="selectIndexPos(this)">🔄 MIDFIELDER (MF)</button>
+                    <button class="pos-pill-index" data-pos="DF" onclick="selectIndexPos(this)">🛡 DEFENDER (DF)</button>
+                    <button class="pos-pill-index" data-pos="GK" onclick="selectIndexPos(this)">🧤 GOALKEEPER (GK)</button>
                 </div>
             </div>
 
@@ -657,7 +657,7 @@ $scorers = [
                 <a class="player-card-index" href="player.php?id=30" data-name="Jude Bellingham" data-pos="MF" data-country="ENG" data-club="Real Madrid C. F.">
                     <div class="card-top-index">
                         <span class="flag-tag-index">ENG 🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
-                        <span class="badge-pos-index MF">MF · TIỀN VỆ</span>
+                        <span class="badge-pos-index MF">MF · MIDFIELDER</span>
                         <div class="card-rating-index">
                             <span class="num">91.4</span>
                             <span class="lbl">OVERALL</span>
@@ -665,20 +665,20 @@ $scorers = [
                     </div>
                     <div class="shirt-avatar-index">7</div>
                     <div class="player-name-index">Jude Bellingham</div>
-                    <div class="player-sub-index">England · Real Madrid C. F. · 22 tuổi · 186 cm</div>
+                    <div class="player-sub-index">England · Real Madrid C. F. · 22 yrs · 186 cm</div>
                     <div class="card-stats-index">
-                        <div><small>BÀN THẮNG</small><b>8</b></div>
-                        <div><small>KIẾN TẠO</small><b>6</b></div>
-                        <div><small>SỐ TRẬN</small><b>5</b></div>
+                        <div><small>GOALS</small><b>8</b></div>
+                        <div><small>ASSISTS</small><b>6</b></div>
+                        <div><small>MATCHES</small><b>5</b></div>
                     </div>
-                    <div class="btn-profile-index">XEM HỒ SƠ CẦU THỦ ↗</div>
+                    <div class="btn-profile-index">VIEW PLAYER PROFILE ↗</div>
                 </a>
 
                 <!-- CARD 2: Mbappé -->
                 <a class="player-card-index" href="player.php?id=3" data-name="Kylian Mbappé" data-pos="FW" data-country="FRA" data-club="Real Madrid C. F.">
                     <div class="card-top-index">
                         <span class="flag-tag-index">FRA 🇫🇷</span>
-                        <span class="badge-pos-index FW">FW · TIỀN ĐẠO</span>
+                        <span class="badge-pos-index FW">FW · FORWARD</span>
                         <div class="card-rating-index">
                             <span class="num">91.8</span>
                             <span class="lbl">OVERALL</span>
@@ -686,20 +686,20 @@ $scorers = [
                     </div>
                     <div class="shirt-avatar-index">10</div>
                     <div class="player-name-index">Kylian Mbappé</div>
-                    <div class="player-sub-index">France · Real Madrid C. F. · 27 tuổi · 178 cm</div>
+                    <div class="player-sub-index">France · Real Madrid C. F. · 27 yrs · 178 cm</div>
                     <div class="card-stats-index">
-                        <div><small>BÀN THẮNG</small><b>12</b></div>
-                        <div><small>KIẾN TẠO</small><b>5</b></div>
-                        <div><small>SỐ TRẬN</small><b>6</b></div>
+                        <div><small>GOALS</small><b>12</b></div>
+                        <div><small>ASSISTS</small><b>5</b></div>
+                        <div><small>MATCHES</small><b>6</b></div>
                     </div>
-                    <div class="btn-profile-index">XEM HỒ SƠ CẦU THỦ ↗</div>
+                    <div class="btn-profile-index">VIEW PLAYER PROFILE ↗</div>
                 </a>
 
                 <!-- CARD 3: Messi -->
                 <a class="player-card-index" href="player.php?id=1" data-name="Lionel Messi" data-pos="FW" data-country="ARG" data-club="Inter Miami CF">
                     <div class="card-top-index">
                         <span class="flag-tag-index">ARG 🇦🇷</span>
-                        <span class="badge-pos-index FW">FW · TIỀN ĐẠO</span>
+                        <span class="badge-pos-index FW">FW · FORWARD</span>
                         <div class="card-rating-index">
                             <span class="num">90.5</span>
                             <span class="lbl">OVERALL</span>
@@ -707,20 +707,20 @@ $scorers = [
                     </div>
                     <div class="shirt-avatar-index">10</div>
                     <div class="player-name-index">Lionel Messi</div>
-                    <div class="player-sub-index">Argentina · Inter Miami CF · 38 tuổi · 170 cm</div>
+                    <div class="player-sub-index">Argentina · Inter Miami CF · 38 yrs · 170 cm</div>
                     <div class="card-stats-index">
-                        <div><small>BÀN THẮNG</small><b>10</b></div>
-                        <div><small>KIẾN TẠO</small><b>8</b></div>
-                        <div><small>SỐ TRẬN</small><b>7</b></div>
+                        <div><small>GOALS</small><b>10</b></div>
+                        <div><small>ASSISTS</small><b>8</b></div>
+                        <div><small>MATCHES</small><b>7</b></div>
                     </div>
-                    <div class="btn-profile-index">XEM HỒ SƠ CẦU THỦ ↗</div>
+                    <div class="btn-profile-index">VIEW PLAYER PROFILE ↗</div>
                 </a>
 
                 <!-- CARD 4: Haaland -->
                 <a class="player-card-index" href="player.php?id=2" data-name="Erling Haaland" data-pos="FW" data-country="NOR" data-club="Manchester City">
                     <div class="card-top-index">
                         <span class="flag-tag-index">NOR 🇳🇴</span>
-                        <span class="badge-pos-index FW">FW · TIỀN ĐẠO</span>
+                        <span class="badge-pos-index FW">FW · FORWARD</span>
                         <div class="card-rating-index">
                             <span class="num">92.1</span>
                             <span class="lbl">OVERALL</span>
@@ -728,13 +728,13 @@ $scorers = [
                     </div>
                     <div class="shirt-avatar-index">9</div>
                     <div class="player-name-index">Erling Haaland</div>
-                    <div class="player-sub-index">Norway · Manchester City · 25 tuổi · 195 cm</div>
+                    <div class="player-sub-index">Norway · Manchester City · 25 yrs · 195 cm</div>
                     <div class="card-stats-index">
-                        <div><small>BÀN THẮNG</small><b>15</b></div>
-                        <div><small>KIẾN TẠO</small><b>3</b></div>
-                        <div><small>SỐ TRẬN</small><b>6</b></div>
+                        <div><small>GOALS</small><b>15</b></div>
+                        <div><small>ASSISTS</small><b>3</b></div>
+                        <div><small>MATCHES</small><b>6</b></div>
                     </div>
-                    <div class="btn-profile-index">XEM HỒ SƠ CẦU THỦ ↗</div>
+                    <div class="btn-profile-index">VIEW PLAYER PROFILE ↗</div>
                 </a>
             </div>
         </section>
@@ -768,14 +768,14 @@ $scorers = [
                 <small style="color:var(--accent-cyan, #00f0ff);font-family:'Space Grotesk',monospace;font-weight:800;letter-spacing:2px;display:block;margin-bottom:8px;">05 / INTELLIGENCE — MACHINE LEARNING ENGINE</small>
                 <h2 style="font-family:'Cinzel', serif;font-size:clamp(34px, 4vw, 50px);line-height:1.1;color:#fff;margin:10px 0 16px 0;">FOOTBALL<br><em style="color:var(--accent-cyan, #00f0ff);font-style:normal;">MEETS AI ML.</em></h2>
                 <p style="color:#94a3b8;font-size:14px;line-height:1.7;margin-bottom:24px;">
-                    Mô hình học máy <strong>XGBoost (R² = 90.26%)</strong> phân tích <strong>888 cầu thủ FIFA World Cup 2026</strong>. Đo lường 5 chỉ số LED VU-Meter theo từng vị trí thi đấu và giả lập kịch bản thi đấu (What-If Simulator) thời gian thực.
+                    Machine Learning model <strong>XGBoost (R² = 90.26%)</strong> analyzing <strong>888 FIFA World Cup 2026 matched players</strong>. Features 5 position-based LED VU-Meters and real-time What-If scenario simulation.
                 </p>
                 <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;">
                     <span style="font-family:'Space Grotesk',monospace;font-size:11px;font-weight:700;padding:5px 12px;background:rgba(34,197,94,0.12);border:1px solid rgba(34,197,94,0.3);color:#22c55e;border-radius:20px;">● MODEL: XGBoost</span>
                     <span style="font-family:'Space Grotesk',monospace;font-size:11px;font-weight:700;padding:5px 12px;background:rgba(0,240,255,0.12);border:1px solid rgba(0,240,255,0.3);color:#00f0ff;border-radius:20px;">● ACCURACY: R² 90.26%</span>
                     <span style="font-family:'Space Grotesk',monospace;font-size:11px;font-weight:700;padding:5px 12px;background:rgba(226,183,117,0.12);border:1px solid rgba(226,183,117,0.3);color:#e2b775;border-radius:20px;">● MATCHED: 888 PLAYERS</span>
                 </div>
-                <a class="primary" href="ml-analysis.php" style="background:var(--accent-cyan, #00f0ff);color:#000;font-family:'Space Grotesk',monospace;font-weight:800;padding:14px 28px;border-radius:30px;text-decoration:none;display:inline-block;box-shadow:0 0 24px rgba(0,240,255,0.35);transition:all 0.3s ease;">MỞ BẢNG DỰ ĐOÁN &amp; PHÂN TÍCH (ML ANALYSIS ⚡)</a>
+                <a class="primary" href="ml-analysis.php" style="background:var(--accent-cyan, #00f0ff);color:#000;font-family:'Space Grotesk',monospace;font-weight:800;padding:14px 28px;border-radius:30px;text-decoration:none;display:inline-block;box-shadow:0 0 24px rgba(0,240,255,0.35);transition:all 0.3s ease;">LAUNCH ML ANALYSIS DASHBOARD ⚡</a>
             </div>
 
             <!-- INTERACTIVE ML PREVIEW WIDGET -->
@@ -820,11 +820,11 @@ $scorers = [
                 <!-- SIMULATOR CONTROLS -->
                 <div style="background:#06080b;border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:12px;margin-top:16px;">
                     <div style="font-size:11px;color:#94a3b8;font-family:'Space Grotesk',monospace;margin-bottom:8px;display:flex;justify-content:space-between;">
-                        <span>GIẢ LẬP KỊCH BẢN (WHAT-IF):</span>
+                        <span>WHAT-IF SCENARIO SIMULATION:</span>
                         <b style="color:var(--accent-cyan,#00f0ff);" id="indexSimResult">Rating: 91.4 ➔ 91.8</b>
                     </div>
                     <div style="display:flex;gap:6px;">
-                        <button class="sim-chip" onclick="applyIndexSim(30, 0, 0, this)">+30' Phút</button>
+                        <button class="sim-chip" onclick="applyIndexSim(30, 0, 0, this)">+30' Mins</button>
                         <button class="sim-chip" onclick="applyIndexSim(0, 1, 0, this)">+1 Goal</button>
                         <button class="sim-chip" onclick="applyIndexSim(0, 0, 1, this)">+1 Assist</button>
                         <button class="sim-chip" onclick="resetIndexSim(this)">Reset</button>
@@ -920,7 +920,7 @@ $scorers = [
                 const simBoost = (extraMins * 0.015) + (extraGoals * 0.4) + (extraAssists * 0.25);
                 const simRating = (data.ai + simBoost).toFixed(1);
 
-                document.getElementById('indexSimResult').innerHTML = `Thực tế: ${data.base} ➔ AI: ${data.ai} ${simBoost > 0 ? `<span style="color:var(--accent-gold,#e2b775)">(Giả lập: ${simRating} ⚡)</span>` : ''}`;
+                document.getElementById('indexSimResult').innerHTML = `Actual: ${data.base} ➔ AI: ${data.ai} ${simBoost > 0 ? `<span style="color:var(--accent-gold,#e2b775)">(Simulated: ${simRating} ⚡)</span>` : ''}`;
             }
         </script>
 

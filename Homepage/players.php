@@ -1,8 +1,8 @@
 <?php
-$title = "TRA CỨU & TÌM KIẾM CẦU THỦ";
+$title = "PLAYER SEARCH & DATABASE";
 ?>
 <!doctype html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -352,24 +352,24 @@ $title = "TRA CỨU & TÌM KIẾM CẦU THỦ";
     <header class="app-header">
         <a class="brand" href="index.php"><b>FM</b><span>FOOTBALL<small>ML ANALYTICS</small></span></a>
         <nav id="nav">
-            <a href="index.php">Trang chủ</a>
-            <a href="countries.php">Châu lục</a>
-            <a class="active" href="players.php">Cầu thủ</a>
+            <a href="index.php">Home</a>
+            <a href="countries.php">Continents</a>
+            <a class="active" href="players.php">Players</a>
             <a href="ml-analysis.php" style="color:var(--accent-cyan);font-weight:700;">ML Analysis ⚡</a>
-            <a href="rankings.php">Bảng xếp hạng</a>
-            <a href="statistics.php">Thống kê</a>
+            <a href="rankings.php">Rankings</a>
+            <a href="statistics.php">Statistics</a>
         </nav>
         <div class="actions">
-            <a href="index.php" class="secondary" style="font-size:12px;padding:6px 14px;">← Quay lại Trang chủ</a>
+            <a href="index.php" class="secondary" style="font-size:12px;padding:6px 14px;">← Back to Home</a>
         </div>
     </header>
 
     <section class="player-hero">
         <div class="hero-container">
             <div class="eyebrow-tag">● FIFA WORLD CUP 2026 · PLAYER SEARCH DATABASE</div>
-            <h1 class="hero-title">TRA CỨU &amp; TÌM KIẾM CẦU THỦ</h1>
+            <h1 class="hero-title">PLAYER SEARCH &amp; DATABASE</h1>
             <p class="hero-desc">
-                Hệ thống danh sách <strong>888 cầu thủ đã match thông tin</strong> tham dự FIFA World Cup 2026. Lọc theo tên cầu thủ, vị trí thi đấu, câu lạc bộ và đội tuyển quốc gia để xem hồ sơ sinh trắc học chi tiết.
+                Explore complete profiles for <strong>888 matched players</strong> competing in the FIFA World Cup 2026. Filter by player name, position, club, and national team to analyze key match stats.
             </p>
         </div>
     </section>
@@ -378,18 +378,18 @@ $title = "TRA CỨU & TÌM KIẾM CẦU THỦ";
         <div class="search-toolbar">
             <div class="search-input-wrap">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm tên cầu thủ, quốc gia, câu lạc bộ... (VD: Vinicius, BRA, Real Madrid...)" oninput="filterPlayers()">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search player name, country, club... (e.g. Vinicius, BRA, Real Madrid...)" oninput="filterPlayers()">
             </div>
             <div class="pos-pills">
-                <button class="pos-pill active" data-pos="ALL" onclick="selectPosFilter(this)">TẤT CẢ (888)</button>
-                <button class="pos-pill" data-pos="FW" onclick="selectPosFilter(this)">⚽ FW TIỀN ĐẠO</button>
-                <button class="pos-pill" data-pos="MF" onclick="selectPosFilter(this)">🔄 MF TIỀN VỆ</button>
-                <button class="pos-pill" data-pos="DF" onclick="selectPosFilter(this)">🛡 DF HẬU VỆ</button>
-                <button class="pos-pill" data-pos="GK" onclick="selectPosFilter(this)">🧤 GK THỦ MÔN</button>
+                <button class="pos-pill active" data-pos="ALL" onclick="selectPosFilter(this)">ALL (888)</button>
+                <button class="pos-pill" data-pos="FW" onclick="selectPosFilter(this)">⚽ FW FORWARD</button>
+                <button class="pos-pill" data-pos="MF" onclick="selectPosFilter(this)">🔄 MF MIDFIELDER</button>
+                <button class="pos-pill" data-pos="DF" onclick="selectPosFilter(this)">🛡 DF DEFENDER</button>
+                <button class="pos-pill" data-pos="GK" onclick="selectPosFilter(this)">🧤 GK GOALKEEPER</button>
             </div>
         </div>
 
-        <div class="count-bar" id="countBar">Đang tải dữ liệu 888 cầu thủ...</div>
+        <div class="count-bar" id="countBar">Loading 888 player dataset...</div>
         <div class="players-grid" id="playersGrid"></div>
     </main>
 
@@ -420,8 +420,8 @@ $title = "TRA CỨU & TÌM KIẾM CẦU THỦ";
                 filterPlayers();
             })
             .catch(err => {
-                console.error("Lỗi khi tải dữ liệu cầu thủ:", err);
-                document.getElementById('countBar').textContent = "Không thể tải dữ liệu cầu thủ.";
+                console.error("Error loading player dataset:", err);
+                document.getElementById('countBar').textContent = "Failed to load player dataset.";
             });
 
         function selectPosFilter(btn) {
@@ -448,10 +448,10 @@ $title = "TRA CỨU & TÌM KIẾM CẦU THỦ";
             const grid = document.getElementById('playersGrid');
             const countBar = document.getElementById('countBar');
 
-            countBar.textContent = `Hiển thị ${filteredPlayers.length} / ${allPlayersData.length} cầu thủ`;
+            countBar.textContent = `Showing ${filteredPlayers.length} of ${allPlayersData.length} players`;
 
             if (!filteredPlayers.length) {
-                grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-muted);">Không tìm thấy cầu thủ phù hợp.</div>`;
+                grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-muted);">No matching players found.</div>`;
                 return;
             }
 
@@ -469,11 +469,11 @@ $title = "TRA CỨU & TÌM KIẾM CẦU THỦ";
                     <div class="player-name">${p.name}</div>
                     <div class="player-sub">${p.team} · ${p.club}</div>
                     <div class="card-stats">
-                        <div><small>Tuổi</small><b>${p.age}</b></div>
-                        <div><small>Chiều cao</small><b>${p.height}cm</b></div>
-                        <div><small>Số trận</small><b>${p.matches}</b></div>
+                        <div><small>Age</small><b>${p.age}</b></div>
+                        <div><small>Height</small><b>${p.height}cm</b></div>
+                        <div><small>Matches</small><b>${p.matches}</b></div>
                     </div>
-                    <div class="btn-profile">XEM HỒ SƠ ↗</div>
+                    <div class="btn-profile">VIEW PROFILE ↗</div>
                 </a>
             `).join('');
         }
