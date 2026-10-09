@@ -1,5 +1,5 @@
 <?php
-$title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
+$title = "TRA CỨU & TÌM KIẾM CẦU THỦ";
 ?>
 <!doctype html>
 <html lang="vi">
@@ -7,10 +7,10 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="FIFA World Cup 2026 - Player Search & AI Performance Prediction">
+    <meta name="description" content="FIFA World Cup 2026 - Player Search Database">
     <title><?= $title ?> — Football ML</title>
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -29,7 +29,6 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
             --accent-gold: #e2b775;
             --accent-cyan: #00f0ff;
             --accent-green: #22c55e;
-            --accent-red: #ff4500;
             --text-sub: #94a3b8;
             --text-muted: #64748b;
         }
@@ -41,7 +40,6 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
             min-height: 100vh;
         }
 
-        /* HEADER & BRANDING */
         .app-header {
             position: sticky;
             top: 0;
@@ -56,7 +54,6 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
-        /* HERO SECTION */
         .player-hero {
             position: relative;
             padding: 60px 40px;
@@ -100,7 +97,6 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
             margin-bottom: 28px;
         }
 
-        /* TOOLBAR */
         .search-toolbar {
             max-width: 1400px;
             margin: 0 auto 30px auto;
@@ -144,8 +140,8 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
         }
 
         .search-input:focus {
-            border-color: var(--accent-cyan);
-            box-shadow: 0 0 16px rgba(0, 240, 255, 0.25);
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 16px rgba(226, 183, 117, 0.25);
         }
 
         .pos-pills {
@@ -178,7 +174,6 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
             box-shadow: 0 0 14px rgba(226, 183, 117, 0.35);
         }
 
-        /* GRID & CARDS */
         .players-container {
             max-width: 1400px;
             margin: 0 auto;
@@ -207,6 +202,9 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
             transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
             position: relative;
             overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
 
         .player-card:hover {
@@ -325,10 +323,6 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
             color: #fff;
         }
 
-        .card-stats b.ai {
-            color: var(--accent-cyan);
-        }
-
         .btn-profile {
             width: 100%;
             padding: 10px;
@@ -342,6 +336,7 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
             letter-spacing: 0.08em;
             cursor: pointer;
             transition: all 0.3s ease;
+            text-align: center;
         }
 
         .player-card:hover .btn-profile {
@@ -349,71 +344,18 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
             color: #000;
             border-color: var(--accent-gold);
         }
-
-        /* MODAL STYLES */
-        .modal-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.88);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            z-index: 9999;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .modal-overlay.active {
-            display: flex;
-        }
-
-        .modal-card {
-            width: 100%;
-            max-width: 1160px;
-            max-height: 92vh;
-            overflow-y: auto;
-            background: #090e17;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 20px;
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .modal-header {
-            padding: 18px 24px;
-            background: #06080b;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .modal-body {
-            display: grid;
-            grid-template-columns: 3fr 5fr 4fr;
-            gap: 20px;
-            padding: 24px;
-        }
-
-        @media (max-width: 960px) {
-            .modal-body {
-                grid-template-columns: 1fr;
-            }
-        }
     </style>
 </head>
 
 <body>
 
-    <!-- APP HEADER -->
     <header class="app-header">
         <a class="brand" href="index.php"><b>FM</b><span>FOOTBALL<small>ML ANALYTICS</small></span></a>
         <nav id="nav">
             <a href="index.php">Trang chủ</a>
             <a href="countries.php">Châu lục</a>
-            <a class="active" href="players.php">Tra cứu cầu thủ &amp; AI</a>
+            <a class="active" href="players.php">Cầu thủ</a>
+            <a href="ml-analysis.php" style="color:var(--accent-cyan);font-weight:700;">ML Analysis ⚡</a>
             <a href="rankings.php">Bảng xếp hạng</a>
             <a href="statistics.php">Thống kê</a>
         </nav>
@@ -422,20 +364,17 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
         </div>
     </header>
 
-    <!-- HERO HEADER -->
     <section class="player-hero">
         <div class="hero-container">
-            <div class="eyebrow-tag">● FIFA WORLD CUP 2026 · MACHINE LEARNING ENGINE</div>
-            <h1 class="hero-title">TRA CỨU CẦU THỦ &amp; DỰ ĐOÁN PHONG ĐỘ AI</h1>
+            <div class="eyebrow-tag">● FIFA WORLD CUP 2026 · PLAYER SEARCH DATABASE</div>
+            <h1 class="hero-title">TRA CỨU &amp; TÌM KIẾM CẦU THỦ</h1>
             <p class="hero-desc">
-                Hệ thống tra cứu dữ liệu <strong>888 cầu thủ đã match thông tin</strong> từ FIFA World Cup &amp; FBref. Sử dụng mô hình học máy <strong>XGBoost (R² = 90.26%)</strong> để dự đoán điểm phong độ tổng thể, tích hợp bộ đo 5 chỉ số LED VU-Meter và giả lập kịch bản What-If thời gian thực.
+                Hệ thống danh sách <strong>888 cầu thủ đã match thông tin</strong> tham dự FIFA World Cup 2026. Lọc theo tên cầu thủ, vị trí thi đấu, câu lạc bộ và đội tuyển quốc gia để xem hồ sơ sinh trắc học chi tiết.
             </p>
         </div>
     </section>
 
-    <!-- MAIN CONTENT AREA -->
     <main class="players-container">
-        <!-- FILTER TOOLBAR -->
         <div class="search-toolbar">
             <div class="search-input-wrap">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -454,128 +393,16 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
         <div class="players-grid" id="playersGrid"></div>
     </main>
 
-    <!-- PLAYER PROFILE & AI PREDICTION MODAL -->
-    <div class="modal-overlay" id="playerModal" onclick="handleModalOverlayClick(event)">
-        <div class="modal-card">
-            <div class="modal-header">
-                <div style="display:flex;align-items:center;gap:10px;">
-                    <span style="width:10px;height:10px;border-radius:50%;background:var(--accent-gold);box-shadow:0 0 10px var(--accent-gold)"></span>
-                    <span style="font-family:'Space Grotesk',monospace;font-size:12px;font-weight:700;letter-spacing:0.15em;">FIFA WC 2026 · HỒ SƠ CẦU THỦ &amp; DỰ ĐOÁN AI ML</span>
-                </div>
-                <button class="close-btn" onclick="closePlayerModal()" style="background:rgba(255,255,255,0.1);border:none;color:#fff;width:32px;height:32px;border-radius:50%;cursor:pointer;">✕</button>
-            </div>
-
-            <div class="modal-body">
-                <!-- COL 1: BIO -->
-                <div style="display:flex;flex-direction:column;gap:14px;">
-                    <div style="background:var(--surface);border:1px solid var(--card-border);border-radius:14px;padding:18px;text-align:center;">
-                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-                            <span class="flag-tag" id="mFlag">BRA</span>
-                            <span class="badge-pos FW" id="mPosBadge">FW · TIỀN ĐẠO</span>
-                        </div>
-                        <div class="shirt-avatar" id="mShirt">7</div>
-                        <h3 style="font-size:18px;font-weight:800;margin-bottom:4px;" id="mName">VINICIUS JUNIOR</h3>
-                        <p style="font-size:12px;color:var(--text-sub);margin-bottom:10px;" id="mClub">Real Madrid C. F.</p>
-                        <span style="display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:rgba(34,197,94,0.12);border:1px solid rgba(34,197,94,0.25);color:var(--accent-green);border-radius:20px;font-size:11px;font-weight:700;">
-                            ● ĐỘI TUYỂN: <span id="mTeam">BRA</span>
-                        </span>
-                    </div>
-
-                    <div style="background:var(--surface);border:1px solid var(--card-border);border-radius:14px;padding:16px;">
-                        <div style="font-size:11px;font-weight:800;color:var(--text-sub);letter-spacing:0.1em;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--card-border);display:flex;justify-content:space-between;">
-                            <span>SINH TRẮC &amp; THỐNG KÊ</span>
-                            <span style="color:var(--accent-green)">✓ FBref Verified</span>
-                        </div>
-                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-                            <div style="background:#06080b;padding:8px 10px;border-radius:8px;border:1px solid var(--card-border);">
-                                <small style="display:block;font-size:10px;color:var(--text-muted);">Độ tuổi</small>
-                                <span style="font-size:13px;font-weight:700;" id="mAge">25 tuổi</span>
-                            </div>
-                            <div style="background:#06080b;padding:8px 10px;border-radius:8px;border:1px solid var(--card-border);">
-                                <small style="display:block;font-size:10px;color:var(--text-muted);">Chiều cao</small>
-                                <span style="font-size:13px;font-weight:700;" id="mHeight">176 cm</span>
-                            </div>
-                            <div style="background:#06080b;padding:8px 10px;border-radius:8px;border:1px solid var(--card-border);">
-                                <small style="display:block;font-size:10px;color:var(--text-muted);">Phút thi đấu</small>
-                                <span style="font-size:13px;font-weight:700;color:var(--accent-cyan);" id="mMins">440'</span>
-                            </div>
-                            <div style="background:#06080b;padding:8px 10px;border-radius:8px;border:1px solid var(--card-border);">
-                                <small style="display:block;font-size:10px;color:var(--text-muted);">Số trận</small>
-                                <span style="font-size:13px;font-weight:700;" id="mMatches">5 trận</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- COL 2: VU-METER & RADAR -->
-                <div style="display:flex;flex-direction:column;gap:14px;">
-                    <div style="background:var(--surface);border:1px solid var(--card-border);border-radius:14px;padding:16px;">
-                        <div style="font-size:11px;font-weight:800;color:var(--text-sub);letter-spacing:0.1em;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--card-border);display:flex;justify-content:space-between;align-items:center;">
-                            <span>🎚️ 5 CHỈ SỐ CAO NHẤT THEO VỊ TRÍ</span>
-                            <span style="background:rgba(226,183,117,0.18);color:var(--accent-gold);padding:2px 6px;border-radius:4px;font-size:10px;font-family:'Space Grotesk',monospace">VU-METER</span>
-                        </div>
-                        <div id="vBarsContainer"></div>
-                    </div>
-                </div>
-
-                <!-- COL 3: MACHINE LEARNING & SIMULATOR -->
-                <div style="display:flex;flex-direction:column;gap:14px;">
-                    <div style="background:var(--surface);border:1px solid rgba(0,240,255,0.25);border-radius:14px;padding:16px;">
-                        <div style="font-size:11px;font-weight:800;color:var(--text-sub);letter-spacing:0.1em;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;">
-                            <span>🤖 MACHINE LEARNING</span>
-                            <span style="font-size:10px;font-weight:700;padding:2px 7px;border-radius:4px;background:rgba(34,197,94,0.18);color:var(--accent-green);">XGBoost R²=90.26%</span>
-                        </div>
-                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;">
-                            <div style="background:#06080b;border:1px solid var(--card-border);border-radius:10px;padding:10px;text-align:center;">
-                                <small style="display:block;font-size:10px;font-weight:700;color:var(--text-sub);text-transform:uppercase;">Điểm Thực Tế</small>
-                                <div style="font-size:26px;font-weight:900;font-family:'Space Grotesk',monospace;color:#fff;" id="mActual">79.1</div>
-                                <span style="font-size:9px;color:var(--text-muted);">Formula Rating</span>
-                            </div>
-                            <div style="background:#06080b;border:1px solid rgba(0,240,255,0.3);border-radius:10px;padding:10px;text-align:center;">
-                                <small style="display:block;font-size:10px;font-weight:700;color:var(--accent-cyan);text-transform:uppercase;">AI Dự Đoán</small>
-                                <div style="font-size:26px;font-weight:900;font-family:'Space Grotesk',monospace;color:var(--accent-cyan);text-shadow:0 0 14px rgba(0,240,255,0.5);" id="mPred">78.8</div>
-                                <span style="font-size:9px;color:var(--accent-cyan);">Model Inference</span>
-                            </div>
-                        </div>
-                        <div style="background:#06080b;padding:8px 12px;border-radius:8px;font-size:11px;display:flex;justify-content:space-between;border:1px solid var(--card-border);">
-                            <span style="color:var(--text-sub);">Sai số tuyệt đối:</span>
-                            <b id="mDelta" style="color:var(--accent-green);font-family:'Space Grotesk',monospace;">± 0.30 điểm</b>
-                        </div>
-                    </div>
-
-                    <div style="background:var(--surface);border:1px solid var(--card-border);border-radius:14px;padding:16px;">
-                        <div style="font-size:11px;font-weight:800;color:var(--text-sub);letter-spacing:0.1em;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--card-border);">
-                            <span>⚡ GIẢ LẬP KỊCH BẢN (WHAT-IF SIMULATOR)</span>
-                        </div>
-                        <div style="display:flex;justify-content:space-between;font-size:11px;font-weight:700;margin-bottom:6px;">
-                            <span>Số phút thi đấu bổ sung:</span>
-                            <span id="simVal" style="color:var(--accent-gold);font-family:'Space Grotesk',monospace">+0 phút</span>
-                        </div>
-                        <input type="range" min="0" max="180" step="15" value="0" id="simRange" oninput="updateSimScore(this.value)" style="width:100%;accent-color:var(--accent-gold);cursor:pointer;margin-bottom:10px;">
-                        <div style="background:#06080b;padding:10px 14px;border-radius:8px;font-size:11px;display:flex;justify-content:space-between;align-items:center;border:1px solid var(--card-border);">
-                            <span style="color:var(--text-sub);">Điểm AI mô phỏng:</span>
-                            <span id="simScore" style="font-size:16px;font-weight:900;color:var(--accent-cyan);font-family:'Space Grotesk',monospace;">78.8</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- JAVASCRIPT LOGIC -->
     <script>
         let allPlayersData = [];
         let filteredPlayers = [];
         let currentPosFilter = 'ALL';
-        let activePlayer = null;
 
-        // Load 888 matched players dataset
         fetch('assets/js/players_full_data.json')
             .then(res => res.json())
             .then(data => {
                 allPlayersData = data;
                 
-                // Parse URL params
                 const urlParams = new URLSearchParams(window.location.search);
                 const initialQuery = urlParams.get('q') || '';
                 const initialPos = urlParams.get('position') || 'ALL';
@@ -621,16 +448,15 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
             const grid = document.getElementById('playersGrid');
             const countBar = document.getElementById('countBar');
 
-            countBar.textContent = `Hiển thị ${filteredPlayers.length} / ${allPlayersData.length} cầu thủ đã match thông tin`;
+            countBar.textContent = `Hiển thị ${filteredPlayers.length} / ${allPlayersData.length} cầu thủ`;
 
             if (!filteredPlayers.length) {
                 grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-muted);">Không tìm thấy cầu thủ phù hợp.</div>`;
                 return;
             }
 
-            // Render top 100 or full dataset smooth
             grid.innerHTML = filteredPlayers.slice(0, 120).map(p => `
-                <div class="player-card" onclick="openPlayerModal(${p.id})">
+                <a href="player.php?id=${p.id}" class="player-card">
                     <div class="card-top">
                         <span class="flag-tag">${p.flag_code}</span>
                         <span class="badge-pos ${p.pos}">${p.pos}</span>
@@ -643,120 +469,14 @@ $title = "TRA CỨU CẦU THỦ & DỰ ĐOÁN PHONG ĐỘ AI";
                     <div class="player-name">${p.name}</div>
                     <div class="player-sub">${p.team} · ${p.club}</div>
                     <div class="card-stats">
-                        <div><small>Phút</small><b>${p.minutes}'</b></div>
-                        <div><small>Trận</small><b>${p.matches}</b></div>
-                        <div><small>AI dự đoán</small><b class="ai">${p.predicted_rating.toFixed(1)}</b></div>
+                        <div><small>Tuổi</small><b>${p.age}</b></div>
+                        <div><small>Chiều cao</small><b>${p.height}cm</b></div>
+                        <div><small>Số trận</small><b>${p.matches}</b></div>
                     </div>
-                    <button class="btn-profile">XEM HỒ SƠ &amp; ML 🎚️</button>
-                </div>
+                    <div class="btn-profile">XEM HỒ SƠ ↗</div>
+                </a>
             `).join('');
         }
-
-        function getTopMetrics(p) {
-            if (p.pos === 'FW') return [
-                { n: 'Bàn thắng / 90p (Goals p90)', sc: Math.min(99, Math.round(p.goals_p90 * 85 + 25)) },
-                { n: 'Độ chính xác dứt điểm (Shot Acc %)', sc: Math.min(99, Math.round(p.shot_acc * 0.9 + 20)) },
-                { n: 'Tần suất dứt điểm (Shots p90)', sc: Math.min(99, Math.round(p.shots_p90 * 18 + 20)) },
-                { n: 'Đóng góp bàn thắng trực tiếp (G+A)', sc: Math.min(99, Math.round((p.goals_p90 + p.assists_p90) * 60 + 25)) },
-                { n: 'Kiến tạo đột biến (Assists p90)', sc: Math.min(99, Math.round(p.assists_p90 * 120 + 20)) }
-            ];
-            if (p.pos === 'MF') return [
-                { n: 'Cắt bóng & Đánh chặn (Interceptions p90)', sc: Math.min(99, Math.round(p.interceptions_p90 * 60 + 25)) },
-                { n: 'Tắc bóng thu hồi (Tackles p90)', sc: Math.min(99, Math.round(p.tackles_p90 * 65 + 25)) },
-                { n: 'Sút xa & Tuyến hai (Shots p90)', sc: Math.min(99, Math.round(p.shots_p90 * 16 + 20)) },
-                { n: 'Điều tiết nhịp độ (Minutes)', sc: Math.min(99, Math.round(p.minutes / 360 * 50 + 40)) },
-                { n: 'Chính xác dứt điểm (Shot Acc %)', sc: Math.min(99, Math.round(p.shot_acc * 0.8 + 25)) }
-            ];
-            if (p.pos === 'DF') return [
-                { n: 'Đánh chặn & Phán đoán (Interceptions p90)', sc: Math.min(99, Math.round(p.interceptions_p90 * 80 + 35)) },
-                { n: 'Tắc bóng thành công (Tackles p90)', sc: Math.min(99, Math.round(p.tackles_p90 * 85 + 35)) },
-                { n: 'Thời lượng thi đấu trụ cột (Minutes)', sc: Math.min(99, Math.round(p.minutes / 360 * 50 + 45)) },
-                { n: 'Kỷ luật thi đấu & Tranh chấp', sc: 85 },
-                { n: 'Không chiến & Phát động bóng', sc: 82 }
-            ];
-            return [
-                { n: 'Tỷ lệ cản phá thành công (Save %)', sc: Math.min(99, Math.round(p.save_pct * 0.9 + 25)) },
-                { n: 'Tỷ lệ giữ sạch lưới (Clean Sheet %)', sc: Math.min(99, Math.round(p.clean_sheet_pct * 1.2 + 40)) },
-                { n: 'Chỉ số thủng lưới thấp (GA90)', sc: Math.min(99, Math.max(50, Math.round(95 - p.ga90 * 12))) },
-                { n: 'Số trận trắng lưới (Clean Sheets)', sc: Math.min(99, Math.round(p.clean_sheets * 20 + 45)) },
-                { n: 'Làm chủ vùng cấm & Cản phá đối mặt', sc: 88 }
-            ];
-        }
-
-        function renderVuBar(m) {
-            const sc = Math.max(12, Math.min(99, m.sc));
-            const total = 30;
-            const active = Math.round((sc / 100) * total);
-            let leds = '';
-            for (let i = 0; i < total; i++) {
-                let colorClass = 'background:rgba(255,255,255,0.07)';
-                if (i < active) {
-                    colorClass = i < 18 ? 'background:#00f0ff;box-shadow:0 0 6px #00f0ff;' :
-                                 i < 25 ? 'background:#e2b775;box-shadow:0 0 6px #e2b775;' :
-                                          'background:#22c55e;box-shadow:0 0 6px #22c55e;';
-                }
-                leds += `<span style="flex:1;height:12px;border-radius:1px;${colorClass}"></span>`;
-            }
-            return `
-                <div style="background:#06080b;border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:10px 12px;margin-bottom:10px;">
-                    <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px;">
-                        <span style="font-weight:600;">${m.n}</span>
-                        <span style="color:var(--accent-gold);font-family:'Space Grotesk',monospace;font-weight:800;">${sc}/100</span>
-                    </div>
-                    <div style="display:flex;gap:2.5px;background:rgba(0,0,0,0.5);padding:4px 6px;border-radius:6px;border:1px solid rgba(255,255,255,0.05);">${leds}</div>
-                </div>
-            `;
-        }
-
-        function openPlayerModal(id) {
-            activePlayer = allPlayersData.find(x => x.id === id) || allPlayersData[0];
-            const p = activePlayer;
-
-            document.getElementById('mFlag').textContent = p.flag_code;
-            document.getElementById('mPosBadge').className = `badge-pos ${p.pos}`;
-            document.getElementById('mPosBadge').textContent = `${p.pos} · ${p.pos_label}`;
-            document.getElementById('mShirt').textContent = p.shirt;
-            document.getElementById('mName').textContent = p.name;
-            document.getElementById('mClub').textContent = p.club;
-            document.getElementById('mTeam').textContent = p.team;
-            document.getElementById('mAge').textContent = `${p.age} tuổi`;
-            document.getElementById('mHeight').textContent = `${p.height} cm`;
-            document.getElementById('mMins').textContent = `${p.minutes}'`;
-            document.getElementById('mMatches').textContent = `${p.matches} trận`;
-
-            document.getElementById('vBarsContainer').innerHTML = getTopMetrics(p).map(renderVuBar).join('');
-            document.getElementById('mActual').textContent = p.rating.toFixed(1);
-            document.getElementById('mPred').textContent = p.predicted_rating.toFixed(1);
-            document.getElementById('mDelta').textContent = `± ${p.delta.toFixed(2)} điểm`;
-
-            document.getElementById('simRange').value = 0;
-            document.getElementById('simVal').textContent = '+0 phút';
-            document.getElementById('simScore').textContent = p.predicted_rating.toFixed(1);
-
-            document.getElementById('playerModal').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closePlayerModal() {
-            document.getElementById('playerModal').classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        function handleModalOverlayClick(e) {
-            if (e.target === e.currentTarget) closePlayerModal();
-        }
-
-        function updateSimScore(mins) {
-            document.getElementById('simVal').textContent = `+${mins} phút`;
-            if (activePlayer) {
-                const simulated = Math.min(99, activePlayer.predicted_rating + (parseInt(mins) / 180) * 1.8);
-                document.getElementById('simScore').textContent = simulated.toFixed(1);
-            }
-        }
-
-        document.addEventListener('keydown', e => {
-            if (e.key === 'Escape') closePlayerModal();
-        });
     </script>
 </body>
 
