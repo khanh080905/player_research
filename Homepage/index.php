@@ -41,7 +41,7 @@ $scorers = [
 <body>
     <header class="header">
         <a class="brand" href="index.php"><b>FM</b><span>FOOTBALL<small>ML ANALYTICS</small></span></a>
-        <nav id="nav"><a class="active" href="#home">Home</a><a href="#continents">Continents</a><a href="#players">Players</a><a href="#rankings">Rankings</a><a href="#statistics">Statistics</a></nav>
+        <nav id="nav"><a class="active" href="#home">Home</a><a href="#continents">Continents</a><a href="players.php">Players</a><a href="ml-analysis.php" style="color:#00f0ff;font-weight:700;">ML Analysis ⚡</a><a href="#rankings">Rankings</a><a href="#statistics">Statistics</a></nav>
         <div class="actions"><button id="searchBtn">⌕</button><a href="login.php">Sign in</a><button id="menuBtn">☰</button></div>
     </header>
 
