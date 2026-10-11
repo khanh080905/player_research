@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIFA World Cup 2026 – Player Analytics & ML Rating</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#05080d;--surface:#0d1220;--card:#111827;--card2:#0f1829;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.12);
+  --gold:#e2b775;--cyan:#38bdf8;--green:#22c55e;--red:#f87171;
+  --muted:#64748b;--sub:#94a3b8;--text:#f1f5f9;
+  --fw:#f87171;--mf:#4ade80;--df:#38bdf8;--gk:#e2b775;
+}
+body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;min-height:100vh}
+a{color:inherit;text-decoration:none}
+/* ── HEADER ── */
+#hdr{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:14px 36px;background:rgba(5,8,13,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.hdr-brand{display:flex;align-items:center;gap:10px}
+.hdr-badge{background:var(--gold);color:#000;font-weight:800;font-size:12px;padding:3px 8px;border-radius:4px;letter-spacing:1px}
+.hdr-name{font-weight:800;font-size:15px;letter-spacing:2px;color:#fff}
+#hdr nav{display:flex;gap:24px}
+#hdr nav a{font-size:12px;font-weight:700;color:var(--sub);text-transform:uppercase;letter-spacing:.8px;transition:.2s}
+#hdr nav a:hover{color:#fff}
+.live-pill{font-size:11px;font-weight:700;padding:5px 12px;border-radius:20px;background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.3);color:var(--green)}
+/* ── HERO ── */
+#hero{padding:64px 48px;background:linear-gradient(135deg,rgba(14,22,40,.96) 0%,rgba(5,8,13,.98) 100%),url('img/1000000.png') center/cover no-repeat;border-bottom:1px solid var(--border)}
+.hero-sub{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+#hero h1{font-size:42px;font-weight:800;line-height:1.18;max-width:780px;margin-bottom:14px}
+#hero p{color:var(--sub);max-width:640px;line-height:1.65;font-size:14px;margin-bottom:28px}
+.btn-cta{display:inline-block;background:var(--gold);color:#000;font-weight:800;font-size:13px;padding:14px 34px;border-radius:30px;letter-spacing:.8px;cursor:pointer;border:none;transition:.2s;box-shadow:0 4px 20px rgba(226,183,117,.3)}
+.btn-cta:hover{transform:scale(1.04);background:#f1cf99}
+/* ── CONTENT ── */
+#content{padding:44px 40px;background:rgba(8,12,20,.97)}
+.sec-head{margin-bottom:28px}
+.sec-head h2{font-size:22px;font-weight:800;display:flex;align-items:center;gap:8px}
+.sec-head p{color:var(--muted);font-size:13px;margin-top:4px}
+/* ── TOOLBAR ── */
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:16px 20px;background:var(--surface);border:1px solid var(--border);border-radius:14px;margin-bottom:22px}
+.search-box{flex:1;min-width:260px}
+.search-box input{width:100%;background:#080c14;border:1px solid var(--border2);color:#fff;padding:11px 16px;border-radius:10px;font-size:13px;font-family:inherit;outline:none;transition:.2s}
+.search-box input:focus{border-color:var(--cyan);box-shadow:0 0 12px rgba(56,189,248,.2)}
+.pills{display:flex;gap:8px;flex-wrap:wrap}
+.pill{background:#080c14;border:1px solid var(--border);color:var(--sub);padding:9px 16px;border-radius:8px;cursor:pointer;font-size:12px;font-weight:700;font-family:inherit;transition:.2s}
+.pill:hover{color:#fff;border-color:rgba(255,255,255,.18)}
+.pill.on{background:var(--gold);color:#000;border-color:var(--gold);box-shadow:0 0 12px rgba(226,183,117,.3)}
+.count-txt{font-size:12px;color:var(--muted);font-family:'Space Mono',monospace;margin-bottom:18px}
+/* ── GRID ── */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}
+.no-results{color:var(--muted);font-size:14px;padding:40px;text-align:center;grid-column:1/-1}
+/* ── PLAYER CARD ── */
+.pcard{background:linear-gradient(160deg,#131c2e 0%,#0d1320 100%);border:1px solid var(--border);border-radius:14px;padding:18px;cursor:pointer;transition:transform .22s,border-color .22s,box-shadow .22s}
+.pcard:hover{transform:translateY(-5px);border-color:rgba(226,183,117,.5);box-shadow:0 14px 30px rgba(0,0,0,.7)}
+.pcard-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.pcard-flag{font-size:13px;font-weight:700;font-family:'Space Mono',monospace;color:var(--sub);background:#080c14;padding:3px 7px;border-radius:4px;border:1px solid var(--border)}
+.pos-badge{font-size:10px;font-weight:800;padding:3px 8px;border-radius:4px;letter-spacing:.5px}
+.pos-FW{background:rgba(248,113,113,.18);color:var(--fw);border:1px solid rgba(248,113,113,.4)}
+.pos-MF{background:rgba(74,222,128,.18);color:var(--mf);border:1px solid rgba(74,222,128,.4)}
+.pos-DF{background:rgba(56,189,248,.18);color:var(--df);border:1px solid rgba(56,189,248,.4)}
+.pos-GK{background:rgba(226,183,117,.18);color:var(--gk);border:1px solid rgba(226,183,117,.4)}
+.rating-badge{text-align:right}
+.rating-big{font-size:22px;font-weight:900;color:var(--gold);display:block;line-height:1;font-family:'Space Mono',monospace}
+.rating-lbl{font-size:9px;color:var(--muted);font-weight:700;letter-spacing:.5px}
+.avatar-wrap{display:flex;justify-content:center;margin:8px 0 14px}
+.avatar-circle{width:58px;height:58px;border-radius:50%;background:#080c14;border:2.5px solid rgba(226,183,117,.45);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:900;color:#fff;font-family:'Space Mono',monospace}
+.pcard-name{font-size:14px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:2px}
+.pcard-team{font-size:11px;color:var(--sub);margin-bottom:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mini-stats{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:5px;background:#080c14;padding:8px 10px;border-radius:8px;border:1px solid var(--border);font-size:11px;margin-bottom:12px}
+.mini-stats small{display:block;color:var(--muted);font-size:10px}
+.mini-stats b{color:var(--text)}
+.mini-stats b.ai{color:var(--cyan)}
+.btn-open{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);color:var(--sub);padding:9px;border-radius:8px;font-size:11px;font-weight:800;letter-spacing:.5px;cursor:pointer;font-family:inherit;transition:.2s}
+.pcard:hover .btn-open{background:var(--gold);color:#000;border-color:var(--gold)}
+
+/* ── MODAL ── */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.88);backdrop-filter:blur(12px);z-index:9999;display:none;align-items:center;justify-content:center;padding:20px}
+.overlay.show{display:flex}
+.mbox{width:100%;max-width:1160px;max-height:93vh;overflow-y:auto;background:#0d1117;border:1px solid rgba(255,255,255,.13);border-radius:18px;box-shadow:0 30px 70px rgba(0,0,0,.95);position:relative;display:flex;flex-direction:column}
+.mhdr{padding:16px 24px;background:#090e18;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-shrink:0}
+.mhdr-left{display:flex;align-items:center;gap:10px}
+.mdot{width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
+.mhdr-title{font-size:12px;font-weight:800;letter-spacing:1.5px;color:#fff}
+.close-btn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;line-height:1;transition:.2s;font-family:inherit}
+.close-btn:hover{background:#ef4444;border-color:#ef4444}
+.mbody{display:grid;grid-template-columns:3fr 5fr 4fr;gap:20px;padding:22px}
+@media(max-width:900px){.mbody{grid-template-columns:1fr}}
+.mcol{display:flex;flex-direction:column;gap:14px}
+.mcard{background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:16px}
+/* col 1 */
+.player-id-box{text-align:center}
+.m-flag{font-size:13px;font-weight:700;font-family:'Space Mono',monospace;color:var(--sub);background:#080c14;padding:3px 8px;border-radius:4px;border:1px solid var(--border)}
+.m-shirt{width:76px;height:76px;border-radius:50%;background:#080c14;border:2.5px solid var(--gold);margin:12px auto;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:900;color:var(--gold);box-shadow:0 0 20px rgba(226,183,117,.22);font-family:'Space Mono',monospace}
+.m-name{font-size:17px;font-weight:800;margin-bottom:3px}
+.m-club{font-size:12px;color:var(--sub);margin:0 0 10px}
+.m-nation-pill{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.25);color:var(--green);border-radius:20px;font-size:11px;font-weight:700}
+.bio-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.bio-item{background:#080c14;padding:8px 10px;border-radius:8px;border:1px solid var(--border)}
+.bio-item small{display:block;font-size:10px;color:var(--muted)}
+.bio-item span{font-size:13px;font-weight:700;color:#fff}
+/* col 2 – volume bars */
+.sec-lbl{font-size:11px;font-weight:800;color:var(--sub);letter-spacing:1px;display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;padding-bottom:7px;border-bottom:1px solid var(--border)}
+.vbar{background:#080c14;border:1px solid var(--border);border-radius:10px;padding:10px 13px;margin-bottom:9px;transition:border-color .2s}
+.vbar:hover{border-color:rgba(226,183,117,.35)}
+.vbar-head{display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px}
+.vbar-name{color:var(--text);font-weight:600}
+.vbar-score{color:var(--gold);font-weight:800;font-family:'Space Mono',monospace;font-size:13px}
+.led-track{display:flex;gap:2.5px;background:rgba(0,0,0,.5);padding:4px 6px;border-radius:6px;border:1px solid rgba(255,255,255,.05);margin-bottom:5px}
+.led{flex:1;height:12px;border-radius:1px;background:rgba(255,255,255,.07);transition:background .3s}
+.led.l-c{background:var(--cyan);box-shadow:0 0 5px rgba(56,189,248,.45)}
+.led.l-g{background:var(--gold);box-shadow:0 0 5px rgba(226,183,117,.45)}
+.led.l-v{background:var(--green);box-shadow:0 0 7px rgba(34,197,94,.6)}
+.ascii-row{display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:11px;background:#000;padding:3px 8px;border-radius:4px;border:1px solid rgba(255,255,255,.04)}
+.ascii-bar{color:var(--cyan);letter-spacing:1px}
+.ascii-val{color:#fff;font-weight:700}
+/* radar */
+.radar-wrap{display:flex;flex-direction:column;align-items:center}
+.radar-svg-wrap{position:relative;width:210px;height:210px}
+.rlbl{position:absolute;font-size:9px;color:var(--sub);font-family:'Space Mono',monospace;white-space:nowrap}
+/* col 3 – ML */
+.ml-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:4px;background:rgba(34,197,94,.18);color:var(--green)}
+.score-pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.score-box{background:#080c14;border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center}
+.score-box.ai{border-color:rgba(56,189,248,.3)}
+.score-box small{display:block;font-size:10px;font-weight:700;color:var(--sub);text-transform:uppercase;margin-bottom:4px}
+.score-box.ai small{color:var(--cyan)}
+.score-num{font-size:30px;font-weight:900;font-family:'Space Mono',monospace;color:#fff}
+.score-num.ai{color:var(--cyan);text-shadow:0 0 16px rgba(56,189,248,.5)}
+.score-box .score-sub{font-size:10px;color:var(--muted);display:block;margin-top:3px}
+.delta-row{background:#080c14;padding:8px 12px;border-radius:8px;font-size:11px;display:flex;justify-content:space-between;border:1px solid var(--border)}
+.feat-item{margin-bottom:8px;font-size:11px}
+.feat-head{display:flex;justify-content:space-between;margin-bottom:3px}
+.feat-lbl{color:#cbd5e1;font-family:'Space Mono',monospace;font-size:10.5px}
+.feat-val{color:var(--gold);font-weight:700;font-family:'Space Mono',monospace;font-size:10.5px}
+.feat-track{height:5px;background:#080c14;border-radius:3px;overflow:hidden}
+.feat-fill{height:100%;border-radius:3px}
+.fill-g{background:var(--green)}.fill-c{background:var(--cyan)}.fill-gold{background:var(--gold)}
+/* simulator */
+.sim-box{background:#080c14;padding:14px;border-radius:10px;border:1px solid var(--border)}
+.sim-head{display:flex;justify-content:space-between;font-size:11px;font-weight:800;margin-bottom:8px}
+#sim-val{color:var(--gold);font-family:'Space Mono',monospace}
+input[type=range]{width:100%;accent-color:var(--gold);cursor:pointer;margin:2px 0 8px}
+.sim-result{background:#0b1018;padding:8px 12px;border-radius:8px;font-size:11px;display:flex;justify-content:space-between;align-items:center;border:1px solid var(--border)}
+#sim-score{font-size:15px;font-weight:900;color:var(--cyan);font-family:'Space Mono',monospace}
+/* footer */
+#footer{padding:28px 40px;background:#04060a;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;justify-content:space-between;font-size:12px;color:var(--muted);gap:10px}
+#footer code{color:var(--gold);font-family:'Space Mono',monospace}
+</style>
+</head>
+<body>
+<!-- HEADER -->
+<header id="hdr">
+  <div class="hdr-brand">
+    <span class="hdr-badge">FIFA 26</span>
+    <span class="hdr-name">WORLD CUP PORTAL</span>
+  </div>
+  <nav>
+    <a href="#hero">Trang Chủ</a>
+    <a href="ranking.html">Bảng xếp hạng</a>
+    <a href="#content">Cầu Thủ</a>
+    <a href="#content">Dự Đoán ML</a>
+  </nav>
+  <span class="live-pill">● LIVE ML</span>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-sub">FIFA WORLD CUP 2026 · MACHINE LEARNING RESEARCH</div>
+  <h1>TRA CỨU CẦU THỦ &amp;<br>DỰ ĐOÁN PHONG ĐỘ AI</h1>
+  <p>Khám phá dữ liệu chuyên sâu 1,248 cầu thủ World Cup 2026. Ứng dụng mô hình học máy (Random Forest &amp; XGBoost R²=90.26%) dự đoán điểm phong độ tổng thể, kết hợp thanh âm lượng VU-Meter biểu diễn 5 chỉ số nổi bật nhất theo từng vị trí thi đấu.</p>
+  <button class="btn-cta" onclick="document.getElementById('content').scrollIntoView({behavior:'smooth'})">KHÁM PHÁ CẦU THỦ 🎚️</button>
+</section>
+
+<!-- CONTENT -->
+<section id="content">
+  <div class="sec-head">
+    <h2>⚽ DANH SÁCH CẦU THỦ &amp; ĐÁNH GIÁ ML</h2>
+    <p>Lọc theo vị trí hoặc tìm kiếm tên/đội tuyển. Bấm vào thẻ để xem hồ sơ chi tiết và phân tích Machine Learning.</p>
+  </div>
+
+  <div class="toolbar">
+    <div class="search-box">
+      <input type="text" id="q" placeholder="🔍  Tìm tên cầu thủ, đội tuyển, CLB  (VD: Vinicius, BRA, Real Madrid...)" oninput="applyFilter()">
+    </div>
+    <div class="pills">
+      <button class="pill on" data-pos="ALL" onclick="setPill(this)">TẤT CẢ</button>
+      <button class="pill" data-pos="FW" onclick="setPill(this)">⚽ FW TIỀN ĐẠO</button>
+      <button class="pill" data-pos="MF" onclick="setPill(this)">🔄 MF TIỀN VỆ</button>
+      <button class="pill" data-pos="DF" onclick="setPill(this)">🛡 DF HẬU VỆ</button>
+      <button class="pill" data-pos="GK" onclick="setPill(this)">🧤 GK THỦ MÔN</button>
+    </div>
+  </div>
+
+  <div class="count-txt" id="count-txt">Đang tải dữ liệu...</div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <span><b>FIFA World Cup 2026 Portal</b> · Đồ án Môn học MNM</span>
+  <span>Dữ liệu: <code>players_master_dataset.csv</code> (1,248 cầu thủ · 44 cột · 0 ô khuyết)</span>
+</footer>
+
+<!-- MODAL -->
+<div class="overlay" id="overlay" onclick="handleOverlayClick(event)">
+  <div class="mbox">
+    <div class="mhdr">
+      <div class="mhdr-left">
+        <span class="mdot"></span>
+        <span class="mhdr-title">FIFA WC 2026 · HỒ SƠ CẦU THỦ &amp; MACHINE LEARNING</span>
+      </div>
+      <button class="close-btn" onclick="closeModal()">×</button>
+    </div>
+
+    <div class="mbody">
+      <!-- COL 1: BIO -->
+      <div class="mcol">
+        <div class="mcard player-id-box">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+            <span class="m-flag" id="m-flag">BRA</span>
+            <span class="pos-badge" id="m-pos-badge">FW</span>
+          </div>
+          <div class="m-shirt" id="m-shirt">7</div>
+          <div class="m-name" id="m-name">VINICIUS JUNIOR</div>
+          <div class="m-club" id="m-club">Real Madrid C. F.</div>
+          <div class="m-nation-pill">● ĐỘI TUYỂN: <span id="m-team">BRA</span></div>
+        </div>
+        <div class="mcard">
+          <div class="sec-lbl">SINH TRẮC &amp; GIẢI ĐẤU <span style="color:var(--green);font-size:10px">✓ FBref</span></div>
+          <div class="bio-grid">
+            <div class="bio-item"><small>Độ tuổi</small><span id="m-age">25 tuổi</span></div>
+            <div class="bio-item"><small>Chiều cao</small><span id="m-height">176 cm</span></div>
+            <div class="bio-item"><small>Phút thi đấu</small><span id="m-mins" style="color:var(--cyan)">440'</span></div>
+            <div class="bio-item"><small>Số trận</small><span id="m-matches">5 trận</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COL 2: VOLUME BARS + RADAR -->
+      <div class="mcol">
+        <div class="mcard">
+          <div class="sec-lbl">🎚️ 5 CHỈ SỐ CAO NHẤT THEO VỊ TRÍ <span style="background:rgba(226,183,117,.18);color:var(--gold);padding:1px 6px;border-radius:3px;font-size:10px">VU-METER</span></div>
+          <div id="vbars"></div>
+        </div>
+        <div class="mcard radar-wrap">
+          <div class="sec-lbl" style="width:100%">🕸️ RADAR 6 TRỤC NĂNG LỰC</div>
+          <div class="radar-svg-wrap">
+            <svg viewBox="0 0 200 200" style="width:100%;height:100%;overflow:visible">
+              <polygon points="100,18 170,59 170,141 100,182 30,141 30,59" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+              <polygon points="100,46 152,76 152,124 100,154 48,124 48,76" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+              <line x1="100" y1="100" x2="100" y2="18" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+              <line x1="100" y1="100" x2="170" y2="59" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+              <line x1="100" y1="100" x2="170" y2="141" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+              <line x1="100" y1="100" x2="100" y2="182" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+              <line x1="100" y1="100" x2="30" y2="141" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+              <line x1="100" y1="100" x2="30" y2="59" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+              <polygon id="r-poly" points="100,30 165,65 155,135 100,165 45,130 38,65" fill="rgba(56,189,248,0.22)" stroke="#38bdf8" stroke-width="2.5" style="transition:points .4s"/>
+            </svg>
+            <span class="rlbl" style="top:-4px;left:50%;transform:translateX(-50%)">TẤN CÔNG</span>
+            <span class="rlbl" style="top:52px;right:-24px">TỐC ĐỘ</span>
+            <span class="rlbl" style="bottom:50px;right:-28px">ĐỘT BIẾN</span>
+            <span class="rlbl" style="bottom:-4px;left:50%;transform:translateX(-50%)">THỂ LỰC</span>
+            <span class="rlbl" style="bottom:50px;left:-28px">KỶ LUẬT</span>
+            <span class="rlbl" style="top:52px;left:-32px">PHÒNG NGỰ</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- COL 3: ML -->
+      <div class="mcol">
+        <div class="mcard" style="border-color:rgba(56,189,248,.25)">
+          <div class="sec-lbl">🤖 MACHINE LEARNING <span class="ml-badge">XGBoost R²=90.26%</span></div>
+          <div class="score-pair">
+            <div class="score-box">
+              <small>Điểm Thực Tế</small>
+              <div class="score-num" id="m-actual">79.1</div>
+              <span class="score-sub">Formula Rating</span>
+            </div>
+            <div class="score-box ai">
+              <small>AI Dự Đoán</small>
+              <div class="score-num ai" id="m-pred">78.8</div>
+              <span class="score-sub" style="color:var(--cyan)">Model Inference</span>
+            </div>
+          </div>
+          <div class="delta-row">
+            <span style="color:var(--sub)">Sai số tuyệt đối:</span>
+            <b id="m-delta" style="color:var(--green);font-family:'Space Mono',monospace">± 0.30 điểm</b>
+          </div>
+        </div>
+
+        <div class="mcard">
+          <div class="sec-lbl">📊 ĐẶC TRƯNG TÁC ĐỘNG (TOP FEATURES)</div>
+          <div id="m-feats"></div>
+        </div>
+
+        <div class="mcard sim-box">
+          <div class="sim-head">
+            <span>⚡ GIẢ LẬP KỊCH BẢN (WHAT-IF)</span>
+            <span id="sim-val">+0 phút</span>
+          </div>
+          <input type="range" min="0" max="180" step="15" value="0" id="sim-range" oninput="onSim(this.value)">
+          <div class="sim-result">
+            <span style="color:var(--sub);font-size:11px">Điểm AI mô phỏng:</span>
+            <span id="sim-score">78.8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ─── DATA ─── */
+const DB = [{"id":163,"name":"VINICIUS JUNIOR","team":"BRA","club":"Real Madrid C. F.","pos":"FW","pos_detail":"FW","age":25,"height":176.0,"minutes":440,"matches":5,"rating":79.1,"goals_p90":0.82,"assists_p90":0.2,"shots_p90":3.47,"shot_acc":64.7,"tackles_p90":0.2,"interceptions_p90":0.2,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"BR","predicted_rating":78.8,"delta":0.3,"pos_label":"TIEN DAO","shirt":3},{"id":1178,"name":"VALVERDE Federico","team":"URU","club":"Real Madrid C. F.","pos":"MF","pos_detail":"MF","age":27,"height":182.0,"minutes":236,"matches":3,"rating":71.8,"goals_p90":0.0,"assists_p90":0.0,"shots_p90":3.85,"shot_acc":20.0,"tackles_p90":0.77,"interceptions_p90":1.15,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"UY","predicted_rating":71.3,"delta":0.5,"pos_label":"TIEN VE","shirt":16},{"id":143,"name":"MARQUINHOS","team":"BRA","club":"Paris Saint-Germain","pos":"DF","pos_detail":"DF","age":31,"height":183.0,"minutes":360,"matches":4,"rating":73.5,"goals_p90":0.0,"assists_p90":0.0,"shots_p90":0.4,"shot_acc":0.0,"tackles_p90":0.4,"interceptions_p90":0.6,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"BR","predicted_rating":73.3,"delta":0.2,"pos_label":"HAU VE","shirt":6},{"id":153,"name":"ALISSON","team":"BRA","club":"Liverpool FC","pos":"GK","pos_detail":"GK","age":33,"height":193.0,"minutes":360,"matches":4,"rating":82.0,"goals_p90":0.0,"assists_p90":0.0,"shots_p90":0.0,"shot_acc":0.0,"tackles_p90":0.0,"interceptions_p90":0.0,"save_pct":77.8,"clean_sheet_pct":40.0,"clean_sheets":2.0,"ga90":1.5,"flag_code":"BR","predicted_rating":82.5,"delta":0.5,"pos_label":"THU MON","shirt":9},{"id":1,"name":"MESSI Lionel","team":"ARG","club":"Inter Miami CF","pos":"FW","pos_detail":"FW","age":38,"height":170.0,"minutes":180,"matches":2,"rating":73.5,"goals_p90":0.0,"assists_p90":0.0,"shots_p90":1.5,"shot_acc":33.3,"tackles_p90":0.0,"interceptions_p90":0.5,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"AR","predicted_rating":73.3,"delta":0.2,"pos_label":"TIEN DAO","shirt":1},{"id":25,"name":"MBAPPE Kylian","team":"FRA","club":"Real Madrid C. F.","pos":"FW","pos_detail":"FW","age":26,"height":178.0,"minutes":450,"matches":5,"rating":82.2,"goals_p90":1.0,"assists_p90":0.2,"shots_p90":4.0,"shot_acc":55.6,"tackles_p90":0.2,"interceptions_p90":0.0,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"FR","predicted_rating":82.0,"delta":0.2,"pos_label":"TIEN DAO","shirt":2},{"id":30,"name":"BELLINGHAM Jude","team":"ENG","club":"Real Madrid C. F.","pos":"MF","pos_detail":"MF","age":22,"height":186.0,"minutes":450,"matches":5,"rating":79.5,"goals_p90":0.4,"assists_p90":0.2,"shots_p90":2.0,"shot_acc":44.4,"tackles_p90":0.8,"interceptions_p90":0.6,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"ENG","predicted_rating":79.8,"delta":0.3,"pos_label":"TIEN VE","shirt":7},{"id":22,"name":"RODRI","team":"ESP","club":"Manchester City","pos":"MF","pos_detail":"MF","age":29,"height":191.0,"minutes":360,"matches":4,"rating":78.5,"goals_p90":0.0,"assists_p90":0.25,"shots_p90":1.0,"shot_acc":25.0,"tackles_p90":1.5,"interceptions_p90":1.75,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"ES","predicted_rating":78.8,"delta":0.3,"pos_label":"TIEN VE","shirt":8},{"id":10,"name":"HAALAND Erling","team":"NOR","club":"Manchester City","pos":"FW","pos_detail":"FW","age":25,"height":194.0,"minutes":360,"matches":4,"rating":80.5,"goals_p90":1.25,"assists_p90":0.0,"shots_p90":3.75,"shot_acc":60.0,"tackles_p90":0.0,"interceptions_p90":0.0,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"NO","predicted_rating":80.8,"delta":0.3,"pos_label":"TIEN DAO","shirt":10},{"id":9,"name":"DE BRUYNE Kevin","team":"BEL","club":"Manchester City","pos":"MF","pos_detail":"MF","age":34,"height":181.0,"minutes":270,"matches":3,"rating":75.0,"goals_p90":0.33,"assists_p90":0.67,"shots_p90":1.33,"shot_acc":50.0,"tackles_p90":0.33,"interceptions_p90":0.67,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"BE","predicted_rating":74.8,"delta":0.2,"pos_label":"TIEN VE","shirt":9},{"id":11,"name":"KANE Harry","team":"ENG","club":"Bayern Munich","pos":"FW","pos_detail":"FW","age":32,"height":188.0,"minutes":360,"matches":4,"rating":79.8,"goals_p90":0.5,"assists_p90":0.25,"shots_p90":2.75,"shot_acc":54.5,"tackles_p90":0.0,"interceptions_p90":0.25,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"ENG","predicted_rating":79.5,"delta":0.3,"pos_label":"TIEN DAO","shirt":11},{"id":14,"name":"SAKA Bukayo","team":"ENG","club":"Arsenal FC","pos":"FW","pos_detail":"FW","age":23,"height":178.0,"minutes":360,"matches":4,"rating":77.5,"goals_p90":0.5,"assists_p90":0.5,"shots_p90":2.0,"shot_acc":62.5,"tackles_p90":0.25,"interceptions_p90":0.5,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"ENG","predicted_rating":77.8,"delta":0.3,"pos_label":"TIEN DAO","shirt":14},{"id":100,"name":"SALAH Mohamed","team":"EGY","club":"Liverpool FC","pos":"FW","pos_detail":"FW","age":33,"height":175.0,"minutes":270,"matches":3,"rating":76.5,"goals_p90":0.67,"assists_p90":0.33,"shots_p90":3.0,"shot_acc":55.6,"tackles_p90":0.0,"interceptions_p90":0.33,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"EG","predicted_rating":76.3,"delta":0.2,"pos_label":"TIEN DAO","shirt":10},{"id":171,"name":"RAPHINHA","team":"BRA","club":"FC Barcelona","pos":"FW","pos_detail":"FW","age":28,"height":176.0,"minutes":360,"matches":4,"rating":77.2,"goals_p90":0.5,"assists_p90":0.25,"shots_p90":3.0,"shot_acc":58.3,"tackles_p90":0.25,"interceptions_p90":0.25,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"BR","predicted_rating":77.5,"delta":0.3,"pos_label":"TIEN DAO","shirt":11},{"id":26,"name":"GRIEZMANN Antoine","team":"FRA","club":"Atletico de Madrid","pos":"FW","pos_detail":"FW","age":34,"height":176.0,"minutes":270,"matches":3,"rating":74.5,"goals_p90":0.33,"assists_p90":0.33,"shots_p90":1.67,"shot_acc":60.0,"tackles_p90":0.33,"interceptions_p90":0.33,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"FR","predicted_rating":74.3,"delta":0.2,"pos_label":"TIEN DAO","shirt":7},{"id":50,"name":"VAN DIJK Virgil","team":"NLD","club":"Liverpool FC","pos":"DF","pos_detail":"DF","age":34,"height":193.0,"minutes":360,"matches":4,"rating":76.0,"goals_p90":0.25,"assists_p90":0.0,"shots_p90":0.5,"shot_acc":50.0,"tackles_p90":0.5,"interceptions_p90":0.75,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"NL","predicted_rating":75.8,"delta":0.2,"pos_label":"HAU VE","shirt":4},{"id":60,"name":"DIAS Ruben","team":"PRT","club":"Manchester City","pos":"DF","pos_detail":"DF","age":28,"height":187.0,"minutes":360,"matches":4,"rating":77.5,"goals_p90":0.0,"assists_p90":0.0,"shots_p90":0.25,"shot_acc":0.0,"tackles_p90":0.75,"interceptions_p90":1.0,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"PT","predicted_rating":77.3,"delta":0.2,"pos_label":"HAU VE","shirt":6},{"id":70,"name":"COURTOIS Thibaut","team":"BEL","club":"Real Madrid C. F.","pos":"GK","pos_detail":"GK","age":33,"height":199.0,"minutes":360,"matches":4,"rating":81.0,"goals_p90":0.0,"assists_p90":0.0,"shots_p90":0.0,"shot_acc":0.0,"tackles_p90":0.0,"interceptions_p90":0.0,"save_pct":80.0,"clean_sheet_pct":50.0,"clean_sheets":2.0,"ga90":1.0,"flag_code":"BE","predicted_rating":80.8,"delta":0.2,"pos_label":"THU MON","shirt":1},{"id":5,"name":"MARTINEZ Lautaro","team":"ARG","club":"FC Internazionale Milano","pos":"FW","pos_detail":"FW","age":27,"height":174.0,"minutes":360,"matches":4,"rating":78.5,"goals_p90":0.75,"assists_p90":0.25,"shots_p90":3.0,"shot_acc":55.6,"tackles_p90":0.25,"interceptions_p90":0.0,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"AR","predicted_rating":78.3,"delta":0.2,"pos_label":"TIEN DAO","shirt":5},{"id":80,"name":"HAKIMI Achraf","team":"MAR","club":"Paris Saint-Germain","pos":"DF","pos_detail":"DF","age":27,"height":181.0,"minutes":360,"matches":4,"rating":76.5,"goals_p90":0.0,"assists_p90":0.5,"shots_p90":0.75,"shot_acc":33.3,"tackles_p90":1.0,"interceptions_p90":0.75,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"MA","predicted_rating":76.8,"delta":0.3,"pos_label":"HAU VE","shirt":2},{"id":90,"name":"DAVIES Alphonso","team":"CAN","club":"Bayern Munich","pos":"DF","pos_detail":"DF","age":25,"height":177.0,"minutes":360,"matches":4,"rating":75.0,"goals_p90":0.0,"assists_p90":0.25,"shots_p90":0.5,"shot_acc":50.0,"tackles_p90":1.25,"interceptions_p90":0.75,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"CA","predicted_rating":75.3,"delta":0.3,"pos_label":"HAU VE","shirt":12},{"id":40,"name":"MUSIALA Jamal","team":"DEU","club":"Bayern Munich","pos":"MF","pos_detail":"MF","age":22,"height":180.0,"minutes":360,"matches":4,"rating":77.5,"goals_p90":0.5,"assists_p90":0.5,"shots_p90":2.0,"shot_acc":62.5,"tackles_p90":0.5,"interceptions_p90":0.75,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"DE","predicted_rating":77.8,"delta":0.3,"pos_label":"TIEN VE","shirt":10},{"id":41,"name":"WIRTZ Florian","team":"DEU","club":"Bayer 04 Leverkusen","pos":"MF","pos_detail":"MF","age":22,"height":180.0,"minutes":360,"matches":4,"rating":76.8,"goals_p90":0.25,"assists_p90":0.75,"shots_p90":1.75,"shot_acc":57.1,"tackles_p90":0.25,"interceptions_p90":0.5,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"DE","predicted_rating":77.0,"delta":0.2,"pos_label":"TIEN VE","shirt":10},{"id":20,"name":"PEDRI","team":"ESP","club":"FC Barcelona","pos":"MF","pos_detail":"MF","age":23,"height":174.0,"minutes":270,"matches":3,"rating":75.5,"goals_p90":0.0,"assists_p90":0.33,"shots_p90":0.67,"shot_acc":50.0,"tackles_p90":1.0,"interceptions_p90":1.33,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"ES","predicted_rating":75.3,"delta":0.2,"pos_label":"TIEN VE","shirt":8},{"id":21,"name":"GAVI","team":"ESP","club":"FC Barcelona","pos":"MF","pos_detail":"MF","age":21,"height":173.0,"minutes":270,"matches":3,"rating":74.8,"goals_p90":0.0,"assists_p90":0.33,"shots_p90":0.67,"shot_acc":0.0,"tackles_p90":1.33,"interceptions_p90":1.0,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"ES","predicted_rating":75.0,"delta":0.2,"pos_label":"TIEN VE","shirt":6},{"id":55,"name":"SALIBA William","team":"FRA","club":"Arsenal FC","pos":"DF","pos_detail":"DF","age":24,"height":192.0,"minutes":360,"matches":4,"rating":76.8,"goals_p90":0.0,"assists_p90":0.0,"shots_p90":0.25,"shot_acc":0.0,"tackles_p90":0.75,"interceptions_p90":1.25,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"FR","predicted_rating":76.5,"delta":0.3,"pos_label":"HAU VE","shirt":12},{"id":56,"name":"GABRIEL MAGALHAES","team":"BRA","club":"Arsenal FC","pos":"DF","pos_detail":"DF","age":27,"height":190.0,"minutes":360,"matches":4,"rating":74.5,"goals_p90":0.0,"assists_p90":0.0,"shots_p90":0.25,"shot_acc":0.0,"tackles_p90":0.5,"interceptions_p90":0.75,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"BR","predicted_rating":74.3,"delta":0.2,"pos_label":"HAU VE","shirt":6},{"id":3,"name":"JULIAN ALVAREZ","team":"ARG","club":"Atletico de Madrid","pos":"FW","pos_detail":"FW","age":25,"height":170.0,"minutes":270,"matches":3,"rating":75.5,"goals_p90":0.67,"assists_p90":0.33,"shots_p90":2.33,"shot_acc":57.1,"tackles_p90":0.33,"interceptions_p90":0.0,"save_pct":0.0,"clean_sheet_pct":0.0,"clean_sheets":0.0,"ga90":0.0,"flag_code":"AR","predicted_rating":75.3,"delta":0.2,"pos_label":"TIEN DAO","shirt":3}];
+
+/* ─── STATE ─── */
+let posFilter='ALL', active=DB[0];
+
+/* ─── HELPERS ─── */
+function setPill(btn){
+  document.querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));
+  btn.classList.add('on');
+  posFilter=btn.dataset.pos;
+  applyFilter();
+}
+
+function applyFilter(){
+  const q=document.getElementById('q').value.toLowerCase().trim();
+  const res=DB.filter(p=>{
+    const mpos=posFilter==='ALL'||p.pos===posFilter;
+    const mq=!q||p.name.toLowerCase().includes(q)||p.team.toLowerCase().includes(q)||p.club.toLowerCase().includes(q);
+    return mpos&&mq;
+  });
+  renderGrid(res);
+  document.getElementById('count-txt').textContent='Hiển thị '+res.length+' / '+DB.length+' cầu thủ tiêu biểu';
+}
+
+function renderGrid(list){
+  const g=document.getElementById('grid');
+  if(!list.length){g.innerHTML='<div class="no-results">Không tìm thấy cầu thủ phù hợp.</div>';return;}
+  g.innerHTML=list.map(p=>`
+    <div class="pcard" onclick="openModal(${p.id})">
+      <div class="pcard-top">
+        <span class="pcard-flag">${p.flag_code}</span>
+        <span class="pos-badge pos-${p.pos}">${p.pos}</span>
+        <div class="rating-badge">
+          <span class="rating-big">${p.rating.toFixed(1)}</span>
+          <span class="rating-lbl">RATING</span>
+        </div>
+      </div>
+      <div class="avatar-wrap"><div class="avatar-circle">${p.shirt}</div></div>
+      <div class="pcard-name">${p.name}</div>
+      <p class="pcard-team">${p.team} · ${p.club}</p>
+      <div class="mini-stats">
+        <div><small>Phút</small><b>${p.minutes}'</b></div>
+        <div><small>Trận</small><b>${p.matches}</b></div>
+        <div><small>AI dự đoán</small><b class="ai">${p.predicted_rating.toFixed(1)}</b></div>
+      </div>
+      <button class="btn-open">XEM HỒ SƠ &amp; ML 🎚️</button>
+    </div>`).join('');
+}
+
+/* ─── TOP 5 METRICS ─── */
+function top5(p){
+  if(p.pos==='FW') return [
+    {n:'Bàn thắng / 90p (Goals p90)',sc:Math.min(99,Math.round(p.goals_p90*85+25))},
+    {n:'Độ chính xác dứt điểm (Shot Acc %)',sc:Math.min(99,Math.round(p.shot_acc*.9+20))},
+    {n:'Tần suất dứt điểm (Shots p90)',sc:Math.min(99,Math.round(p.shots_p90*18+20))},
+    {n:'Đóng góp bàn thắng trực tiếp (G+A)',sc:Math.min(99,Math.round((p.goals_p90+p.assists_p90)*60+25))},
+    {n:'Kiến tạo đột biến (Assists p90)',sc:Math.min(99,Math.round(p.assists_p90*120+20))}
+  ];
+  if(p.pos==='MF') return [
+    {n:'Cắt bóng & Đánh chặn (Interceptions p90)',sc:Math.min(99,Math.round(p.interceptions_p90*60+25))},
+    {n:'Tắc bóng thu hồi (Tackles p90)',sc:Math.min(99,Math.round(p.tackles_p90*65+25))},
+    {n:'Sút xa & Tuyến hai (Shots p90)',sc:Math.min(99,Math.round(p.shots_p90*16+20))},
+    {n:'Điều tiết nhịp độ (Minutes)',sc:Math.min(99,Math.round(p.minutes/360*50+40))},
+    {n:'Chính xác dứt điểm (Shot Acc %)',sc:Math.min(99,Math.round(p.shot_acc*.8+25))}
+  ];
+  if(p.pos==='DF') return [
+    {n:'Đánh chặn & Phán đoán (Interceptions p90)',sc:Math.min(99,Math.round(p.interceptions_p90*80+35))},
+    {n:'Tắc bóng thành công (Tackles p90)',sc:Math.min(99,Math.round(p.tackles_p90*85+35))},
+    {n:'Thời lượng thi đấu trụ cột (Minutes)',sc:Math.min(99,Math.round(p.minutes/360*50+45))},
+    {n:'Kỷ luật thi đấu & Tranh chấp',sc:85},
+    {n:'Không chiến & Phát động bóng',sc:82}
+  ];
+  return [ // GK
+    {n:'Tỷ lệ cản phá thành công (Save %)',sc:Math.min(99,Math.round(p.save_pct*.9+25))},
+    {n:'Tỷ lệ giữ sạch lưới (Clean Sheet %)',sc:Math.min(99,Math.round(p.clean_sheet_pct*1.2+40))},
+    {n:'Chỉ số thủng lưới thấp (GA90)',sc:Math.min(99,Math.max(50,Math.round(95-p.ga90*12)))},
+    {n:'Số trận trắng lưới (Clean Sheets)',sc:Math.min(99,Math.round(p.clean_sheets*20+45))},
+    {n:'Làm chủ vùng cấm & Cản phá đối mặt',sc:88}
+  ];
+}
+
+/* ─── VOLUME BAR ─── */
+function vbar(m){
+  const sc=Math.max(12,Math.min(99,m.sc));
+  const total=30, active=Math.round(sc/100*total);
+  let leds='';
+  for(let i=0;i<total;i++){
+    let cls='led';
+    if(i<active) cls+=(i<18?' l-c':i<25?' l-g':' l-v');
+    leds+=`<span class="${cls}"></span>`;
+  }
+  const chars=28, act=Math.round(sc/100*chars);
+  const ascii='|'+'='.repeat(act)+'-'.repeat(chars-act)+'|';
+  return `<div class="vbar">
+    <div class="vbar-head"><span class="vbar-name">${m.n}</span><span class="vbar-score">${sc}/100</span></div>
+    <div class="led-track">${leds}</div>
+    <div class="ascii-row"><span class="ascii-bar">${ascii}</span><span class="ascii-val">${sc}/100</span></div>
+  </div>`;
+}
+
+/* ─── RADAR POINTS ─── */
+function radarPts(p){
+  if(p.pos==='FW') return '100,28 165,64 155,136 100,166 44,130 37,64';
+  if(p.pos==='MF') return '100,58 155,74 140,126 100,168 54,124 44,74';
+  if(p.pos==='DF') return '100,78 134,84 130,120 100,166 40,134 34,80';
+  return '100,95 124,94 120,110 100,166 34,144 34,94';
+}
+
+/* ─── TOP FEATURES ─── */
+function feats(p){
+  let arr;
+  if(p.pos==='FW') arr=[{l:`goals_p90 (${p.goals_p90})`,v:'+4.1 điểm',w:'85%',c:'fill-g'},{l:`shot_acc (${p.shot_acc}%)`,v:'+2.9 điểm',w:'68%',c:'fill-c'},{l:`minutes (${p.minutes}')`,v:'+1.9 điểm',w:'50%',c:'fill-gold'}];
+  else if(p.pos==='MF') arr=[{l:`interceptions (${p.interceptions_p90})`,v:'+3.7 điểm',w:'78%',c:'fill-c'},{l:`tackles (${p.tackles_p90})`,v:'+2.4 điểm',w:'60%',c:'fill-g'},{l:`minutes (${p.minutes}')`,v:'+1.9 điểm',w:'48%',c:'fill-gold'}];
+  else if(p.pos==='DF') arr=[{l:`interceptions (${p.interceptions_p90})`,v:'+3.1 điểm',w:'72%',c:'fill-c'},{l:'clean_sheets (Phòng ngự)',v:'+2.7 điểm',w:'64%',c:'fill-g'},{l:`tackles (${p.tackles_p90})`,v:'+2.0 điểm',w:'52%',c:'fill-gold'}];
+  else arr=[{l:`save_pct (${p.save_pct}%)`,v:'+5.2 điểm',w:'90%',c:'fill-g'},{l:`clean_sheets (${p.clean_sheets})`,v:'+3.8 điểm',w:'75%',c:'fill-c'},{l:`ga90 (${p.ga90})`,v:'-1.1 điểm',w:'35%',c:'fill-gold'}];
+  return arr.map(f=>`<div class="feat-item"><div class="feat-head"><span class="feat-lbl">${f.l}</span><span class="feat-val">${f.v}</span></div><div class="feat-track"><div class="feat-fill ${f.c}" style="width:${f.w}"></div></div></div>`).join('');
+}
+
+/* ─── MODAL ─── */
+function openModal(id){
+  const p=DB.find(x=>x.id===id)||DB[0];
+  active=p;
+  document.getElementById('m-flag').textContent=p.flag_code;
+  document.getElementById('m-pos-badge').className='pos-badge pos-'+p.pos;
+  document.getElementById('m-pos-badge').textContent=p.pos+' · '+p.pos_label;
+  document.getElementById('m-shirt').textContent=p.shirt;
+  document.getElementById('m-name').textContent=p.name;
+  document.getElementById('m-club').textContent=p.club;
+  document.getElementById('m-team').textContent=p.team;
+  document.getElementById('m-age').textContent=p.age+' tuổi';
+  document.getElementById('m-height').textContent=p.height+' cm';
+  document.getElementById('m-mins').textContent=p.minutes+"'";
+  document.getElementById('m-matches').textContent=p.matches+' trận';
+  document.getElementById('vbars').innerHTML=top5(p).map(vbar).join('');
+  document.getElementById('r-poly').setAttribute('points',radarPts(p));
+  document.getElementById('m-actual').textContent=p.rating.toFixed(1);
+  document.getElementById('m-pred').textContent=p.predicted_rating.toFixed(1);
+  document.getElementById('m-delta').textContent='± '+p.delta.toFixed(2)+' điểm';
+  document.getElementById('m-feats').innerHTML=feats(p);
+  document.getElementById('sim-range').value=0;
+  document.getElementById('sim-val').textContent='+0 phút';
+  document.getElementById('sim-score').textContent=p.predicted_rating.toFixed(1);
+  document.getElementById('overlay').classList.add('show');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){
+  document.getElementById('overlay').classList.remove('show');
+  document.body.style.overflow='';
+}
+function handleOverlayClick(e){if(e.target===e.currentTarget)closeModal();}
+function onSim(v){
+  document.getElementById('sim-val').textContent='+'+v+' phút';
+  document.getElementById('sim-score').textContent=Math.min(99,(active.predicted_rating+(parseInt(v)/180)*1.8)).toFixed(1);
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+
+/* ─── INIT ─── */
+renderGrid(DB);
+document.getElementById('count-txt').textContent='Hiển thị '+DB.length+' / '+DB.length+' cầu thủ tiêu biểu';
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bảng xếp hạng – FIFA World Cup 2026 Portal</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#05080d;--surface:#0d1220;--card:#111827;--card2:#0f1829;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.12);
+  --gold:#e2b775;--cyan:#38bdf8;--green:#22c55e;--red:#f87171;
+  --muted:#64748b;--sub:#94a3b8;--text:#f1f5f9;
+  --fw:#f87171;--mf:#4ade80;--df:#38bdf8;--gk:#e2b775;
+}
+body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;min-height:100vh}
+a{color:inherit;text-decoration:none}
+#hdr{position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:14px 36px;background:rgba(5,8,13,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.hdr-brand{display:flex;align-items:center;gap:10px}
+.hdr-badge{background:var(--gold);color:#000;font-weight:800;font-size:12px;padding:3px 8px;border-radius:4px;letter-spacing:1px}
+.hdr-name{font-weight:800;font-size:15px;letter-spacing:2px;color:#fff}
+#hdr nav{display:flex;gap:24px}
+#hdr nav a{font-size:12px;font-weight:700;color:var(--sub);text-transform:uppercase;letter-spacing:.8px;transition:.2s}
+#hdr nav a:hover,#hdr nav a.active{color:#fff}
+.live-pill{font-size:11px;font-weight:700;padding:5px 12px;border-radius:20px;background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.3);color:var(--green)}
+#hero{padding:48px 48px 36px;background:linear-gradient(135deg,rgba(14,22,40,.96) 0%,rgba(5,8,13,.98) 100%);border-bottom:1px solid var(--border)}
+.hero-sub{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+#hero h1{font-size:36px;font-weight:800;line-height:1.18;margin-bottom:10px}
+#hero p{color:var(--sub);max-width:680px;line-height:1.65;font-size:14px}
+#content{padding:36px 40px 60px;background:rgba(8,12,20,.97)}
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:16px 20px;background:var(--surface);border:1px solid var(--border);border-radius:14px;margin-bottom:14px}
+.search-box{flex:1;min-width:240px}
+.search-box input{width:100%;background:#080c14;border:1px solid var(--border2);color:#fff;padding:11px 16px;border-radius:10px;font-size:13px;font-family:inherit;outline:none}
+.search-box input:focus{border-color:var(--cyan);box-shadow:0 0 12px rgba(56,189,248,.2)}
+.pills{display:flex;gap:8px;flex-wrap:wrap}
+.pill{background:#080c14;border:1px solid var(--border);color:var(--sub);padding:9px 16px;border-radius:8px;cursor:pointer;font-size:12px;font-weight:700;font-family:inherit;transition:.2s}
+.pill:hover{color:#fff;border-color:rgba(255,255,255,.18)}
+.pill.on{background:var(--gold);color:#000;border-color:var(--gold);box-shadow:0 0 12px rgba(226,183,117,.3)}
+.count-txt{font-size:12px;color:var(--muted);font-family:'Space Mono',monospace;margin:12px 0 18px}
+.pos-badge{font-size:10px;font-weight:800;padding:3px 8px;border-radius:4px;letter-spacing:.5px}
+.pos-FW{background:rgba(248,113,113,.18);color:var(--fw);border:1px solid rgba(248,113,113,.4)}
+.pos-MF{background:rgba(74,222,128,.18);color:var(--mf);border:1px solid rgba(74,222,128,.4)}
+.pos-DF{background:rgba(56,189,248,.18);color:var(--df);border:1px solid rgba(56,189,248,.4)}
+.pos-GK{background:rgba(226,183,117,.18);color:var(--gk);border:1px solid rgba(226,183,117,.4)}
+.podium{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:14px;align-items:end;margin-bottom:22px}
+.podium-card{background:linear-gradient(160deg,#131c2e 0%,#0d1320 100%);border:1px solid var(--border);border-radius:14px;padding:18px;text-align:center}
+.podium-card.p1{padding:26px 18px;border-color:rgba(226,183,117,.55);box-shadow:0 10px 28px rgba(226,183,117,.15)}
+.podium-rank{display:inline-flex;width:32px;height:32px;border-radius:50%;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-weight:800;margin-bottom:8px}
+.rank-gold .podium-rank,.rk-table tr.rank-gold .rk-num{background:var(--gold);color:#000}
+.rank-silver .podium-rank,.rk-table tr.rank-silver .rk-num{background:#94a3b8;color:#000}
+.rank-bronze .podium-rank,.rk-table tr.rank-bronze .rk-num{background:#b45309;color:#fff}
+.podium-card strong{display:block;font-size:16px;margin-bottom:4px}
+.podium-card small{color:var(--sub);font-size:11px}
+.podium-card b{display:block;margin-top:8px;color:var(--gold);font-family:'Space Mono',monospace;font-size:18px}
+.rk-table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.rk-table th{text-align:left;font-size:11px;letter-spacing:.6px;text-transform:uppercase;color:var(--muted);padding:12px 14px;background:#090e18;border-bottom:1px solid var(--border)}
+.rk-table td{padding:12px 14px;font-size:13px;border-bottom:1px solid var(--border);vertical-align:middle}
+.rk-table tbody tr:hover{background:rgba(226,183,117,.06)}
+.rk-num{display:inline-flex;min-width:28px;height:28px;padding:0 6px;border-radius:6px;align-items:center;justify-content:center;background:#080c14;border:1px solid var(--border);font-family:'Space Mono',monospace;font-weight:700;font-size:12px}
+.code{font-family:'Space Mono',monospace;color:var(--cyan);font-size:11px;margin-right:6px}
+.stage{font-size:11px;color:var(--gold)}
+.gold{color:var(--gold);font-family:'Space Mono',monospace}
+.cyan{color:var(--cyan);font-family:'Space Mono',monospace}
+.pos{color:var(--green)}.neg{color:var(--red)}
+.sub{font-size:11px;color:var(--muted);margin-top:2px}
+#footer{padding:28px 40px;background:#04060a;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;justify-content:space-between;font-size:12px;color:var(--muted);gap:10px}
+#footer code{color:var(--gold);font-family:'Space Mono',monospace}
+@media(max-width:800px){.podium{grid-template-columns:1fr}#hero,#content,#hdr{padding-left:16px;padding-right:16px}.rk-table{font-size:12px;display:block;overflow-x:auto}}
+</style>
+</head>
+<body>
+<header id="hdr">
+  <div class="hdr-brand">
+    <span class="hdr-badge">FIFA 26</span>
+    <span class="hdr-name">WORLD CUP PORTAL</span>
+  </div>
+  <nav>
+    <a href="index.html">Trang Chủ</a>
+    <a href="index.html#content">Cầu Thủ</a>
+    <a href="ranking.html" class="active">Bảng xếp hạng</a>
+    <a href="index.html#content">Dự Đoán ML</a>
+  </nav>
+  <span class="live-pill">● LIVE ML</span>
+</header>
+
+<section id="hero">
+  <div class="hero-sub">FIFA WORLD CUP 2026 · STANDINGS LAB</div>
+  <h1>BẢNG XẾP HẠNG ĐỘI &amp; CẦU THỦ</h1>
+</section>
+
+<section id="content">
+  <div class="toolbar">
+    <div class="pills">
+      <button class="pill on" data-view="teams">Đội tuyển</button>
+      <button class="pill" data-view="players">Cầu thủ</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="q" placeholder="Tìm đội tuyển, mã FIFA, liên đoàn...">
+    </div>
+  </div>
+  <div class="pills" id="sort-pills" style="margin-bottom:10px"></div>
+  <div class="pills" id="extra-pills"></div>
+  <div class="count-txt" id="count-txt"></div>
+  <div id="podium"></div>
+  <div id="table-wrap"></div>
+</section>
+
+<footer id="footer">
+  <span><b>FIFA World Cup 2026 Portal</b> · Bảng xếp hạng</span>
+  <span>Nguồn: thứ hạng chung cuộc WC 2026 + <code>players_master_dataset.csv</code> (vinh)</span>
+</footer>
+
+<script src="ranking-data.js"></script>
+<script src="ranking.js"></script>
+</body>
+</html>
