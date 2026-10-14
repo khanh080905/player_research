@@ -92,28 +92,53 @@
     const sortLabel = sortObj ? sortObj.label : "Best Players";
     $("count-txt").textContent = `Showing ${list.length} players · Sorted by ${sortLabel}`;
     $("podium").innerHTML = podiumHtml(list);
+
+    const sort = state.playerSort;
+
+    // Cấu hình cột theo từng mục yêu cầu:
+    // 1. "rating" (Best Players): Bỏ hết goals, assists, tackles, saves
+    // 2. "goals", "assists", "tackles" (Top Scorers, Most Assists, Top Tacklers): Bỏ cột saves
+    // 3. "saves" (GK Saves): Bỏ các cột goals, assists, tackles
+    let extraTh = "";
+    if (sort === "goals" || sort === "assists" || sort === "tackles") {
+      extraTh = `<th>Goals</th><th>Assists</th><th>Tackles</th>`;
+    } else if (sort === "saves") {
+      extraTh = `<th>Saves</th>`;
+    }
+
     $("table-wrap").innerHTML = `
       <table class="rk-table">
         <thead>
           <tr>
-            <th>#</th><th>Player</th><th>Team</th><th>Position</th><th>Rating</th>
-            <th>Goals</th><th>Assists</th><th>Tackles</th><th>Saves</th><th>Minutes</th>
+            <th>#</th>
+            <th>Player</th>
+            <th>Team</th>
+            <th>Position</th>
+            <th>Rating</th>
+            ${extraTh}
+            <th>Minutes</th>
           </tr>
         </thead>
         <tbody>
           ${list.slice(0, 100).map((p, i) => {
             const rank = i + 1;
-            const saveCell = p.pos === "GK" ? p.saves : "—";
+            let extraTd = "";
+            if (sort === "goals" || sort === "assists" || sort === "tackles") {
+              extraTd = `
+                <td><b class="${sort === 'goals' ? 'gold' : ''}">${p.goals}</b></td>
+                <td><b class="${sort === 'assists' ? 'gold' : ''}">${p.assists}</b></td>
+                <td><b class="${sort === 'tackles' ? 'gold' : ''}">${p.tackles}</b></td>`;
+            } else if (sort === "saves") {
+              extraTd = `<td><b class="gold">${p.saves}</b></td>`;
+            }
+
             return `<tr class="${medal(rank)}">
               <td><span class="rk-num">${rank}</span></td>
               <td>${p.name}<div class="sub">${p.club}</div></td>
               <td>${p.team}</td>
               <td><span class="pos-badge pos-${p.pos}">${p.pos}</span></td>
               <td><b class="gold">${p.rating.toFixed(1)}</b></td>
-              <td>${p.goals}</td>
-              <td>${p.assists}</td>
-              <td>${p.tackles}</td>
-              <td>${saveCell}</td>
+              ${extraTd}
               <td>${p.minutes}'</td>
             </tr>`;
           }).join("")}
