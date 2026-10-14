@@ -1313,33 +1313,12 @@ html_content = '''<!doctype html>
                     <!-- Right: VU-Meter & What-If -->
                     <div style="background:rgba(6,8,11,0.95);border:1px solid rgba(56,189,248,0.25);border-radius:18px;padding:22px;box-shadow:0 14px 36px rgba(0,0,0,0.8);">
                         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.08);">
-                            <div style="font-family:'Space Grotesk',monospace;font-size:12px;font-weight:800;color:#fff;">🤖 5 LED VU-METER TELEMETRY GAUGES</div>
+                            <div id="wbGaugesTitle" style="font-family:'Space Grotesk',monospace;font-size:12px;font-weight:800;color:#fff;">🤖 5 POSITION METRICS TELEMETRY</div>
                             <span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 8px;border-radius:4px;font-size:10px;font-weight:700;font-family:'Space Grotesk',monospace;">LIVE PREVIEW</span>
                         </div>
 
                         <!-- 5 LED VU METERS -->
-                        <div id="indexVuContainer">
-                            <div class="v-bar-item">
-                                <div class="v-bar-header"><span>PACE &amp; ATTACK ⚡</span><span id="vPaceVal">94.2</span></div>
-                                <div class="v-bar-track"><div class="v-bar-fill" id="vPaceBar" style="width:94.2%"></div></div>
-                            </div>
-                            <div class="v-bar-item">
-                                <div class="v-bar-header"><span>SHOOTING ⚽</span><span id="vShootVal">91.5</span></div>
-                                <div class="v-bar-track"><div class="v-bar-fill" id="vShootBar" style="width:91.5%"></div></div>
-                            </div>
-                            <div class="v-bar-item">
-                                <div class="v-bar-header"><span>PASSING 🎯</span><span id="vPassVal">89.8</span></div>
-                                <div class="v-bar-track"><div class="v-bar-fill" id="vPassBar" style="width:89.8%"></div></div>
-                            </div>
-                            <div class="v-bar-item">
-                                <div class="v-bar-header"><span>DRIBBLING 💫</span><span id="vDribVal">93.1</span></div>
-                                <div class="v-bar-track"><div class="v-bar-fill" id="vDribBar" style="width:93.1%"></div></div>
-                            </div>
-                            <div class="v-bar-item">
-                                <div class="v-bar-header"><span>DEFENDING 🛡</span><span id="vDefVal">68.4</span></div>
-                                <div class="v-bar-track"><div class="v-bar-fill" id="vDefBar" style="width:68.4%"></div></div>
-                            </div>
-                        </div>
+                        <div id="indexVuContainer"></div>
 
                         <!-- WHAT-IF SIMULATOR -->
                         <div style="background:#090e18;border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:16px;margin-top:16px;">
@@ -1347,12 +1326,7 @@ html_content = '''<!doctype html>
                                 <span>SAMPLE WHAT-IF SIMULATOR:</span>
                                 <b style="color:var(--accent-cyan);" id="indexSimResult">Base AI: 78.8</b>
                             </div>
-                            <div style="display:flex;gap:8px;flex-wrap:wrap;">
-                                <button class="sim-chip" onclick="applyIndexSim(30, 0, 0, this)">+30 Mins</button>
-                                <button class="sim-chip" onclick="applyIndexSim(0, 1, 0, this)">+1 Goal</button>
-                                <button class="sim-chip" onclick="applyIndexSim(0, 0, 1, this)">+1 Assist</button>
-                                <button class="sim-chip" onclick="resetIndexSim(this)" style="background:rgba(248,113,113,0.15);color:#f87171;border-color:rgba(248,113,113,0.3)">Reset</button>
-                            </div>
+                            <div id="simChipsContainer" style="display:flex;gap:8px;flex-wrap:wrap;"></div>
                         </div>
                     </div>
                 </div>
@@ -1690,12 +1664,50 @@ html_content = '''<!doctype html>
         if (p) selectPlayerForMlWorkbench(p);
     }
 
+    function renderSimChips(pos) {
+        const container = document.getElementById('simChipsContainer');
+        if (!container) return;
+        if (pos === 'FW') {
+            container.innerHTML = `
+                <button class="sim-chip" onclick="applyIndexSim(30, 0, 0, this, 0)">+30 Mins</button>
+                <button class="sim-chip" onclick="applyIndexSim(0, 1, 0, this, 0)">+1 Goal</button>
+                <button class="sim-chip" onclick="applyIndexSim(0, 0, 1, this, 0)">+1 Assist</button>
+                <button class="sim-chip" onclick="applyIndexSim(0, 0, 0, this, 2)">+2 Pressing</button>
+                <button class="sim-chip" onclick="resetIndexSim(this)" style="background:rgba(248,113,113,0.15);color:#f87171;border-color:rgba(248,113,113,0.3)">Reset</button>
+            `;
+        } else if (pos === 'MF') {
+            container.innerHTML = `
+                <button class="sim-chip" onclick="applyIndexSim(30, 0, 0, this, 0)">+30 Mins</button>
+                <button class="sim-chip" onclick="applyIndexSim(0, 0, 1, this, 0)">+1 Key Assist</button>
+                <button class="sim-chip" onclick="applyIndexSim(0, 1, 0, this, 0)">+1 Goal</button>
+                <button class="sim-chip" onclick="applyIndexSim(0, 0, 0, this, 2)">+2 Recoveries</button>
+                <button class="sim-chip" onclick="resetIndexSim(this)" style="background:rgba(248,113,113,0.15);color:#f87171;border-color:rgba(248,113,113,0.3)">Reset</button>
+            `;
+        } else if (pos === 'DF') {
+            container.innerHTML = `
+                <button class="sim-chip" onclick="applyIndexSim(30, 0, 0, this, 0)">+30 Mins</button>
+                <button class="sim-chip" onclick="applyIndexSim(0, 0, 0, this, 2)">+2 Tackles Won</button>
+                <button class="sim-chip" onclick="applyIndexSim(0, 0, 0, this, 3)">+3 Interceptions</button>
+                <button class="sim-chip" onclick="applyIndexSim(0, 0, 1, this, 0)">+1 Long Pass</button>
+                <button class="sim-chip" onclick="resetIndexSim(this)" style="background:rgba(248,113,113,0.15);color:#f87171;border-color:rgba(248,113,113,0.3)">Reset</button>
+            `;
+        } else { // GK
+            container.innerHTML = `
+                <button class="sim-chip" onclick="applyIndexSim(30, 0, 0, this, 0)">+30 Mins</button>
+                <button class="sim-chip" onclick="applyIndexSim(0, 0, 0, this, 3)">+3 Crucial Saves</button>
+                <button class="sim-chip" onclick="applyIndexSim(0, 0, 0, this, 2)">+2 High Claims</button>
+                <button class="sim-chip" onclick="applyIndexSim(0, 0, 1, this, 0)">+1 Clean Catch</button>
+                <button class="sim-chip" onclick="resetIndexSim(this)" style="background:rgba(248,113,113,0.15);color:#f87171;border-color:rgba(248,113,113,0.3)">Reset</button>
+            `;
+        }
+    }
+
     function selectPlayerForMlWorkbench(p) {
         if (!p) return;
         activeMlPlayer = p;
-        simMins = 0; simGoals = 0; simAssists = 0;
+        simMins = 0; simGoals = 0; simAssists = 0; simTackles = 0;
 
-        document.getElementById('wbShirt').textContent = p.shirt || '';
+        document.getElementById('wbShirt').textContent = p.shirt || (p.pos === 'GK' ? '1' : (p.pos === 'DF' ? '4' : '10'));
         document.getElementById('wbName').textContent = p.name;
         document.getElementById('wbSub').textContent = `${p.club || 'National Team'} · ${p.team} · ${getPosDetailLabel(p.pos)}`;
 
@@ -1708,13 +1720,78 @@ html_content = '''<!doctype html>
         document.getElementById('wbPred').textContent = pred;
         document.getElementById('wbDelta').textContent = deltaStr;
 
+        renderSimChips(p.pos);
         updateMlWorkbenchTelemetry();
     }
 
-    function applyIndexSim(m, g, a, btn) {
+    function getPosition5Metrics(p, sim) {
+        const r = p.rating || 75;
+        const pos = p.pos || 'FW';
+
+        if (pos === 'FW') {
+            const finishing = Math.min(99, Math.max(65, Math.round(62 + (p.goals_p90 || 0.3) * 24 + (p.shot_acc || 45) * 0.2)));
+            const pace = Math.min(99, Math.max(70, Math.round(76 + (p.shots_p90 || 1.5) * 3.8 + (r - 70) * 0.7)));
+            const dribbling = Math.min(99, Math.max(68, Math.round(72 + (r - 70) * 1.3)));
+            const linkup = Math.min(99, Math.max(60, Math.round(66 + (p.assists_p90 || 0.1) * 32 + (r - 70) * 0.7)));
+            const pressing = Math.min(95, Math.max(45, Math.round(50 + (p.tackles_p90 || 0.3) * 25 + (r - 70) * 0.5)));
+
+            return [
+                { label: 'FINISHING & CONVERSION', icon: '⚽', val: finishing, boost: (sim.goals || 0) * 4.0 },
+                { label: 'ATTACKING PACE & SPRINT', icon: '⚡', val: pace, boost: (sim.mins || 0) * 0.02 },
+                { label: 'DRIBBLING & 1v1 TAKE-ONS', icon: '💫', val: dribbling, boost: (sim.goals || 0) * 1.5 + (sim.assists || 0) * 1.5 },
+                { label: 'KEY PASSES & LINK-UP', icon: '🎯', val: linkup, boost: (sim.assists || 0) * 3.5 },
+                { label: 'PRESSING & WORK RATE', icon: '⚔', val: pressing, boost: (sim.tackles || 0) * 3.0 }
+            ];
+        } else if (pos === 'MF') {
+            const vision = Math.min(99, Math.max(72, Math.round(76 + (p.assists_p90 || 0.25) * 30 + (r - 70) * 0.9)));
+            const control = Math.min(99, Math.max(68, Math.round(74 + (r - 70) * 1.2)));
+            const creation = Math.min(99, Math.max(65, Math.round(70 + (p.assists_p90 || 0.2) * 28 + (p.shots_p90 || 1.0) * 3)));
+            const recovery = Math.min(99, Math.max(60, Math.round(65 + (p.interceptions_p90 || 0.8) * 14 + (p.tackles_p90 || 0.8) * 12)));
+            const stamina = Math.min(99, Math.max(70, Math.round(75 + (r - 70) * 0.8 + Math.min(10, (p.minutes || 300) / 90 * 1.5))));
+
+            return [
+                { label: 'VISION & PASS ACCURACY', icon: '🎯', val: vision, boost: (sim.assists || 0) * 3.5 },
+                { label: 'BALL CONTROL & RETENTION', icon: '💫', val: control, boost: (sim.assists || 0) * 1.5 + (sim.goals || 0) * 1.5 },
+                { label: 'CHANCE CREATION & PASSES', icon: '⚡', val: creation, boost: (sim.assists || 0) * 3.0 + (sim.goals || 0) * 1.5 },
+                { label: 'RECOVERIES & INTERCEPTIONS', icon: '🛡', val: recovery, boost: (sim.tackles || 0) * 3.0 },
+                { label: 'STAMINA & TRANSITIONS', icon: '🏃', val: stamina, boost: (sim.mins || 0) * 0.03 }
+            ];
+        } else if (pos === 'DF') {
+            const tackling = Math.min(99, Math.max(72, Math.round(74 + (p.tackles_p90 || 1.2) * 14 + (r - 70) * 0.7)));
+            const intercep = Math.min(99, Math.max(70, Math.round(73 + (p.interceptions_p90 || 1.2) * 14 + (r - 70) * 0.7)));
+            const aerial = Math.min(99, Math.max(65, Math.round(68 + Math.max(0, (p.height || 180) - 175) * 1.2 + (r - 70) * 0.6)));
+            const clearances = Math.min(99, Math.max(70, Math.round(75 + (p.tackles_p90 || 1.0) * 8 + (r - 70) * 0.8)));
+            const buildUp = Math.min(95, Math.max(55, Math.round(64 + (p.assists_p90 || 0) * 35 + (r - 70) * 0.8)));
+
+            return [
+                { label: 'TACKLING & GROUND 1v1', icon: '🛡', val: tackling, boost: (sim.tackles || 0) * 3.5 },
+                { label: 'INTERCEPTIONS & READING', icon: '🧠', val: intercep, boost: (sim.tackles || 0) * 2.5 },
+                { label: 'AERIAL DUELS & PHYSICALITY', icon: '🦘', val: aerial, boost: (sim.tackles || 0) * 2.0 },
+                { label: 'CLEARANCES & SHOT BLOCKS', icon: '🧱', val: clearances, boost: (sim.tackles || 0) * 3.0 },
+                { label: 'BALL PROGRESSION & PASS', icon: '🎯', val: buildUp, boost: (sim.mins || 0) * 0.02 + (sim.assists || 0) * 3.0 }
+            ];
+        } else { // GK
+            const reflexes = Math.min(99, Math.max(70, Math.round(68 + (p.save_pct || 70) * 0.28 + (r - 70) * 0.6)));
+            const diving = Math.min(99, Math.max(70, Math.round(70 + Math.max(0, (p.height || 188) - 180) * 1.3 + (r - 70) * 0.6)));
+            const positioning = Math.min(99, Math.max(70, Math.round(72 + (p.clean_sheets || 0) * 4 + (r - 70) * 0.8)));
+            const handling = Math.min(99, Math.max(68, Math.round(70 + (p.save_pct || 70) * 0.22 + Math.max(0, 3 - (p.ga90 || 1.0)) * 4)));
+            const distribution = Math.min(96, Math.max(60, Math.round(65 + (r - 70) * 0.9)));
+
+            return [
+                { label: 'REFLEXES & SHOT STOPPING', icon: '🧤', val: reflexes, boost: (sim.tackles || 0) * 3.0 },
+                { label: 'DIVING & AERIAL REACH', icon: '🦅', val: diving, boost: (sim.mins || 0) * 0.02 },
+                { label: 'POSITIONING & BOX COMMAND', icon: '🎯', val: positioning, boost: (sim.mins || 0) * 0.025 },
+                { label: 'HANDLING & CLEAN CATCHES', icon: '🤲', val: handling, boost: (sim.tackles || 0) * 2.0 },
+                { label: 'DISTRIBUTION & LONG BALL', icon: '🚀', val: distribution, boost: (sim.assists || 0) * 3.0 + (sim.mins || 0) * 0.02 }
+            ];
+        }
+    }
+
+    function applyIndexSim(m, g, a, btn, t = 0) {
         simMins += m;
         simGoals += g;
         simAssists += a;
+        simTackles += t;
         updateMlWorkbenchTelemetry();
     }
 
@@ -1722,43 +1799,43 @@ html_content = '''<!doctype html>
         simMins = 0;
         simGoals = 0;
         simAssists = 0;
+        simTackles = 0;
         updateMlWorkbenchTelemetry();
     }
 
     function updateMlWorkbenchTelemetry() {
         if (!activeMlPlayer) return;
         const p = activeMlPlayer;
+        const sim = { mins: simMins, goals: simGoals, assists: simAssists, tackles: simTackles };
+        const metrics = getPosition5Metrics(p, sim);
 
-        const basePace = p.pos === 'FW' ? 92 : 82;
-        const baseShoot = p.pos === 'FW' ? 90 : 76;
-        const basePass = p.pos === 'MF' ? 92 : 82;
-        const baseDrib = p.rating > 78 ? 91 : 80;
-        const baseDef = p.pos === 'DF' ? 90 : 58;
+        const titleElem = document.getElementById('wbGaugesTitle');
+        if (titleElem) {
+            titleElem.textContent = `🤖 5 POSITION METRICS: ${getPosDetailLabel(p.pos).toUpperCase()}`;
+        }
 
-        const paceVal = Math.min(99, basePace + (simMins * 0.02)).toFixed(1);
-        const shootVal = Math.min(99, baseShoot + (simGoals * 3.5)).toFixed(1);
-        const passVal = Math.min(99, basePass + (simAssists * 3.0)).toFixed(1);
-        const dribVal = Math.min(99, baseDrib + (simGoals * 1.5 + simAssists * 1.5)).toFixed(1);
-        const defVal = baseDef.toFixed(1);
-
-        document.getElementById('vPaceVal').innerText = paceVal;
-        document.getElementById('vPaceBar').style.width = paceVal + '%';
-
-        document.getElementById('vShootVal').innerText = shootVal;
-        document.getElementById('vShootBar').style.width = shootVal + '%';
-
-        document.getElementById('vPassVal').innerText = passVal;
-        document.getElementById('vPassBar').style.width = passVal + '%';
-
-        document.getElementById('vDribVal').innerText = dribVal;
-        document.getElementById('vDribBar').style.width = dribVal + '%';
-
-        document.getElementById('vDefVal').innerText = defVal;
-        document.getElementById('vDefBar').style.width = defVal + '%';
+        const vuHtml = metrics.map(m => {
+            const finalVal = Math.min(99.0, Math.max(30.0, m.val + (m.boost || 0))).toFixed(1);
+            return `
+            <div class="v-bar-item">
+                <div class="v-bar-header"><span>${m.label} ${m.icon}</span><span>${finalVal}</span></div>
+                <div class="v-bar-track"><div class="v-bar-fill" style="width:${finalVal}%"></div></div>
+            </div>`;
+        }).join('');
+        document.getElementById('indexVuContainer').innerHTML = vuHtml;
 
         const basePred = activeMlPlayer.predicted_rating || activeMlPlayer.rating || 75;
-        const boost = (simMins * 0.015) + (simGoals * 0.45) + (simAssists * 0.3);
-        const simTotal = Math.min(99, basePred + boost).toFixed(1);
+        let boost = 0;
+        if (p.pos === 'FW') {
+            boost = (simMins * 0.015) + (simGoals * 0.5) + (simAssists * 0.3) + (simTackles * 0.15);
+        } else if (p.pos === 'MF') {
+            boost = (simMins * 0.015) + (simAssists * 0.45) + (simGoals * 0.35) + (simTackles * 0.25);
+        } else if (p.pos === 'DF') {
+            boost = (simMins * 0.015) + (simTackles * 0.4) + (simAssists * 0.25) + (simGoals * 0.2);
+        } else { // GK
+            boost = (simMins * 0.015) + (simTackles * 0.45) + (simAssists * 0.2);
+        }
+        const simTotal = Math.min(99.0, basePred + boost).toFixed(1);
 
         if (boost > 0) {
             document.getElementById('indexSimResult').innerHTML = `Base AI: ${basePred.toFixed(1)} ➔ <span style="color:var(--accent-gold);margin-left:4px;">Simulated: ${simTotal} ⚡ (+${boost.toFixed(1)})</span>`;
