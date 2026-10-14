@@ -232,38 +232,27 @@ html_content = '''<!doctype html>
             box-shadow: 0 0 14px rgba(56, 189, 248, 0.35);
         }
 
-        /* News Link in Header */
-        .nav-news-btn {
+        /* News Link in Header Nav */
+        .header nav a.news-link {
+            color: #e2b775;
+            border: 1px solid rgba(226, 183, 117, 0.35);
+            background: rgba(226, 183, 117, 0.08);
             display: inline-flex;
             align-items: center;
             gap: 7px;
-            padding: 8px 16px;
-            background: rgba(226, 183, 117, 0.12);
-            border: 1px solid rgba(226, 183, 117, 0.4);
-            border-radius: 20px;
-            color: #f1f5f9;
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 11px;
-            font-weight: 800;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 0.25s ease;
         }
-        .nav-news-btn i {
+        .header nav a.news-link:hover {
+            color: #fff;
+            background: rgba(226, 183, 117, 0.2);
+            border-color: rgba(226, 183, 117, 0.7);
+            box-shadow: 0 0 14px rgba(226, 183, 117, 0.35);
+        }
+        .header nav a.news-link i {
             font-size: 13px;
             color: #e2b775;
             transition: transform 0.25s ease;
         }
-        .nav-news-btn:hover {
-            background: rgba(226, 183, 117, 0.25);
-            border-color: rgba(226, 183, 117, 0.85);
-            color: #fff;
-            box-shadow: 0 0 16px rgba(226, 183, 117, 0.35);
-            transform: translateY(-1px);
-        }
-        .nav-news-btn:hover i {
+        .header nav a.news-link:hover i {
             transform: scale(1.15);
         }
 
@@ -1069,12 +1058,9 @@ html_content = '''<!doctype html>
             <a href="players.html">Player Profiles 👤</a>
             <a href="ranking.html">Rankings 🏆</a>
             <a href="ml-intelligence.html" class="ml-link">ML Intelligence ⚡</a>
+            <a href="#news" class="news-link"><i class="fa-solid fa-newspaper"></i> News</a>
         </nav>
         <div class="actions">
-            <a href="#news" class="nav-news-btn" title="05 / NEWS">
-                <i class="fa-solid fa-newspaper"></i>
-                <span>NEWS</span>
-            </a>
             <button id="menuBtn">☰</button>
         </div>
     </header>
