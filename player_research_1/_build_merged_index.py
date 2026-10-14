@@ -832,13 +832,13 @@ html_content = '''<!doctype html>
             padding: 20px;
         }
 
-        /* ══════════════ STICKY SKYSCRAPER SIDE BANNERS ══════════════ */
+        /* ══════════════ STICKY SKYSCRAPER SIDE BANNERS (2X SIZE) ══════════════ */
         .skyscraper-banner {
             position: fixed;
-            top: 52%;
+            top: 50%;
             transform: translateY(-50%);
             z-index: 150;
-            width: 150px;
+            width: 300px;
             transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
             animation: fadeInSkyscraper 0.8s ease-out;
         }
@@ -855,11 +855,11 @@ html_content = '''<!doctype html>
         }
 
         .skyscraper-left {
-            left: 16px;
+            left: 24px;
         }
 
         .skyscraper-right {
-            right: 16px;
+            right: 24px;
         }
 
         .skyscraper-card {
@@ -868,51 +868,51 @@ html_content = '''<!doctype html>
             text-decoration: none;
             background: rgba(8, 12, 20, 0.94);
             backdrop-filter: blur(14px);
-            border-radius: 14px;
+            border-radius: 20px;
             overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
             transition: all 0.3s ease;
         }
 
         .skyscraper-left .skyscraper-card {
-            border-color: rgba(239, 68, 68, 0.4);
-            box-shadow: 0 12px 36px rgba(220, 38, 38, 0.25);
+            border-color: rgba(239, 68, 68, 0.45);
+            box-shadow: 0 16px 45px rgba(220, 38, 38, 0.28);
         }
         .skyscraper-left:hover .skyscraper-card {
-            border-color: rgba(239, 68, 68, 0.9);
-            box-shadow: 0 18px 48px rgba(220, 38, 38, 0.5);
-            transform: scale(1.04) translateX(4px);
+            border-color: rgba(239, 68, 68, 0.95);
+            box-shadow: 0 24px 60px rgba(220, 38, 38, 0.55);
+            transform: scale(1.03) translateX(6px);
         }
 
         .skyscraper-right .skyscraper-card {
-            border-color: rgba(56, 189, 248, 0.4);
-            box-shadow: 0 12px 36px rgba(56, 189, 248, 0.25);
+            border-color: rgba(56, 189, 248, 0.45);
+            box-shadow: 0 16px 45px rgba(56, 189, 248, 0.28);
         }
         .skyscraper-right:hover .skyscraper-card {
-            border-color: rgba(56, 189, 248, 0.9);
-            box-shadow: 0 18px 48px rgba(56, 189, 248, 0.5);
-            transform: scale(1.04) translateX(-4px);
+            border-color: rgba(56, 189, 248, 0.95);
+            box-shadow: 0 24px 60px rgba(56, 189, 248, 0.55);
+            transform: scale(1.03) translateX(-6px);
         }
 
         .skyscraper-tag {
             font-family: 'Space Grotesk', monospace;
-            font-size: 10px;
+            font-size: 13px;
             font-weight: 800;
-            letter-spacing: 1.5px;
-            padding: 6px 8px;
+            letter-spacing: 2px;
+            padding: 10px 14px;
             text-align: center;
             text-transform: uppercase;
         }
         .tag-portugal {
-            background: linear-gradient(90deg, rgba(220, 38, 38, 0.35), rgba(16, 185, 129, 0.25));
+            background: linear-gradient(90deg, rgba(220, 38, 38, 0.4), rgba(16, 185, 129, 0.28));
             color: #fca5a5;
-            border-bottom: 1px solid rgba(220, 38, 38, 0.35);
+            border-bottom: 1px solid rgba(220, 38, 38, 0.4);
         }
         .tag-argentina {
-            background: linear-gradient(90deg, rgba(56, 189, 248, 0.35), rgba(226, 183, 117, 0.25));
+            background: linear-gradient(90deg, rgba(56, 189, 248, 0.4), rgba(226, 183, 117, 0.28));
             color: #bae6fd;
-            border-bottom: 1px solid rgba(56, 189, 248, 0.35);
+            border-bottom: 1px solid rgba(56, 189, 248, 0.4);
         }
 
         .skyscraper-img-wrap {
@@ -934,10 +934,10 @@ html_content = '''<!doctype html>
         }
 
         .skyscraper-footer {
-            padding: 8px 10px 10px;
+            padding: 12px 16px 16px;
             display: flex;
             flex-direction: column;
-            gap: 2px;
+            gap: 4px;
             text-align: center;
         }
         .footer-portugal {
@@ -950,8 +950,8 @@ html_content = '''<!doctype html>
         .skyscraper-title {
             font-family: 'Cinzel', serif;
             font-weight: 800;
-            font-size: 11px;
-            letter-spacing: 1px;
+            font-size: 15px;
+            letter-spacing: 1.5px;
             color: #fff;
             white-space: nowrap;
             overflow: hidden;
@@ -959,24 +959,24 @@ html_content = '''<!doctype html>
         }
         .skyscraper-sub {
             font-family: 'Space Grotesk', monospace;
-            font-size: 9px;
+            font-size: 12px;
             font-weight: 700;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.8px;
         }
         .footer-portugal .skyscraper-sub { color: #f87171; }
         .footer-argentina .skyscraper-sub { color: #38bdf8; }
 
         .skyscraper-close-btn {
             position: absolute;
-            top: -10px;
-            right: -10px;
-            width: 22px;
-            height: 22px;
+            top: -12px;
+            right: -12px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
             background: rgba(15, 23, 42, 0.95);
-            border: 1px solid rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             color: #94a3b8;
-            font-size: 14px;
+            font-size: 17px;
             font-weight: 700;
             line-height: 1;
             cursor: pointer;
@@ -985,7 +985,7 @@ html_content = '''<!doctype html>
             justify-content: center;
             z-index: 160;
             transition: all 0.2s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
         }
         .skyscraper-close-btn:hover {
             background: #ef4444;
@@ -994,14 +994,14 @@ html_content = '''<!doctype html>
             transform: scale(1.15);
         }
 
-        @media (max-width: 1440px) {
+        @media (max-width: 1750px) {
             .skyscraper-banner {
-                width: 125px;
+                width: clamp(220px, 15vw, 270px);
             }
-            .skyscraper-left { left: 8px; }
-            .skyscraper-right { right: 8px; }
+            .skyscraper-left { left: 12px; }
+            .skyscraper-right { right: 12px; }
         }
-        @media (max-width: 1250px) {
+        @media (max-width: 1380px) {
             .skyscraper-banner {
                 display: none !important;
             }
