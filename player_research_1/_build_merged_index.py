@@ -831,6 +831,181 @@ html_content = '''<!doctype html>
             border-radius: 14px;
             padding: 20px;
         }
+
+        /* ══════════════ STICKY SKYSCRAPER SIDE BANNERS ══════════════ */
+        .skyscraper-banner {
+            position: fixed;
+            top: 52%;
+            transform: translateY(-50%);
+            z-index: 150;
+            width: 150px;
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            animation: fadeInSkyscraper 0.8s ease-out;
+        }
+
+        @keyframes fadeInSkyscraper {
+            from {
+                opacity: 0;
+                transform: translateY(-42%) scale(0.92);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(-50%) scale(1);
+            }
+        }
+
+        .skyscraper-left {
+            left: 16px;
+        }
+
+        .skyscraper-right {
+            right: 16px;
+        }
+
+        .skyscraper-card {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            background: rgba(8, 12, 20, 0.94);
+            backdrop-filter: blur(14px);
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75);
+            transition: all 0.3s ease;
+        }
+
+        .skyscraper-left .skyscraper-card {
+            border-color: rgba(239, 68, 68, 0.4);
+            box-shadow: 0 12px 36px rgba(220, 38, 38, 0.25);
+        }
+        .skyscraper-left:hover .skyscraper-card {
+            border-color: rgba(239, 68, 68, 0.9);
+            box-shadow: 0 18px 48px rgba(220, 38, 38, 0.5);
+            transform: scale(1.04) translateX(4px);
+        }
+
+        .skyscraper-right .skyscraper-card {
+            border-color: rgba(56, 189, 248, 0.4);
+            box-shadow: 0 12px 36px rgba(56, 189, 248, 0.25);
+        }
+        .skyscraper-right:hover .skyscraper-card {
+            border-color: rgba(56, 189, 248, 0.9);
+            box-shadow: 0 18px 48px rgba(56, 189, 248, 0.5);
+            transform: scale(1.04) translateX(-4px);
+        }
+
+        .skyscraper-tag {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            padding: 6px 8px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .tag-portugal {
+            background: linear-gradient(90deg, rgba(220, 38, 38, 0.35), rgba(16, 185, 129, 0.25));
+            color: #fca5a5;
+            border-bottom: 1px solid rgba(220, 38, 38, 0.35);
+        }
+        .tag-argentina {
+            background: linear-gradient(90deg, rgba(56, 189, 248, 0.35), rgba(226, 183, 117, 0.25));
+            color: #bae6fd;
+            border-bottom: 1px solid rgba(56, 189, 248, 0.35);
+        }
+
+        .skyscraper-img-wrap {
+            width: 100%;
+            line-height: 0;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .skyscraper-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .skyscraper-banner:hover .skyscraper-img {
+            transform: scale(1.03);
+        }
+
+        .skyscraper-footer {
+            padding: 8px 10px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            text-align: center;
+        }
+        .footer-portugal {
+            background: rgba(18, 6, 8, 0.96);
+        }
+        .footer-argentina {
+            background: rgba(6, 14, 24, 0.96);
+        }
+
+        .skyscraper-title {
+            font-family: 'Cinzel', serif;
+            font-weight: 800;
+            font-size: 11px;
+            letter-spacing: 1px;
+            color: #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .skyscraper-sub {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .footer-portugal .skyscraper-sub { color: #f87171; }
+        .footer-argentina .skyscraper-sub { color: #38bdf8; }
+
+        .skyscraper-close-btn {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: #94a3b8;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 160;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .skyscraper-close-btn:hover {
+            background: #ef4444;
+            color: #fff;
+            border-color: #ef4444;
+            transform: scale(1.15);
+        }
+
+        @media (max-width: 1440px) {
+            .skyscraper-banner {
+                width: 125px;
+            }
+            .skyscraper-left { left: 8px; }
+            .skyscraper-right { right: 8px; }
+        }
+        @media (max-width: 1250px) {
+            .skyscraper-banner {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 
@@ -855,6 +1030,35 @@ html_content = '''<!doctype html>
             <button id="menuBtn">☰</button>
         </div>
     </header>
+
+    <!-- ══════════════ STICKY SKYSCRAPER SIDE BANNERS ══════════════ -->
+    <div class="skyscraper-banner skyscraper-left" id="bannerPortugal">
+        <button class="skyscraper-close-btn" onclick="document.getElementById('bannerPortugal').style.display='none'" title="Close banner">×</button>
+        <a href="players.html?q=Ronaldo" class="skyscraper-card" title="Cristiano Ronaldo — Portugal World Cup 2026">
+            <div class="skyscraper-tag tag-portugal">🇵🇹 PORTUGAL</div>
+            <div class="skyscraper-img-wrap">
+                <img src="assets/images/banner_portugal.png" alt="Cristiano Ronaldo - Portugal World Cup 2026" class="skyscraper-img">
+            </div>
+            <div class="skyscraper-footer footer-portugal">
+                <span class="skyscraper-title">CRISTIANO RONALDO</span>
+                <span class="skyscraper-sub">WC 2026 · FINAL DANCE ⚡</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="skyscraper-banner skyscraper-right" id="bannerArgentina">
+        <button class="skyscraper-close-btn" onclick="document.getElementById('bannerArgentina').style.display='none'" title="Close banner">×</button>
+        <a href="players.html?q=Messi" class="skyscraper-card" title="Lionel Messi — Argentina World Cup 2026">
+            <div class="skyscraper-tag tag-argentina">🇦🇷 ARGENTINA</div>
+            <div class="skyscraper-img-wrap">
+                <img src="assets/images/banner_argentina.png" alt="Lionel Messi - Argentina World Cup 2026" class="skyscraper-img">
+            </div>
+            <div class="skyscraper-footer footer-argentina">
+                <span class="skyscraper-title">LIONEL MESSI</span>
+                <span class="skyscraper-sub">WC 2026 · DEFENDING CHAMPION ★</span>
+            </div>
+        </a>
+    </div>
 
     <main>
         <!-- ══════════════ HERO SECTION ══════════════ -->
