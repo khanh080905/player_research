@@ -6,6 +6,7 @@
 const PLAYERS_DATABASE = [
   {
     "id": 163,
+    "shirt": 19,
     "name": "VINICIUS JUNIOR",
     "team": "BRA",
     "club": "Real Madrid C. F.",
@@ -32,6 +33,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 1178,
+    "shirt": 10,
     "name": "VALVERDE Federico",
     "team": "URU",
     "club": "Real Madrid C. F.",
@@ -58,6 +60,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 160,
+    "shirt": 15,
     "name": "MARQUINHOS",
     "team": "BRA",
     "club": "Paris Saint-Germain",
@@ -84,6 +87,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 157,
+    "shirt": 11,
     "name": "ALISSON",
     "team": "BRA",
     "club": "Liverpool FC",
@@ -110,6 +114,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 36,
+    "shirt": 17,
     "name": "MESSI Lionel",
     "team": "ARG",
     "club": "Inter Miami CF",
@@ -136,6 +141,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 478,
+    "shirt": 3,
     "name": "MBAPPE Kylian",
     "team": "FRA",
     "club": "Real Madrid C. F.",
@@ -162,6 +168,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 452,
+    "shirt": 11,
     "name": "BELLINGHAM Jude",
     "team": "ENG",
     "club": "Real Madrid C. F.",
@@ -188,6 +195,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 33,
+    "shirt": 14,
     "name": "DE PAUL Rodrigo",
     "team": "ARG",
     "club": "Inter Miami CF",
@@ -214,6 +222,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 815,
+    "shirt": 20,
     "name": "HAALAND Erling",
     "team": "NOR",
     "club": "Manchester City FC",
@@ -240,6 +249,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 111,
+    "shirt": 4,
     "name": "DE BRUYNE Kevin",
     "team": "BEL",
     "club": "SSC Napoli",
@@ -266,6 +276,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 451,
+    "shirt": 10,
     "name": "KANE Harry",
     "team": "ENG",
     "club": "FC Bayern München",
@@ -292,6 +303,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 262,
+    "shirt": 17,
     "name": "WAN-BISSAKA Aaron",
     "team": "COD",
     "club": "West Ham United FC",
@@ -318,6 +330,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 426,
+    "shirt": 24,
     "name": "MOHAMED SALAH",
     "team": "EGY",
     "club": "Liverpool FC",
@@ -344,6 +357,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 166,
+    "shirt": 22,
     "name": "NEYMAR JR",
     "team": "BRA",
     "club": "Santos FC",
@@ -370,6 +384,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 167,
+    "shirt": 24,
     "name": "RAPHINHA",
     "team": "BRA",
     "club": "FC Barcelona",
@@ -396,6 +411,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 758,
+    "shirt": 3,
     "name": "VAN DIJK Virgil",
     "team": "NED",
     "club": "Liverpool FC",
@@ -422,6 +438,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 887,
+    "shirt": 23,
     "name": "RUBEN DIAS",
     "team": "POR",
     "club": "Manchester City FC",
@@ -448,6 +465,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 105,
+    "shirt": 23,
     "name": "COURTOIS Thibaut",
     "team": "BEL",
     "club": "Real Madrid C. F.",
@@ -474,6 +492,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 32,
+    "shirt": 13,
     "name": "MARTINEZ Lisandro",
     "team": "ARG",
     "club": "Manchester United FC",
@@ -500,6 +519,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 730,
+    "shirt": 19,
     "name": "HAKIMI Achraf",
     "team": "MAR",
     "club": "Paris Saint-Germain",
@@ -526,6 +546,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 227,
+    "shirt": 25,
     "name": "DAVIES Alphonso",
     "team": "CAN",
     "club": "FC Bayern München",
@@ -552,6 +573,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 270,
+    "shirt": 3,
     "name": "BONGONDA Theo",
     "team": "COD",
     "club": "FC Spartak Moscow",
@@ -578,6 +600,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 504,
+    "shirt": 23,
     "name": "MUSIALA Jamal",
     "team": "GER",
     "club": "FC Bayern München",
@@ -604,6 +627,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 511,
+    "shirt": 7,
     "name": "WIRTZ Florian",
     "team": "GER",
     "club": "Liverpool FC",
@@ -630,6 +654,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 1060,
+    "shirt": 20,
     "name": "PEDRI",
     "team": "ESP",
     "club": "FC Barcelona",
@@ -656,6 +681,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 1049,
+    "shirt": 9,
     "name": "GAVI",
     "team": "ESP",
     "club": "FC Barcelona",
@@ -682,6 +708,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 233,
+    "shirt": 6,
     "name": "SALIBA Nathan",
     "team": "CAN",
     "club": "RSC Anderlecht",
@@ -708,6 +735,7 @@ const PLAYERS_DATABASE = [
   },
   {
     "id": 159,
+    "shirt": 14,
     "name": "GABRIEL MAGALHAES",
     "team": "BRA",
     "club": "Arsenal FC",
@@ -890,7 +918,7 @@ function openPlayerModal(playerId) {
   document.getElementById('modal-team').textContent = player.team;
   document.getElementById('modal-club').textContent = player.club;
   document.getElementById('modal-pos-badge').textContent = player.pos + ' • ' + player.pos_detail;
-  document.getElementById('modal-shirt-num').textContent = (player.id % 23) + 1;
+  document.getElementById('modal-shirt-num').textContent = player.shirt ? '#' + player.shirt : 'N/A';
   document.getElementById('modal-age').textContent = player.age + ' tuổi';
   document.getElementById('modal-height').textContent = player.height + ' cm';
   document.getElementById('modal-minutes').textContent = player.minutes + ' phút';
@@ -955,7 +983,7 @@ function renderPlayerCards(players) {
       </div>
 
       <div class="card-avatar">
-        <div class="avatar-num">${(p.id % 23) + 1}</div>
+        <div class="avatar-num">${p.shirt || ""}</div>
       </div>
 
       <div class="card-body">

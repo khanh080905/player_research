@@ -19,7 +19,7 @@ html_content = '''<!doctype html>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=20261014_2">
     <link rel="stylesheet" href="assets/css/voyage-style.css">
 
     <style>
@@ -33,6 +33,160 @@ html_content = '''<!doctype html>
         }
 
         html { scroll-behavior: smooth; }
+
+        /* Section Headings 01 -> 05 in Cinzel serif font */
+        .heading h2,
+        .ml h2 {
+            font-family: 'Cinzel', serif !important;
+            font-size: clamp(32px, 4.2vw, 56px) !important;
+            font-weight: 700 !important;
+            line-height: 1.15 !important;
+            letter-spacing: 1.5px !important;
+            color: #fff !important;
+            margin: 10px 0 !important;
+        }
+
+        /* ══════════════ NEWS SECTION: ROW-BASED EDITORIAL LAYOUT ══════════════ */
+        .news-list-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 14px;
+        }
+
+        .news-row-card {
+            display: flex;
+            align-items: center;
+            background: rgba(13, 18, 32, 0.72);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 18px 22px;
+            gap: 26px;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            backdrop-filter: blur(12px);
+        }
+
+        .news-row-card:hover {
+            background: rgba(18, 26, 46, 0.92);
+            border-color: rgba(226, 183, 117, 0.35);
+            transform: translateY(-2px);
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5), 0 0 24px rgba(226, 183, 117, 0.08);
+        }
+
+        .news-thumb-wrap {
+            flex-shrink: 0;
+            width: 250px;
+            height: 160px;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            background: #080d1a;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .news-thumb-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.5s ease;
+        }
+
+        .news-row-card:hover .news-thumb-img {
+            transform: scale(1.05);
+        }
+
+        .news-content-wrap {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 0;
+        }
+
+        .news-tag {
+            font-size: 13px;
+            font-weight: 600;
+            color: #94a3b8;
+            margin-bottom: 6px;
+            letter-spacing: 0.3px;
+        }
+
+        .news-headline {
+            font-size: clamp(18px, 1.9vw, 24px);
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.35;
+            margin: 0 0 8px 0;
+            letter-spacing: -0.2px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            transition: color 0.25s ease;
+        }
+
+        .news-row-card:hover .news-headline {
+            color: var(--accent-gold, #e2b775);
+        }
+
+        .news-summary {
+            font-size: 14px;
+            color: #94a3b8;
+            line-height: 1.55;
+            margin: 0 0 12px 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .news-link-row {
+            margin-top: 4px;
+        }
+
+        .news-direct-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: rgba(226, 183, 117, 0.12);
+            border: 1px solid rgba(226, 183, 117, 0.35);
+            color: var(--accent-gold, #e2b775);
+            font-size: 12px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            letter-spacing: 0.4px;
+        }
+
+        .news-direct-link:hover {
+            background: var(--accent-gold, #e2b775);
+            color: #070b14;
+            box-shadow: 0 0 16px rgba(226, 183, 117, 0.4);
+            transform: translateX(3px);
+        }
+
+        .news-direct-link i {
+            font-size: 11px;
+            transition: transform 0.25s ease;
+        }
+
+        .news-direct-link:hover i {
+            transform: translate(2px, -2px);
+        }
+
+        @media (max-width: 768px) {
+            .news-row-card {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 16px;
+                gap: 16px;
+            }
+            .news-thumb-wrap {
+                width: 100%;
+                height: 190px;
+            }
+        }
 
         /* Header link styling */
         .header {
@@ -324,9 +478,163 @@ html_content = '''<!doctype html>
         .rank-gold .podium-rank { background: var(--accent-gold); color: #000; }
         .rank-silver .podium-rank { background: #94a3b8; color: #000; }
         .rank-bronze .podium-rank { background: #b45309; color: #fff; }
-        .podium-card strong { display: block; font-size: 16px; margin-bottom: 4px; }
-        .podium-card small { color: #94a3b8; font-size: 11px; }
+        .podium-card strong { font-family: 'Cinzel', serif; font-weight: 800; display: block; font-size: 16px; margin-bottom: 4px; color: #fff; }
+        .podium-card small { font-family: 'Space Grotesk', sans-serif; color: #94a3b8; font-size: 11px; }
         .podium-card b { display: block; margin-top: 8px; color: var(--accent-gold); font-family: 'Space Mono', monospace; font-size: 18px; }
+
+        /* ── SECTION 03: LEADERBOARD PANELS (BEST PLAYERS & GOLDEN BOOT) ── */
+        .split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+        @media (max-width: 900px) {
+            .split { grid-template-columns: 1fr; }
+        }
+        .panel {
+            background: linear-gradient(160deg, #101a2d 0%, #090e18 100%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            padding: 26px 28px;
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+        }
+        .panelhead {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 18px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .panelhead small {
+            font-family: 'Space Grotesk', monospace, sans-serif;
+            font-size: 11px;
+            font-weight: 800;
+            color: var(--accent-gold);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .panelhead h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 22px;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: 0.8px;
+            margin: 0;
+            line-height: 1.2;
+        }
+        .panelhead h3 em {
+            font-style: normal;
+            color: var(--accent-gold);
+        }
+        .panelhead > em {
+            font-family: 'Space Grotesk', monospace, sans-serif;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            background: rgba(226, 183, 117, 0.12);
+            color: var(--accent-gold);
+            border: 1px solid rgba(226, 183, 117, 0.3);
+            font-style: normal;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: 36px 1fr auto 24px;
+            gap: 12px;
+            align-items: center;
+            padding: 12px 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            transition: all 0.2s ease;
+        }
+        .row:hover, .scorer:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+        .row:first-of-type, .scorer:first-of-type {
+            border-top: none;
+        }
+        .row > span, .scorer > span {
+            font-family: 'Space Mono', monospace;
+            font-size: 13px;
+            font-weight: 700;
+            color: #64748b;
+        }
+        .row:nth-child(2) > span, .scorer:nth-child(2) > span {
+            color: var(--accent-gold);
+            font-weight: 800;
+        }
+        .row:nth-child(3) > span, .scorer:nth-child(3) > span {
+            color: #cbd5e1;
+            font-weight: 800;
+        }
+        .row:nth-child(4) > span, .scorer:nth-child(4) > span {
+            color: #d97706;
+            font-weight: 800;
+        }
+        .row b, .scorer b {
+            font-family: 'Cinzel', serif;
+            font-size: 15px;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: 0.5px;
+            display: block;
+        }
+        .row small, .scorer small {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 11px;
+            color: #94a3b8;
+            display: block;
+            margin-top: 2px;
+        }
+        .row strong {
+            font-family: 'Space Mono', monospace;
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--accent-gold);
+            text-align: right;
+        }
+        .row em {
+            font-family: 'Space Mono', monospace;
+            font-size: 14px;
+            color: var(--accent-green);
+            font-style: normal;
+            text-align: right;
+        }
+        .scorer {
+            display: grid;
+            grid-template-columns: 36px 1fr auto;
+            gap: 12px;
+            align-items: center;
+            padding: 12px 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            transition: all 0.2s ease;
+        }
+        .scorer > strong {
+            font-family: 'Space Mono', monospace;
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--accent-gold);
+            text-align: right;
+            line-height: 1.1;
+        }
+        .scorer > strong small {
+            display: block;
+            font-family: 'Space Grotesk', monospace, sans-serif;
+            font-size: 9px;
+            font-weight: 800;
+            color: #64748b;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-top: 3px;
+        }
 
         /* ── SECTION 05: ML SPOTLIGHT PREVIEW ── */
         .ml-dedicated-section {
@@ -535,7 +843,7 @@ html_content = '''<!doctype html>
         <nav id="nav">
             <a class="active" href="#home">Home</a>
             <a href="#continents" onclick="openWorldMap();return false;">Nations &amp; Map 🌍</a>
-            <a href="players.html">Player Search 👤</a>
+            <a href="players.html">Player Profiles 👤</a>
             <a href="ranking.html">Rankings 🏆</a>
             <a href="ml-intelligence.html" class="ml-link">ML Intelligence ⚡</a>
         </nav>
@@ -557,7 +865,7 @@ html_content = '''<!doctype html>
                 <p>Welcome to the FIFA World Cup 2026 Analytics Hub. Explore interactive world maps, sample player biometrics, tournament standings, and machine learning performance predictions.</p>
                 
                 <div class="buttons">
-                    <a class="primary" href="players.html">Player Search 👤</a>
+                    <a class="primary" href="players.html">Player Profiles 👤</a>
                     <a class="secondary" href="ml-intelligence.html" style="border-color:rgba(56,189,248,0.5);color:var(--accent-cyan);background:rgba(56,189,248,0.1);">ML Intelligence ⚡</a>
                     <a class="secondary" href="#continents" onclick="openWorldMap();return false;">World Map 🌍</a>
                     <a class="secondary" href="ranking.html" style="background:rgba(226,183,117,0.15);color:var(--accent-gold);border-color:rgba(226,183,117,0.4)">Rankings 🏆</a>
@@ -592,19 +900,15 @@ html_content = '''<!doctype html>
 
         <!-- ══════════════ TICKER ══════════════ -->
         <div class="ticker">
-            <div>✦ WORLD NATIONS ✦ INTERACTIVE MAP ✦ BASIC PLAYER PROFILES ✦ 48 TEAMS RANKINGS ✦ MACHINE LEARNING INTELLIGENCE ✦ VU-METER WHAT-IF SIMULATOR ✦</div>
+            <div>✦ WORLD NATIONS ✦ INTERACTIVE MAP ✦ BASIC PLAYER PROFILES ✦ FEATURED PLAYERS RANKINGS ✦ MACHINE LEARNING INTELLIGENCE ✦ VU-METER WHAT-IF SIMULATOR ✦</div>
         </div>
 
-        <!-- ══════════════ SECTION 01: 5 CONTINENTS & WORLD MAP ══════════════ -->
+        <!-- ══════════════ SECTION 01: EXPLORE THE WORLD ══════════════ -->
         <section class="section" id="continents">
             <div class="heading">
                 <div>
-                    <small style="color:var(--accent-gold);font-family:'Space Grotesk',monospace;font-weight:800;letter-spacing:1.5px;">01 / EXPLORE THE WORLD</small>
-                    <h2>5 CONTINENTS &amp; <em>INTERACTIVE WORLD MAP</em></h2>
+                    <h2>01 / EXPLORE THE WORLD</h2>
                 </div>
-                <button class="pill on" onclick="openWorldMap()" style="cursor:pointer;font-weight:800;padding:10px 18px">
-                    🗺️ Open Interactive World Map ↗
-                </button>
             </div>
 
             <!-- VOYAGE 5 EXPANDING NAV PANELS -->
@@ -666,8 +970,8 @@ html_content = '''<!doctype html>
                         <h3 class="flex-title">PLAYERS</h3>
                         <div class="panel-content">
                             <span class="panel-num">04</span>
-                            <h4 class="panel-heading">BASIC PLAYER SEARCH</h4>
-                            <p class="panel-desc">Search basic player profiles: Playing Position, National Team, Height, Weight, Age, and Club affiliation.</p>
+                            <h4 class="panel-heading">PLAYER PROFILES</h4>
+                            <p class="panel-desc">Search player profiles: Playing Position, National Team, Height, Weight, Age, and Club affiliation.</p>
                             <a class="panel-action-btn" href="players.html" style="text-decoration:none;">
                                 <span>Search All 888+</span>
                                 <i class="fa-solid fa-arrow-right"></i>
@@ -682,10 +986,10 @@ html_content = '''<!doctype html>
                         <h3 class="flex-title">RANKINGS</h3>
                         <div class="panel-content">
                             <span class="panel-num">05</span>
-                            <h4 class="panel-heading">48 TEAMS STANDINGS</h4>
-                            <p class="panel-desc">Final tournament standings of all 48 national teams and premier star players from the master dataset.</p>
+                            <h4 class="panel-heading">FEATURED PLAYERS</h4>
+                            <p class="panel-desc">Tournament standings, goals, assists and performance ratings of premier star players from the master dataset.</p>
                             <a class="panel-action-btn" href="ranking.html" style="text-decoration:none;">
-                                <span>View Full Standings</span>
+                                <span>View Player Rankings</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -871,17 +1175,12 @@ html_content = '''<!doctype html>
             </div>
         </div>
 
-        <!-- ══════════════ SECTION 02: PLAYER SPOTLIGHT (SAMPLE PLAYERS) ══════════════ -->
+        <!-- ══════════════ SECTION 02: BASIC PROFILE SPOTLIGHT ══════════════ -->
         <section class="section" id="players">
             <div class="heading">
                 <div>
-                    <small style="color:var(--accent-gold);font-family:'Space Grotesk',monospace;font-weight:800;letter-spacing:1px;">02 / BASIC PROFILES SPOTLIGHT</small>
-                    <h2 style="font-family:'Cinzel',serif;">FEATURED PLAYERS &amp; <em>BASIC PROFILES</em></h2>
-                    <p style="color:#94a3b8;font-size:13px;margin:4px 0 0 0;">
-                        Curated preview illustrating the 4 core biometric metrics: <strong>Playing Position</strong>, <strong>National Team</strong>, <strong>Height</strong>, and <strong>Weight</strong>.
-                    </p>
+                    <h2>02 / BASIC PROFILE SPOTLIGHT</h2>
                 </div>
-                <span style="color:#94a3b8;font-size:13px;font-family:'Space Grotesk',monospace;">Featured Star Showcase (5 Sample Players)</span>
             </div>
 
             <!-- SPOTLIGHT SAMPLE PLAYERS GRID (5 PLAYERS) -->
@@ -896,58 +1195,54 @@ html_content = '''<!doctype html>
             </div>
         </section>
 
-        <!-- ══════════════ SECTION 03 & 04: STANDINGS PREVIEW (SAMPLE TEAMS) ══════════════ -->
+        <!-- ══════════════ SECTION 03: RANKINGS ══════════════ -->
         <section class="section" id="rankings">
             <div class="heading">
                 <div>
-                    <small style="color:var(--accent-gold);font-family:'Space Grotesk',monospace;font-weight:800;letter-spacing:1px;">03 &amp; 04 / STANDINGS SPOTLIGHT</small>
-                    <h2>TOURNAMENT STANDINGS &amp; <em>TOP TEAMS</em></h2>
-                    <p style="color:#94a3b8;font-size:13px;margin:4px 0 0 0;">
-                        Sample summary of the championship podium, national power rankings, and golden boot leaders.
-                    </p>
+                    <h2>03 / RANKINGS</h2>
                 </div>
                 <span class="live-pill" style="font-size:11px;font-weight:700;padding:5px 12px;border-radius:20px;background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.3);color:#22c55e;">
                     ● LIVE STANDINGS PREVIEW
                 </span>
             </div>
 
-            <!-- TOP 3 PODIUM PREVIEW -->
+            <!-- TOP 3 PODIUM PREVIEW (PLAYERS) -->
             <div class="podium">
                 <div class="podium-card rank-silver">
                     <span class="podium-rank">2</span>
-                    <strong>France</strong>
-                    <small>Runner-up · UEFA</small>
+                    <strong>Erling Haaland</strong>
+                    <small>Forward · Norway (Man City)</small>
                     <b>91.8</b>
                 </div>
                 <div class="podium-card p1 rank-gold">
                     <span class="podium-rank">1</span>
-                    <strong style="font-size:18px;">🏆 Argentina</strong>
-                    <small>World Champion · CONMEBOL</small>
+                    <strong style="font-size:18px;">🏆 Kylian Mbappé</strong>
+                    <small>Forward · France (Real Madrid)</small>
                     <b style="font-size:22px;">92.4</b>
                 </div>
                 <div class="podium-card rank-bronze">
                     <span class="podium-rank">3</span>
-                    <strong>Spain</strong>
-                    <small>3rd Place · UEFA</small>
+                    <strong>Vinicius Junior</strong>
+                    <small>Forward · Brazil (Real Madrid)</small>
                     <b>90.7</b>
                 </div>
             </div>
 
-            <!-- QUICK SUMMARY SPLIT (SAMPLE 5 TEAMS & 5 SCORERS) -->
-            <div class="split" style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:20px;">
+            <!-- QUICK SUMMARY SPLIT (SAMPLE 5 PLAYERS & 5 SCORERS) -->
+            <div class="split">
                 <div class="panel">
                     <div class="panelhead">
                         <div>
-                            <small>TOP 5 NATIONS</small>
-                            <h3>NATIONAL <em>POWER</em></h3>
+                            <small>BEST PLAYERS</small>
+                            <h3>OVERALL <em>RATING</em></h3>
                         </div>
                         <em>TOP 5</em>
                     </div>
-                    <div class="row"><span>1</span><b>🇦🇷 Argentina</b><strong>92.4</strong><em>↗</em></div>
-                    <div class="row"><span>2</span><b>🇫🇷 France</b><strong>91.8</strong><em>↗</em></div>
-                    <div class="row"><span>3</span><b>🇪🇸 Spain</b><strong>90.7</strong><em>↗</em></div>
-                    <div class="row"><span>4</span><b>🇧🇷 Brazil</b><strong>89.9</strong><em>↗</em></div>
-                    <div class="row"><span>5</span><b>🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</b><strong>89.5</strong><em>↗</em></div>
+                    <div class="row"><span>01</span><div><b>🇫🇷 Kylian Mbappé</b><small>Real Madrid · France</small></div><strong>92.4</strong><em>↗</em></div>
+                    <div class="row"><span>02</span><div><b>🇳🇴 Erling Haaland</b><small>Manchester City · Norway</small></div><strong>91.8</strong><em>↗</em></div>
+                    <div class="row"><span>03</span><div><b>🇧🇷 Vinicius Junior</b><small>Real Madrid · Brazil</small></div><strong>90.7</strong><em>↗</em></div>
+                    <div class="row"><span>04</span><div><b>🏴󠁧󠁢󠁥󠁮󠁧󠁿 Jude Bellingham</b><small>Real Madrid · England</small></div><strong>89.9</strong><em>↗</em></div>
+                    <div class="row"><span>05</span><div><b>🇧🇪 Kevin De Bruyne</b><small>Manchester City · Belgium</small></div><strong>89.5</strong><em>↗</em></div>
                 </div>
 
                 <div class="panel">
@@ -958,33 +1253,29 @@ html_content = '''<!doctype html>
                         </div>
                         <em>TOP 5</em>
                     </div>
-                    <div class="scorer"><span>01</span><div><b>Erling Haaland</b><small>Manchester City · Norway</small></div><strong>24<small>GOALS</small></strong></div>
-                    <div class="scorer"><span>02</span><div><b>Kylian Mbappé</b><small>Real Madrid · France</small></div><strong>21<small>GOALS</small></strong></div>
-                    <div class="scorer"><span>03</span><div><b>Mohamed Salah</b><small>Liverpool · Egypt</small></div><strong>19<small>GOALS</small></strong></div>
-                    <div class="scorer"><span>04</span><div><b>Harry Kane</b><small>Bayern München · England</small></div><strong>18<small>GOALS</small></strong></div>
-                    <div class="scorer"><span>05</span><div><b>Vinicius Junior</b><small>Real Madrid · Brazil</small></div><strong>16<small>GOALS</small></strong></div>
+                    <div class="scorer"><span>01</span><div><b>🇳🇴 Erling Haaland</b><small>Manchester City · Norway</small></div><strong>24<small>GOALS</small></strong></div>
+                    <div class="scorer"><span>02</span><div><b>🇫🇷 Kylian Mbappé</b><small>Real Madrid · France</small></div><strong>21<small>GOALS</small></strong></div>
+                    <div class="scorer"><span>03</span><div><b>🇪🇬 Mohamed Salah</b><small>Liverpool · Egypt</small></div><strong>19<small>GOALS</small></strong></div>
+                    <div class="scorer"><span>04</span><div><b>🏴󠁧󠁢󠁥󠁮󠁧󠁿 Harry Kane</b><small>Bayern München · England</small></div><strong>18<small>GOALS</small></strong></div>
+                    <div class="scorer"><span>05</span><div><b>🇧🇷 Vinicius Junior</b><small>Real Madrid · Brazil</small></div><strong>16<small>GOALS</small></strong></div>
                 </div>
             </div>
 
             <!-- PROMINENT BUTTON LINKING TO DEDICATED RANKING.HTML PAGE -->
             <div class="section-cta-wrap">
                 <a href="ranking.html" class="btn-section-cta">
-                    <span>VIEW FULL 48 TEAMS &amp; ALL PLAYER STANDINGS</span>
+                    <span>VIEW ALL PLAYER RANKINGS &amp; LEADERBOARDS</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
         </section>
 
-        <!-- ══════════════ SECTION 05: ML INTELLIGENCE SPOTLIGHT ══════════════ -->
+        <!-- ══════════════ SECTION 04: AI PREDICTION ══════════════ -->
         <section class="ml-dedicated-section" id="ml-intelligence">
             <div style="max-width: var(--max); margin: 0 auto; padding: 0 20px;">
                 <div class="heading">
                     <div>
-                        <small style="color:var(--accent-cyan);font-family:'Space Grotesk',monospace;font-weight:800;letter-spacing:1.5px;">05 / MACHINE LEARNING ENGINE SPOTLIGHT</small>
-                        <h2 style="font-family:'Cinzel',serif;color:#fff;">AI PREDICTION &amp; <em>WHAT-IF SIMULATOR</em></h2>
-                        <p style="color:#94a3b8;font-size:14px;margin:6px 0 0 0;">
-                            Preview of the <strong>XGBoost &amp; Random Forest (R² = 90.26%)</strong> intelligence engine with live LED VU-Meter gauges and scenario modeling.
-                        </p>
+                        <h2>04 / AI PREDICTION</h2>
                     </div>
                     <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
                         <span class="live-pill" style="font-size:11px;font-weight:700;padding:6px 14px;border-radius:20px;background:rgba(56,189,248,.15);border:1px solid rgba(56,189,248,.4);color:var(--accent-cyan);font-family:'Space Grotesk',monospace;">
@@ -1104,34 +1395,84 @@ html_content = '''<!doctype html>
             </div>
         </section>
 
-        <!-- ══════════════ SECTION 06: RESEARCH INSIGHTS ══════════════ -->
+        <!-- ══════════════ SECTION 05: NEWS ══════════════ -->
         <section class="section" id="insights">
             <div class="heading">
                 <div>
-                    <small style="color:var(--accent-gold);font-family:'Space Grotesk',monospace;font-weight:800;letter-spacing:1px;">06 / INSIGHTS</small>
-                    <h2>LATEST <em>RESEARCH INSIGHTS</em></h2>
+                    <h2>05 / NEWS</h2>
                 </div>
             </div>
-            <div class="news">
-                <article>
-                    <div class="newsimg">MACHINE LEARNING</div><small>Research Paper</small>
-                    <h3>Applying XGBoost and Random Forest to evaluate elite player performance at World Cup 2026</h3>
-                    <a href="ml-intelligence.html">View Details ↗</a>
+            <div class="news-list-container">
+                <!-- Article 1: Nico Williams -->
+                <article class="news-row-card">
+                    <div class="news-thumb-wrap">
+                        <img src="assets/images/news_williams.jpg" alt="Williams' winding road to world glory" class="news-thumb-img">
+                    </div>
+                    <div class="news-content-wrap">
+                        <span class="news-tag">Spain</span>
+                        <h3 class="news-headline">Williams' winding road to world glory</h3>
+                        <p class="news-summary">From local grassroots beginnings to football immortality on the global stage, Nico Williams' electric speed, technical flair, and pivotal goals powered Spain through a historic championship run.</p>
+                        <div class="news-link-row">
+                            <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/nico-williams-spain-road-to-glory" target="_blank" rel="noopener noreferrer" class="news-direct-link">
+                                <span>Xem bài báo gốc trên FIFA.com</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
                 </article>
-                <article>
-                    <div class="newsimg">SCOUTING DATA</div><small>Tactics &amp; Analytics</small>
-                    <h3>Data analysis of 5 key metrics by position (FW, MF, DF, GK) with VU-Meter gauges</h3>
-                    <a href="players.html">View Details ↗</a>
+
+                <!-- Article 2: Unai Simon -->
+                <article class="news-row-card">
+                    <div class="news-thumb-wrap">
+                        <img src="assets/images/news_simon.jpg" alt="Tears turn to cheers for world champion Simon" class="news-thumb-img">
+                    </div>
+                    <div class="news-content-wrap">
+                        <span class="news-tag">Spain</span>
+                        <h3 class="news-headline">Tears turn to cheers for world champion Simon</h3>
+                        <p class="news-summary">Spain goalkeeper Unai Simón claimed the adidas Golden Glove after recording seven clean sheets and conceding just one goal in an impassioned masterclass between the posts across North America.</p>
+                        <div class="news-link-row">
+                            <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/unai-simon-spain-world-cup-glory" target="_blank" rel="noopener noreferrer" class="news-direct-link">
+                                <span>Xem bài báo gốc trên FIFA.com</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
                 </article>
-                <article>
-                    <div class="newsimg">TOURNAMENT 48</div><small>FIFA Expansion</small>
-                    <h3>48-team tournament format and qualification slot distribution across 5 continents</h3>
-                    <a href="#continents" onclick="openWorldMap();return false;">View Details ↗</a>
+
+                <!-- Article 3: World Cup Awards -->
+                <article class="news-row-card">
+                    <div class="news-thumb-wrap">
+                        <img src="assets/images/news_awards.jpg" alt="FIFA World Cup awards: Rodri, Cubarsi, Simon and Mbappe honoured" class="news-thumb-img">
+                    </div>
+                    <div class="news-content-wrap">
+                        <span class="news-tag">Featured</span>
+                        <h3 class="news-headline">FIFA World Cup awards: Rodri, Cubarsi, Simon and Mbappe honoured</h3>
+                        <p class="news-summary">Tournament individual honours officially awarded: Rodri collects the adidas Golden Ball, Kylian Mbappé secures Golden Boot, Unai Simón wins Golden Glove, and Pau Cubarsí earns Best Young Player.</p>
+                        <div class="news-link-row">
+                            <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/award-winners" target="_blank" rel="noopener noreferrer" class="news-direct-link">
+                                <span>Xem bài báo gốc trên FIFA.com</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
                 </article>
-                <article>
-                    <div class="newsimg" style="background:linear-gradient(135deg,#f59e0b,#ea580c);">PHYSICAL BIOMETRICS</div><small>Sports Science</small>
-                    <h3>Correlation analysis between physical biometrics (Height, Weight, Age) and athletic performance</h3>
-                    <a href="ranking.html">View Details ↗</a>
+
+                <!-- Article 4: Spain 2030 -->
+                <article class="news-row-card">
+                    <div class="news-thumb-wrap">
+                        <img src="assets/images/news_yamal.jpg" alt="Spain have ingredients for more history in 2030" class="news-thumb-img">
+                    </div>
+                    <div class="news-content-wrap">
+                        <span class="news-tag">Spain</span>
+                        <h3 class="news-headline">Spain have ingredients for more history in 2030</h3>
+                        <p class="news-summary">Spearheaded by Lamine Yamal and a dazzling young generation, reigning champions Spain already set their sights on a historic title defense on home soil at FIFA World Cup 2030.</p>
+                        <div class="news-link-row">
+                            <a href="https://www.fifa.com/en/tournaments/mens/worldcup/2030/articles/spain-have-ingredients-for-more-history-in-2030" target="_blank" rel="noopener noreferrer" class="news-direct-link">
+                                <span>Xem bài báo gốc trên FIFA.com</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
                 </article>
             </div>
         </section>
@@ -1267,30 +1608,30 @@ html_content = '''<!doctype html>
         return map[pos] || pos || 'Player';
     }
 
-    fetch('assets/js/players_full_data.json')
+    fetch('assets/js/players_full_data.json?v=20261014')
         .then(res => res.json())
         .then(data => {
-            // Pick 5 prominent sample star players for Section 02 (Highlight 5 thành phần)
-            const targetIds = [163, 30, 25, 1, 10]; // Vinicius, Bellingham, Mbappe, Messi, Haaland (5 Superstar Highlights)
-            samplePlayers = targetIds.map(id => data.find(p => p.id === id)).filter(Boolean);
+            // Pick 5 prominent sample star players for Section 02
+            const starNames = ['Vinicius', 'Bellingham', 'Mbapp', 'Messi', 'Haaland'];
+            samplePlayers = starNames.map(n => data.find(p => p.name.toLowerCase().includes(n.toLowerCase()))).filter(Boolean);
             if (samplePlayers.length < 5) {
                 samplePlayers = data.slice(0, 5);
             }
             renderSamplePlayerCards(samplePlayers);
 
-            // Pick 4 sample players for Section 05 ML preview
+            // Pick 4 sample players for Section 04 ML preview
             const mlSamples = samplePlayers.slice(0, 4);
             renderSampleMlCards(mlSamples);
             selectPlayerForMlWorkbench(samplePlayers[0]);
         })
         .catch(() => {
-            // Fallback sample players (Highlight 5 players)
+            // Fallback sample players (Highlight 5 players with authentic shirt numbers)
             samplePlayers = [
-                { id: 163, name: "VINICIUS JUNIOR", team: "BRA", club: "Real Madrid C. F.", pos: "FW", pos_detail: "FW", age: 25, height: 176, minutes: 440, matches: 5, rating: 79.1, predicted_rating: 78.8, delta: 0.3, goals_p90: 0.82, assists_p90: 0.2, shots_p90: 3.47, shirt: 7, flag_code: "BR" },
-                { id: 30, name: "Jude Bellingham", team: "ENG", club: "Real Madrid C. F.", pos: "MF", pos_detail: "MF", age: 22, height: 186, minutes: 450, matches: 5, rating: 79.5, predicted_rating: 79.8, delta: 0.3, goals_p90: 0.4, assists_p90: 0.2, shots_p90: 2.0, shirt: 7, flag_code: "ENG" },
-                { id: 25, name: "Kylian Mbappé", team: "FRA", club: "Real Madrid C. F.", pos: "FW", pos_detail: "FW", age: 26, height: 178, minutes: 450, matches: 5, rating: 82.2, predicted_rating: 82.0, delta: 0.2, goals_p90: 1.0, assists_p90: 0.2, shots_p90: 4.0, shirt: 10, flag_code: "FR" },
-                { id: 1, name: "Lionel Messi", team: "ARG", club: "Inter Miami CF", pos: "FW", pos_detail: "FW", age: 38, height: 170, minutes: 180, matches: 2, rating: 73.5, predicted_rating: 73.3, delta: 0.2, goals_p90: 0.0, assists_p90: 0.0, shots_p90: 1.5, shirt: 10, flag_code: "AR" },
-                { id: 10, name: "Erling Haaland", team: "NOR", club: "Manchester City", pos: "FW", pos_detail: "FW", age: 25, height: 194, minutes: 360, matches: 4, rating: 80.5, predicted_rating: 80.8, delta: 0.3, goals_p90: 1.25, assists_p90: 0.0, shots_p90: 3.75, shirt: 9, flag_code: "NO" }
+                { id: 137, name: "VINICIUS JUNIOR", team: "BRA", club: "Real Madrid C. F.", pos: "FW", pos_detail: "FW", age: 25, height: 176, minutes: 440, matches: 5, rating: 79.1, predicted_rating: 78.8, delta: 0.3, goals_p90: 0.82, assists_p90: 0.2, shots_p90: 3.47, shirt: 7, flag_code: "BR" },
+                { id: 354, name: "Jude Bellingham", team: "ENG", club: "Real Madrid C. F.", pos: "MF", pos_detail: "MF", age: 22, height: 186, minutes: 450, matches: 5, rating: 79.5, predicted_rating: 79.8, delta: 0.3, goals_p90: 0.4, assists_p90: 0.2, shots_p90: 2.0, shirt: 10, flag_code: "ENG" },
+                { id: 376, name: "Kylian Mbappé", team: "FRA", club: "Real Madrid C. F.", pos: "FW", pos_detail: "FW", age: 26, height: 178, minutes: 450, matches: 5, rating: 82.2, predicted_rating: 82.0, delta: 0.2, goals_p90: 1.0, assists_p90: 0.2, shots_p90: 4.0, shirt: 10, flag_code: "FR" },
+                { id: 30, name: "Lionel Messi", team: "ARG", club: "Inter Miami CF", pos: "FW", pos_detail: "FW", age: 38, height: 170, minutes: 180, matches: 2, rating: 73.5, predicted_rating: 73.3, delta: 0.2, goals_p90: 0.0, assists_p90: 0.0, shots_p90: 1.5, shirt: 10, flag_code: "AR" },
+                { id: 590, name: "Erling Haaland", team: "NOR", club: "Manchester City", pos: "FW", pos_detail: "FW", age: 25, height: 194, minutes: 360, matches: 4, rating: 80.5, predicted_rating: 80.8, delta: 0.3, goals_p90: 1.25, assists_p90: 0.0, shots_p90: 3.75, shirt: 9, flag_code: "NO" }
             ];
             renderSamplePlayerCards(samplePlayers);
             renderSampleMlCards(samplePlayers.slice(0, 4));
@@ -1307,7 +1648,7 @@ html_content = '''<!doctype html>
                     <span class="flag-tag-index">🌐 ${p.team || p.flag_code || 'WC'}</span>
                     <span class="badge-pos-index ${p.pos}">${p.pos}</span>
                 </div>
-                <div class="shirt-avatar-index">${p.shirt || ((p.id % 23) + 1)}</div>
+                <div class="shirt-avatar-index">${p.shirt || ''}</div>
                 <div class="player-name-index">${p.name}</div>
                 <div class="player-sub-index">${p.club || 'National Team'} · ${p.age || 25} yrs</div>
                 
@@ -1382,7 +1723,7 @@ html_content = '''<!doctype html>
         activeMlPlayer = p;
         simMins = 0; simGoals = 0; simAssists = 0;
 
-        document.getElementById('wbShirt').textContent = p.shirt || ((p.id % 23) + 1);
+        document.getElementById('wbShirt').textContent = p.shirt || '';
         document.getElementById('wbName').textContent = p.name;
         document.getElementById('wbSub').textContent = `${p.club || 'National Team'} · ${p.team} · ${getPosDetailLabel(p.pos)}`;
 
@@ -1462,7 +1803,7 @@ html_content = '''<!doctype html>
         document.getElementById('pmFlag').textContent = p.team || p.flag_code || 'WC';
         document.getElementById('pmPosBadge').textContent = p.pos;
         document.getElementById('pmPosBadge').className = 'badge-pos-index ' + p.pos;
-        document.getElementById('pmShirt').textContent = p.shirt || ((p.id % 23) + 1);
+        document.getElementById('pmShirt').textContent = p.shirt || '';
         document.getElementById('pmName').textContent = p.name;
         document.getElementById('pmClub').textContent = p.club || 'National Team';
         document.getElementById('pmTeam').textContent = '● NATIONAL TEAM: ' + (p.team || 'WC 2026');
@@ -1473,7 +1814,7 @@ html_content = '''<!doctype html>
         document.getElementById('pmWeight').textContent = weight + ' kg';
 
         document.getElementById('pmAge').textContent = (p.age || 25) + ' yrs';
-        document.getElementById('pmShirtNum').textContent = '#' + (p.shirt || ((p.id % 23) + 1));
+        document.getElementById('pmShirtNum').textContent = p.shirt ? '#' + p.shirt : 'N/A';
         document.getElementById('pmMatches').textContent = (p.matches || 4) + ' matches';
         document.getElementById('pmMinutes').textContent = (p.minutes || 360) + ' mins';
 
