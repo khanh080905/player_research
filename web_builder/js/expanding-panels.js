@@ -49,16 +49,22 @@ document.addEventListener("DOMContentLoaded", () => {
   function openWorldMap() {
     if (worldMapModal) {
       worldMapModal.classList.add("active");
+      document.body.classList.add("modal-open");
       document.body.style.overflow = "hidden";
     }
   }
+  window.openWorldMap = openWorldMap;
 
   function closeWorldMap() {
     if (worldMapModal) {
       worldMapModal.classList.remove("active");
-      document.body.style.overflow = "";
+      if (!countrySliderModal || !countrySliderModal.classList.contains("active")) {
+        document.body.classList.remove("modal-open");
+        document.body.style.overflow = "";
+      }
     }
   }
+  window.closeWorldMap = closeWorldMap;
 
   if (closeMapBtn) {
     closeMapBtn.addEventListener("click", () => {
@@ -103,15 +109,27 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.timedCardsApp) {
       window.timedCardsApp.loadContinent(continentKey);
     }
+    if (window.scrollableTeamsApp) {
+      window.scrollableTeamsApp.loadContinent(continentKey);
+    }
 
     if (countrySliderModal) {
       countrySliderModal.classList.add("active");
+      document.body.classList.add("modal-open");
+      document.body.style.overflow = "hidden";
     }
   }
 
   function closeCountrySlider() {
     if (countrySliderModal) {
       countrySliderModal.classList.remove("active");
+      if (worldMapModal && worldMapModal.classList.contains("active")) {
+        document.body.classList.add("modal-open");
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.classList.remove("modal-open");
+        document.body.style.overflow = "";
+      }
     }
   }
 

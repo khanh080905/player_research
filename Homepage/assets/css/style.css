@@ -62,6 +62,16 @@ select {
     z-index: 20;
     background: #07100ddd;
     backdrop-filter: blur(15px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+body.modal-open .header,
+body:has(.feature-modal.active) .header,
+body:has(.wc-history-modal.is-open) .header {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: translateY(-100%) !important;
 }
 
 .brand {
