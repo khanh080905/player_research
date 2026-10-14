@@ -20,7 +20,7 @@ html_content = '''<!doctype html>
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/style.css?v=20261014_2">
-    <link rel="stylesheet" href="assets/css/voyage-style.css">
+    <link rel="stylesheet" href="assets/css/voyage-style.css?v=20261014_wc">
 
     <style>
         :root {
@@ -196,6 +196,15 @@ html_content = '''<!doctype html>
             backdrop-filter: blur(14px);
             z-index: 1000;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+        }
+        body.modal-open .header,
+        body:has(.feature-modal.active) .header,
+        body:has(.wc-history-modal.is-open) .header {
+            opacity: 0 !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+            transform: translateY(-100%) !important;
         }
         .header nav a {
             font-size: 13px;
@@ -1204,13 +1213,6 @@ html_content = '''<!doctype html>
                     <span>BACK TO HOME</span>
                 </button>
 
-                <div class="map-nav-pills">
-                    <button class="map-pill active">5 PARTICIPATING CONTINENTS</button>
-                    <button class="map-pill" onclick="openCountrySlider('americas')">AMERICAS</button>
-                    <button class="map-pill" onclick="openCountrySlider('europe')">EUROPE</button>
-                    <button class="map-pill" onclick="openCountrySlider('asia')">ASIA</button>
-                    <button class="map-pill" onclick="openCountrySlider('africa')">AFRICA</button>
-                </div>
             </div>
 
             <div class="world-map-wrapper">
@@ -1254,9 +1256,9 @@ html_content = '''<!doctype html>
                             <div class="item-head">
                                 <span class="num">1.</span>
                                 <span class="name">AMERICAS</span>
-                                <span class="flags">🇺🇸 🇲🇽 🇨🇦 🇧🇷 🇦🇷</span>
+                                <span class="flags">🇺🇸 🇲🇽 🇨🇦</span>
                             </div>
-                            <p class="item-sub">USA, Mexico, Canada co-hosts alongside CONMEBOL representatives</p>
+                            <p class="item-sub">Co-hosts &amp; CONMEBOL qualification</p>
                             <div class="item-meta">
                                 <span><i class="fa-solid fa-flag"></i> 16 Host Cities</span>
                                 <span class="badge-tag badge-americas">CONCACAF &amp; CONMEBOL</span>
@@ -1269,7 +1271,7 @@ html_content = '''<!doctype html>
                                 <span class="name">EUROPE</span>
                                 <span class="icon-pin"><i class="fa-solid fa-location-dot"></i></span>
                             </div>
-                            <p class="item-sub">France, England, Spain, Germany, Portugal, Netherlands...</p>
+                            <p class="item-sub">Qualified Teams • Matches • Key Cities</p>
                             <div class="item-meta">
                                 <span><i class="fa-solid fa-trophy"></i> 16 Finals Slots</span>
                                 <span class="badge-tag badge-europe">UEFA</span>
@@ -1282,7 +1284,7 @@ html_content = '''<!doctype html>
                                 <span class="name">ASIA</span>
                                 <span class="icon-flag"><i class="fa-solid fa-flag"></i></span>
                             </div>
-                            <p class="item-sub">Japan, South Korea, Saudi Arabia, Iran, Australia...</p>
+                            <p class="item-sub">Teams • Events • Data</p>
                             <div class="item-meta">
                                 <span><i class="fa-solid fa-users"></i> 8.5 Finals Slots</span>
                                 <span class="badge-tag badge-asia">AFC</span>
@@ -1295,7 +1297,7 @@ html_content = '''<!doctype html>
                                 <span class="name">AFRICA</span>
                                 <span class="icon-flag"><i class="fa-solid fa-flag"></i></span>
                             </div>
-                            <p class="item-sub">Morocco, Senegal, Nigeria, Egypt, Cameroon...</p>
+                            <p class="item-sub">Teams • Details • Stats</p>
                             <div class="item-meta">
                                 <span><i class="fa-solid fa-bolt"></i> 9.5 Finals Slots</span>
                                 <span class="badge-tag badge-africa">CAF</span>
@@ -1308,7 +1310,7 @@ html_content = '''<!doctype html>
                                 <span class="name">OCEANIA</span>
                                 <span class="icon-flag"><i class="fa-solid fa-flag"></i></span>
                             </div>
-                            <p class="item-sub">New Zealand and Pacific region national teams</p>
+                            <p class="item-sub">Teams • Events</p>
                             <div class="item-meta">
                                 <span><i class="fa-solid fa-trophy"></i> 1.5 Finals Slots</span>
                                 <span class="badge-tag badge-oceania">OFC</span>
@@ -1732,8 +1734,8 @@ html_content = '''<!doctype html>
     </div>
 
     <!-- ══════════════ SCRIPTS ══════════════ -->
-    <script src="assets/js/timed-cards.js"></script>
-    <script src="assets/js/expanding-panels.js"></script>
+    <script src="assets/js/timed-cards.js?v=20261014_wchistory2"></script>
+    <script src="assets/js/expanding-panels.js?v=20261014_v2"></script>
     <script src="assets/js/app.js"></script>
 
     <script>

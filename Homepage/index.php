@@ -34,8 +34,8 @@ $scorers = [
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/voyage-style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=20261014_v2">
+    <link rel="stylesheet" href="assets/css/voyage-style.css?v=20261014_v2">
 </head>
 
 <body>
@@ -172,12 +172,6 @@ $scorers = [
                     <span>BACK TO PANELS</span>
                 </button>
 
-                <div class="map-nav-pills">
-                    <button class="map-pill active">EXPLORE CONTINENTS</button>
-                    <button class="map-pill">LIVE SCORES</button>
-                    <button class="map-pill">GLOBAL NEWS</button>
-                    <button class="map-pill">SCHEDULES</button>
-                </div>
             </div>
 
             <div class="world-map-wrapper">
@@ -951,8 +945,8 @@ $scorers = [
             <h2>SEARCH <em>FOOTBALL</em></h2><input placeholder="Player, country, club...">
         </div>
     </div>
-    <script src="assets/js/timed-cards.js"></script>
-    <script src="assets/js/expanding-panels.js"></script>
+    <script src="assets/js/timed-cards.js?v=20261014_wchistory2"></script>
+    <script src="assets/js/expanding-panels.js?v=20261014_v2"></script>
     <script src="assets/js/app.js"></script>
 </body>
 
