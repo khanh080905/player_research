@@ -232,6 +232,45 @@ html_content = '''<!doctype html>
             box-shadow: 0 0 14px rgba(56, 189, 248, 0.35);
         }
 
+        /* News Link in Header */
+        .nav-news-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 8px 16px;
+            background: rgba(226, 183, 117, 0.12);
+            border: 1px solid rgba(226, 183, 117, 0.4);
+            border-radius: 20px;
+            color: #f1f5f9;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .nav-news-btn i {
+            font-size: 13px;
+            color: #e2b775;
+            transition: transform 0.25s ease;
+        }
+        .nav-news-btn:hover {
+            background: rgba(226, 183, 117, 0.25);
+            border-color: rgba(226, 183, 117, 0.85);
+            color: #fff;
+            box-shadow: 0 0 16px rgba(226, 183, 117, 0.35);
+            transform: translateY(-1px);
+        }
+        .nav-news-btn:hover i {
+            transform: scale(1.15);
+        }
+
+        #news, .section[id] {
+            scroll-margin-top: 80px;
+        }
+
         /* Quick Stat Pill in Hero */
         .hero-metric-box {
             background: rgba(13, 18, 32, 0.7);
@@ -1032,10 +1071,10 @@ html_content = '''<!doctype html>
             <a href="ml-intelligence.html" class="ml-link">ML Intelligence ⚡</a>
         </nav>
         <div class="actions">
-            <button id="searchBtn" title="Global quick search">⌕</button>
-            <button class="pill on" onclick="openWorldMap()" style="cursor:pointer;padding:8px 14px;font-size:11px;font-weight:800;border-radius:20px;">
-                🗺️ OPEN MAP
-            </button>
+            <a href="#news" class="nav-news-btn" title="05 / NEWS">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>NEWS</span>
+            </a>
             <button id="menuBtn">☰</button>
         </div>
     </header>
@@ -1548,7 +1587,7 @@ html_content = '''<!doctype html>
         </section>
 
         <!-- ══════════════ SECTION 05: NEWS ══════════════ -->
-        <section class="section" id="insights">
+        <section class="section" id="news">
             <div class="heading">
                 <div>
                     <h2>05 / NEWS</h2>
