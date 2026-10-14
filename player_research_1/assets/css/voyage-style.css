@@ -531,6 +531,7 @@ body:has(.wc-history-modal.is-open) .header {
 /* SVG CONTINENTS STYLING: PURE INVISIBLE HITBOXES (ZERO OVERLAY BOXES/TINTS) */
 .svg-continent {
   cursor: pointer;
+  pointer-events: auto;
   transition: all 0.35s ease;
 }
 
@@ -539,12 +540,15 @@ body:has(.wc-history-modal.is-open) .header {
   stroke: none !important;
   filter: none !important;
   transition: none;
+  pointer-events: all !important;
+  cursor: pointer !important;
 }
 
 .svg-continent:hover path {
   fill: transparent !important;
   stroke: none !important;
   filter: none !important;
+  pointer-events: all !important;
 }
 
 /* SVG TEXT LABELS PER CONTINENT WITH MATCHING NEON COLORS */
@@ -744,11 +748,15 @@ body:has(.wc-history-modal.is-open) .header {
   max-height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
-  z-index: 210;
+  z-index: 13000 !important;
   background: var(--bg-dark);
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.country-slider-modal .close-modal-btn {
+  z-index: 13100 !important;
 }
 
 /* ACTIVE BACKGROUND STAGE (FULLSCREEN IMAGE LIKE IMAGE 1) */

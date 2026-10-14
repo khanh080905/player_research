@@ -206,6 +206,28 @@ html_content = '''<!doctype html>
             pointer-events: none !important;
             transform: translateY(-100%) !important;
         }
+
+        /* Ensure country-slider-modal is immediately visible on top of world-map-modal */
+        .country-slider-modal {
+            z-index: 13000 !important;
+        }
+        .country-slider-modal.active {
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: scale(1) !important;
+            pointer-events: auto !important;
+        }
+        .country-slider-modal .close-modal-btn {
+            z-index: 13100 !important;
+        }
+        .svg-continent {
+            cursor: pointer !important;
+            pointer-events: auto !important;
+        }
+        .svg-continent path {
+            pointer-events: all !important;
+            cursor: pointer !important;
+        }
         .header nav a {
             font-size: 13px;
             font-weight: 700;

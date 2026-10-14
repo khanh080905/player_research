@@ -80,13 +80,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 3. CONTINENT SELECTION ON SVG WORLD MAP & SIDE PANEL (SYNCHRONIZED HOVER & CLICK)
   allContinentElements.forEach((element) => {
-    const key = element.dataset.continent;
+    const key = element.dataset?.continent || element.getAttribute("data-continent");
     if (!key) return;
 
     // Synchronized Hover
     element.addEventListener("mouseenter", () => {
       allContinentElements.forEach((item) => {
-        if (item.dataset.continent !== key) {
+        const itemKey = item.dataset?.continent || item.getAttribute("data-continent");
+        if (itemKey !== key) {
           item.classList.add("dimmed");
         } else {
           item.classList.remove("dimmed");
@@ -99,7 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Click to view national teams slider
-    element.addEventListener("click", () => {
+    element.addEventListener("click", (e) => {
+      if (e) e.stopPropagation();
       openCountrySlider(key);
     });
   });
@@ -115,6 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (countrySliderModal) {
       countrySliderModal.classList.add("active");
+      countrySliderModal.style.zIndex = "13000";
       document.body.classList.add("modal-open");
       document.body.style.overflow = "hidden";
     }
