@@ -240,41 +240,93 @@ html_content = '''<!doctype html>
             border-radius: 6px;
             text-decoration: none;
         }
-        .header nav a:hover, .header nav a.active {
+        /* ═════════ 6-COLOR NEON NAV ITEMS ═════════ */
+        /* 1. Xanh lá (Green) - Home */
+        .header nav a.nav-home {
+            color: #4ade80;
+            border: 1px solid rgba(34, 197, 94, 0.55);
+            background: rgba(34, 197, 94, 0.08);
+        }
+        .header nav a.nav-home:hover, .header nav a.nav-home.active {
             color: #fff;
-            background: rgba(255, 255, 255, 0.06);
-        }
-        .header nav a.ml-link {
-            color: #38bdf8;
-            border: 1px solid rgba(56, 189, 248, 0.35);
-            background: rgba(56, 189, 248, 0.08);
-        }
-        .header nav a.ml-link:hover {
-            background: rgba(56, 189, 248, 0.2);
-            box-shadow: 0 0 14px rgba(56, 189, 248, 0.35);
+            background: rgba(34, 197, 94, 0.22);
+            border-color: rgba(34, 197, 94, 0.95);
+            box-shadow: 0 0 14px rgba(34, 197, 94, 0.4);
         }
 
-        /* News Link in Header Nav */
-        .header nav a.news-link {
+        /* 2. Đỏ (Red) - Nations & Map */
+        .header nav a.nav-map {
+            color: #f87171;
+            border: 1px solid rgba(239, 68, 68, 0.55);
+            background: rgba(239, 68, 68, 0.08);
+        }
+        .header nav a.nav-map:hover, .header nav a.nav-map.active {
+            color: #fff;
+            background: rgba(239, 68, 68, 0.22);
+            border-color: rgba(239, 68, 68, 0.95);
+            box-shadow: 0 0 14px rgba(239, 68, 68, 0.4);
+        }
+
+        /* 3. Tím (Purple) - Player Profiles */
+        .header nav a.nav-players {
+            color: #c084fc;
+            border: 1px solid rgba(168, 85, 247, 0.55);
+            background: rgba(168, 85, 247, 0.08);
+        }
+        .header nav a.nav-players:hover, .header nav a.nav-players.active {
+            color: #fff;
+            background: rgba(168, 85, 247, 0.22);
+            border-color: rgba(168, 85, 247, 0.95);
+            box-shadow: 0 0 14px rgba(168, 85, 247, 0.4);
+        }
+
+        /* 4. Vàng sáng (Bright Yellow) - Rankings */
+        .header nav a.nav-rankings {
+            color: #facc15;
+            border: 1px solid rgba(250, 204, 21, 0.6);
+            background: rgba(250, 204, 21, 0.08);
+        }
+        .header nav a.nav-rankings:hover, .header nav a.nav-rankings.active {
+            color: #fff;
+            background: rgba(250, 204, 21, 0.24);
+            border-color: rgba(250, 204, 21, 1);
+            box-shadow: 0 0 16px rgba(250, 204, 21, 0.45);
+        }
+
+        /* 5. Xanh dương (Cyan) - ML Intelligence */
+        .header nav a.ml-link, .header nav a.nav-ml {
+            color: #38bdf8;
+            border: 1px solid rgba(56, 189, 248, 0.45);
+            background: rgba(56, 189, 248, 0.08);
+        }
+        .header nav a.ml-link:hover, .header nav a.nav-ml:hover, .header nav a.ml-link.active, .header nav a.nav-ml.active {
+            color: #fff;
+            background: rgba(56, 189, 248, 0.22);
+            border-color: rgba(56, 189, 248, 0.95);
+            box-shadow: 0 0 14px rgba(56, 189, 248, 0.4);
+        }
+
+        /* 6. Vàng champagne (Champagne Gold) - News */
+        .header nav a.news-link, .header nav a.nav-news {
             color: #e2b775;
-            border: 1px solid rgba(226, 183, 117, 0.35);
+            border: 1px solid rgba(226, 183, 117, 0.45);
             background: rgba(226, 183, 117, 0.08);
             display: inline-flex;
             align-items: center;
             gap: 7px;
         }
-        .header nav a.news-link:hover {
+        .header nav a.news-link:hover, .header nav a.nav-news:hover, .header nav a.news-link.active, .header nav a.nav-news.active {
             color: #fff;
-            background: rgba(226, 183, 117, 0.2);
-            border-color: rgba(226, 183, 117, 0.7);
-            box-shadow: 0 0 14px rgba(226, 183, 117, 0.35);
+            background: rgba(226, 183, 117, 0.22);
+            border-color: rgba(226, 183, 117, 0.95);
+            box-shadow: 0 0 14px rgba(226, 183, 117, 0.4);
         }
-        .header nav a.news-link i {
+        .header nav a.news-link i, .header nav a.nav-news i {
             font-size: 13px;
-            color: #e2b775;
+            color: inherit;
             transition: transform 0.25s ease;
         }
-        .header nav a.news-link:hover i {
+        .header nav a.news-link:hover i, .header nav a.nav-news:hover i {
             transform: scale(1.15);
         }
 
@@ -1075,12 +1127,12 @@ html_content = '''<!doctype html>
             <b>FM</b><span>FOOTBALL<small>ANALYTICS</small></span>
         </a>
         <nav id="nav">
-            <a class="active" href="#home">Home</a>
-            <a href="#continents" onclick="openWorldMap();return false;">Nations &amp; Map 🌍</a>
-            <a href="players.html">Player Profiles 👤</a>
-            <a href="ranking.html">Rankings 🏆</a>
-            <a href="ml-intelligence.html" class="ml-link">ML Intelligence ⚡</a>
-            <a href="#news" class="news-link"><i class="fa-solid fa-newspaper"></i> News</a>
+            <a class="nav-home active" href="#home">Home</a>
+            <a class="nav-map" href="#continents" onclick="openWorldMap();return false;">Nations &amp; Map 🌍</a>
+            <a class="nav-players" href="players.html">Player Profiles 👤</a>
+            <a class="nav-rankings" href="ranking.html">Rankings 🏆</a>
+            <a class="nav-ml ml-link" href="ml-intelligence.html">ML Intelligence ⚡</a>
+            <a class="nav-news news-link" href="#news"><i class="fa-solid fa-newspaper"></i> News</a>
         </nav>
         <div class="actions">
             <button id="menuBtn">☰</button>
