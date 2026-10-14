@@ -864,13 +864,6 @@ html_content = '''<!doctype html>
                 <h1>THE GAME<br><em>BEYOND</em><br>THE NUMBERS.</h1>
                 <p>Welcome to the FIFA World Cup 2026 Analytics Hub. Explore interactive world maps, sample player biometrics, tournament standings, and machine learning performance predictions.</p>
                 
-                <div class="buttons">
-                    <a class="primary" href="players.html">Player Profiles 👤</a>
-                    <a class="secondary" href="ml-intelligence.html" style="border-color:rgba(56,189,248,0.5);color:var(--accent-cyan);background:rgba(56,189,248,0.1);">ML Intelligence ⚡</a>
-                    <a class="secondary" href="#continents" onclick="openWorldMap();return false;">World Map 🌍</a>
-                    <a class="secondary" href="ranking.html" style="background:rgba(226,183,117,0.15);color:var(--accent-gold);border-color:rgba(226,183,117,0.4)">Rankings 🏆</a>
-                </div>
-                
                 <div class="metrics" style="margin-top:36px;display:flex;gap:14px;flex-wrap:wrap">
                     <div class="hero-metric-box">
                         <b>48</b>
@@ -1277,20 +1270,8 @@ html_content = '''<!doctype html>
                     <div>
                         <h2>04 / AI PREDICTION</h2>
                     </div>
-                    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
-                        <span class="live-pill" style="font-size:11px;font-weight:700;padding:6px 14px;border-radius:20px;background:rgba(56,189,248,.15);border:1px solid rgba(56,189,248,.4);color:var(--accent-cyan);font-family:'Space Grotesk',monospace;">
-                            ⚡ MODEL: XGBOOST &amp; RF
-                        </span>
-                        <span class="live-pill" style="font-size:11px;font-weight:700;padding:6px 14px;border-radius:20px;background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.3);color:#22c55e;font-family:'Space Grotesk',monospace;">
-                            🎯 ACCURACY R² = 90.26%
-                        </span>
-                    </div>
                 </div>
 
-                <!-- 4 SAMPLE ML PLAYERS CARDS -->
-                <div style="margin-bottom:12px;font-size:12px;color:#94a3b8;font-family:'Space Grotesk',monospace;font-weight:700;">
-                    FEATURED SAMPLE PLAYERS EVALUATED BY AI:
-                </div>
                 <div class="ml-cards-grid" id="indexMlSampleGrid"></div>
 
                 <!-- WORKBENCH PREVIEW -->
@@ -1310,7 +1291,7 @@ html_content = '''<!doctype html>
                             </div>
                         </div>
 
-                        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;background:#06080b;padding:14px;border-radius:14px;border:1px solid rgba(56,189,248,0.25);margin-bottom:18px;">
+                        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;background:#06080b;padding:14px;border-radius:14px;border:1px solid rgba(56,189,248,0.25);margin-bottom:0;">
                             <div style="text-align:center;">
                                 <small style="font-size:9px;color:#64748b;display:block;font-weight:700;">ACTUAL RATING</small>
                                 <b style="font-size:22px;color:var(--accent-gold);font-family:'Space Mono',monospace;" id="wbActual">79.1</b>
@@ -1326,15 +1307,6 @@ html_content = '''<!doctype html>
                                 <b style="font-size:22px;color:#22c55e;font-family:'Space Mono',monospace;" id="wbDelta">+0.3</b>
                                 <span style="font-size:9px;color:#22c55e;display:block;">Model Error Margin</span>
                             </div>
-                        </div>
-
-                        <div style="background:#090e18;border-left:3px solid var(--accent-cyan);padding:12px 14px;border-radius:0 10px 10px 0;font-size:12px;line-height:1.6;color:#cbd5e1;margin-bottom:18px;" id="wbVerdict">
-                            XGBoost model identifies the player in the elite tier with R²=90.26% confidence. The player demonstrates exceptional offensive generation per 90 minutes.
-                        </div>
-
-                        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-                            <span style="font-family:'Space Grotesk',monospace;font-size:10px;font-weight:700;padding:4px 10px;background:rgba(34,197,94,0.12);border:1px solid rgba(34,197,94,0.3);color:#22c55e;border-radius:12px;">● MODEL: XGBoost &amp; RF</span>
-                            <span style="font-family:'Space Grotesk',monospace;font-size:10px;font-weight:700;padding:4px 10px;background:rgba(56,189,248,0.12);border:1px solid rgba(56,189,248,0.3);color:#38bdf8;border-radius:12px;">● CONFIDENCE: 94.2%</span>
                         </div>
                     </div>
 
