@@ -188,6 +188,52 @@ html_content = '''<!doctype html>
             }
         }
 
+        .news-see-more-wrap {
+            display: flex;
+            justify-content: center;
+            margin-top: 32px;
+            padding-bottom: 6px;
+        }
+
+        .news-see-more-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 14px 34px;
+            background: linear-gradient(135deg, rgba(226, 183, 117, 0.16) 0%, rgba(226, 183, 117, 0.05) 100%);
+            border: 1.5px solid rgba(226, 183, 117, 0.55);
+            border-radius: 30px;
+            color: #fce7b0;
+            font-family: 'Space Grotesk', -apple-system, sans-serif;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 0 18px rgba(226, 183, 117, 0.2);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .news-see-more-btn:hover {
+            color: #05080e;
+            background: linear-gradient(135deg, #fce7b0 0%, #e2b775 100%);
+            border-color: #fce7b0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 26px rgba(226, 183, 117, 0.6);
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        .news-see-more-btn i {
+            font-size: 14px;
+            transition: transform 0.3s ease;
+        }
+
+        .news-see-more-btn:hover i {
+            transform: translateX(6px);
+        }
+
         /* Header link styling */
         .header {
             position: sticky;
@@ -1725,6 +1771,14 @@ html_content = '''<!doctype html>
                         </div>
                     </div>
                 </article>
+            </div>
+
+            <!-- SEE MORE BUTTON -->
+            <div class="news-see-more-wrap">
+                <a href="news.html" class="news-see-more-btn" id="newsSeeMoreBtn">
+                    <span>SEE MORE NEWS &amp; ARTICLES</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
             </div>
         </section>
     </main>
