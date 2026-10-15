@@ -10,7 +10,6 @@ $title = "AI PERFORMANCE PREDICTION & ML ANALYSIS";
     <meta name="description" content="FIFA World Cup 2026 - AI Machine Learning Analysis & Performance Prediction">
     <title><?= $title ?> — Football ML</title>
     
-    <!-- Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -447,7 +446,7 @@ $title = "AI PERFORMANCE PREDICTION & ML ANALYSIS";
         <div class="players-grid" id="playersGrid"></div>
     </main>
 
-    <!-- PLAYER PROFILE & AI PREDICTION MODAL -->
+
     <div class="modal-overlay" id="playerModal" onclick="handleModalOverlayClick(event)">
         <div class="modal-card">
             <div class="modal-header">
@@ -459,8 +458,8 @@ $title = "AI PERFORMANCE PREDICTION & ML ANALYSIS";
             </div>
 
             <div class="modal-body">
-                <!-- COL 1: BIO -->
-                <div style="display:flex;flex-direction:column;gap:14px;">
+
+            <div style="display:flex;flex-direction:column;gap:14px;">
                     <div style="background:var(--surface);border:1px solid var(--card-border);border-radius:14px;padding:18px;text-align:center;">
                         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
                             <span class="flag-tag" id="mFlag">BRA</span>
@@ -500,7 +499,7 @@ $title = "AI PERFORMANCE PREDICTION & ML ANALYSIS";
                     </div>
                 </div>
 
-                <!-- COL 2: VU-METER & RADAR -->
+
                 <div style="display:flex;flex-direction:column;gap:14px;">
                     <div style="background:var(--surface);border:1px solid var(--card-border);border-radius:14px;padding:16px;">
                         <div style="font-size:11px;font-weight:800;color:var(--text-sub);letter-spacing:0.1em;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--card-border);display:flex;justify-content:space-between;align-items:center;">
@@ -511,7 +510,7 @@ $title = "AI PERFORMANCE PREDICTION & ML ANALYSIS";
                     </div>
                 </div>
 
-                <!-- COL 3: MACHINE LEARNING & SIMULATOR -->
+
                 <div style="display:flex;flex-direction:column;gap:14px;">
                     <div style="background:var(--surface);border:1px solid rgba(0,240,255,0.25);border-radius:14px;padding:16px;">
                         <div style="font-size:11px;font-weight:800;color:var(--text-sub);letter-spacing:0.1em;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;">

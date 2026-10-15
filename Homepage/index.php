@@ -80,7 +80,7 @@ $scorers = [
             <div class="expanding-nav-panels-section">
                 <div class="flex-panels-container">
                     
-                    <!-- Panel 1: HOME -->
+                    
                     <div class="flex-panel" id="panel-home">
                         <div class="panel-bg" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80');"></div>
                         <div class="panel-overlay"></div>
@@ -96,7 +96,7 @@ $scorers = [
                         </div>
                     </div>
 
-                    <!-- Panel 2: DESTINATIONS -->
+                    
                     <div class="flex-panel" id="panel-destinations">
                         <div class="panel-bg" style="background-image: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80');"></div>
                         <div class="panel-overlay"></div>
@@ -112,7 +112,7 @@ $scorers = [
                         </div>
                     </div>
 
-                    <!-- Panel 3: ABOUT (ACTIVE BY DEFAULT) -->
+                    
                     <div class="flex-panel active" id="panel-about">
                         <div class="panel-bg" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80');"></div>
                         <div class="panel-overlay"></div>
@@ -128,7 +128,7 @@ $scorers = [
                         </div>
                     </div>
 
-                    <!-- Panel 4: WORK -->
+                    
                     <div class="flex-panel" id="panel-work">
                         <div class="panel-bg" style="background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80');"></div>
                         <div class="panel-overlay"></div>
@@ -144,7 +144,7 @@ $scorers = [
                         </div>
                     </div>
 
-                    <!-- Panel 5: SERVICES -->
+                    
                     <div class="flex-panel" id="panel-services">
                         <div class="panel-bg" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80');"></div>
                         <div class="panel-overlay"></div>
@@ -164,7 +164,7 @@ $scorers = [
             </div>
         </section>
 
-        <!-- INTERACTIVE WORLD MAP WITH 5 CONTINENTS -->
+        
         <div class="feature-modal world-map-modal" id="world-map-modal">
             <div class="map-top-bar">
                 <button class="close-modal-btn" id="close-map-btn">
@@ -280,7 +280,7 @@ $scorers = [
             </div>
         </div>
 
-        <!-- NATIONAL TEAMS SLIDER WITH HORIZONTAL SCROLLBAR -->
+       
         <div class="feature-modal country-slider-modal" id="country-slider-modal">
             <button class="close-modal-btn" id="back-to-map-btn">
                 <i class="fa-solid fa-arrow-left"></i>
@@ -334,7 +334,7 @@ $scorers = [
             </div>
         </div>
 
-        <!-- STYLES FOR REDESIGNED SECTION 02 & SECTION 05 -->
+        
         <style>
             .search-toolbar-index {
                 padding: 16px 20px;
@@ -555,7 +555,7 @@ $scorers = [
                 border-color: var(--accent-gold, #e2b775);
             }
 
-            /* SECTION 05: INTELLIGENCE STYLES */
+            
             .ml-widget-container {
                 background: linear-gradient(135deg, rgba(6,8,11,0.95) 0%, rgba(13,18,32,0.98) 100%);
                 border: 1px solid rgba(0, 240, 255, 0.25);
@@ -620,7 +620,7 @@ $scorers = [
             }
         </style>
 
-        <!-- SECTION 02 / SCOUT (REDESIGNED TO MATCH PLAYERS.PHP) -->
+        
         <section class="section" id="players">
             <div class="heading">
                 <div>
@@ -630,7 +630,7 @@ $scorers = [
                 <a href="players.php" style="color:var(--accent-gold, #e2b775);font-family:'Space Grotesk',monospace;font-weight:700;font-size:13px;">Browse all 888 players ↗</a>
             </div>
 
-            <!-- SEARCH TOOLBAR PREVIEW MATCHING PLAYERS.PHP -->
+            
             <div class="search-toolbar-index">
                 <div class="search-input-wrap-index">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -645,10 +645,10 @@ $scorers = [
                 </div>
             </div>
 
-            <!-- 4 FEATURED PLAYER CARDS MATCHING PLAYERS.PHP GRID -->
+
             <div class="players-grid-index" id="indexPlayersGrid">
-                <!-- CARD 1: Bellingham -->
-                <a class="player-card-index" href="player.php?id=30" data-name="Jude Bellingham" data-pos="MF" data-country="ENG" data-club="Real Madrid C. F.">
+
+            <a class="player-card-index" href="player.php?id=30" data-name="Jude Bellingham" data-pos="MF" data-country="ENG" data-club="Real Madrid C. F.">
                     <div class="card-top-index">
                         <span class="flag-tag-index">ENG 🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
                         <span class="badge-pos-index MF">MF · MIDFIELDER</span>
@@ -668,7 +668,7 @@ $scorers = [
                     <div class="btn-profile-index">VIEW PLAYER PROFILE ↗</div>
                 </a>
 
-                <!-- CARD 2: Mbappé -->
+
                 <a class="player-card-index" href="player.php?id=3" data-name="Kylian Mbappé" data-pos="FW" data-country="FRA" data-club="Real Madrid C. F.">
                     <div class="card-top-index">
                         <span class="flag-tag-index">FRA 🇫🇷</span>
@@ -689,7 +689,7 @@ $scorers = [
                     <div class="btn-profile-index">VIEW PLAYER PROFILE ↗</div>
                 </a>
 
-                <!-- CARD 3: Messi -->
+
                 <a class="player-card-index" href="player.php?id=1" data-name="Lionel Messi" data-pos="FW" data-country="ARG" data-club="Inter Miami CF">
                     <div class="card-top-index">
                         <span class="flag-tag-index">ARG 🇦🇷</span>
@@ -710,7 +710,7 @@ $scorers = [
                     <div class="btn-profile-index">VIEW PLAYER PROFILE ↗</div>
                 </a>
 
-                <!-- CARD 4: Haaland -->
+
                 <a class="player-card-index" href="player.php?id=2" data-name="Erling Haaland" data-pos="FW" data-country="NOR" data-club="Manchester City">
                     <div class="card-top-index">
                         <span class="flag-tag-index">NOR 🇳🇴</span>
@@ -756,7 +756,7 @@ $scorers = [
             </div>
         </section>
 
-        <!-- SECTION 05 / INTELLIGENCE (REDESIGNED TO MATCH ML-ANALYSIS.PHP) -->
+
         <section class="ml-widget-container" id="ml-intelligence">
             <div style="padding-right:20px;">
                 <small style="color:var(--accent-cyan, #00f0ff);font-family:'Space Grotesk',monospace;font-weight:800;letter-spacing:2px;display:block;margin-bottom:8px;">05 / INTELLIGENCE — MACHINE LEARNING ENGINE</small>
@@ -772,14 +772,14 @@ $scorers = [
                 <a class="primary" href="ml-analysis.php" style="background:var(--accent-cyan, #00f0ff);color:#000;font-family:'Space Grotesk',monospace;font-weight:800;padding:14px 28px;border-radius:30px;text-decoration:none;display:inline-block;box-shadow:0 0 24px rgba(0,240,255,0.35);transition:all 0.3s ease;">LAUNCH ML ANALYSIS DASHBOARD ⚡</a>
             </div>
 
-            <!-- INTERACTIVE ML PREVIEW WIDGET -->
+
             <div style="background:rgba(6,8,11,0.9);border:1px solid rgba(0,240,255,0.25);border-radius:20px;padding:24px;box-shadow:0 20px 50px rgba(0,0,0,0.8);">
                 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.08);">
                     <div style="font-family:'Space Grotesk',monospace;font-size:12px;font-weight:800;color:#fff;">🤖 AI MODEL INFERENCE &amp; VU-METER</div>
                     <span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 8px;border-radius:4px;font-size:10px;font-weight:700;font-family:'Space Grotesk',monospace;">LIVE PREVIEW</span>
                 </div>
 
-                <!-- PLAYER TOGGLE TAB -->
+
                 <div style="display:flex;gap:6px;margin-bottom:16px;" id="indexMlPlayerTabs">
                     <button class="sim-chip active" onclick="switchIndexMlPlayer('bellingham', this)">BELLINGHAM</button>
                     <button class="sim-chip" onclick="switchIndexMlPlayer('mbappe', this)">MBAPPÉ</button>
@@ -787,7 +787,7 @@ $scorers = [
                     <button class="sim-chip" onclick="switchIndexMlPlayer('haaland', this)">HAALAND</button>
                 </div>
 
-                <!-- 5 LED VU METERS -->
+
                 <div id="indexVuContainer">
                     <div class="v-bar-item">
                         <div class="v-bar-header"><span>PACE ⚡</span><span id="vPaceVal">94.2</span></div>
@@ -811,7 +811,7 @@ $scorers = [
                     </div>
                 </div>
 
-                <!-- SIMULATOR CONTROLS -->
+
                 <div style="background:#06080b;border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:12px;margin-top:16px;">
                     <div style="font-size:11px;color:#94a3b8;font-family:'Space Grotesk',monospace;margin-bottom:8px;display:flex;justify-content:space-between;">
                         <span>WHAT-IF SCENARIO SIMULATION:</span>
@@ -828,7 +828,7 @@ $scorers = [
         </section>
 
         <script>
-            // Section 02 Search & Filter Logic
+
             let currentSelectedPos = '';
             function selectIndexPos(btn) {
                 document.querySelectorAll('.pos-pill-index').forEach(b => b.classList.remove('active'));
@@ -857,7 +857,7 @@ $scorers = [
                 });
             }
 
-            // Section 05 ML Preview Data & Logic
+
             const mlPlayerData = {
                 bellingham: { pace: 88.5, shoot: 86.4, pass: 91.2, drib: 92.5, def: 78.4, base: 91.4, ai: 91.8 },
                 mbappe: { pace: 97.4, shoot: 94.2, pass: 82.5, drib: 93.8, def: 42.1, base: 91.8, ai: 92.3 },
